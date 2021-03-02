@@ -6,7 +6,6 @@ on:
 jobs:
   requestActivationFile:
     runs-on: ubuntu-latest
-    if: false
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
