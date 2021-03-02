@@ -20,6 +20,8 @@ jobs:
       with:
         # Arguments to pass to unity
         args: -buildTarget StandaloneWindows64 -customBuildName Mirage -customBuildPath ./build/StandaloneWindows64 -projectPath . -executeMethod  UnityEditor.SyncVS.SyncSolution -quit
+    - name: DebugPath
+      run: ls -l
     - name: Generate API
       uses: nikeee/docfx-action@v1.0.0
       with:
