@@ -3,9 +3,8 @@
         {
             "src": [
                 {
-                    "files": [
-                        "doc.csproj"
-                    ]
+                    "files": "Mirage.sln",
+                    "src": "../"
                 }
             ],
             "dest": "api",
@@ -66,6 +65,9 @@
         ],
         "xrefService": [
             "https://xref.docs.microsoft.com/query?uid={uid}"
+        ],
+        "xref": [
+            "https://normanderwan.github.io/UnityXrefMaps/xrefmap.yml"
         ],
         "postProcessors": [],
         "markdownEngineName": "markdig",
