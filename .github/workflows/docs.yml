@@ -12,11 +12,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Activate license
-      uses: MirageNet/unity-runner@2.0.0
+      uses: MirageNet/unity-runner@3.1.0
       with:
         entrypoint: /activate.sh
     - name: Generate Solution
-      uses: MirageNet/unity-runner@2.0.0
+      uses: MirageNet/unity-runner@3.1.0
       with:
         # Arguments to pass to unity
         args: -buildTarget StandaloneWindows64 -customBuildName Mirage -customBuildPath ./build/StandaloneWindows64 -projectPath . -executeMethod  UnityEditor.SyncVS.SyncSolution -quit
