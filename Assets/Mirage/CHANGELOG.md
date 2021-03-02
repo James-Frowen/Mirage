@@ -1,3 +1,55 @@
+# [67.0.0](https://github.com/James-Frowen/Mirage/compare/v66.2.1...v67.0.0) (2021-03-02)
+
+
+### Bug Fixes
+
+* add comments and backing field for time ([#618](https://github.com/James-Frowen/Mirage/issues/618)) ([da74e11](https://github.com/James-Frowen/Mirage/commit/da74e11066f1a6782ec1304f855b79840c7058f3))
+* add missing properties to interface ([#617](https://github.com/James-Frowen/Mirage/issues/617)) ([e45920e](https://github.com/James-Frowen/Mirage/commit/e45920ebd375b382f48e11bba7e73549efb58c6c))
+* add summaries to event classes ([#623](https://github.com/James-Frowen/Mirage/issues/623)) ([e6b9354](https://github.com/James-Frowen/Mirage/commit/e6b9354665294dc11140a560bfc661ef6bfbb3b9))
+* bug in tanks sample ([#575](https://github.com/James-Frowen/Mirage/issues/575)) ([d82efea](https://github.com/James-Frowen/Mirage/commit/d82efea9015cf2db9436f12deaa9a7dd65ba862d))
+* clientObjectManager was not using its interface ([#615](https://github.com/James-Frowen/Mirage/issues/615)) ([d2b07ea](https://github.com/James-Frowen/Mirage/commit/d2b07ea46ef1e5e0dbc4685b39c4cd24a7c2fc36))
+* drop support for older versions ([5dc12b5](https://github.com/James-Frowen/Mirage/commit/5dc12b5e8553f5689833af5b71a936615514b021))
+* mirage icon missing in welcome window ([#637](https://github.com/James-Frowen/Mirage/issues/637)) ([6c4dc9e](https://github.com/James-Frowen/Mirage/commit/6c4dc9ee9639503631da43f74f92f0394fadab29))
+* move interfaces into their own files ([#613](https://github.com/James-Frowen/Mirage/issues/613)) ([432005b](https://github.com/James-Frowen/Mirage/commit/432005bea62a83d50416aa7760ee15881ac68d00))
+* no longer true. spawnableobjects populated by FindObjectsOfTypeAll ([#622](https://github.com/James-Frowen/Mirage/issues/622)) ([5692709](https://github.com/James-Frowen/Mirage/commit/5692709b62095a08e25172d6a4dfba51e47355f5))
+* passing NetworkBehaviors in RPC works with IL2PP ([#630](https://github.com/James-Frowen/Mirage/issues/630)) ([87becee](https://github.com/James-Frowen/Mirage/commit/87becee8fdc028ca86abd6aa13a55396ea202567)), closes [#629](https://github.com/James-Frowen/Mirage/issues/629)
+* passing NetworkBehaviors in syncvars work with il2pp ([#631](https://github.com/James-Frowen/Mirage/issues/631)) ([cd7317f](https://github.com/James-Frowen/Mirage/commit/cd7317f368bd65c6bd594c337de4bdc676fe2805)), closes [#630](https://github.com/James-Frowen/Mirage/issues/630) [#629](https://github.com/James-Frowen/Mirage/issues/629)
+* revert preprocessor change ([b89c454](https://github.com/James-Frowen/Mirage/commit/b89c45489755a9fa598ec804e8d71b35cfc8f438))
+* show selected tab when welcome screen is opened ([#628](https://github.com/James-Frowen/Mirage/issues/628)) ([f6cae98](https://github.com/James-Frowen/Mirage/commit/f6cae984f1dfb2941a35cd4bfd1dd0050ce06873))
+* simplify checking if client is host ([#602](https://github.com/James-Frowen/Mirage/issues/602)) ([dbf5784](https://github.com/James-Frowen/Mirage/commit/dbf5784884012bd08a46d823452f8f9d95009721))
+* static not needed ([#604](https://github.com/James-Frowen/Mirage/issues/604)) ([879ba01](https://github.com/James-Frowen/Mirage/commit/879ba018feed89d12b217e273f66b0fe75a447d5))
+* stopping `: ` being at the start of all log messages ([#606](https://github.com/James-Frowen/Mirage/issues/606)) ([8efe7ce](https://github.com/James-Frowen/Mirage/commit/8efe7cea0eb8536335f46bf412a8ba71be74ae96))
+* welcome window icon not being found ([#635](https://github.com/James-Frowen/Mirage/issues/635)) ([263a7b2](https://github.com/James-Frowen/Mirage/commit/263a7b21c36357f8e6a7fa48f9ea74d1e6233216))
+* welcome window layout ([#634](https://github.com/James-Frowen/Mirage/issues/634)) ([2bceedb](https://github.com/James-Frowen/Mirage/commit/2bceedb0baa0dd5d5767e440deea74077469fd11))
+
+
+### Code Refactoring
+
+* move LocalPlayer to ClientObjectManager ([#619](https://github.com/James-Frowen/Mirage/issues/619)) ([df1e379](https://github.com/James-Frowen/Mirage/commit/df1e379e064cdea01309fbf9ada0bab1f3bbd7dd))
+* remove unnecessary assembly definition ([#599](https://github.com/James-Frowen/Mirage/issues/599)) ([89ffc7c](https://github.com/James-Frowen/Mirage/commit/89ffc7c9cc9a37650c998381bf97c148b2f1cfd9))
+
+
+### Features
+
+* add events to interfaces ([#614](https://github.com/James-Frowen/Mirage/issues/614)) ([4d1a772](https://github.com/James-Frowen/Mirage/commit/4d1a77263dfbca0f631ded85a5f772ce6e4e4343))
+* add more control over player spawning ([#626](https://github.com/James-Frowen/Mirage/issues/626)) ([e0dd626](https://github.com/James-Frowen/Mirage/commit/e0dd626d5bd23e6c555730c6a4c3517694ea3bba))
+* adding assert extension method to logger ([#642](https://github.com/James-Frowen/Mirage/issues/642)) ([1df6081](https://github.com/James-Frowen/Mirage/commit/1df6081e5d1244a1f780b9945f5bd3c0a10387f0))
+* install/uninstall modules from welcome window ([#593](https://github.com/James-Frowen/Mirage/issues/593)) ([53ac404](https://github.com/James-Frowen/Mirage/commit/53ac40492ade8059338436ad15b69e3573ad1482))
+* support generic network behaviors ([#574](https://github.com/James-Frowen/Mirage/issues/574)) ([715642c](https://github.com/James-Frowen/Mirage/commit/715642ceb5de02dc500d8ba3f4cda883431decb7))
+* welcome window shows active tab ([#616](https://github.com/James-Frowen/Mirage/issues/616)) ([1411d0a](https://github.com/James-Frowen/Mirage/commit/1411d0ae4dd3b83c44ce27800e4117f00211f092))
+
+
+### Styles
+
+* renaming NumPlayers to NumberOfPlayers ([#646](https://github.com/James-Frowen/Mirage/issues/646)) ([27b99be](https://github.com/James-Frowen/Mirage/commit/27b99be272ef4f6df73717d877385981e7565259))
+
+
+### BREAKING CHANGES
+
+* Use NetworkServer.NumberOfPlayers instead of NetworkServer.NumPlayers
+* removed NetworkClient.LocalPlayer,  use ClientObjectManager.LocalPlayer instead
+* removed MirageNG.asmdef,  change your assembly to use Mirage.asmdef instead
+
 # [69.0.0](https://github.com/MirageNet/Mirage/compare/v68.0.3...v69.0.0) (2021-03-02)
 
 
