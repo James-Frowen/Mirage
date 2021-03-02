@@ -134,6 +134,19 @@ references:
   isSpec: "True"
   fullName: Mirage.ClientObjectManager.Item
   nameWithType: ClientObjectManager.Item
+- uid: Mirage.ClientObjectManager.LocalPlayer
+  name: LocalPlayer
+  href: api/Mirage.ClientObjectManager.html#Mirage_ClientObjectManager_LocalPlayer
+  commentId: P:Mirage.ClientObjectManager.LocalPlayer
+  fullName: Mirage.ClientObjectManager.LocalPlayer
+  nameWithType: ClientObjectManager.LocalPlayer
+- uid: Mirage.ClientObjectManager.LocalPlayer*
+  name: LocalPlayer
+  href: api/Mirage.ClientObjectManager.html#Mirage_ClientObjectManager_LocalPlayer_
+  commentId: Overload:Mirage.ClientObjectManager.LocalPlayer
+  isSpec: "True"
+  fullName: Mirage.ClientObjectManager.LocalPlayer
+  nameWithType: ClientObjectManager.LocalPlayer
 - uid: Mirage.ClientObjectManager.NetworkSceneManager
   name: NetworkSceneManager
   href: api/Mirage.ClientObjectManager.html#Mirage_ClientObjectManager_NetworkSceneManager
@@ -200,7 +213,14 @@ references:
 - uid: Mirage.ClientObjectManager.Spawned
   name: Spawned
   href: api/Mirage.ClientObjectManager.html#Mirage_ClientObjectManager_Spawned
-  commentId: F:Mirage.ClientObjectManager.Spawned
+  commentId: P:Mirage.ClientObjectManager.Spawned
+  fullName: Mirage.ClientObjectManager.Spawned
+  nameWithType: ClientObjectManager.Spawned
+- uid: Mirage.ClientObjectManager.Spawned*
+  name: Spawned
+  href: api/Mirage.ClientObjectManager.html#Mirage_ClientObjectManager_Spawned_
+  commentId: Overload:Mirage.ClientObjectManager.Spawned
+  isSpec: "True"
   fullName: Mirage.ClientObjectManager.Spawned
   nameWithType: ClientObjectManager.Spawned
 - uid: Mirage.ClientObjectManager.SpawnedObjects
@@ -216,12 +236,6 @@ references:
   isSpec: "True"
   fullName: Mirage.ClientObjectManager.SpawnedObjects
   nameWithType: ClientObjectManager.SpawnedObjects
-- uid: Mirage.ClientObjectManager.SpawnEvent
-  name: ClientObjectManager.SpawnEvent
-  href: api/Mirage.ClientObjectManager.SpawnEvent.html
-  commentId: T:Mirage.ClientObjectManager.SpawnEvent
-  fullName: Mirage.ClientObjectManager.SpawnEvent
-  nameWithType: ClientObjectManager.SpawnEvent
 - uid: Mirage.ClientObjectManager.spawnPrefabs
   name: spawnPrefabs
   href: api/Mirage.ClientObjectManager.html#Mirage_ClientObjectManager_spawnPrefabs
@@ -270,7 +284,14 @@ references:
 - uid: Mirage.ClientObjectManager.UnSpawned
   name: UnSpawned
   href: api/Mirage.ClientObjectManager.html#Mirage_ClientObjectManager_UnSpawned
-  commentId: F:Mirage.ClientObjectManager.UnSpawned
+  commentId: P:Mirage.ClientObjectManager.UnSpawned
+  fullName: Mirage.ClientObjectManager.UnSpawned
+  nameWithType: ClientObjectManager.UnSpawned
+- uid: Mirage.ClientObjectManager.UnSpawned*
+  name: UnSpawned
+  href: api/Mirage.ClientObjectManager.html#Mirage_ClientObjectManager_UnSpawned_
+  commentId: Overload:Mirage.ClientObjectManager.UnSpawned
+  isSpec: "True"
   fullName: Mirage.ClientObjectManager.UnSpawned
   nameWithType: ClientObjectManager.UnSpawned
 - uid: Mirage.ClientRpcAttribute
@@ -303,1108 +324,6 @@ references:
   commentId: T:Mirage.ClientSceneChangeEvent
   fullName: Mirage.ClientSceneChangeEvent
   nameWithType: ClientSceneChangeEvent
-- uid: Mirage.Cloud
-  name: Mirage.Cloud
-  href: api/Mirage.Cloud.html
-  commentId: N:Mirage.Cloud
-  fullName: Mirage.Cloud
-  nameWithType: Mirage.Cloud
-- uid: Mirage.Cloud.ApiConnector
-  name: ApiConnector
-  href: api/Mirage.Cloud.ApiConnector.html
-  commentId: T:Mirage.Cloud.ApiConnector
-  fullName: Mirage.Cloud.ApiConnector
-  nameWithType: ApiConnector
-- uid: Mirage.Cloud.ApiConnector.ListServer
-  name: ListServer
-  href: api/Mirage.Cloud.ApiConnector.html#Mirage_Cloud_ApiConnector_ListServer
-  commentId: P:Mirage.Cloud.ApiConnector.ListServer
-  fullName: Mirage.Cloud.ApiConnector.ListServer
-  nameWithType: ApiConnector.ListServer
-- uid: Mirage.Cloud.ApiConnector.ListServer*
-  name: ListServer
-  href: api/Mirage.Cloud.ApiConnector.html#Mirage_Cloud_ApiConnector_ListServer_
-  commentId: Overload:Mirage.Cloud.ApiConnector.ListServer
-  isSpec: "True"
-  fullName: Mirage.Cloud.ApiConnector.ListServer
-  nameWithType: ApiConnector.ListServer
-- uid: Mirage.Cloud.ApiConnector.OnDestroy
-  name: OnDestroy()
-  href: api/Mirage.Cloud.ApiConnector.html#Mirage_Cloud_ApiConnector_OnDestroy
-  commentId: M:Mirage.Cloud.ApiConnector.OnDestroy
-  fullName: Mirage.Cloud.ApiConnector.OnDestroy()
-  nameWithType: ApiConnector.OnDestroy()
-- uid: Mirage.Cloud.ApiConnector.OnDestroy*
-  name: OnDestroy
-  href: api/Mirage.Cloud.ApiConnector.html#Mirage_Cloud_ApiConnector_OnDestroy_
-  commentId: Overload:Mirage.Cloud.ApiConnector.OnDestroy
-  isSpec: "True"
-  fullName: Mirage.Cloud.ApiConnector.OnDestroy
-  nameWithType: ApiConnector.OnDestroy
-- uid: Mirage.Cloud.BaseApi
-  name: BaseApi
-  href: api/Mirage.Cloud.BaseApi.html
-  commentId: T:Mirage.Cloud.BaseApi
-  fullName: Mirage.Cloud.BaseApi
-  nameWithType: BaseApi
-- uid: Mirage.Cloud.BaseApi.#ctor(Mirage.Cloud.ICoroutineRunner,Mirage.Cloud.IRequestCreator)
-  name: BaseApi(ICoroutineRunner, IRequestCreator)
-  href: api/Mirage.Cloud.BaseApi.html#Mirage_Cloud_BaseApi__ctor_Mirage_Cloud_ICoroutineRunner_Mirage_Cloud_IRequestCreator_
-  commentId: M:Mirage.Cloud.BaseApi.#ctor(Mirage.Cloud.ICoroutineRunner,Mirage.Cloud.IRequestCreator)
-  fullName: Mirage.Cloud.BaseApi.BaseApi(Mirage.Cloud.ICoroutineRunner, Mirage.Cloud.IRequestCreator)
-  nameWithType: BaseApi.BaseApi(ICoroutineRunner, IRequestCreator)
-- uid: Mirage.Cloud.BaseApi.#ctor*
-  name: BaseApi
-  href: api/Mirage.Cloud.BaseApi.html#Mirage_Cloud_BaseApi__ctor_
-  commentId: Overload:Mirage.Cloud.BaseApi.#ctor
-  isSpec: "True"
-  fullName: Mirage.Cloud.BaseApi.BaseApi
-  nameWithType: BaseApi.BaseApi
-- uid: Mirage.Cloud.BaseApi.requestCreator
-  name: requestCreator
-  href: api/Mirage.Cloud.BaseApi.html#Mirage_Cloud_BaseApi_requestCreator
-  commentId: F:Mirage.Cloud.BaseApi.requestCreator
-  fullName: Mirage.Cloud.BaseApi.requestCreator
-  nameWithType: BaseApi.requestCreator
-- uid: Mirage.Cloud.BaseApi.runner
-  name: runner
-  href: api/Mirage.Cloud.BaseApi.html#Mirage_Cloud_BaseApi_runner
-  commentId: F:Mirage.Cloud.BaseApi.runner
-  fullName: Mirage.Cloud.BaseApi.runner
-  nameWithType: BaseApi.runner
-- uid: Mirage.Cloud.CreatedIdJson
-  name: CreatedIdJson
-  href: api/Mirage.Cloud.CreatedIdJson.html
-  commentId: T:Mirage.Cloud.CreatedIdJson
-  fullName: Mirage.Cloud.CreatedIdJson
-  nameWithType: CreatedIdJson
-- uid: Mirage.Cloud.CreatedIdJson.id
-  name: id
-  href: api/Mirage.Cloud.CreatedIdJson.html#Mirage_Cloud_CreatedIdJson_id
-  commentId: F:Mirage.Cloud.CreatedIdJson.id
-  fullName: Mirage.Cloud.CreatedIdJson.id
-  nameWithType: CreatedIdJson.id
-- uid: Mirage.Cloud.EmptyJson
-  name: EmptyJson
-  href: api/Mirage.Cloud.EmptyJson.html
-  commentId: T:Mirage.Cloud.EmptyJson
-  fullName: Mirage.Cloud.EmptyJson
-  nameWithType: EmptyJson
-- uid: Mirage.Cloud.ErrorJson
-  name: ErrorJson
-  href: api/Mirage.Cloud.ErrorJson.html
-  commentId: T:Mirage.Cloud.ErrorJson
-  fullName: Mirage.Cloud.ErrorJson
-  nameWithType: ErrorJson
-- uid: Mirage.Cloud.ErrorJson.code
-  name: code
-  href: api/Mirage.Cloud.ErrorJson.html#Mirage_Cloud_ErrorJson_code
-  commentId: F:Mirage.Cloud.ErrorJson.code
-  fullName: Mirage.Cloud.ErrorJson.code
-  nameWithType: ErrorJson.code
-- uid: Mirage.Cloud.ErrorJson.HtmlCode
-  name: HtmlCode
-  href: api/Mirage.Cloud.ErrorJson.html#Mirage_Cloud_ErrorJson_HtmlCode
-  commentId: P:Mirage.Cloud.ErrorJson.HtmlCode
-  fullName: Mirage.Cloud.ErrorJson.HtmlCode
-  nameWithType: ErrorJson.HtmlCode
-- uid: Mirage.Cloud.ErrorJson.HtmlCode*
-  name: HtmlCode
-  href: api/Mirage.Cloud.ErrorJson.html#Mirage_Cloud_ErrorJson_HtmlCode_
-  commentId: Overload:Mirage.Cloud.ErrorJson.HtmlCode
-  isSpec: "True"
-  fullName: Mirage.Cloud.ErrorJson.HtmlCode
-  nameWithType: ErrorJson.HtmlCode
-- uid: Mirage.Cloud.ErrorJson.message
-  name: message
-  href: api/Mirage.Cloud.ErrorJson.html#Mirage_Cloud_ErrorJson_message
-  commentId: F:Mirage.Cloud.ErrorJson.message
-  fullName: Mirage.Cloud.ErrorJson.message
-  nameWithType: ErrorJson.message
-- uid: Mirage.Cloud.Extensions
-  name: Extensions
-  href: api/Mirage.Cloud.Extensions.html
-  commentId: T:Mirage.Cloud.Extensions
-  fullName: Mirage.Cloud.Extensions
-  nameWithType: Extensions
-- uid: Mirage.Cloud.Extensions.IsOk(UnityWebRequest)
-  name: IsOk(UnityWebRequest)
-  href: api/Mirage.Cloud.Extensions.html#Mirage_Cloud_Extensions_IsOk_UnityWebRequest_
-  commentId: M:Mirage.Cloud.Extensions.IsOk(UnityWebRequest)
-  fullName: Mirage.Cloud.Extensions.IsOk(UnityWebRequest)
-  nameWithType: Extensions.IsOk(UnityWebRequest)
-- uid: Mirage.Cloud.Extensions.IsOk*
-  name: IsOk
-  href: api/Mirage.Cloud.Extensions.html#Mirage_Cloud_Extensions_IsOk_
-  commentId: Overload:Mirage.Cloud.Extensions.IsOk
-  isSpec: "True"
-  fullName: Mirage.Cloud.Extensions.IsOk
-  nameWithType: Extensions.IsOk
-- uid: Mirage.Cloud.IApiConnector
-  name: IApiConnector
-  href: api/Mirage.Cloud.IApiConnector.html
-  commentId: T:Mirage.Cloud.IApiConnector
-  fullName: Mirage.Cloud.IApiConnector
-  nameWithType: IApiConnector
-- uid: Mirage.Cloud.IApiConnector.ListServer
-  name: ListServer
-  href: api/Mirage.Cloud.IApiConnector.html#Mirage_Cloud_IApiConnector_ListServer
-  commentId: P:Mirage.Cloud.IApiConnector.ListServer
-  fullName: Mirage.Cloud.IApiConnector.ListServer
-  nameWithType: IApiConnector.ListServer
-- uid: Mirage.Cloud.IApiConnector.ListServer*
-  name: ListServer
-  href: api/Mirage.Cloud.IApiConnector.html#Mirage_Cloud_IApiConnector_ListServer_
-  commentId: Overload:Mirage.Cloud.IApiConnector.ListServer
-  isSpec: "True"
-  fullName: Mirage.Cloud.IApiConnector.ListServer
-  nameWithType: IApiConnector.ListServer
-- uid: Mirage.Cloud.IBaseApi
-  name: IBaseApi
-  href: api/Mirage.Cloud.IBaseApi.html
-  commentId: T:Mirage.Cloud.IBaseApi
-  fullName: Mirage.Cloud.IBaseApi
-  nameWithType: IBaseApi
-- uid: Mirage.Cloud.IBaseApi.Shutdown
-  name: Shutdown()
-  href: api/Mirage.Cloud.IBaseApi.html#Mirage_Cloud_IBaseApi_Shutdown
-  commentId: M:Mirage.Cloud.IBaseApi.Shutdown
-  fullName: Mirage.Cloud.IBaseApi.Shutdown()
-  nameWithType: IBaseApi.Shutdown()
-- uid: Mirage.Cloud.IBaseApi.Shutdown*
-  name: Shutdown
-  href: api/Mirage.Cloud.IBaseApi.html#Mirage_Cloud_IBaseApi_Shutdown_
-  commentId: Overload:Mirage.Cloud.IBaseApi.Shutdown
-  isSpec: "True"
-  fullName: Mirage.Cloud.IBaseApi.Shutdown
-  nameWithType: IBaseApi.Shutdown
-- uid: Mirage.Cloud.ICanBeJson
-  name: ICanBeJson
-  href: api/Mirage.Cloud.ICanBeJson.html
-  commentId: T:Mirage.Cloud.ICanBeJson
-  fullName: Mirage.Cloud.ICanBeJson
-  nameWithType: ICanBeJson
-- uid: Mirage.Cloud.ICoroutineRunner
-  name: ICoroutineRunner
-  href: api/Mirage.Cloud.ICoroutineRunner.html
-  commentId: T:Mirage.Cloud.ICoroutineRunner
-  fullName: Mirage.Cloud.ICoroutineRunner
-  nameWithType: ICoroutineRunner
-- uid: Mirage.Cloud.ICoroutineRunner.StartCoroutine(IEnumerator)
-  name: StartCoroutine(IEnumerator)
-  href: api/Mirage.Cloud.ICoroutineRunner.html#Mirage_Cloud_ICoroutineRunner_StartCoroutine_IEnumerator_
-  commentId: M:Mirage.Cloud.ICoroutineRunner.StartCoroutine(IEnumerator)
-  fullName: Mirage.Cloud.ICoroutineRunner.StartCoroutine(IEnumerator)
-  nameWithType: ICoroutineRunner.StartCoroutine(IEnumerator)
-- uid: Mirage.Cloud.ICoroutineRunner.StartCoroutine*
-  name: StartCoroutine
-  href: api/Mirage.Cloud.ICoroutineRunner.html#Mirage_Cloud_ICoroutineRunner_StartCoroutine_
-  commentId: Overload:Mirage.Cloud.ICoroutineRunner.StartCoroutine
-  isSpec: "True"
-  fullName: Mirage.Cloud.ICoroutineRunner.StartCoroutine
-  nameWithType: ICoroutineRunner.StartCoroutine
-- uid: Mirage.Cloud.ICoroutineRunner.StopCoroutine(Coroutine)
-  name: StopCoroutine(Coroutine)
-  href: api/Mirage.Cloud.ICoroutineRunner.html#Mirage_Cloud_ICoroutineRunner_StopCoroutine_Coroutine_
-  commentId: M:Mirage.Cloud.ICoroutineRunner.StopCoroutine(Coroutine)
-  fullName: Mirage.Cloud.ICoroutineRunner.StopCoroutine(Coroutine)
-  nameWithType: ICoroutineRunner.StopCoroutine(Coroutine)
-- uid: Mirage.Cloud.ICoroutineRunner.StopCoroutine(IEnumerator)
-  name: StopCoroutine(IEnumerator)
-  href: api/Mirage.Cloud.ICoroutineRunner.html#Mirage_Cloud_ICoroutineRunner_StopCoroutine_IEnumerator_
-  commentId: M:Mirage.Cloud.ICoroutineRunner.StopCoroutine(IEnumerator)
-  fullName: Mirage.Cloud.ICoroutineRunner.StopCoroutine(IEnumerator)
-  nameWithType: ICoroutineRunner.StopCoroutine(IEnumerator)
-- uid: Mirage.Cloud.ICoroutineRunner.StopCoroutine*
-  name: StopCoroutine
-  href: api/Mirage.Cloud.ICoroutineRunner.html#Mirage_Cloud_ICoroutineRunner_StopCoroutine_
-  commentId: Overload:Mirage.Cloud.ICoroutineRunner.StopCoroutine
-  isSpec: "True"
-  fullName: Mirage.Cloud.ICoroutineRunner.StopCoroutine
-  nameWithType: ICoroutineRunner.StopCoroutine
-- uid: Mirage.Cloud.IRequestCreator
-  name: IRequestCreator
-  href: api/Mirage.Cloud.IRequestCreator.html
-  commentId: T:Mirage.Cloud.IRequestCreator
-  fullName: Mirage.Cloud.IRequestCreator
-  nameWithType: IRequestCreator
-- uid: Mirage.Cloud.IRequestCreator.Delete(System.String)
-  name: Delete(String)
-  href: api/Mirage.Cloud.IRequestCreator.html#Mirage_Cloud_IRequestCreator_Delete_System_String_
-  commentId: M:Mirage.Cloud.IRequestCreator.Delete(System.String)
-  fullName: Mirage.Cloud.IRequestCreator.Delete(System.String)
-  nameWithType: IRequestCreator.Delete(String)
-- uid: Mirage.Cloud.IRequestCreator.Delete*
-  name: Delete
-  href: api/Mirage.Cloud.IRequestCreator.html#Mirage_Cloud_IRequestCreator_Delete_
-  commentId: Overload:Mirage.Cloud.IRequestCreator.Delete
-  isSpec: "True"
-  fullName: Mirage.Cloud.IRequestCreator.Delete
-  nameWithType: IRequestCreator.Delete
-- uid: Mirage.Cloud.IRequestCreator.Get(System.String)
-  name: Get(String)
-  href: api/Mirage.Cloud.IRequestCreator.html#Mirage_Cloud_IRequestCreator_Get_System_String_
-  commentId: M:Mirage.Cloud.IRequestCreator.Get(System.String)
-  fullName: Mirage.Cloud.IRequestCreator.Get(System.String)
-  nameWithType: IRequestCreator.Get(String)
-- uid: Mirage.Cloud.IRequestCreator.Get*
-  name: Get
-  href: api/Mirage.Cloud.IRequestCreator.html#Mirage_Cloud_IRequestCreator_Get_
-  commentId: Overload:Mirage.Cloud.IRequestCreator.Get
-  isSpec: "True"
-  fullName: Mirage.Cloud.IRequestCreator.Get
-  nameWithType: IRequestCreator.Get
-- uid: Mirage.Cloud.IRequestCreator.Patch*
-  name: Patch
-  href: api/Mirage.Cloud.IRequestCreator.html#Mirage_Cloud_IRequestCreator_Patch_
-  commentId: Overload:Mirage.Cloud.IRequestCreator.Patch
-  isSpec: "True"
-  fullName: Mirage.Cloud.IRequestCreator.Patch
-  nameWithType: IRequestCreator.Patch
-- uid: Mirage.Cloud.IRequestCreator.Patch``1(System.String,``0)
-  name: Patch<T>(String, T)
-  href: api/Mirage.Cloud.IRequestCreator.html#Mirage_Cloud_IRequestCreator_Patch__1_System_String___0_
-  commentId: M:Mirage.Cloud.IRequestCreator.Patch``1(System.String,``0)
-  name.vb: Patch(Of T)(String, T)
-  fullName: Mirage.Cloud.IRequestCreator.Patch<T>(System.String, T)
-  fullName.vb: Mirage.Cloud.IRequestCreator.Patch(Of T)(System.String, T)
-  nameWithType: IRequestCreator.Patch<T>(String, T)
-  nameWithType.vb: IRequestCreator.Patch(Of T)(String, T)
-- uid: Mirage.Cloud.IRequestCreator.Post*
-  name: Post
-  href: api/Mirage.Cloud.IRequestCreator.html#Mirage_Cloud_IRequestCreator_Post_
-  commentId: Overload:Mirage.Cloud.IRequestCreator.Post
-  isSpec: "True"
-  fullName: Mirage.Cloud.IRequestCreator.Post
-  nameWithType: IRequestCreator.Post
-- uid: Mirage.Cloud.IRequestCreator.Post``1(System.String,``0)
-  name: Post<T>(String, T)
-  href: api/Mirage.Cloud.IRequestCreator.html#Mirage_Cloud_IRequestCreator_Post__1_System_String___0_
-  commentId: M:Mirage.Cloud.IRequestCreator.Post``1(System.String,``0)
-  name.vb: Post(Of T)(String, T)
-  fullName: Mirage.Cloud.IRequestCreator.Post<T>(System.String, T)
-  fullName.vb: Mirage.Cloud.IRequestCreator.Post(Of T)(System.String, T)
-  nameWithType: IRequestCreator.Post<T>(String, T)
-  nameWithType.vb: IRequestCreator.Post(Of T)(String, T)
-- uid: Mirage.Cloud.IRequestCreator.SendRequest(UnityWebRequest,Mirage.Cloud.RequestSuccess,Mirage.Cloud.RequestFail)
-  name: SendRequest(UnityWebRequest, RequestSuccess, RequestFail)
-  href: api/Mirage.Cloud.IRequestCreator.html#Mirage_Cloud_IRequestCreator_SendRequest_UnityWebRequest_Mirage_Cloud_RequestSuccess_Mirage_Cloud_RequestFail_
-  commentId: M:Mirage.Cloud.IRequestCreator.SendRequest(UnityWebRequest,Mirage.Cloud.RequestSuccess,Mirage.Cloud.RequestFail)
-  fullName: Mirage.Cloud.IRequestCreator.SendRequest(UnityWebRequest, Mirage.Cloud.RequestSuccess, Mirage.Cloud.RequestFail)
-  nameWithType: IRequestCreator.SendRequest(UnityWebRequest, RequestSuccess, RequestFail)
-- uid: Mirage.Cloud.IRequestCreator.SendRequest*
-  name: SendRequest
-  href: api/Mirage.Cloud.IRequestCreator.html#Mirage_Cloud_IRequestCreator_SendRequest_
-  commentId: Overload:Mirage.Cloud.IRequestCreator.SendRequest
-  isSpec: "True"
-  fullName: Mirage.Cloud.IRequestCreator.SendRequest
-  nameWithType: IRequestCreator.SendRequest
-- uid: Mirage.Cloud.IRequestCreator.SendRequestEnumerator(UnityWebRequest,Mirage.Cloud.RequestSuccess,Mirage.Cloud.RequestFail)
-  name: SendRequestEnumerator(UnityWebRequest, RequestSuccess, RequestFail)
-  href: api/Mirage.Cloud.IRequestCreator.html#Mirage_Cloud_IRequestCreator_SendRequestEnumerator_UnityWebRequest_Mirage_Cloud_RequestSuccess_Mirage_Cloud_RequestFail_
-  commentId: M:Mirage.Cloud.IRequestCreator.SendRequestEnumerator(UnityWebRequest,Mirage.Cloud.RequestSuccess,Mirage.Cloud.RequestFail)
-  fullName: Mirage.Cloud.IRequestCreator.SendRequestEnumerator(UnityWebRequest, Mirage.Cloud.RequestSuccess, Mirage.Cloud.RequestFail)
-  nameWithType: IRequestCreator.SendRequestEnumerator(UnityWebRequest, RequestSuccess, RequestFail)
-- uid: Mirage.Cloud.IRequestCreator.SendRequestEnumerator*
-  name: SendRequestEnumerator
-  href: api/Mirage.Cloud.IRequestCreator.html#Mirage_Cloud_IRequestCreator_SendRequestEnumerator_
-  commentId: Overload:Mirage.Cloud.IRequestCreator.SendRequestEnumerator
-  isSpec: "True"
-  fullName: Mirage.Cloud.IRequestCreator.SendRequestEnumerator
-  nameWithType: IRequestCreator.SendRequestEnumerator
-- uid: Mirage.Cloud.ListServerService
-  name: Mirage.Cloud.ListServerService
-  href: api/Mirage.Cloud.ListServerService.html
-  commentId: N:Mirage.Cloud.ListServerService
-  fullName: Mirage.Cloud.ListServerService
-  nameWithType: Mirage.Cloud.ListServerService
-- uid: Mirage.Cloud.ListServerService.CustomDataHelper
-  name: CustomDataHelper
-  href: api/Mirage.Cloud.ListServerService.CustomDataHelper.html
-  commentId: T:Mirage.Cloud.ListServerService.CustomDataHelper
-  fullName: Mirage.Cloud.ListServerService.CustomDataHelper
-  nameWithType: CustomDataHelper
-- uid: Mirage.Cloud.ListServerService.CustomDataHelper.ToDictionary(Mirage.Cloud.ListServerService.KeyValue[])
-  name: ToDictionary(KeyValue[])
-  href: api/Mirage.Cloud.ListServerService.CustomDataHelper.html#Mirage_Cloud_ListServerService_CustomDataHelper_ToDictionary_Mirage_Cloud_ListServerService_KeyValue___
-  commentId: M:Mirage.Cloud.ListServerService.CustomDataHelper.ToDictionary(Mirage.Cloud.ListServerService.KeyValue[])
-  name.vb: ToDictionary(KeyValue())
-  fullName: Mirage.Cloud.ListServerService.CustomDataHelper.ToDictionary(Mirage.Cloud.ListServerService.KeyValue[])
-  fullName.vb: Mirage.Cloud.ListServerService.CustomDataHelper.ToDictionary(Mirage.Cloud.ListServerService.KeyValue())
-  nameWithType: CustomDataHelper.ToDictionary(KeyValue[])
-  nameWithType.vb: CustomDataHelper.ToDictionary(KeyValue())
-- uid: Mirage.Cloud.ListServerService.CustomDataHelper.ToDictionary*
-  name: ToDictionary
-  href: api/Mirage.Cloud.ListServerService.CustomDataHelper.html#Mirage_Cloud_ListServerService_CustomDataHelper_ToDictionary_
-  commentId: Overload:Mirage.Cloud.ListServerService.CustomDataHelper.ToDictionary
-  isSpec: "True"
-  fullName: Mirage.Cloud.ListServerService.CustomDataHelper.ToDictionary
-  nameWithType: CustomDataHelper.ToDictionary
-- uid: Mirage.Cloud.ListServerService.CustomDataHelper.ToKeyValueArray(Dictionary{System.String,System.String})
-  name: ToKeyValueArray(Dictionary<String, String>)
-  href: api/Mirage.Cloud.ListServerService.CustomDataHelper.html#Mirage_Cloud_ListServerService_CustomDataHelper_ToKeyValueArray_Dictionary_System_String_System_String__
-  commentId: M:Mirage.Cloud.ListServerService.CustomDataHelper.ToKeyValueArray(Dictionary{System.String,System.String})
-  name.vb: ToKeyValueArray(Dictionary(Of String, String))
-  fullName: Mirage.Cloud.ListServerService.CustomDataHelper.ToKeyValueArray(Dictionary<System.String, System.String>)
-  fullName.vb: Mirage.Cloud.ListServerService.CustomDataHelper.ToKeyValueArray(Dictionary(Of System.String, System.String))
-  nameWithType: CustomDataHelper.ToKeyValueArray(Dictionary<String, String>)
-  nameWithType.vb: CustomDataHelper.ToKeyValueArray(Dictionary(Of String, String))
-- uid: Mirage.Cloud.ListServerService.CustomDataHelper.ToKeyValueArray*
-  name: ToKeyValueArray
-  href: api/Mirage.Cloud.ListServerService.CustomDataHelper.html#Mirage_Cloud_ListServerService_CustomDataHelper_ToKeyValueArray_
-  commentId: Overload:Mirage.Cloud.ListServerService.CustomDataHelper.ToKeyValueArray
-  isSpec: "True"
-  fullName: Mirage.Cloud.ListServerService.CustomDataHelper.ToKeyValueArray
-  nameWithType: CustomDataHelper.ToKeyValueArray
-- uid: Mirage.Cloud.ListServerService.CustomDataHelper.ValidateCustomData(Mirage.Cloud.ListServerService.KeyValue[])
-  name: ValidateCustomData(KeyValue[])
-  href: api/Mirage.Cloud.ListServerService.CustomDataHelper.html#Mirage_Cloud_ListServerService_CustomDataHelper_ValidateCustomData_Mirage_Cloud_ListServerService_KeyValue___
-  commentId: M:Mirage.Cloud.ListServerService.CustomDataHelper.ValidateCustomData(Mirage.Cloud.ListServerService.KeyValue[])
-  name.vb: ValidateCustomData(KeyValue())
-  fullName: Mirage.Cloud.ListServerService.CustomDataHelper.ValidateCustomData(Mirage.Cloud.ListServerService.KeyValue[])
-  fullName.vb: Mirage.Cloud.ListServerService.CustomDataHelper.ValidateCustomData(Mirage.Cloud.ListServerService.KeyValue())
-  nameWithType: CustomDataHelper.ValidateCustomData(KeyValue[])
-  nameWithType.vb: CustomDataHelper.ValidateCustomData(KeyValue())
-- uid: Mirage.Cloud.ListServerService.CustomDataHelper.ValidateCustomData*
-  name: ValidateCustomData
-  href: api/Mirage.Cloud.ListServerService.CustomDataHelper.html#Mirage_Cloud_ListServerService_CustomDataHelper_ValidateCustomData_
-  commentId: Overload:Mirage.Cloud.ListServerService.CustomDataHelper.ValidateCustomData
-  isSpec: "True"
-  fullName: Mirage.Cloud.ListServerService.CustomDataHelper.ValidateCustomData
-  nameWithType: CustomDataHelper.ValidateCustomData
-- uid: Mirage.Cloud.ListServerService.IListServerClientApi
-  name: IListServerClientApi
-  href: api/Mirage.Cloud.ListServerService.IListServerClientApi.html
-  commentId: T:Mirage.Cloud.ListServerService.IListServerClientApi
-  fullName: Mirage.Cloud.ListServerService.IListServerClientApi
-  nameWithType: IListServerClientApi
-- uid: Mirage.Cloud.ListServerService.IListServerClientApi.GetServerList
-  name: GetServerList()
-  href: api/Mirage.Cloud.ListServerService.IListServerClientApi.html#Mirage_Cloud_ListServerService_IListServerClientApi_GetServerList
-  commentId: M:Mirage.Cloud.ListServerService.IListServerClientApi.GetServerList
-  fullName: Mirage.Cloud.ListServerService.IListServerClientApi.GetServerList()
-  nameWithType: IListServerClientApi.GetServerList()
-- uid: Mirage.Cloud.ListServerService.IListServerClientApi.GetServerList*
-  name: GetServerList
-  href: api/Mirage.Cloud.ListServerService.IListServerClientApi.html#Mirage_Cloud_ListServerService_IListServerClientApi_GetServerList_
-  commentId: Overload:Mirage.Cloud.ListServerService.IListServerClientApi.GetServerList
-  isSpec: "True"
-  fullName: Mirage.Cloud.ListServerService.IListServerClientApi.GetServerList
-  nameWithType: IListServerClientApi.GetServerList
-- uid: Mirage.Cloud.ListServerService.IListServerClientApi.onServerListUpdated
-  name: onServerListUpdated
-  href: api/Mirage.Cloud.ListServerService.IListServerClientApi.html#Mirage_Cloud_ListServerService_IListServerClientApi_onServerListUpdated
-  commentId: E:Mirage.Cloud.ListServerService.IListServerClientApi.onServerListUpdated
-  fullName: Mirage.Cloud.ListServerService.IListServerClientApi.onServerListUpdated
-  nameWithType: IListServerClientApi.onServerListUpdated
-- uid: Mirage.Cloud.ListServerService.IListServerClientApi.StartGetServerListRepeat(System.Int32)
-  name: StartGetServerListRepeat(Int32)
-  href: api/Mirage.Cloud.ListServerService.IListServerClientApi.html#Mirage_Cloud_ListServerService_IListServerClientApi_StartGetServerListRepeat_System_Int32_
-  commentId: M:Mirage.Cloud.ListServerService.IListServerClientApi.StartGetServerListRepeat(System.Int32)
-  fullName: Mirage.Cloud.ListServerService.IListServerClientApi.StartGetServerListRepeat(System.Int32)
-  nameWithType: IListServerClientApi.StartGetServerListRepeat(Int32)
-- uid: Mirage.Cloud.ListServerService.IListServerClientApi.StartGetServerListRepeat*
-  name: StartGetServerListRepeat
-  href: api/Mirage.Cloud.ListServerService.IListServerClientApi.html#Mirage_Cloud_ListServerService_IListServerClientApi_StartGetServerListRepeat_
-  commentId: Overload:Mirage.Cloud.ListServerService.IListServerClientApi.StartGetServerListRepeat
-  isSpec: "True"
-  fullName: Mirage.Cloud.ListServerService.IListServerClientApi.StartGetServerListRepeat
-  nameWithType: IListServerClientApi.StartGetServerListRepeat
-- uid: Mirage.Cloud.ListServerService.IListServerClientApi.StopGetServerListRepeat
-  name: StopGetServerListRepeat()
-  href: api/Mirage.Cloud.ListServerService.IListServerClientApi.html#Mirage_Cloud_ListServerService_IListServerClientApi_StopGetServerListRepeat
-  commentId: M:Mirage.Cloud.ListServerService.IListServerClientApi.StopGetServerListRepeat
-  fullName: Mirage.Cloud.ListServerService.IListServerClientApi.StopGetServerListRepeat()
-  nameWithType: IListServerClientApi.StopGetServerListRepeat()
-- uid: Mirage.Cloud.ListServerService.IListServerClientApi.StopGetServerListRepeat*
-  name: StopGetServerListRepeat
-  href: api/Mirage.Cloud.ListServerService.IListServerClientApi.html#Mirage_Cloud_ListServerService_IListServerClientApi_StopGetServerListRepeat_
-  commentId: Overload:Mirage.Cloud.ListServerService.IListServerClientApi.StopGetServerListRepeat
-  isSpec: "True"
-  fullName: Mirage.Cloud.ListServerService.IListServerClientApi.StopGetServerListRepeat
-  nameWithType: IListServerClientApi.StopGetServerListRepeat
-- uid: Mirage.Cloud.ListServerService.IListServerServerApi
-  name: IListServerServerApi
-  href: api/Mirage.Cloud.ListServerService.IListServerServerApi.html
-  commentId: T:Mirage.Cloud.ListServerService.IListServerServerApi
-  fullName: Mirage.Cloud.ListServerService.IListServerServerApi
-  nameWithType: IListServerServerApi
-- uid: Mirage.Cloud.ListServerService.IListServerServerApi.AddServer(Mirage.Cloud.ListServerService.ServerJson)
-  name: AddServer(ServerJson)
-  href: api/Mirage.Cloud.ListServerService.IListServerServerApi.html#Mirage_Cloud_ListServerService_IListServerServerApi_AddServer_Mirage_Cloud_ListServerService_ServerJson_
-  commentId: M:Mirage.Cloud.ListServerService.IListServerServerApi.AddServer(Mirage.Cloud.ListServerService.ServerJson)
-  fullName: Mirage.Cloud.ListServerService.IListServerServerApi.AddServer(Mirage.Cloud.ListServerService.ServerJson)
-  nameWithType: IListServerServerApi.AddServer(ServerJson)
-- uid: Mirage.Cloud.ListServerService.IListServerServerApi.AddServer*
-  name: AddServer
-  href: api/Mirage.Cloud.ListServerService.IListServerServerApi.html#Mirage_Cloud_ListServerService_IListServerServerApi_AddServer_
-  commentId: Overload:Mirage.Cloud.ListServerService.IListServerServerApi.AddServer
-  isSpec: "True"
-  fullName: Mirage.Cloud.ListServerService.IListServerServerApi.AddServer
-  nameWithType: IListServerServerApi.AddServer
-- uid: Mirage.Cloud.ListServerService.IListServerServerApi.RemoveServer
-  name: RemoveServer()
-  href: api/Mirage.Cloud.ListServerService.IListServerServerApi.html#Mirage_Cloud_ListServerService_IListServerServerApi_RemoveServer
-  commentId: M:Mirage.Cloud.ListServerService.IListServerServerApi.RemoveServer
-  fullName: Mirage.Cloud.ListServerService.IListServerServerApi.RemoveServer()
-  nameWithType: IListServerServerApi.RemoveServer()
-- uid: Mirage.Cloud.ListServerService.IListServerServerApi.RemoveServer*
-  name: RemoveServer
-  href: api/Mirage.Cloud.ListServerService.IListServerServerApi.html#Mirage_Cloud_ListServerService_IListServerServerApi_RemoveServer_
-  commentId: Overload:Mirage.Cloud.ListServerService.IListServerServerApi.RemoveServer
-  isSpec: "True"
-  fullName: Mirage.Cloud.ListServerService.IListServerServerApi.RemoveServer
-  nameWithType: IListServerServerApi.RemoveServer
-- uid: Mirage.Cloud.ListServerService.IListServerServerApi.ServerInList
-  name: ServerInList
-  href: api/Mirage.Cloud.ListServerService.IListServerServerApi.html#Mirage_Cloud_ListServerService_IListServerServerApi_ServerInList
-  commentId: P:Mirage.Cloud.ListServerService.IListServerServerApi.ServerInList
-  fullName: Mirage.Cloud.ListServerService.IListServerServerApi.ServerInList
-  nameWithType: IListServerServerApi.ServerInList
-- uid: Mirage.Cloud.ListServerService.IListServerServerApi.ServerInList*
-  name: ServerInList
-  href: api/Mirage.Cloud.ListServerService.IListServerServerApi.html#Mirage_Cloud_ListServerService_IListServerServerApi_ServerInList_
-  commentId: Overload:Mirage.Cloud.ListServerService.IListServerServerApi.ServerInList
-  isSpec: "True"
-  fullName: Mirage.Cloud.ListServerService.IListServerServerApi.ServerInList
-  nameWithType: IListServerServerApi.ServerInList
-- uid: Mirage.Cloud.ListServerService.IListServerServerApi.UpdateServer(Mirage.Cloud.ListServerService.ServerJson)
-  name: UpdateServer(ServerJson)
-  href: api/Mirage.Cloud.ListServerService.IListServerServerApi.html#Mirage_Cloud_ListServerService_IListServerServerApi_UpdateServer_Mirage_Cloud_ListServerService_ServerJson_
-  commentId: M:Mirage.Cloud.ListServerService.IListServerServerApi.UpdateServer(Mirage.Cloud.ListServerService.ServerJson)
-  fullName: Mirage.Cloud.ListServerService.IListServerServerApi.UpdateServer(Mirage.Cloud.ListServerService.ServerJson)
-  nameWithType: IListServerServerApi.UpdateServer(ServerJson)
-- uid: Mirage.Cloud.ListServerService.IListServerServerApi.UpdateServer(System.Int32)
-  name: UpdateServer(Int32)
-  href: api/Mirage.Cloud.ListServerService.IListServerServerApi.html#Mirage_Cloud_ListServerService_IListServerServerApi_UpdateServer_System_Int32_
-  commentId: M:Mirage.Cloud.ListServerService.IListServerServerApi.UpdateServer(System.Int32)
-  fullName: Mirage.Cloud.ListServerService.IListServerServerApi.UpdateServer(System.Int32)
-  nameWithType: IListServerServerApi.UpdateServer(Int32)
-- uid: Mirage.Cloud.ListServerService.IListServerServerApi.UpdateServer*
-  name: UpdateServer
-  href: api/Mirage.Cloud.ListServerService.IListServerServerApi.html#Mirage_Cloud_ListServerService_IListServerServerApi_UpdateServer_
-  commentId: Overload:Mirage.Cloud.ListServerService.IListServerServerApi.UpdateServer
-  isSpec: "True"
-  fullName: Mirage.Cloud.ListServerService.IListServerServerApi.UpdateServer
-  nameWithType: IListServerServerApi.UpdateServer
-- uid: Mirage.Cloud.ListServerService.KeyValue
-  name: KeyValue
-  href: api/Mirage.Cloud.ListServerService.KeyValue.html
-  commentId: T:Mirage.Cloud.ListServerService.KeyValue
-  fullName: Mirage.Cloud.ListServerService.KeyValue
-  nameWithType: KeyValue
-- uid: Mirage.Cloud.ListServerService.KeyValue.#ctor(System.String,System.String)
-  name: KeyValue(String, String)
-  href: api/Mirage.Cloud.ListServerService.KeyValue.html#Mirage_Cloud_ListServerService_KeyValue__ctor_System_String_System_String_
-  commentId: M:Mirage.Cloud.ListServerService.KeyValue.#ctor(System.String,System.String)
-  fullName: Mirage.Cloud.ListServerService.KeyValue.KeyValue(System.String, System.String)
-  nameWithType: KeyValue.KeyValue(String, String)
-- uid: Mirage.Cloud.ListServerService.KeyValue.#ctor*
-  name: KeyValue
-  href: api/Mirage.Cloud.ListServerService.KeyValue.html#Mirage_Cloud_ListServerService_KeyValue__ctor_
-  commentId: Overload:Mirage.Cloud.ListServerService.KeyValue.#ctor
-  isSpec: "True"
-  fullName: Mirage.Cloud.ListServerService.KeyValue.KeyValue
-  nameWithType: KeyValue.KeyValue
-- uid: Mirage.Cloud.ListServerService.KeyValue.key
-  name: key
-  href: api/Mirage.Cloud.ListServerService.KeyValue.html#Mirage_Cloud_ListServerService_KeyValue_key
-  commentId: F:Mirage.Cloud.ListServerService.KeyValue.key
-  fullName: Mirage.Cloud.ListServerService.KeyValue.key
-  nameWithType: KeyValue.key
-- uid: Mirage.Cloud.ListServerService.KeyValue.Validate
-  name: Validate()
-  href: api/Mirage.Cloud.ListServerService.KeyValue.html#Mirage_Cloud_ListServerService_KeyValue_Validate
-  commentId: M:Mirage.Cloud.ListServerService.KeyValue.Validate
-  fullName: Mirage.Cloud.ListServerService.KeyValue.Validate()
-  nameWithType: KeyValue.Validate()
-- uid: Mirage.Cloud.ListServerService.KeyValue.Validate*
-  name: Validate
-  href: api/Mirage.Cloud.ListServerService.KeyValue.html#Mirage_Cloud_ListServerService_KeyValue_Validate_
-  commentId: Overload:Mirage.Cloud.ListServerService.KeyValue.Validate
-  isSpec: "True"
-  fullName: Mirage.Cloud.ListServerService.KeyValue.Validate
-  nameWithType: KeyValue.Validate
-- uid: Mirage.Cloud.ListServerService.KeyValue.value
-  name: value
-  href: api/Mirage.Cloud.ListServerService.KeyValue.html#Mirage_Cloud_ListServerService_KeyValue_value
-  commentId: F:Mirage.Cloud.ListServerService.KeyValue.value
-  fullName: Mirage.Cloud.ListServerService.KeyValue.value
-  nameWithType: KeyValue.value
-- uid: Mirage.Cloud.ListServerService.ListServer
-  name: ListServer
-  href: api/Mirage.Cloud.ListServerService.ListServer.html
-  commentId: T:Mirage.Cloud.ListServerService.ListServer
-  fullName: Mirage.Cloud.ListServerService.ListServer
-  nameWithType: ListServer
-- uid: Mirage.Cloud.ListServerService.ListServer.#ctor(Mirage.Cloud.ListServerService.IListServerServerApi,Mirage.Cloud.ListServerService.IListServerClientApi)
-  name: ListServer(IListServerServerApi, IListServerClientApi)
-  href: api/Mirage.Cloud.ListServerService.ListServer.html#Mirage_Cloud_ListServerService_ListServer__ctor_Mirage_Cloud_ListServerService_IListServerServerApi_Mirage_Cloud_ListServerService_IListServerClientApi_
-  commentId: M:Mirage.Cloud.ListServerService.ListServer.#ctor(Mirage.Cloud.ListServerService.IListServerServerApi,Mirage.Cloud.ListServerService.IListServerClientApi)
-  fullName: Mirage.Cloud.ListServerService.ListServer.ListServer(Mirage.Cloud.ListServerService.IListServerServerApi, Mirage.Cloud.ListServerService.IListServerClientApi)
-  nameWithType: ListServer.ListServer(IListServerServerApi, IListServerClientApi)
-- uid: Mirage.Cloud.ListServerService.ListServer.#ctor*
-  name: ListServer
-  href: api/Mirage.Cloud.ListServerService.ListServer.html#Mirage_Cloud_ListServerService_ListServer__ctor_
-  commentId: Overload:Mirage.Cloud.ListServerService.ListServer.#ctor
-  isSpec: "True"
-  fullName: Mirage.Cloud.ListServerService.ListServer.ListServer
-  nameWithType: ListServer.ListServer
-- uid: Mirage.Cloud.ListServerService.ListServer.ClientApi
-  name: ClientApi
-  href: api/Mirage.Cloud.ListServerService.ListServer.html#Mirage_Cloud_ListServerService_ListServer_ClientApi
-  commentId: F:Mirage.Cloud.ListServerService.ListServer.ClientApi
-  fullName: Mirage.Cloud.ListServerService.ListServer.ClientApi
-  nameWithType: ListServer.ClientApi
-- uid: Mirage.Cloud.ListServerService.ListServer.ServerApi
-  name: ServerApi
-  href: api/Mirage.Cloud.ListServerService.ListServer.html#Mirage_Cloud_ListServerService_ListServer_ServerApi
-  commentId: F:Mirage.Cloud.ListServerService.ListServer.ServerApi
-  fullName: Mirage.Cloud.ListServerService.ListServer.ServerApi
-  nameWithType: ListServer.ServerApi
-- uid: Mirage.Cloud.ListServerService.ListServerBaseApi
-  name: ListServerBaseApi
-  href: api/Mirage.Cloud.ListServerService.ListServerBaseApi.html
-  commentId: T:Mirage.Cloud.ListServerService.ListServerBaseApi
-  fullName: Mirage.Cloud.ListServerService.ListServerBaseApi
-  nameWithType: ListServerBaseApi
-- uid: Mirage.Cloud.ListServerService.ListServerBaseApi.#ctor(Mirage.Cloud.ICoroutineRunner,Mirage.Cloud.IRequestCreator)
-  name: ListServerBaseApi(ICoroutineRunner, IRequestCreator)
-  href: api/Mirage.Cloud.ListServerService.ListServerBaseApi.html#Mirage_Cloud_ListServerService_ListServerBaseApi__ctor_Mirage_Cloud_ICoroutineRunner_Mirage_Cloud_IRequestCreator_
-  commentId: M:Mirage.Cloud.ListServerService.ListServerBaseApi.#ctor(Mirage.Cloud.ICoroutineRunner,Mirage.Cloud.IRequestCreator)
-  fullName: Mirage.Cloud.ListServerService.ListServerBaseApi.ListServerBaseApi(Mirage.Cloud.ICoroutineRunner, Mirage.Cloud.IRequestCreator)
-  nameWithType: ListServerBaseApi.ListServerBaseApi(ICoroutineRunner, IRequestCreator)
-- uid: Mirage.Cloud.ListServerService.ListServerBaseApi.#ctor*
-  name: ListServerBaseApi
-  href: api/Mirage.Cloud.ListServerService.ListServerBaseApi.html#Mirage_Cloud_ListServerService_ListServerBaseApi__ctor_
-  commentId: Overload:Mirage.Cloud.ListServerService.ListServerBaseApi.#ctor
-  isSpec: "True"
-  fullName: Mirage.Cloud.ListServerService.ListServerBaseApi.ListServerBaseApi
-  nameWithType: ListServerBaseApi.ListServerBaseApi
-- uid: Mirage.Cloud.ListServerService.ListServerClientApi
-  name: ListServerClientApi
-  href: api/Mirage.Cloud.ListServerService.ListServerClientApi.html
-  commentId: T:Mirage.Cloud.ListServerService.ListServerClientApi
-  fullName: Mirage.Cloud.ListServerService.ListServerClientApi
-  nameWithType: ListServerClientApi
-- uid: Mirage.Cloud.ListServerService.ListServerClientApi.#ctor(Mirage.Cloud.ICoroutineRunner,Mirage.Cloud.IRequestCreator,Mirage.Cloud.ServerListEvent)
-  name: ListServerClientApi(ICoroutineRunner, IRequestCreator, ServerListEvent)
-  href: api/Mirage.Cloud.ListServerService.ListServerClientApi.html#Mirage_Cloud_ListServerService_ListServerClientApi__ctor_Mirage_Cloud_ICoroutineRunner_Mirage_Cloud_IRequestCreator_Mirage_Cloud_ServerListEvent_
-  commentId: M:Mirage.Cloud.ListServerService.ListServerClientApi.#ctor(Mirage.Cloud.ICoroutineRunner,Mirage.Cloud.IRequestCreator,Mirage.Cloud.ServerListEvent)
-  fullName: Mirage.Cloud.ListServerService.ListServerClientApi.ListServerClientApi(Mirage.Cloud.ICoroutineRunner, Mirage.Cloud.IRequestCreator, Mirage.Cloud.ServerListEvent)
-  nameWithType: ListServerClientApi.ListServerClientApi(ICoroutineRunner, IRequestCreator, ServerListEvent)
-- uid: Mirage.Cloud.ListServerService.ListServerClientApi.#ctor*
-  name: ListServerClientApi
-  href: api/Mirage.Cloud.ListServerService.ListServerClientApi.html#Mirage_Cloud_ListServerService_ListServerClientApi__ctor_
-  commentId: Overload:Mirage.Cloud.ListServerService.ListServerClientApi.#ctor
-  isSpec: "True"
-  fullName: Mirage.Cloud.ListServerService.ListServerClientApi.ListServerClientApi
-  nameWithType: ListServerClientApi.ListServerClientApi
-- uid: Mirage.Cloud.ListServerService.ListServerClientApi.GetServerList
-  name: GetServerList()
-  href: api/Mirage.Cloud.ListServerService.ListServerClientApi.html#Mirage_Cloud_ListServerService_ListServerClientApi_GetServerList
-  commentId: M:Mirage.Cloud.ListServerService.ListServerClientApi.GetServerList
-  fullName: Mirage.Cloud.ListServerService.ListServerClientApi.GetServerList()
-  nameWithType: ListServerClientApi.GetServerList()
-- uid: Mirage.Cloud.ListServerService.ListServerClientApi.GetServerList*
-  name: GetServerList
-  href: api/Mirage.Cloud.ListServerService.ListServerClientApi.html#Mirage_Cloud_ListServerService_ListServerClientApi_GetServerList_
-  commentId: Overload:Mirage.Cloud.ListServerService.ListServerClientApi.GetServerList
-  isSpec: "True"
-  fullName: Mirage.Cloud.ListServerService.ListServerClientApi.GetServerList
-  nameWithType: ListServerClientApi.GetServerList
-- uid: Mirage.Cloud.ListServerService.ListServerClientApi.onServerListUpdated
-  name: onServerListUpdated
-  href: api/Mirage.Cloud.ListServerService.ListServerClientApi.html#Mirage_Cloud_ListServerService_ListServerClientApi_onServerListUpdated
-  commentId: E:Mirage.Cloud.ListServerService.ListServerClientApi.onServerListUpdated
-  fullName: Mirage.Cloud.ListServerService.ListServerClientApi.onServerListUpdated
-  nameWithType: ListServerClientApi.onServerListUpdated
-- uid: Mirage.Cloud.ListServerService.ListServerClientApi.Shutdown
-  name: Shutdown()
-  href: api/Mirage.Cloud.ListServerService.ListServerClientApi.html#Mirage_Cloud_ListServerService_ListServerClientApi_Shutdown
-  commentId: M:Mirage.Cloud.ListServerService.ListServerClientApi.Shutdown
-  fullName: Mirage.Cloud.ListServerService.ListServerClientApi.Shutdown()
-  nameWithType: ListServerClientApi.Shutdown()
-- uid: Mirage.Cloud.ListServerService.ListServerClientApi.Shutdown*
-  name: Shutdown
-  href: api/Mirage.Cloud.ListServerService.ListServerClientApi.html#Mirage_Cloud_ListServerService_ListServerClientApi_Shutdown_
-  commentId: Overload:Mirage.Cloud.ListServerService.ListServerClientApi.Shutdown
-  isSpec: "True"
-  fullName: Mirage.Cloud.ListServerService.ListServerClientApi.Shutdown
-  nameWithType: ListServerClientApi.Shutdown
-- uid: Mirage.Cloud.ListServerService.ListServerClientApi.StartGetServerListRepeat(System.Int32)
-  name: StartGetServerListRepeat(Int32)
-  href: api/Mirage.Cloud.ListServerService.ListServerClientApi.html#Mirage_Cloud_ListServerService_ListServerClientApi_StartGetServerListRepeat_System_Int32_
-  commentId: M:Mirage.Cloud.ListServerService.ListServerClientApi.StartGetServerListRepeat(System.Int32)
-  fullName: Mirage.Cloud.ListServerService.ListServerClientApi.StartGetServerListRepeat(System.Int32)
-  nameWithType: ListServerClientApi.StartGetServerListRepeat(Int32)
-- uid: Mirage.Cloud.ListServerService.ListServerClientApi.StartGetServerListRepeat*
-  name: StartGetServerListRepeat
-  href: api/Mirage.Cloud.ListServerService.ListServerClientApi.html#Mirage_Cloud_ListServerService_ListServerClientApi_StartGetServerListRepeat_
-  commentId: Overload:Mirage.Cloud.ListServerService.ListServerClientApi.StartGetServerListRepeat
-  isSpec: "True"
-  fullName: Mirage.Cloud.ListServerService.ListServerClientApi.StartGetServerListRepeat
-  nameWithType: ListServerClientApi.StartGetServerListRepeat
-- uid: Mirage.Cloud.ListServerService.ListServerClientApi.StopGetServerListRepeat
-  name: StopGetServerListRepeat()
-  href: api/Mirage.Cloud.ListServerService.ListServerClientApi.html#Mirage_Cloud_ListServerService_ListServerClientApi_StopGetServerListRepeat
-  commentId: M:Mirage.Cloud.ListServerService.ListServerClientApi.StopGetServerListRepeat
-  fullName: Mirage.Cloud.ListServerService.ListServerClientApi.StopGetServerListRepeat()
-  nameWithType: ListServerClientApi.StopGetServerListRepeat()
-- uid: Mirage.Cloud.ListServerService.ListServerClientApi.StopGetServerListRepeat*
-  name: StopGetServerListRepeat
-  href: api/Mirage.Cloud.ListServerService.ListServerClientApi.html#Mirage_Cloud_ListServerService_ListServerClientApi_StopGetServerListRepeat_
-  commentId: Overload:Mirage.Cloud.ListServerService.ListServerClientApi.StopGetServerListRepeat
-  isSpec: "True"
-  fullName: Mirage.Cloud.ListServerService.ListServerClientApi.StopGetServerListRepeat
-  nameWithType: ListServerClientApi.StopGetServerListRepeat
-- uid: Mirage.Cloud.ListServerService.ListServerServerApi
-  name: ListServerServerApi
-  href: api/Mirage.Cloud.ListServerService.ListServerServerApi.html
-  commentId: T:Mirage.Cloud.ListServerService.ListServerServerApi
-  fullName: Mirage.Cloud.ListServerService.ListServerServerApi
-  nameWithType: ListServerServerApi
-- uid: Mirage.Cloud.ListServerService.ListServerServerApi.#ctor(Mirage.Cloud.ICoroutineRunner,Mirage.Cloud.IRequestCreator)
-  name: ListServerServerApi(ICoroutineRunner, IRequestCreator)
-  href: api/Mirage.Cloud.ListServerService.ListServerServerApi.html#Mirage_Cloud_ListServerService_ListServerServerApi__ctor_Mirage_Cloud_ICoroutineRunner_Mirage_Cloud_IRequestCreator_
-  commentId: M:Mirage.Cloud.ListServerService.ListServerServerApi.#ctor(Mirage.Cloud.ICoroutineRunner,Mirage.Cloud.IRequestCreator)
-  fullName: Mirage.Cloud.ListServerService.ListServerServerApi.ListServerServerApi(Mirage.Cloud.ICoroutineRunner, Mirage.Cloud.IRequestCreator)
-  nameWithType: ListServerServerApi.ListServerServerApi(ICoroutineRunner, IRequestCreator)
-- uid: Mirage.Cloud.ListServerService.ListServerServerApi.#ctor*
-  name: ListServerServerApi
-  href: api/Mirage.Cloud.ListServerService.ListServerServerApi.html#Mirage_Cloud_ListServerService_ListServerServerApi__ctor_
-  commentId: Overload:Mirage.Cloud.ListServerService.ListServerServerApi.#ctor
-  isSpec: "True"
-  fullName: Mirage.Cloud.ListServerService.ListServerServerApi.ListServerServerApi
-  nameWithType: ListServerServerApi.ListServerServerApi
-- uid: Mirage.Cloud.ListServerService.ListServerServerApi.AddServer(Mirage.Cloud.ListServerService.ServerJson)
-  name: AddServer(ServerJson)
-  href: api/Mirage.Cloud.ListServerService.ListServerServerApi.html#Mirage_Cloud_ListServerService_ListServerServerApi_AddServer_Mirage_Cloud_ListServerService_ServerJson_
-  commentId: M:Mirage.Cloud.ListServerService.ListServerServerApi.AddServer(Mirage.Cloud.ListServerService.ServerJson)
-  fullName: Mirage.Cloud.ListServerService.ListServerServerApi.AddServer(Mirage.Cloud.ListServerService.ServerJson)
-  nameWithType: ListServerServerApi.AddServer(ServerJson)
-- uid: Mirage.Cloud.ListServerService.ListServerServerApi.AddServer*
-  name: AddServer
-  href: api/Mirage.Cloud.ListServerService.ListServerServerApi.html#Mirage_Cloud_ListServerService_ListServerServerApi_AddServer_
-  commentId: Overload:Mirage.Cloud.ListServerService.ListServerServerApi.AddServer
-  isSpec: "True"
-  fullName: Mirage.Cloud.ListServerService.ListServerServerApi.AddServer
-  nameWithType: ListServerServerApi.AddServer
-- uid: Mirage.Cloud.ListServerService.ListServerServerApi.RemoveServer
-  name: RemoveServer()
-  href: api/Mirage.Cloud.ListServerService.ListServerServerApi.html#Mirage_Cloud_ListServerService_ListServerServerApi_RemoveServer
-  commentId: M:Mirage.Cloud.ListServerService.ListServerServerApi.RemoveServer
-  fullName: Mirage.Cloud.ListServerService.ListServerServerApi.RemoveServer()
-  nameWithType: ListServerServerApi.RemoveServer()
-- uid: Mirage.Cloud.ListServerService.ListServerServerApi.RemoveServer*
-  name: RemoveServer
-  href: api/Mirage.Cloud.ListServerService.ListServerServerApi.html#Mirage_Cloud_ListServerService_ListServerServerApi_RemoveServer_
-  commentId: Overload:Mirage.Cloud.ListServerService.ListServerServerApi.RemoveServer
-  isSpec: "True"
-  fullName: Mirage.Cloud.ListServerService.ListServerServerApi.RemoveServer
-  nameWithType: ListServerServerApi.RemoveServer
-- uid: Mirage.Cloud.ListServerService.ListServerServerApi.ServerInList
-  name: ServerInList
-  href: api/Mirage.Cloud.ListServerService.ListServerServerApi.html#Mirage_Cloud_ListServerService_ListServerServerApi_ServerInList
-  commentId: P:Mirage.Cloud.ListServerService.ListServerServerApi.ServerInList
-  fullName: Mirage.Cloud.ListServerService.ListServerServerApi.ServerInList
-  nameWithType: ListServerServerApi.ServerInList
-- uid: Mirage.Cloud.ListServerService.ListServerServerApi.ServerInList*
-  name: ServerInList
-  href: api/Mirage.Cloud.ListServerService.ListServerServerApi.html#Mirage_Cloud_ListServerService_ListServerServerApi_ServerInList_
-  commentId: Overload:Mirage.Cloud.ListServerService.ListServerServerApi.ServerInList
-  isSpec: "True"
-  fullName: Mirage.Cloud.ListServerService.ListServerServerApi.ServerInList
-  nameWithType: ListServerServerApi.ServerInList
-- uid: Mirage.Cloud.ListServerService.ListServerServerApi.Shutdown
-  name: Shutdown()
-  href: api/Mirage.Cloud.ListServerService.ListServerServerApi.html#Mirage_Cloud_ListServerService_ListServerServerApi_Shutdown
-  commentId: M:Mirage.Cloud.ListServerService.ListServerServerApi.Shutdown
-  fullName: Mirage.Cloud.ListServerService.ListServerServerApi.Shutdown()
-  nameWithType: ListServerServerApi.Shutdown()
-- uid: Mirage.Cloud.ListServerService.ListServerServerApi.Shutdown*
-  name: Shutdown
-  href: api/Mirage.Cloud.ListServerService.ListServerServerApi.html#Mirage_Cloud_ListServerService_ListServerServerApi_Shutdown_
-  commentId: Overload:Mirage.Cloud.ListServerService.ListServerServerApi.Shutdown
-  isSpec: "True"
-  fullName: Mirage.Cloud.ListServerService.ListServerServerApi.Shutdown
-  nameWithType: ListServerServerApi.Shutdown
-- uid: Mirage.Cloud.ListServerService.ListServerServerApi.UpdateServer(Mirage.Cloud.ListServerService.ServerJson)
-  name: UpdateServer(ServerJson)
-  href: api/Mirage.Cloud.ListServerService.ListServerServerApi.html#Mirage_Cloud_ListServerService_ListServerServerApi_UpdateServer_Mirage_Cloud_ListServerService_ServerJson_
-  commentId: M:Mirage.Cloud.ListServerService.ListServerServerApi.UpdateServer(Mirage.Cloud.ListServerService.ServerJson)
-  fullName: Mirage.Cloud.ListServerService.ListServerServerApi.UpdateServer(Mirage.Cloud.ListServerService.ServerJson)
-  nameWithType: ListServerServerApi.UpdateServer(ServerJson)
-- uid: Mirage.Cloud.ListServerService.ListServerServerApi.UpdateServer(System.Int32)
-  name: UpdateServer(Int32)
-  href: api/Mirage.Cloud.ListServerService.ListServerServerApi.html#Mirage_Cloud_ListServerService_ListServerServerApi_UpdateServer_System_Int32_
-  commentId: M:Mirage.Cloud.ListServerService.ListServerServerApi.UpdateServer(System.Int32)
-  fullName: Mirage.Cloud.ListServerService.ListServerServerApi.UpdateServer(System.Int32)
-  nameWithType: ListServerServerApi.UpdateServer(Int32)
-- uid: Mirage.Cloud.ListServerService.ListServerServerApi.UpdateServer*
-  name: UpdateServer
-  href: api/Mirage.Cloud.ListServerService.ListServerServerApi.html#Mirage_Cloud_ListServerService_ListServerServerApi_UpdateServer_
-  commentId: Overload:Mirage.Cloud.ListServerService.ListServerServerApi.UpdateServer
-  isSpec: "True"
-  fullName: Mirage.Cloud.ListServerService.ListServerServerApi.UpdateServer
-  nameWithType: ListServerServerApi.UpdateServer
-- uid: Mirage.Cloud.ListServerService.PartialServerJson
-  name: PartialServerJson
-  href: api/Mirage.Cloud.ListServerService.PartialServerJson.html
-  commentId: T:Mirage.Cloud.ListServerService.PartialServerJson
-  fullName: Mirage.Cloud.ListServerService.PartialServerJson
-  nameWithType: PartialServerJson
-- uid: Mirage.Cloud.ListServerService.PartialServerJson.customData
-  name: customData
-  href: api/Mirage.Cloud.ListServerService.PartialServerJson.html#Mirage_Cloud_ListServerService_PartialServerJson_customData
-  commentId: F:Mirage.Cloud.ListServerService.PartialServerJson.customData
-  fullName: Mirage.Cloud.ListServerService.PartialServerJson.customData
-  nameWithType: PartialServerJson.customData
-- uid: Mirage.Cloud.ListServerService.PartialServerJson.displayName
-  name: displayName
-  href: api/Mirage.Cloud.ListServerService.PartialServerJson.html#Mirage_Cloud_ListServerService_PartialServerJson_displayName
-  commentId: F:Mirage.Cloud.ListServerService.PartialServerJson.displayName
-  fullName: Mirage.Cloud.ListServerService.PartialServerJson.displayName
-  nameWithType: PartialServerJson.displayName
-- uid: Mirage.Cloud.ListServerService.PartialServerJson.maxPlayerCount
-  name: maxPlayerCount
-  href: api/Mirage.Cloud.ListServerService.PartialServerJson.html#Mirage_Cloud_ListServerService_PartialServerJson_maxPlayerCount
-  commentId: F:Mirage.Cloud.ListServerService.PartialServerJson.maxPlayerCount
-  fullName: Mirage.Cloud.ListServerService.PartialServerJson.maxPlayerCount
-  nameWithType: PartialServerJson.maxPlayerCount
-- uid: Mirage.Cloud.ListServerService.PartialServerJson.playerCount
-  name: playerCount
-  href: api/Mirage.Cloud.ListServerService.PartialServerJson.html#Mirage_Cloud_ListServerService_PartialServerJson_playerCount
-  commentId: F:Mirage.Cloud.ListServerService.PartialServerJson.playerCount
-  fullName: Mirage.Cloud.ListServerService.PartialServerJson.playerCount
-  nameWithType: PartialServerJson.playerCount
-- uid: Mirage.Cloud.ListServerService.PartialServerJson.SetCustomData(Dictionary{System.String,System.String})
-  name: SetCustomData(Dictionary<String, String>)
-  href: api/Mirage.Cloud.ListServerService.PartialServerJson.html#Mirage_Cloud_ListServerService_PartialServerJson_SetCustomData_Dictionary_System_String_System_String__
-  commentId: M:Mirage.Cloud.ListServerService.PartialServerJson.SetCustomData(Dictionary{System.String,System.String})
-  name.vb: SetCustomData(Dictionary(Of String, String))
-  fullName: Mirage.Cloud.ListServerService.PartialServerJson.SetCustomData(Dictionary<System.String, System.String>)
-  fullName.vb: Mirage.Cloud.ListServerService.PartialServerJson.SetCustomData(Dictionary(Of System.String, System.String))
-  nameWithType: PartialServerJson.SetCustomData(Dictionary<String, String>)
-  nameWithType.vb: PartialServerJson.SetCustomData(Dictionary(Of String, String))
-- uid: Mirage.Cloud.ListServerService.PartialServerJson.SetCustomData*
-  name: SetCustomData
-  href: api/Mirage.Cloud.ListServerService.PartialServerJson.html#Mirage_Cloud_ListServerService_PartialServerJson_SetCustomData_
-  commentId: Overload:Mirage.Cloud.ListServerService.PartialServerJson.SetCustomData
-  isSpec: "True"
-  fullName: Mirage.Cloud.ListServerService.PartialServerJson.SetCustomData
-  nameWithType: PartialServerJson.SetCustomData
-- uid: Mirage.Cloud.ListServerService.PartialServerJson.Validate
-  name: Validate()
-  href: api/Mirage.Cloud.ListServerService.PartialServerJson.html#Mirage_Cloud_ListServerService_PartialServerJson_Validate
-  commentId: M:Mirage.Cloud.ListServerService.PartialServerJson.Validate
-  fullName: Mirage.Cloud.ListServerService.PartialServerJson.Validate()
-  nameWithType: PartialServerJson.Validate()
-- uid: Mirage.Cloud.ListServerService.PartialServerJson.Validate*
-  name: Validate
-  href: api/Mirage.Cloud.ListServerService.PartialServerJson.html#Mirage_Cloud_ListServerService_PartialServerJson_Validate_
-  commentId: Overload:Mirage.Cloud.ListServerService.PartialServerJson.Validate
-  isSpec: "True"
-  fullName: Mirage.Cloud.ListServerService.PartialServerJson.Validate
-  nameWithType: PartialServerJson.Validate
-- uid: Mirage.Cloud.ListServerService.ServerCollectionJson
-  name: ServerCollectionJson
-  href: api/Mirage.Cloud.ListServerService.ServerCollectionJson.html
-  commentId: T:Mirage.Cloud.ListServerService.ServerCollectionJson
-  fullName: Mirage.Cloud.ListServerService.ServerCollectionJson
-  nameWithType: ServerCollectionJson
-- uid: Mirage.Cloud.ListServerService.ServerCollectionJson.servers
-  name: servers
-  href: api/Mirage.Cloud.ListServerService.ServerCollectionJson.html#Mirage_Cloud_ListServerService_ServerCollectionJson_servers
-  commentId: F:Mirage.Cloud.ListServerService.ServerCollectionJson.servers
-  fullName: Mirage.Cloud.ListServerService.ServerCollectionJson.servers
-  nameWithType: ServerCollectionJson.servers
-- uid: Mirage.Cloud.ListServerService.ServerJson
-  name: ServerJson
-  href: api/Mirage.Cloud.ListServerService.ServerJson.html
-  commentId: T:Mirage.Cloud.ListServerService.ServerJson
-  fullName: Mirage.Cloud.ListServerService.ServerJson
-  nameWithType: ServerJson
-- uid: Mirage.Cloud.ListServerService.ServerJson.address
-  name: address
-  href: api/Mirage.Cloud.ListServerService.ServerJson.html#Mirage_Cloud_ListServerService_ServerJson_address
-  commentId: F:Mirage.Cloud.ListServerService.ServerJson.address
-  fullName: Mirage.Cloud.ListServerService.ServerJson.address
-  nameWithType: ServerJson.address
-- uid: Mirage.Cloud.ListServerService.ServerJson.customAddress
-  name: customAddress
-  href: api/Mirage.Cloud.ListServerService.ServerJson.html#Mirage_Cloud_ListServerService_ServerJson_customAddress
-  commentId: F:Mirage.Cloud.ListServerService.ServerJson.customAddress
-  fullName: Mirage.Cloud.ListServerService.ServerJson.customAddress
-  nameWithType: ServerJson.customAddress
-- uid: Mirage.Cloud.ListServerService.ServerJson.customData
-  name: customData
-  href: api/Mirage.Cloud.ListServerService.ServerJson.html#Mirage_Cloud_ListServerService_ServerJson_customData
-  commentId: F:Mirage.Cloud.ListServerService.ServerJson.customData
-  fullName: Mirage.Cloud.ListServerService.ServerJson.customData
-  nameWithType: ServerJson.customData
-- uid: Mirage.Cloud.ListServerService.ServerJson.displayName
-  name: displayName
-  href: api/Mirage.Cloud.ListServerService.ServerJson.html#Mirage_Cloud_ListServerService_ServerJson_displayName
-  commentId: F:Mirage.Cloud.ListServerService.ServerJson.displayName
-  fullName: Mirage.Cloud.ListServerService.ServerJson.displayName
-  nameWithType: ServerJson.displayName
-- uid: Mirage.Cloud.ListServerService.ServerJson.GetCustomUri
-  name: GetCustomUri()
-  href: api/Mirage.Cloud.ListServerService.ServerJson.html#Mirage_Cloud_ListServerService_ServerJson_GetCustomUri
-  commentId: M:Mirage.Cloud.ListServerService.ServerJson.GetCustomUri
-  fullName: Mirage.Cloud.ListServerService.ServerJson.GetCustomUri()
-  nameWithType: ServerJson.GetCustomUri()
-- uid: Mirage.Cloud.ListServerService.ServerJson.GetCustomUri*
-  name: GetCustomUri
-  href: api/Mirage.Cloud.ListServerService.ServerJson.html#Mirage_Cloud_ListServerService_ServerJson_GetCustomUri_
-  commentId: Overload:Mirage.Cloud.ListServerService.ServerJson.GetCustomUri
-  isSpec: "True"
-  fullName: Mirage.Cloud.ListServerService.ServerJson.GetCustomUri
-  nameWithType: ServerJson.GetCustomUri
-- uid: Mirage.Cloud.ListServerService.ServerJson.GetServerUri
-  name: GetServerUri()
-  href: api/Mirage.Cloud.ListServerService.ServerJson.html#Mirage_Cloud_ListServerService_ServerJson_GetServerUri
-  commentId: M:Mirage.Cloud.ListServerService.ServerJson.GetServerUri
-  fullName: Mirage.Cloud.ListServerService.ServerJson.GetServerUri()
-  nameWithType: ServerJson.GetServerUri()
-- uid: Mirage.Cloud.ListServerService.ServerJson.GetServerUri*
-  name: GetServerUri
-  href: api/Mirage.Cloud.ListServerService.ServerJson.html#Mirage_Cloud_ListServerService_ServerJson_GetServerUri_
-  commentId: Overload:Mirage.Cloud.ListServerService.ServerJson.GetServerUri
-  isSpec: "True"
-  fullName: Mirage.Cloud.ListServerService.ServerJson.GetServerUri
-  nameWithType: ServerJson.GetServerUri
-- uid: Mirage.Cloud.ListServerService.ServerJson.maxPlayerCount
-  name: maxPlayerCount
-  href: api/Mirage.Cloud.ListServerService.ServerJson.html#Mirage_Cloud_ListServerService_ServerJson_maxPlayerCount
-  commentId: F:Mirage.Cloud.ListServerService.ServerJson.maxPlayerCount
-  fullName: Mirage.Cloud.ListServerService.ServerJson.maxPlayerCount
-  nameWithType: ServerJson.maxPlayerCount
-- uid: Mirage.Cloud.ListServerService.ServerJson.playerCount
-  name: playerCount
-  href: api/Mirage.Cloud.ListServerService.ServerJson.html#Mirage_Cloud_ListServerService_ServerJson_playerCount
-  commentId: F:Mirage.Cloud.ListServerService.ServerJson.playerCount
-  fullName: Mirage.Cloud.ListServerService.ServerJson.playerCount
-  nameWithType: ServerJson.playerCount
-- uid: Mirage.Cloud.ListServerService.ServerJson.port
-  name: port
-  href: api/Mirage.Cloud.ListServerService.ServerJson.html#Mirage_Cloud_ListServerService_ServerJson_port
-  commentId: F:Mirage.Cloud.ListServerService.ServerJson.port
-  fullName: Mirage.Cloud.ListServerService.ServerJson.port
-  nameWithType: ServerJson.port
-- uid: Mirage.Cloud.ListServerService.ServerJson.protocol
-  name: protocol
-  href: api/Mirage.Cloud.ListServerService.ServerJson.html#Mirage_Cloud_ListServerService_ServerJson_protocol
-  commentId: F:Mirage.Cloud.ListServerService.ServerJson.protocol
-  fullName: Mirage.Cloud.ListServerService.ServerJson.protocol
-  nameWithType: ServerJson.protocol
-- uid: Mirage.Cloud.ListServerService.ServerJson.SetCustomData(Dictionary{System.String,System.String})
-  name: SetCustomData(Dictionary<String, String>)
-  href: api/Mirage.Cloud.ListServerService.ServerJson.html#Mirage_Cloud_ListServerService_ServerJson_SetCustomData_Dictionary_System_String_System_String__
-  commentId: M:Mirage.Cloud.ListServerService.ServerJson.SetCustomData(Dictionary{System.String,System.String})
-  name.vb: SetCustomData(Dictionary(Of String, String))
-  fullName: Mirage.Cloud.ListServerService.ServerJson.SetCustomData(Dictionary<System.String, System.String>)
-  fullName.vb: Mirage.Cloud.ListServerService.ServerJson.SetCustomData(Dictionary(Of System.String, System.String))
-  nameWithType: ServerJson.SetCustomData(Dictionary<String, String>)
-  nameWithType.vb: ServerJson.SetCustomData(Dictionary(Of String, String))
-- uid: Mirage.Cloud.ListServerService.ServerJson.SetCustomData*
-  name: SetCustomData
-  href: api/Mirage.Cloud.ListServerService.ServerJson.html#Mirage_Cloud_ListServerService_ServerJson_SetCustomData_
-  commentId: Overload:Mirage.Cloud.ListServerService.ServerJson.SetCustomData
-  isSpec: "True"
-  fullName: Mirage.Cloud.ListServerService.ServerJson.SetCustomData
-  nameWithType: ServerJson.SetCustomData
-- uid: Mirage.Cloud.ListServerService.ServerJson.Validate
-  name: Validate()
-  href: api/Mirage.Cloud.ListServerService.ServerJson.html#Mirage_Cloud_ListServerService_ServerJson_Validate
-  commentId: M:Mirage.Cloud.ListServerService.ServerJson.Validate
-  fullName: Mirage.Cloud.ListServerService.ServerJson.Validate()
-  nameWithType: ServerJson.Validate()
-- uid: Mirage.Cloud.ListServerService.ServerJson.Validate*
-  name: Validate
-  href: api/Mirage.Cloud.ListServerService.ServerJson.html#Mirage_Cloud_ListServerService_ServerJson_Validate_
-  commentId: Overload:Mirage.Cloud.ListServerService.ServerJson.Validate
-  isSpec: "True"
-  fullName: Mirage.Cloud.ListServerService.ServerJson.Validate
-  nameWithType: ServerJson.Validate
-- uid: Mirage.Cloud.Logger
-  name: Logger
-  href: api/Mirage.Cloud.Logger.html
-  commentId: T:Mirage.Cloud.Logger
-  fullName: Mirage.Cloud.Logger
-  nameWithType: Logger
-- uid: Mirage.Cloud.Logger.LogRequest(System.String,System.String,System.Boolean,System.String)
-  name: LogRequest(String, String, Boolean, String)
-  href: api/Mirage.Cloud.Logger.html#Mirage_Cloud_Logger_LogRequest_System_String_System_String_System_Boolean_System_String_
-  commentId: M:Mirage.Cloud.Logger.LogRequest(System.String,System.String,System.Boolean,System.String)
-  fullName: Mirage.Cloud.Logger.LogRequest(System.String, System.String, System.Boolean, System.String)
-  nameWithType: Logger.LogRequest(String, String, Boolean, String)
-- uid: Mirage.Cloud.Logger.LogRequest*
-  name: LogRequest
-  href: api/Mirage.Cloud.Logger.html#Mirage_Cloud_Logger_LogRequest_
-  commentId: Overload:Mirage.Cloud.Logger.LogRequest
-  isSpec: "True"
-  fullName: Mirage.Cloud.Logger.LogRequest
-  nameWithType: Logger.LogRequest
-- uid: Mirage.Cloud.Logger.LogResponse(UnityWebRequest)
-  name: LogResponse(UnityWebRequest)
-  href: api/Mirage.Cloud.Logger.html#Mirage_Cloud_Logger_LogResponse_UnityWebRequest_
-  commentId: M:Mirage.Cloud.Logger.LogResponse(UnityWebRequest)
-  fullName: Mirage.Cloud.Logger.LogResponse(UnityWebRequest)
-  nameWithType: Logger.LogResponse(UnityWebRequest)
-- uid: Mirage.Cloud.Logger.LogResponse*
-  name: LogResponse
-  href: api/Mirage.Cloud.Logger.html#Mirage_Cloud_Logger_LogResponse_
-  commentId: Overload:Mirage.Cloud.Logger.LogResponse
-  isSpec: "True"
-  fullName: Mirage.Cloud.Logger.LogResponse
-  nameWithType: Logger.LogResponse
-- uid: Mirage.Cloud.Logger.VerboseLogging
-  name: VerboseLogging
-  href: api/Mirage.Cloud.Logger.html#Mirage_Cloud_Logger_VerboseLogging
-  commentId: F:Mirage.Cloud.Logger.VerboseLogging
-  fullName: Mirage.Cloud.Logger.VerboseLogging
-  nameWithType: Logger.VerboseLogging
-- uid: Mirage.Cloud.MatchFoundEvent
-  name: MatchFoundEvent
-  href: api/Mirage.Cloud.MatchFoundEvent.html
-  commentId: T:Mirage.Cloud.MatchFoundEvent
-  fullName: Mirage.Cloud.MatchFoundEvent
-  nameWithType: MatchFoundEvent
-- uid: Mirage.Cloud.RequestCreator
-  name: RequestCreator
-  href: api/Mirage.Cloud.RequestCreator.html
-  commentId: T:Mirage.Cloud.RequestCreator
-  fullName: Mirage.Cloud.RequestCreator
-  nameWithType: RequestCreator
-- uid: Mirage.Cloud.RequestCreator.#ctor(System.String,System.String,Mirage.Cloud.ICoroutineRunner)
-  name: RequestCreator(String, String, ICoroutineRunner)
-  href: api/Mirage.Cloud.RequestCreator.html#Mirage_Cloud_RequestCreator__ctor_System_String_System_String_Mirage_Cloud_ICoroutineRunner_
-  commentId: M:Mirage.Cloud.RequestCreator.#ctor(System.String,System.String,Mirage.Cloud.ICoroutineRunner)
-  fullName: Mirage.Cloud.RequestCreator.RequestCreator(System.String, System.String, Mirage.Cloud.ICoroutineRunner)
-  nameWithType: RequestCreator.RequestCreator(String, String, ICoroutineRunner)
-- uid: Mirage.Cloud.RequestCreator.#ctor*
-  name: RequestCreator
-  href: api/Mirage.Cloud.RequestCreator.html#Mirage_Cloud_RequestCreator__ctor_
-  commentId: Overload:Mirage.Cloud.RequestCreator.#ctor
-  isSpec: "True"
-  fullName: Mirage.Cloud.RequestCreator.RequestCreator
-  nameWithType: RequestCreator.RequestCreator
-- uid: Mirage.Cloud.RequestCreator.apiKey
-  name: apiKey
-  href: api/Mirage.Cloud.RequestCreator.html#Mirage_Cloud_RequestCreator_apiKey
-  commentId: F:Mirage.Cloud.RequestCreator.apiKey
-  fullName: Mirage.Cloud.RequestCreator.apiKey
-  nameWithType: RequestCreator.apiKey
-- uid: Mirage.Cloud.RequestCreator.baseAddress
-  name: baseAddress
-  href: api/Mirage.Cloud.RequestCreator.html#Mirage_Cloud_RequestCreator_baseAddress
-  commentId: F:Mirage.Cloud.RequestCreator.baseAddress
-  fullName: Mirage.Cloud.RequestCreator.baseAddress
-  nameWithType: RequestCreator.baseAddress
-- uid: Mirage.Cloud.RequestCreator.Delete(System.String)
-  name: Delete(String)
-  href: api/Mirage.Cloud.RequestCreator.html#Mirage_Cloud_RequestCreator_Delete_System_String_
-  commentId: M:Mirage.Cloud.RequestCreator.Delete(System.String)
-  fullName: Mirage.Cloud.RequestCreator.Delete(System.String)
-  nameWithType: RequestCreator.Delete(String)
-- uid: Mirage.Cloud.RequestCreator.Delete*
-  name: Delete
-  href: api/Mirage.Cloud.RequestCreator.html#Mirage_Cloud_RequestCreator_Delete_
-  commentId: Overload:Mirage.Cloud.RequestCreator.Delete
-  isSpec: "True"
-  fullName: Mirage.Cloud.RequestCreator.Delete
-  nameWithType: RequestCreator.Delete
-- uid: Mirage.Cloud.RequestCreator.Get(System.String)
-  name: Get(String)
-  href: api/Mirage.Cloud.RequestCreator.html#Mirage_Cloud_RequestCreator_Get_System_String_
-  commentId: M:Mirage.Cloud.RequestCreator.Get(System.String)
-  fullName: Mirage.Cloud.RequestCreator.Get(System.String)
-  nameWithType: RequestCreator.Get(String)
-- uid: Mirage.Cloud.RequestCreator.Get*
-  name: Get
-  href: api/Mirage.Cloud.RequestCreator.html#Mirage_Cloud_RequestCreator_Get_
-  commentId: Overload:Mirage.Cloud.RequestCreator.Get
-  isSpec: "True"
-  fullName: Mirage.Cloud.RequestCreator.Get
-  nameWithType: RequestCreator.Get
-- uid: Mirage.Cloud.RequestCreator.Patch*
-  name: Patch
-  href: api/Mirage.Cloud.RequestCreator.html#Mirage_Cloud_RequestCreator_Patch_
-  commentId: Overload:Mirage.Cloud.RequestCreator.Patch
-  isSpec: "True"
-  fullName: Mirage.Cloud.RequestCreator.Patch
-  nameWithType: RequestCreator.Patch
-- uid: Mirage.Cloud.RequestCreator.Patch``1(System.String,``0)
-  name: Patch<T>(String, T)
-  href: api/Mirage.Cloud.RequestCreator.html#Mirage_Cloud_RequestCreator_Patch__1_System_String___0_
-  commentId: M:Mirage.Cloud.RequestCreator.Patch``1(System.String,``0)
-  name.vb: Patch(Of T)(String, T)
-  fullName: Mirage.Cloud.RequestCreator.Patch<T>(System.String, T)
-  fullName.vb: Mirage.Cloud.RequestCreator.Patch(Of T)(System.String, T)
-  nameWithType: RequestCreator.Patch<T>(String, T)
-  nameWithType.vb: RequestCreator.Patch(Of T)(String, T)
-- uid: Mirage.Cloud.RequestCreator.Post*
-  name: Post
-  href: api/Mirage.Cloud.RequestCreator.html#Mirage_Cloud_RequestCreator_Post_
-  commentId: Overload:Mirage.Cloud.RequestCreator.Post
-  isSpec: "True"
-  fullName: Mirage.Cloud.RequestCreator.Post
-  nameWithType: RequestCreator.Post
-- uid: Mirage.Cloud.RequestCreator.Post``1(System.String,``0)
-  name: Post<T>(String, T)
-  href: api/Mirage.Cloud.RequestCreator.html#Mirage_Cloud_RequestCreator_Post__1_System_String___0_
-  commentId: M:Mirage.Cloud.RequestCreator.Post``1(System.String,``0)
-  name.vb: Post(Of T)(String, T)
-  fullName: Mirage.Cloud.RequestCreator.Post<T>(System.String, T)
-  fullName.vb: Mirage.Cloud.RequestCreator.Post(Of T)(System.String, T)
-  nameWithType: RequestCreator.Post<T>(String, T)
-  nameWithType.vb: RequestCreator.Post(Of T)(String, T)
-- uid: Mirage.Cloud.RequestCreator.SendRequest(UnityWebRequest,Mirage.Cloud.RequestSuccess,Mirage.Cloud.RequestFail)
-  name: SendRequest(UnityWebRequest, RequestSuccess, RequestFail)
-  href: api/Mirage.Cloud.RequestCreator.html#Mirage_Cloud_RequestCreator_SendRequest_UnityWebRequest_Mirage_Cloud_RequestSuccess_Mirage_Cloud_RequestFail_
-  commentId: M:Mirage.Cloud.RequestCreator.SendRequest(UnityWebRequest,Mirage.Cloud.RequestSuccess,Mirage.Cloud.RequestFail)
-  fullName: Mirage.Cloud.RequestCreator.SendRequest(UnityWebRequest, Mirage.Cloud.RequestSuccess, Mirage.Cloud.RequestFail)
-  nameWithType: RequestCreator.SendRequest(UnityWebRequest, RequestSuccess, RequestFail)
-- uid: Mirage.Cloud.RequestCreator.SendRequest*
-  name: SendRequest
-  href: api/Mirage.Cloud.RequestCreator.html#Mirage_Cloud_RequestCreator_SendRequest_
-  commentId: Overload:Mirage.Cloud.RequestCreator.SendRequest
-  isSpec: "True"
-  fullName: Mirage.Cloud.RequestCreator.SendRequest
-  nameWithType: RequestCreator.SendRequest
-- uid: Mirage.Cloud.RequestCreator.SendRequestEnumerator(UnityWebRequest,Mirage.Cloud.RequestSuccess,Mirage.Cloud.RequestFail)
-  name: SendRequestEnumerator(UnityWebRequest, RequestSuccess, RequestFail)
-  href: api/Mirage.Cloud.RequestCreator.html#Mirage_Cloud_RequestCreator_SendRequestEnumerator_UnityWebRequest_Mirage_Cloud_RequestSuccess_Mirage_Cloud_RequestFail_
-  commentId: M:Mirage.Cloud.RequestCreator.SendRequestEnumerator(UnityWebRequest,Mirage.Cloud.RequestSuccess,Mirage.Cloud.RequestFail)
-  fullName: Mirage.Cloud.RequestCreator.SendRequestEnumerator(UnityWebRequest, Mirage.Cloud.RequestSuccess, Mirage.Cloud.RequestFail)
-  nameWithType: RequestCreator.SendRequestEnumerator(UnityWebRequest, RequestSuccess, RequestFail)
-- uid: Mirage.Cloud.RequestCreator.SendRequestEnumerator*
-  name: SendRequestEnumerator
-  href: api/Mirage.Cloud.RequestCreator.html#Mirage_Cloud_RequestCreator_SendRequestEnumerator_
-  commentId: Overload:Mirage.Cloud.RequestCreator.SendRequestEnumerator
-  isSpec: "True"
-  fullName: Mirage.Cloud.RequestCreator.SendRequestEnumerator
-  nameWithType: RequestCreator.SendRequestEnumerator
-- uid: Mirage.Cloud.RequestFail
-  name: RequestFail
-  href: api/Mirage.Cloud.RequestFail.html
-  commentId: T:Mirage.Cloud.RequestFail
-  fullName: Mirage.Cloud.RequestFail
-  nameWithType: RequestFail
-- uid: Mirage.Cloud.RequestSuccess
-  name: RequestSuccess
-  href: api/Mirage.Cloud.RequestSuccess.html
-  commentId: T:Mirage.Cloud.RequestSuccess
-  fullName: Mirage.Cloud.RequestSuccess
-  nameWithType: RequestSuccess
-- uid: Mirage.Cloud.ServerListEvent
-  name: ServerListEvent
-  href: api/Mirage.Cloud.ServerListEvent.html
-  commentId: T:Mirage.Cloud.ServerListEvent
-  fullName: Mirage.Cloud.ServerListEvent
-  nameWithType: ServerListEvent
 - uid: Mirage.Compression
   name: Compression
   href: api/Mirage.Compression.html
@@ -1984,6 +903,19 @@ references:
   isSpec: "True"
   fullName: Mirage.IClientObjectManager.GetPrefab
   nameWithType: IClientObjectManager.GetPrefab
+- uid: Mirage.IClientObjectManager.LocalPlayer
+  name: LocalPlayer
+  href: api/Mirage.IClientObjectManager.html#Mirage_IClientObjectManager_LocalPlayer
+  commentId: P:Mirage.IClientObjectManager.LocalPlayer
+  fullName: Mirage.IClientObjectManager.LocalPlayer
+  nameWithType: IClientObjectManager.LocalPlayer
+- uid: Mirage.IClientObjectManager.LocalPlayer*
+  name: LocalPlayer
+  href: api/Mirage.IClientObjectManager.html#Mirage_IClientObjectManager_LocalPlayer_
+  commentId: Overload:Mirage.IClientObjectManager.LocalPlayer
+  isSpec: "True"
+  fullName: Mirage.IClientObjectManager.LocalPlayer
+  nameWithType: IClientObjectManager.LocalPlayer
 - uid: Mirage.IClientObjectManager.PrepareToSpawnSceneObjects
   name: PrepareToSpawnSceneObjects()
   href: api/Mirage.IClientObjectManager.html#Mirage_IClientObjectManager_PrepareToSpawnSceneObjects
@@ -2035,6 +967,19 @@ references:
   isSpec: "True"
   fullName: Mirage.IClientObjectManager.RegisterSpawnHandler
   nameWithType: IClientObjectManager.RegisterSpawnHandler
+- uid: Mirage.IClientObjectManager.Spawned
+  name: Spawned
+  href: api/Mirage.IClientObjectManager.html#Mirage_IClientObjectManager_Spawned
+  commentId: P:Mirage.IClientObjectManager.Spawned
+  fullName: Mirage.IClientObjectManager.Spawned
+  nameWithType: IClientObjectManager.Spawned
+- uid: Mirage.IClientObjectManager.Spawned*
+  name: Spawned
+  href: api/Mirage.IClientObjectManager.html#Mirage_IClientObjectManager_Spawned_
+  commentId: Overload:Mirage.IClientObjectManager.Spawned
+  isSpec: "True"
+  fullName: Mirage.IClientObjectManager.Spawned
+  nameWithType: IClientObjectManager.Spawned
 - uid: Mirage.IClientObjectManager.UnregisterPrefab(Mirage.NetworkIdentity)
   name: UnregisterPrefab(NetworkIdentity)
   href: api/Mirage.IClientObjectManager.html#Mirage_IClientObjectManager_UnregisterPrefab_Mirage_NetworkIdentity_
@@ -2061,6 +1006,19 @@ references:
   isSpec: "True"
   fullName: Mirage.IClientObjectManager.UnregisterSpawnHandler
   nameWithType: IClientObjectManager.UnregisterSpawnHandler
+- uid: Mirage.IClientObjectManager.UnSpawned
+  name: UnSpawned
+  href: api/Mirage.IClientObjectManager.html#Mirage_IClientObjectManager_UnSpawned
+  commentId: P:Mirage.IClientObjectManager.UnSpawned
+  fullName: Mirage.IClientObjectManager.UnSpawned
+  nameWithType: IClientObjectManager.UnSpawned
+- uid: Mirage.IClientObjectManager.UnSpawned*
+  name: UnSpawned
+  href: api/Mirage.IClientObjectManager.html#Mirage_IClientObjectManager_UnSpawned_
+  commentId: Overload:Mirage.IClientObjectManager.UnSpawned
+  isSpec: "True"
+  fullName: Mirage.IClientObjectManager.UnSpawned
+  nameWithType: IClientObjectManager.UnSpawned
 - uid: Mirage.IConnection
   name: IConnection
   href: api/Mirage.IConnection.html
@@ -2341,6 +1299,58 @@ references:
   commentId: T:Mirage.INetworkClient
   fullName: Mirage.INetworkClient
   nameWithType: INetworkClient
+- uid: Mirage.INetworkClient.Active
+  name: Active
+  href: api/Mirage.INetworkClient.html#Mirage_INetworkClient_Active
+  commentId: P:Mirage.INetworkClient.Active
+  fullName: Mirage.INetworkClient.Active
+  nameWithType: INetworkClient.Active
+- uid: Mirage.INetworkClient.Active*
+  name: Active
+  href: api/Mirage.INetworkClient.html#Mirage_INetworkClient_Active_
+  commentId: Overload:Mirage.INetworkClient.Active
+  isSpec: "True"
+  fullName: Mirage.INetworkClient.Active
+  nameWithType: INetworkClient.Active
+- uid: Mirage.INetworkClient.Authenticated
+  name: Authenticated
+  href: api/Mirage.INetworkClient.html#Mirage_INetworkClient_Authenticated
+  commentId: P:Mirage.INetworkClient.Authenticated
+  fullName: Mirage.INetworkClient.Authenticated
+  nameWithType: INetworkClient.Authenticated
+- uid: Mirage.INetworkClient.Authenticated*
+  name: Authenticated
+  href: api/Mirage.INetworkClient.html#Mirage_INetworkClient_Authenticated_
+  commentId: Overload:Mirage.INetworkClient.Authenticated
+  isSpec: "True"
+  fullName: Mirage.INetworkClient.Authenticated
+  nameWithType: INetworkClient.Authenticated
+- uid: Mirage.INetworkClient.Connected
+  name: Connected
+  href: api/Mirage.INetworkClient.html#Mirage_INetworkClient_Connected
+  commentId: P:Mirage.INetworkClient.Connected
+  fullName: Mirage.INetworkClient.Connected
+  nameWithType: INetworkClient.Connected
+- uid: Mirage.INetworkClient.Connected*
+  name: Connected
+  href: api/Mirage.INetworkClient.html#Mirage_INetworkClient_Connected_
+  commentId: Overload:Mirage.INetworkClient.Connected
+  isSpec: "True"
+  fullName: Mirage.INetworkClient.Connected
+  nameWithType: INetworkClient.Connected
+- uid: Mirage.INetworkClient.Connection
+  name: Connection
+  href: api/Mirage.INetworkClient.html#Mirage_INetworkClient_Connection
+  commentId: P:Mirage.INetworkClient.Connection
+  fullName: Mirage.INetworkClient.Connection
+  nameWithType: INetworkClient.Connection
+- uid: Mirage.INetworkClient.Connection*
+  name: Connection
+  href: api/Mirage.INetworkClient.html#Mirage_INetworkClient_Connection_
+  commentId: Overload:Mirage.INetworkClient.Connection
+  isSpec: "True"
+  fullName: Mirage.INetworkClient.Connection
+  nameWithType: INetworkClient.Connection
 - uid: Mirage.INetworkClient.Disconnect
   name: Disconnect()
   href: api/Mirage.INetworkClient.html#Mirage_INetworkClient_Disconnect
@@ -2354,6 +1364,32 @@ references:
   isSpec: "True"
   fullName: Mirage.INetworkClient.Disconnect
   nameWithType: INetworkClient.Disconnect
+- uid: Mirage.INetworkClient.Disconnected
+  name: Disconnected
+  href: api/Mirage.INetworkClient.html#Mirage_INetworkClient_Disconnected
+  commentId: P:Mirage.INetworkClient.Disconnected
+  fullName: Mirage.INetworkClient.Disconnected
+  nameWithType: INetworkClient.Disconnected
+- uid: Mirage.INetworkClient.Disconnected*
+  name: Disconnected
+  href: api/Mirage.INetworkClient.html#Mirage_INetworkClient_Disconnected_
+  commentId: Overload:Mirage.INetworkClient.Disconnected
+  isSpec: "True"
+  fullName: Mirage.INetworkClient.Disconnected
+  nameWithType: INetworkClient.Disconnected
+- uid: Mirage.INetworkClient.IsLocalClient
+  name: IsLocalClient
+  href: api/Mirage.INetworkClient.html#Mirage_INetworkClient_IsLocalClient
+  commentId: P:Mirage.INetworkClient.IsLocalClient
+  fullName: Mirage.INetworkClient.IsLocalClient
+  nameWithType: INetworkClient.IsLocalClient
+- uid: Mirage.INetworkClient.IsLocalClient*
+  name: IsLocalClient
+  href: api/Mirage.INetworkClient.html#Mirage_INetworkClient_IsLocalClient_
+  commentId: Overload:Mirage.INetworkClient.IsLocalClient
+  isSpec: "True"
+  fullName: Mirage.INetworkClient.IsLocalClient
+  nameWithType: INetworkClient.IsLocalClient
 - uid: Mirage.INetworkClient.Send*
   name: Send
   href: api/Mirage.INetworkClient.html#Mirage_INetworkClient_Send_
@@ -2482,12 +1518,77 @@ references:
   isSpec: "True"
   fullName: Mirage.INetworkSceneManager.ChangeServerScene
   nameWithType: INetworkSceneManager.ChangeServerScene
+- uid: Mirage.INetworkSceneManager.ClientChangeScene
+  name: ClientChangeScene
+  href: api/Mirage.INetworkSceneManager.html#Mirage_INetworkSceneManager_ClientChangeScene
+  commentId: P:Mirage.INetworkSceneManager.ClientChangeScene
+  fullName: Mirage.INetworkSceneManager.ClientChangeScene
+  nameWithType: INetworkSceneManager.ClientChangeScene
+- uid: Mirage.INetworkSceneManager.ClientChangeScene*
+  name: ClientChangeScene
+  href: api/Mirage.INetworkSceneManager.html#Mirage_INetworkSceneManager_ClientChangeScene_
+  commentId: Overload:Mirage.INetworkSceneManager.ClientChangeScene
+  isSpec: "True"
+  fullName: Mirage.INetworkSceneManager.ClientChangeScene
+  nameWithType: INetworkSceneManager.ClientChangeScene
+- uid: Mirage.INetworkSceneManager.ClientSceneChanged
+  name: ClientSceneChanged
+  href: api/Mirage.INetworkSceneManager.html#Mirage_INetworkSceneManager_ClientSceneChanged
+  commentId: P:Mirage.INetworkSceneManager.ClientSceneChanged
+  fullName: Mirage.INetworkSceneManager.ClientSceneChanged
+  nameWithType: INetworkSceneManager.ClientSceneChanged
+- uid: Mirage.INetworkSceneManager.ClientSceneChanged*
+  name: ClientSceneChanged
+  href: api/Mirage.INetworkSceneManager.html#Mirage_INetworkSceneManager_ClientSceneChanged_
+  commentId: Overload:Mirage.INetworkSceneManager.ClientSceneChanged
+  isSpec: "True"
+  fullName: Mirage.INetworkSceneManager.ClientSceneChanged
+  nameWithType: INetworkSceneManager.ClientSceneChanged
+- uid: Mirage.INetworkSceneManager.ServerChangeScene
+  name: ServerChangeScene
+  href: api/Mirage.INetworkSceneManager.html#Mirage_INetworkSceneManager_ServerChangeScene
+  commentId: P:Mirage.INetworkSceneManager.ServerChangeScene
+  fullName: Mirage.INetworkSceneManager.ServerChangeScene
+  nameWithType: INetworkSceneManager.ServerChangeScene
+- uid: Mirage.INetworkSceneManager.ServerChangeScene*
+  name: ServerChangeScene
+  href: api/Mirage.INetworkSceneManager.html#Mirage_INetworkSceneManager_ServerChangeScene_
+  commentId: Overload:Mirage.INetworkSceneManager.ServerChangeScene
+  isSpec: "True"
+  fullName: Mirage.INetworkSceneManager.ServerChangeScene
+  nameWithType: INetworkSceneManager.ServerChangeScene
+- uid: Mirage.INetworkSceneManager.ServerSceneChanged
+  name: ServerSceneChanged
+  href: api/Mirage.INetworkSceneManager.html#Mirage_INetworkSceneManager_ServerSceneChanged
+  commentId: P:Mirage.INetworkSceneManager.ServerSceneChanged
+  fullName: Mirage.INetworkSceneManager.ServerSceneChanged
+  nameWithType: INetworkSceneManager.ServerSceneChanged
+- uid: Mirage.INetworkSceneManager.ServerSceneChanged*
+  name: ServerSceneChanged
+  href: api/Mirage.INetworkSceneManager.html#Mirage_INetworkSceneManager_ServerSceneChanged_
+  commentId: Overload:Mirage.INetworkSceneManager.ServerSceneChanged
+  isSpec: "True"
+  fullName: Mirage.INetworkSceneManager.ServerSceneChanged
+  nameWithType: INetworkSceneManager.ServerSceneChanged
 - uid: Mirage.INetworkServer
   name: INetworkServer
   href: api/Mirage.INetworkServer.html
   commentId: T:Mirage.INetworkServer
   fullName: Mirage.INetworkServer
   nameWithType: INetworkServer
+- uid: Mirage.INetworkServer.Active
+  name: Active
+  href: api/Mirage.INetworkServer.html#Mirage_INetworkServer_Active
+  commentId: P:Mirage.INetworkServer.Active
+  fullName: Mirage.INetworkServer.Active
+  nameWithType: INetworkServer.Active
+- uid: Mirage.INetworkServer.Active*
+  name: Active
+  href: api/Mirage.INetworkServer.html#Mirage_INetworkServer_Active_
+  commentId: Overload:Mirage.INetworkServer.Active
+  isSpec: "True"
+  fullName: Mirage.INetworkServer.Active
+  nameWithType: INetworkServer.Active
 - uid: Mirage.INetworkServer.AddConnection(Mirage.INetworkConnection)
   name: AddConnection(INetworkConnection)
   href: api/Mirage.INetworkServer.html#Mirage_INetworkServer_AddConnection_Mirage_INetworkConnection_
@@ -2501,6 +1602,32 @@ references:
   isSpec: "True"
   fullName: Mirage.INetworkServer.AddConnection
   nameWithType: INetworkServer.AddConnection
+- uid: Mirage.INetworkServer.Authenticated
+  name: Authenticated
+  href: api/Mirage.INetworkServer.html#Mirage_INetworkServer_Authenticated
+  commentId: P:Mirage.INetworkServer.Authenticated
+  fullName: Mirage.INetworkServer.Authenticated
+  nameWithType: INetworkServer.Authenticated
+- uid: Mirage.INetworkServer.Authenticated*
+  name: Authenticated
+  href: api/Mirage.INetworkServer.html#Mirage_INetworkServer_Authenticated_
+  commentId: Overload:Mirage.INetworkServer.Authenticated
+  isSpec: "True"
+  fullName: Mirage.INetworkServer.Authenticated
+  nameWithType: INetworkServer.Authenticated
+- uid: Mirage.INetworkServer.Connected
+  name: Connected
+  href: api/Mirage.INetworkServer.html#Mirage_INetworkServer_Connected
+  commentId: P:Mirage.INetworkServer.Connected
+  fullName: Mirage.INetworkServer.Connected
+  nameWithType: INetworkServer.Connected
+- uid: Mirage.INetworkServer.Connected*
+  name: Connected
+  href: api/Mirage.INetworkServer.html#Mirage_INetworkServer_Connected_
+  commentId: Overload:Mirage.INetworkServer.Connected
+  isSpec: "True"
+  fullName: Mirage.INetworkServer.Connected
+  nameWithType: INetworkServer.Connected
 - uid: Mirage.INetworkServer.Disconnect
   name: Disconnect()
   href: api/Mirage.INetworkServer.html#Mirage_INetworkServer_Disconnect
@@ -2514,6 +1641,84 @@ references:
   isSpec: "True"
   fullName: Mirage.INetworkServer.Disconnect
   nameWithType: INetworkServer.Disconnect
+- uid: Mirage.INetworkServer.Disconnected
+  name: Disconnected
+  href: api/Mirage.INetworkServer.html#Mirage_INetworkServer_Disconnected
+  commentId: P:Mirage.INetworkServer.Disconnected
+  fullName: Mirage.INetworkServer.Disconnected
+  nameWithType: INetworkServer.Disconnected
+- uid: Mirage.INetworkServer.Disconnected*
+  name: Disconnected
+  href: api/Mirage.INetworkServer.html#Mirage_INetworkServer_Disconnected_
+  commentId: Overload:Mirage.INetworkServer.Disconnected
+  isSpec: "True"
+  fullName: Mirage.INetworkServer.Disconnected
+  nameWithType: INetworkServer.Disconnected
+- uid: Mirage.INetworkServer.LocalClient
+  name: LocalClient
+  href: api/Mirage.INetworkServer.html#Mirage_INetworkServer_LocalClient
+  commentId: P:Mirage.INetworkServer.LocalClient
+  fullName: Mirage.INetworkServer.LocalClient
+  nameWithType: INetworkServer.LocalClient
+- uid: Mirage.INetworkServer.LocalClient*
+  name: LocalClient
+  href: api/Mirage.INetworkServer.html#Mirage_INetworkServer_LocalClient_
+  commentId: Overload:Mirage.INetworkServer.LocalClient
+  isSpec: "True"
+  fullName: Mirage.INetworkServer.LocalClient
+  nameWithType: INetworkServer.LocalClient
+- uid: Mirage.INetworkServer.LocalClientActive
+  name: LocalClientActive
+  href: api/Mirage.INetworkServer.html#Mirage_INetworkServer_LocalClientActive
+  commentId: P:Mirage.INetworkServer.LocalClientActive
+  fullName: Mirage.INetworkServer.LocalClientActive
+  nameWithType: INetworkServer.LocalClientActive
+- uid: Mirage.INetworkServer.LocalClientActive*
+  name: LocalClientActive
+  href: api/Mirage.INetworkServer.html#Mirage_INetworkServer_LocalClientActive_
+  commentId: Overload:Mirage.INetworkServer.LocalClientActive
+  isSpec: "True"
+  fullName: Mirage.INetworkServer.LocalClientActive
+  nameWithType: INetworkServer.LocalClientActive
+- uid: Mirage.INetworkServer.LocalConnection
+  name: LocalConnection
+  href: api/Mirage.INetworkServer.html#Mirage_INetworkServer_LocalConnection
+  commentId: P:Mirage.INetworkServer.LocalConnection
+  fullName: Mirage.INetworkServer.LocalConnection
+  nameWithType: INetworkServer.LocalConnection
+- uid: Mirage.INetworkServer.LocalConnection*
+  name: LocalConnection
+  href: api/Mirage.INetworkServer.html#Mirage_INetworkServer_LocalConnection_
+  commentId: Overload:Mirage.INetworkServer.LocalConnection
+  isSpec: "True"
+  fullName: Mirage.INetworkServer.LocalConnection
+  nameWithType: INetworkServer.LocalConnection
+- uid: Mirage.INetworkServer.OnStartHost
+  name: OnStartHost
+  href: api/Mirage.INetworkServer.html#Mirage_INetworkServer_OnStartHost
+  commentId: P:Mirage.INetworkServer.OnStartHost
+  fullName: Mirage.INetworkServer.OnStartHost
+  nameWithType: INetworkServer.OnStartHost
+- uid: Mirage.INetworkServer.OnStartHost*
+  name: OnStartHost
+  href: api/Mirage.INetworkServer.html#Mirage_INetworkServer_OnStartHost_
+  commentId: Overload:Mirage.INetworkServer.OnStartHost
+  isSpec: "True"
+  fullName: Mirage.INetworkServer.OnStartHost
+  nameWithType: INetworkServer.OnStartHost
+- uid: Mirage.INetworkServer.OnStopHost
+  name: OnStopHost
+  href: api/Mirage.INetworkServer.html#Mirage_INetworkServer_OnStopHost
+  commentId: P:Mirage.INetworkServer.OnStopHost
+  fullName: Mirage.INetworkServer.OnStopHost
+  nameWithType: INetworkServer.OnStopHost
+- uid: Mirage.INetworkServer.OnStopHost*
+  name: OnStopHost
+  href: api/Mirage.INetworkServer.html#Mirage_INetworkServer_OnStopHost_
+  commentId: Overload:Mirage.INetworkServer.OnStopHost
+  isSpec: "True"
+  fullName: Mirage.INetworkServer.OnStopHost
+  nameWithType: INetworkServer.OnStopHost
 - uid: Mirage.INetworkServer.RemoveConnection(Mirage.INetworkConnection)
   name: RemoveConnection(INetworkConnection)
   href: api/Mirage.INetworkServer.html#Mirage_INetworkServer_RemoveConnection_Mirage_INetworkConnection_
@@ -2543,6 +1748,32 @@ references:
   fullName.vb: Mirage.INetworkServer.SendToAll(Of T)(T, System.Int32)
   nameWithType: INetworkServer.SendToAll<T>(T, Int32)
   nameWithType.vb: INetworkServer.SendToAll(Of T)(T, Int32)
+- uid: Mirage.INetworkServer.Started
+  name: Started
+  href: api/Mirage.INetworkServer.html#Mirage_INetworkServer_Started
+  commentId: P:Mirage.INetworkServer.Started
+  fullName: Mirage.INetworkServer.Started
+  nameWithType: INetworkServer.Started
+- uid: Mirage.INetworkServer.Started*
+  name: Started
+  href: api/Mirage.INetworkServer.html#Mirage_INetworkServer_Started_
+  commentId: Overload:Mirage.INetworkServer.Started
+  isSpec: "True"
+  fullName: Mirage.INetworkServer.Started
+  nameWithType: INetworkServer.Started
+- uid: Mirage.INetworkServer.Stopped
+  name: Stopped
+  href: api/Mirage.INetworkServer.html#Mirage_INetworkServer_Stopped
+  commentId: P:Mirage.INetworkServer.Stopped
+  fullName: Mirage.INetworkServer.Stopped
+  nameWithType: INetworkServer.Stopped
+- uid: Mirage.INetworkServer.Stopped*
+  name: Stopped
+  href: api/Mirage.INetworkServer.html#Mirage_INetworkServer_Stopped_
+  commentId: Overload:Mirage.INetworkServer.Stopped
+  isSpec: "True"
+  fullName: Mirage.INetworkServer.Stopped
+  nameWithType: INetworkServer.Stopped
 - uid: Mirage.InvalidMessageException
   name: InvalidMessageException
   href: api/Mirage.InvalidMessageException.html
@@ -2742,6 +1973,19 @@ references:
   isSpec: "True"
   fullName: Mirage.IServerObjectManager.Spawn
   nameWithType: IServerObjectManager.Spawn
+- uid: Mirage.IServerObjectManager.Spawned
+  name: Spawned
+  href: api/Mirage.IServerObjectManager.html#Mirage_IServerObjectManager_Spawned
+  commentId: P:Mirage.IServerObjectManager.Spawned
+  fullName: Mirage.IServerObjectManager.Spawned
+  nameWithType: IServerObjectManager.Spawned
+- uid: Mirage.IServerObjectManager.Spawned*
+  name: Spawned
+  href: api/Mirage.IServerObjectManager.html#Mirage_IServerObjectManager_Spawned_
+  commentId: Overload:Mirage.IServerObjectManager.Spawned
+  isSpec: "True"
+  fullName: Mirage.IServerObjectManager.Spawned
+  nameWithType: IServerObjectManager.Spawned
 - uid: Mirage.IServerObjectManager.SpawnObjects
   name: SpawnObjects()
   href: api/Mirage.IServerObjectManager.html#Mirage_IServerObjectManager_SpawnObjects
@@ -2768,6 +2012,19 @@ references:
   isSpec: "True"
   fullName: Mirage.IServerObjectManager.UnSpawn
   nameWithType: IServerObjectManager.UnSpawn
+- uid: Mirage.IServerObjectManager.UnSpawned
+  name: UnSpawned
+  href: api/Mirage.IServerObjectManager.html#Mirage_IServerObjectManager_UnSpawned
+  commentId: P:Mirage.IServerObjectManager.UnSpawned
+  fullName: Mirage.IServerObjectManager.UnSpawned
+  nameWithType: IServerObjectManager.UnSpawned
+- uid: Mirage.IServerObjectManager.UnSpawned*
+  name: UnSpawned
+  href: api/Mirage.IServerObjectManager.html#Mirage_IServerObjectManager_UnSpawned_
+  commentId: Overload:Mirage.IServerObjectManager.UnSpawned
+  isSpec: "True"
+  fullName: Mirage.IServerObjectManager.UnSpawned
+  nameWithType: IServerObjectManager.UnSpawned
 - uid: Mirage.ISyncObject
   name: ISyncObject
   href: api/Mirage.ISyncObject.html
@@ -5126,7 +4383,14 @@ references:
 - uid: Mirage.NetworkClient.Authenticated
   name: Authenticated
   href: api/Mirage.NetworkClient.html#Mirage_NetworkClient_Authenticated
-  commentId: F:Mirage.NetworkClient.Authenticated
+  commentId: P:Mirage.NetworkClient.Authenticated
+  fullName: Mirage.NetworkClient.Authenticated
+  nameWithType: NetworkClient.Authenticated
+- uid: Mirage.NetworkClient.Authenticated*
+  name: Authenticated
+  href: api/Mirage.NetworkClient.html#Mirage_NetworkClient_Authenticated_
+  commentId: Overload:Mirage.NetworkClient.Authenticated
+  isSpec: "True"
   fullName: Mirage.NetworkClient.Authenticated
   nameWithType: NetworkClient.Authenticated
 - uid: Mirage.NetworkClient.authenticator
@@ -5163,7 +4427,14 @@ references:
 - uid: Mirage.NetworkClient.Connected
   name: Connected
   href: api/Mirage.NetworkClient.html#Mirage_NetworkClient_Connected
-  commentId: F:Mirage.NetworkClient.Connected
+  commentId: P:Mirage.NetworkClient.Connected
+  fullName: Mirage.NetworkClient.Connected
+  nameWithType: NetworkClient.Connected
+- uid: Mirage.NetworkClient.Connected*
+  name: Connected
+  href: api/Mirage.NetworkClient.html#Mirage_NetworkClient_Connected_
+  commentId: Overload:Mirage.NetworkClient.Connected
+  isSpec: "True"
   fullName: Mirage.NetworkClient.Connected
   nameWithType: NetworkClient.Connected
 - uid: Mirage.NetworkClient.Connection
@@ -5195,7 +4466,14 @@ references:
 - uid: Mirage.NetworkClient.Disconnected
   name: Disconnected
   href: api/Mirage.NetworkClient.html#Mirage_NetworkClient_Disconnected
-  commentId: F:Mirage.NetworkClient.Disconnected
+  commentId: P:Mirage.NetworkClient.Disconnected
+  fullName: Mirage.NetworkClient.Disconnected
+  nameWithType: NetworkClient.Disconnected
+- uid: Mirage.NetworkClient.Disconnected*
+  name: Disconnected
+  href: api/Mirage.NetworkClient.html#Mirage_NetworkClient_Disconnected_
+  commentId: Overload:Mirage.NetworkClient.Disconnected
+  isSpec: "True"
   fullName: Mirage.NetworkClient.Disconnected
   nameWithType: NetworkClient.Disconnected
 - uid: Mirage.NetworkClient.GetNewConnection(Mirage.IConnection)
@@ -5237,19 +4515,6 @@ references:
   isSpec: "True"
   fullName: Mirage.NetworkClient.IsLocalClient
   nameWithType: NetworkClient.IsLocalClient
-- uid: Mirage.NetworkClient.LocalPlayer
-  name: LocalPlayer
-  href: api/Mirage.NetworkClient.html#Mirage_NetworkClient_LocalPlayer
-  commentId: P:Mirage.NetworkClient.LocalPlayer
-  fullName: Mirage.NetworkClient.LocalPlayer
-  nameWithType: NetworkClient.LocalPlayer
-- uid: Mirage.NetworkClient.LocalPlayer*
-  name: LocalPlayer
-  href: api/Mirage.NetworkClient.html#Mirage_NetworkClient_LocalPlayer_
-  commentId: Overload:Mirage.NetworkClient.LocalPlayer
-  isSpec: "True"
-  fullName: Mirage.NetworkClient.LocalPlayer
-  nameWithType: NetworkClient.LocalPlayer
 - uid: Mirage.NetworkClient.Send*
   name: Send
   href: api/Mirage.NetworkClient.html#Mirage_NetworkClient_Send_
@@ -5285,7 +4550,14 @@ references:
 - uid: Mirage.NetworkClient.Time
   name: Time
   href: api/Mirage.NetworkClient.html#Mirage_NetworkClient_Time
-  commentId: F:Mirage.NetworkClient.Time
+  commentId: P:Mirage.NetworkClient.Time
+  fullName: Mirage.NetworkClient.Time
+  nameWithType: NetworkClient.Time
+- uid: Mirage.NetworkClient.Time*
+  name: Time
+  href: api/Mirage.NetworkClient.html#Mirage_NetworkClient_Time_
+  commentId: Overload:Mirage.NetworkClient.Time
+  isSpec: "True"
   fullName: Mirage.NetworkClient.Time
   nameWithType: NetworkClient.Time
 - uid: Mirage.NetworkClient.Transport
@@ -7278,13 +6550,27 @@ references:
 - uid: Mirage.NetworkSceneManager.ClientChangeScene
   name: ClientChangeScene
   href: api/Mirage.NetworkSceneManager.html#Mirage_NetworkSceneManager_ClientChangeScene
-  commentId: F:Mirage.NetworkSceneManager.ClientChangeScene
+  commentId: P:Mirage.NetworkSceneManager.ClientChangeScene
+  fullName: Mirage.NetworkSceneManager.ClientChangeScene
+  nameWithType: NetworkSceneManager.ClientChangeScene
+- uid: Mirage.NetworkSceneManager.ClientChangeScene*
+  name: ClientChangeScene
+  href: api/Mirage.NetworkSceneManager.html#Mirage_NetworkSceneManager_ClientChangeScene_
+  commentId: Overload:Mirage.NetworkSceneManager.ClientChangeScene
+  isSpec: "True"
   fullName: Mirage.NetworkSceneManager.ClientChangeScene
   nameWithType: NetworkSceneManager.ClientChangeScene
 - uid: Mirage.NetworkSceneManager.ClientSceneChanged
   name: ClientSceneChanged
   href: api/Mirage.NetworkSceneManager.html#Mirage_NetworkSceneManager_ClientSceneChanged
-  commentId: F:Mirage.NetworkSceneManager.ClientSceneChanged
+  commentId: P:Mirage.NetworkSceneManager.ClientSceneChanged
+  fullName: Mirage.NetworkSceneManager.ClientSceneChanged
+  nameWithType: NetworkSceneManager.ClientSceneChanged
+- uid: Mirage.NetworkSceneManager.ClientSceneChanged*
+  name: ClientSceneChanged
+  href: api/Mirage.NetworkSceneManager.html#Mirage_NetworkSceneManager_ClientSceneChanged_
+  commentId: Overload:Mirage.NetworkSceneManager.ClientSceneChanged
+  isSpec: "True"
   fullName: Mirage.NetworkSceneManager.ClientSceneChanged
   nameWithType: NetworkSceneManager.ClientSceneChanged
 - uid: Mirage.NetworkSceneManager.DontDestroy
@@ -7315,13 +6601,27 @@ references:
 - uid: Mirage.NetworkSceneManager.ServerChangeScene
   name: ServerChangeScene
   href: api/Mirage.NetworkSceneManager.html#Mirage_NetworkSceneManager_ServerChangeScene
-  commentId: F:Mirage.NetworkSceneManager.ServerChangeScene
+  commentId: P:Mirage.NetworkSceneManager.ServerChangeScene
+  fullName: Mirage.NetworkSceneManager.ServerChangeScene
+  nameWithType: NetworkSceneManager.ServerChangeScene
+- uid: Mirage.NetworkSceneManager.ServerChangeScene*
+  name: ServerChangeScene
+  href: api/Mirage.NetworkSceneManager.html#Mirage_NetworkSceneManager_ServerChangeScene_
+  commentId: Overload:Mirage.NetworkSceneManager.ServerChangeScene
+  isSpec: "True"
   fullName: Mirage.NetworkSceneManager.ServerChangeScene
   nameWithType: NetworkSceneManager.ServerChangeScene
 - uid: Mirage.NetworkSceneManager.ServerSceneChanged
   name: ServerSceneChanged
   href: api/Mirage.NetworkSceneManager.html#Mirage_NetworkSceneManager_ServerSceneChanged
-  commentId: F:Mirage.NetworkSceneManager.ServerSceneChanged
+  commentId: P:Mirage.NetworkSceneManager.ServerSceneChanged
+  fullName: Mirage.NetworkSceneManager.ServerSceneChanged
+  nameWithType: NetworkSceneManager.ServerSceneChanged
+- uid: Mirage.NetworkSceneManager.ServerSceneChanged*
+  name: ServerSceneChanged
+  href: api/Mirage.NetworkSceneManager.html#Mirage_NetworkSceneManager_ServerSceneChanged_
+  commentId: Overload:Mirage.NetworkSceneManager.ServerSceneChanged
+  isSpec: "True"
   fullName: Mirage.NetworkSceneManager.ServerSceneChanged
   nameWithType: NetworkSceneManager.ServerSceneChanged
 - uid: Mirage.NetworkSceneManager.SetClientReady
@@ -7385,7 +6685,14 @@ references:
 - uid: Mirage.NetworkServer.Authenticated
   name: Authenticated
   href: api/Mirage.NetworkServer.html#Mirage_NetworkServer_Authenticated
-  commentId: F:Mirage.NetworkServer.Authenticated
+  commentId: P:Mirage.NetworkServer.Authenticated
+  fullName: Mirage.NetworkServer.Authenticated
+  nameWithType: NetworkServer.Authenticated
+- uid: Mirage.NetworkServer.Authenticated*
+  name: Authenticated
+  href: api/Mirage.NetworkServer.html#Mirage_NetworkServer_Authenticated_
+  commentId: Overload:Mirage.NetworkServer.Authenticated
+  isSpec: "True"
   fullName: Mirage.NetworkServer.Authenticated
   nameWithType: NetworkServer.Authenticated
 - uid: Mirage.NetworkServer.authenticator
@@ -7397,7 +6704,14 @@ references:
 - uid: Mirage.NetworkServer.Connected
   name: Connected
   href: api/Mirage.NetworkServer.html#Mirage_NetworkServer_Connected
-  commentId: F:Mirage.NetworkServer.Connected
+  commentId: P:Mirage.NetworkServer.Connected
+  fullName: Mirage.NetworkServer.Connected
+  nameWithType: NetworkServer.Connected
+- uid: Mirage.NetworkServer.Connected*
+  name: Connected
+  href: api/Mirage.NetworkServer.html#Mirage_NetworkServer_Connected_
+  commentId: Overload:Mirage.NetworkServer.Connected
+  isSpec: "True"
   fullName: Mirage.NetworkServer.Connected
   nameWithType: NetworkServer.Connected
 - uid: Mirage.NetworkServer.connections
@@ -7422,7 +6736,14 @@ references:
 - uid: Mirage.NetworkServer.Disconnected
   name: Disconnected
   href: api/Mirage.NetworkServer.html#Mirage_NetworkServer_Disconnected
-  commentId: F:Mirage.NetworkServer.Disconnected
+  commentId: P:Mirage.NetworkServer.Disconnected
+  fullName: Mirage.NetworkServer.Disconnected
+  nameWithType: NetworkServer.Disconnected
+- uid: Mirage.NetworkServer.Disconnected*
+  name: Disconnected
+  href: api/Mirage.NetworkServer.html#Mirage_NetworkServer_Disconnected_
+  commentId: Overload:Mirage.NetworkServer.Disconnected
+  isSpec: "True"
   fullName: Mirage.NetworkServer.Disconnected
   nameWithType: NetworkServer.Disconnected
 - uid: Mirage.NetworkServer.GetNewConnection(Mirage.IConnection)
@@ -7518,13 +6839,27 @@ references:
 - uid: Mirage.NetworkServer.OnStartHost
   name: OnStartHost
   href: api/Mirage.NetworkServer.html#Mirage_NetworkServer_OnStartHost
-  commentId: F:Mirage.NetworkServer.OnStartHost
+  commentId: P:Mirage.NetworkServer.OnStartHost
+  fullName: Mirage.NetworkServer.OnStartHost
+  nameWithType: NetworkServer.OnStartHost
+- uid: Mirage.NetworkServer.OnStartHost*
+  name: OnStartHost
+  href: api/Mirage.NetworkServer.html#Mirage_NetworkServer_OnStartHost_
+  commentId: Overload:Mirage.NetworkServer.OnStartHost
+  isSpec: "True"
   fullName: Mirage.NetworkServer.OnStartHost
   nameWithType: NetworkServer.OnStartHost
 - uid: Mirage.NetworkServer.OnStopHost
   name: OnStopHost
   href: api/Mirage.NetworkServer.html#Mirage_NetworkServer_OnStopHost
-  commentId: F:Mirage.NetworkServer.OnStopHost
+  commentId: P:Mirage.NetworkServer.OnStopHost
+  fullName: Mirage.NetworkServer.OnStopHost
+  nameWithType: NetworkServer.OnStopHost
+- uid: Mirage.NetworkServer.OnStopHost*
+  name: OnStopHost
+  href: api/Mirage.NetworkServer.html#Mirage_NetworkServer_OnStopHost_
+  commentId: Overload:Mirage.NetworkServer.OnStopHost
+  isSpec: "True"
   fullName: Mirage.NetworkServer.OnStopHost
   nameWithType: NetworkServer.OnStopHost
 - uid: Mirage.NetworkServer.RemoveConnection(Mirage.INetworkConnection)
@@ -7559,7 +6894,14 @@ references:
 - uid: Mirage.NetworkServer.Started
   name: Started
   href: api/Mirage.NetworkServer.html#Mirage_NetworkServer_Started
-  commentId: F:Mirage.NetworkServer.Started
+  commentId: P:Mirage.NetworkServer.Started
+  fullName: Mirage.NetworkServer.Started
+  nameWithType: NetworkServer.Started
+- uid: Mirage.NetworkServer.Started*
+  name: Started
+  href: api/Mirage.NetworkServer.html#Mirage_NetworkServer_Started_
+  commentId: Overload:Mirage.NetworkServer.Started
+  isSpec: "True"
   fullName: Mirage.NetworkServer.Started
   nameWithType: NetworkServer.Started
 - uid: Mirage.NetworkServer.StartHost(Mirage.NetworkClient)
@@ -7591,13 +6933,27 @@ references:
 - uid: Mirage.NetworkServer.Stopped
   name: Stopped
   href: api/Mirage.NetworkServer.html#Mirage_NetworkServer_Stopped
-  commentId: F:Mirage.NetworkServer.Stopped
+  commentId: P:Mirage.NetworkServer.Stopped
+  fullName: Mirage.NetworkServer.Stopped
+  nameWithType: NetworkServer.Stopped
+- uid: Mirage.NetworkServer.Stopped*
+  name: Stopped
+  href: api/Mirage.NetworkServer.html#Mirage_NetworkServer_Stopped_
+  commentId: Overload:Mirage.NetworkServer.Stopped
+  isSpec: "True"
   fullName: Mirage.NetworkServer.Stopped
   nameWithType: NetworkServer.Stopped
 - uid: Mirage.NetworkServer.Time
   name: Time
   href: api/Mirage.NetworkServer.html#Mirage_NetworkServer_Time
-  commentId: F:Mirage.NetworkServer.Time
+  commentId: P:Mirage.NetworkServer.Time
+  fullName: Mirage.NetworkServer.Time
+  nameWithType: NetworkServer.Time
+- uid: Mirage.NetworkServer.Time*
+  name: Time
+  href: api/Mirage.NetworkServer.html#Mirage_NetworkServer_Time_
+  commentId: Overload:Mirage.NetworkServer.Time
+  isSpec: "True"
   fullName: Mirage.NetworkServer.Time
   nameWithType: NetworkServer.Time
 - uid: Mirage.NetworkServer.Transport
@@ -8934,6 +8290,12 @@ references:
   commentId: T:Mirage.PlayerSpawner
   fullName: Mirage.PlayerSpawner
   nameWithType: PlayerSpawner
+- uid: Mirage.PlayerSpawner.AutoSpawn
+  name: AutoSpawn
+  href: api/Mirage.PlayerSpawner.html#Mirage_PlayerSpawner_AutoSpawn
+  commentId: F:Mirage.PlayerSpawner.AutoSpawn
+  fullName: Mirage.PlayerSpawner.AutoSpawn
+  nameWithType: PlayerSpawner.AutoSpawn
 - uid: Mirage.PlayerSpawner.Client
   name: Client
   href: api/Mirage.PlayerSpawner.html#Mirage_PlayerSpawner_Client
@@ -9002,6 +8364,19 @@ references:
   commentId: F:Mirage.PlayerSpawner.PlayerSpawnMethod.RoundRobin
   fullName: Mirage.PlayerSpawner.PlayerSpawnMethod.RoundRobin
   nameWithType: PlayerSpawner.PlayerSpawnMethod.RoundRobin
+- uid: Mirage.PlayerSpawner.RequestServerSpawnPlayer
+  name: RequestServerSpawnPlayer()
+  href: api/Mirage.PlayerSpawner.html#Mirage_PlayerSpawner_RequestServerSpawnPlayer
+  commentId: M:Mirage.PlayerSpawner.RequestServerSpawnPlayer
+  fullName: Mirage.PlayerSpawner.RequestServerSpawnPlayer()
+  nameWithType: PlayerSpawner.RequestServerSpawnPlayer()
+- uid: Mirage.PlayerSpawner.RequestServerSpawnPlayer*
+  name: RequestServerSpawnPlayer
+  href: api/Mirage.PlayerSpawner.html#Mirage_PlayerSpawner_RequestServerSpawnPlayer_
+  commentId: Overload:Mirage.PlayerSpawner.RequestServerSpawnPlayer
+  isSpec: "True"
+  fullName: Mirage.PlayerSpawner.RequestServerSpawnPlayer
+  nameWithType: PlayerSpawner.RequestServerSpawnPlayer
 - uid: Mirage.PlayerSpawner.SceneManager
   name: SceneManager
   href: api/Mirage.PlayerSpawner.html#Mirage_PlayerSpawner_SceneManager
@@ -9560,7 +8935,14 @@ references:
 - uid: Mirage.ServerObjectManager.Spawned
   name: Spawned
   href: api/Mirage.ServerObjectManager.html#Mirage_ServerObjectManager_Spawned
-  commentId: F:Mirage.ServerObjectManager.Spawned
+  commentId: P:Mirage.ServerObjectManager.Spawned
+  fullName: Mirage.ServerObjectManager.Spawned
+  nameWithType: ServerObjectManager.Spawned
+- uid: Mirage.ServerObjectManager.Spawned*
+  name: Spawned
+  href: api/Mirage.ServerObjectManager.html#Mirage_ServerObjectManager_Spawned_
+  commentId: Overload:Mirage.ServerObjectManager.Spawned
+  isSpec: "True"
   fullName: Mirage.ServerObjectManager.Spawned
   nameWithType: ServerObjectManager.Spawned
 - uid: Mirage.ServerObjectManager.SpawnedObjects
@@ -9569,12 +8951,6 @@ references:
   commentId: F:Mirage.ServerObjectManager.SpawnedObjects
   fullName: Mirage.ServerObjectManager.SpawnedObjects
   nameWithType: ServerObjectManager.SpawnedObjects
-- uid: Mirage.ServerObjectManager.SpawnEvent
-  name: ServerObjectManager.SpawnEvent
-  href: api/Mirage.ServerObjectManager.SpawnEvent.html
-  commentId: T:Mirage.ServerObjectManager.SpawnEvent
-  fullName: Mirage.ServerObjectManager.SpawnEvent
-  nameWithType: ServerObjectManager.SpawnEvent
 - uid: Mirage.ServerObjectManager.SpawnObjects
   name: SpawnObjects()
   href: api/Mirage.ServerObjectManager.html#Mirage_ServerObjectManager_SpawnObjects
@@ -9617,7 +8993,14 @@ references:
 - uid: Mirage.ServerObjectManager.UnSpawned
   name: UnSpawned
   href: api/Mirage.ServerObjectManager.html#Mirage_ServerObjectManager_UnSpawned
-  commentId: F:Mirage.ServerObjectManager.UnSpawned
+  commentId: P:Mirage.ServerObjectManager.UnSpawned
+  fullName: Mirage.ServerObjectManager.UnSpawned
+  nameWithType: ServerObjectManager.UnSpawned
+- uid: Mirage.ServerObjectManager.UnSpawned*
+  name: UnSpawned
+  href: api/Mirage.ServerObjectManager.html#Mirage_ServerObjectManager_UnSpawned_
+  commentId: Overload:Mirage.ServerObjectManager.UnSpawned
+  isSpec: "True"
   fullName: Mirage.ServerObjectManager.UnSpawned
   nameWithType: ServerObjectManager.UnSpawned
 - uid: Mirage.ServerRpcAttribute
@@ -9698,6 +9081,12 @@ references:
   commentId: T:Mirage.ShowInInspectorAttribute
   fullName: Mirage.ShowInInspectorAttribute
   nameWithType: ShowInInspectorAttribute
+- uid: Mirage.SpawnEvent
+  name: SpawnEvent
+  href: api/Mirage.SpawnEvent.html
+  commentId: T:Mirage.SpawnEvent
+  fullName: Mirage.SpawnEvent
+  nameWithType: SpawnEvent
 - uid: Mirage.SpawnHandlerDelegate
   name: SpawnHandlerDelegate
   href: api/Mirage.SpawnHandlerDelegate.html

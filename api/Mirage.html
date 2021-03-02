@@ -94,14 +94,15 @@
 </section>
       <h4><a class="xref" href="Mirage.ClientObjectManager.html">ClientObjectManager</a></h4>
       <section></section>
-      <h4><a class="xref" href="Mirage.ClientObjectManager.SpawnEvent.html">ClientObjectManager.SpawnEvent</a></h4>
-      <section></section>
       <h4><a class="xref" href="Mirage.ClientRpcAttribute.html">ClientRpcAttribute</a></h4>
       <section><p>The server uses a Remote Procedure Call (RPC) to run this function on specific clients.</p>
 <p>Note that if you set the target as Connection, you need to pass a specific connection as a parameter of your method</p>
 </section>
       <h4><a class="xref" href="Mirage.ClientSceneChangeEvent.html">ClientSceneChangeEvent</a></h4>
-      <section></section>
+      <section><p>Event fires from <a class="xref" href="Mirage.INetworkSceneManager.html">INetworkSceneManager</a> when a scene change happens on either Server or Client.</p>
+<p>string - New ScenePath</p>
+<p>SceneOperation - Scene change type (Normal, Additive Load, Additive Unload).</p>
+</section>
       <h4><a class="xref" href="Mirage.Compression.html">Compression</a></h4>
       <section><p>Credit to this man for converting gaffer games c code to c#
 <a href="https://gist.github.com/fversnel/0497ad7ab3b81e0dc1dd">https://gist.github.com/fversnel/0497ad7ab3b81e0dc1dd</a></p>
@@ -157,7 +158,9 @@
       <section><p>A High level network connection. This is used for connections from client-to-server and for connection from server-to-client.</p>
 </section>
       <h4><a class="xref" href="Mirage.NetworkConnectionEvent.html">NetworkConnectionEvent</a></h4>
-      <section></section>
+      <section><p>Event fires from a <a class="xref" href="Mirage.NetworkClient.html">NetworkClient</a> or <a class="xref" href="Mirage.NetworkServer.html">NetworkServer</a> during a new connection, a new authentication, or a disconnection.</p>
+<p>INetworkConnection - connection creating the event</p>
+</section>
       <h4><a class="xref" href="Mirage.NetworkDiagnostics.html">NetworkDiagnostics</a></h4>
       <section><p>Provides profiling information from mirror
 A profiler can subscribe to these events and
@@ -250,7 +253,7 @@ This is used in network communications to be able to lookup game objects on diff
 If you send data in one of them,  you receive it on the other one</p>
 </section>
       <h4><a class="xref" href="Mirage.PlayerSpawner.html">PlayerSpawner</a></h4>
-      <section><p>Spawns a player as soon  as the connection is authenticated</p>
+      <section><p>Spawns a player as soon as the connection is authenticated</p>
 </section>
       <h4><a class="xref" href="Mirage.PooledNetworkReader.html">PooledNetworkReader</a></h4>
       <section><p>NetworkReader to be used with <a class="xref" href="Mirage.NetworkReaderPool.html">NetworkReaderPool</a></p>
@@ -273,8 +276,6 @@ This will be populated by the weaver</p>
       <h4><a class="xref" href="Mirage.ServerObjectManager.html">ServerObjectManager</a></h4>
       <section><p>The ServerObjectManager.</p>
 </section>
-      <h4><a class="xref" href="Mirage.ServerObjectManager.SpawnEvent.html">ServerObjectManager.SpawnEvent</a></h4>
-      <section></section>
       <h4><a class="xref" href="Mirage.ServerRpcAttribute.html">ServerRpcAttribute</a></h4>
       <section><p>Call this from a client to run this function on the server.</p>
 <p>Make sure to validate input etc. It&apos;s not possible to call this from a server.</p>
@@ -283,6 +284,8 @@ This will be populated by the weaver</p>
       <section><p>Used to show private SyncList in the inspector,</p>
 <p> Use instead of SerializeField for non Serializable types </p>
 </section>
+      <h4><a class="xref" href="Mirage.SpawnEvent.html">SpawnEvent</a></h4>
+      <section></section>
       <h4><a class="xref" href="Mirage.StringHash.html">StringHash</a></h4>
       <section></section>
       <h4><a class="xref" href="Mirage.SyncDictionary-2.html">SyncDictionary&lt;TKey, TValue&gt;</a></h4>

@@ -225,7 +225,7 @@ public class Door : NetworkBehaviour
         Healed(10);
     }
 
-    [ClientRpc(target = client.Owner)]
+    [ClientRpc(target = Client.Owner)]
     public void Healed(int amount)
     {
         // No NetworkConnection parameter, so it goes to owner
@@ -244,7 +244,7 @@ public class Door : NetworkBehaviour
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/MirageNet/Mirage/blob/master/doc/Articles/Guides/Communications/RemoteActions.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/James-Frowen/Mirage/blob/master/doc/Articles/Guides/Communications/RemoteActions.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

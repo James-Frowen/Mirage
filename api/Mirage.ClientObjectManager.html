@@ -92,22 +92,23 @@
   </div>
   <div classs="implements">
     <h5>Implements</h5>
+    <div><a class="xref" href="Mirage.IClientObjectManager.html">IClientObjectManager</a></div>
     <div><a class="xref" href="Mirage.IObjectLocator.html">IObjectLocator</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Mirage.html">Mirage</a></h6>
   <h6><strong>Assembly</strong>: doc.dll</h6>
   <h5 id="Mirage_ClientObjectManager_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ClientObjectManager : MonoBehaviour, IObjectLocator</code></pre>
+    <pre><code class="lang-csharp hljs">public class ClientObjectManager : MonoBehaviour, IClientObjectManager, IObjectLocator</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/MirageNet/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_Client.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.Client%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_Client.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.Client%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MirageNet/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L20">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L19">View Source</a>
   </span>
   <h4 id="Mirage_ClientObjectManager_Client" data-uid="Mirage.ClientObjectManager.Client">Client</h4>
   <div class="markdown level1 summary"></div>
@@ -133,10 +134,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/MirageNet/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_NetworkSceneManager.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.NetworkSceneManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_NetworkSceneManager.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.NetworkSceneManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MirageNet/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L22">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L21">View Source</a>
   </span>
   <h4 id="Mirage_ClientObjectManager_NetworkSceneManager" data-uid="Mirage.ClientObjectManager.NetworkSceneManager">NetworkSceneManager</h4>
   <div class="markdown level1 summary"></div>
@@ -162,10 +163,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/MirageNet/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_spawnableObjects.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.spawnableObjects%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_spawnableObjects.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.spawnableObjects%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MirageNet/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L59">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L64">View Source</a>
   </span>
   <h4 id="Mirage_ClientObjectManager_spawnableObjects" data-uid="Mirage.ClientObjectManager.spawnableObjects">spawnableObjects</h4>
   <div class="markdown level1 summary"><p>This is dictionary of the disabled NetworkIdentity objects in the scene that could be spawned by messages from the server.</p>
@@ -193,39 +194,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/MirageNet/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_Spawned.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.Spawned%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_spawnPrefabs.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.spawnPrefabs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MirageNet/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L35">View Source</a>
-  </span>
-  <h4 id="Mirage_ClientObjectManager_Spawned" data-uid="Mirage.ClientObjectManager.Spawned">Spawned</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ClientObjectManager.SpawnEvent Spawned</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Mirage.ClientObjectManager.SpawnEvent.html">ClientObjectManager.SpawnEvent</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/MirageNet/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_spawnPrefabs.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.spawnPrefabs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MirageNet/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L47">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L52">View Source</a>
   </span>
   <h4 id="Mirage_ClientObjectManager_spawnPrefabs" data-uid="Mirage.ClientObjectManager.spawnPrefabs">spawnPrefabs</h4>
   <div class="markdown level1 summary"></div>
@@ -249,44 +221,14 @@
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/MirageNet/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_UnSpawned.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.UnSpawned%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MirageNet/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L40">View Source</a>
-  </span>
-  <h4 id="Mirage_ClientObjectManager_UnSpawned" data-uid="Mirage.ClientObjectManager.UnSpawned">UnSpawned</h4>
-  <div class="markdown level1 summary"><p>Raised when the client unspawns an object</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ClientObjectManager.SpawnEvent UnSpawned</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Mirage.ClientObjectManager.SpawnEvent.html">ClientObjectManager.SpawnEvent</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/MirageNet/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_Item_System_UInt32_.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.Item(System.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_Item_System_UInt32_.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.Item(System.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MirageNet/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L611">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L616">View Source</a>
   </span>
   <a id="Mirage_ClientObjectManager_Item_" data-uid="Mirage.ClientObjectManager.Item*"></a>
   <h4 id="Mirage_ClientObjectManager_Item_System_UInt32_" data-uid="Mirage.ClientObjectManager.Item(System.UInt32)">Item[UInt32]</h4>
@@ -330,10 +272,71 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/MirageNet/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_SpawnedObjects.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.SpawnedObjects%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_LocalPlayer.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.LocalPlayer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MirageNet/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L64">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L45">View Source</a>
+  </span>
+  <a id="Mirage_ClientObjectManager_LocalPlayer_" data-uid="Mirage.ClientObjectManager.LocalPlayer*"></a>
+  <h4 id="Mirage_ClientObjectManager_LocalPlayer" data-uid="Mirage.ClientObjectManager.LocalPlayer">LocalPlayer</h4>
+  <div class="markdown level1 summary"><p>NetworkIdentity of the localPlayer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NetworkIdentity LocalPlayer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mirage.NetworkIdentity.html">NetworkIdentity</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_Spawned.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.Spawned%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L33">View Source</a>
+  </span>
+  <a id="Mirage_ClientObjectManager_Spawned_" data-uid="Mirage.ClientObjectManager.Spawned*"></a>
+  <h4 id="Mirage_ClientObjectManager_Spawned" data-uid="Mirage.ClientObjectManager.Spawned">Spawned</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SpawnEvent Spawned { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mirage.SpawnEvent.html">SpawnEvent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_SpawnedObjects.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.SpawnedObjects%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L69">View Source</a>
   </span>
   <a id="Mirage_ClientObjectManager_SpawnedObjects_" data-uid="Mirage.ClientObjectManager.SpawnedObjects*"></a>
   <h4 id="Mirage_ClientObjectManager_SpawnedObjects" data-uid="Mirage.ClientObjectManager.SpawnedObjects">SpawnedObjects</h4>
@@ -359,14 +362,44 @@
       </tr>
     </tbody>
   </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_UnSpawned.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.UnSpawned%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L40">View Source</a>
+  </span>
+  <a id="Mirage_ClientObjectManager_UnSpawned_" data-uid="Mirage.ClientObjectManager.UnSpawned*"></a>
+  <h4 id="Mirage_ClientObjectManager_UnSpawned" data-uid="Mirage.ClientObjectManager.UnSpawned">UnSpawned</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SpawnEvent UnSpawned { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mirage.SpawnEvent.html">SpawnEvent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/MirageNet/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_ClearSpawners.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.ClearSpawners%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_ClearSpawners.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.ClearSpawners%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MirageNet/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L302">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L307">View Source</a>
   </span>
   <a id="Mirage_ClientObjectManager_ClearSpawners_" data-uid="Mirage.ClientObjectManager.ClearSpawners*"></a>
   <h4 id="Mirage_ClientObjectManager_ClearSpawners" data-uid="Mirage.ClientObjectManager.ClearSpawners">ClearSpawners()</h4>
@@ -379,10 +412,10 @@
   </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/MirageNet/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_DestroyAllClientObjects.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.DestroyAllClientObjects%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_DestroyAllClientObjects.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.DestroyAllClientObjects%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MirageNet/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L338">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L343">View Source</a>
   </span>
   <a id="Mirage_ClientObjectManager_DestroyAllClientObjects_" data-uid="Mirage.ClientObjectManager.DestroyAllClientObjects*"></a>
   <h4 id="Mirage_ClientObjectManager_DestroyAllClientObjects" data-uid="Mirage.ClientObjectManager.DestroyAllClientObjects">DestroyAllClientObjects()</h4>
@@ -396,10 +429,10 @@
   </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/MirageNet/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_GetPrefab_Guid_.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.GetPrefab(Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_GetPrefab_Guid_.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.GetPrefab(Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MirageNet/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L197">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L202">View Source</a>
   </span>
   <a id="Mirage_ClientObjectManager_GetPrefab_" data-uid="Mirage.ClientObjectManager.GetPrefab*"></a>
   <h4 id="Mirage_ClientObjectManager_GetPrefab_Guid_" data-uid="Mirage.ClientObjectManager.GetPrefab(Guid)">GetPrefab(Guid)</h4>
@@ -447,10 +480,10 @@ Useful for debuggers</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/MirageNet/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_PrepareToSpawnSceneObjects.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.PrepareToSpawnSceneObjects%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_PrepareToSpawnSceneObjects.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.PrepareToSpawnSceneObjects%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MirageNet/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L164">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L169">View Source</a>
   </span>
   <a id="Mirage_ClientObjectManager_PrepareToSpawnSceneObjects_" data-uid="Mirage.ClientObjectManager.PrepareToSpawnSceneObjects*"></a>
   <h4 id="Mirage_ClientObjectManager_PrepareToSpawnSceneObjects" data-uid="Mirage.ClientObjectManager.PrepareToSpawnSceneObjects">PrepareToSpawnSceneObjects()</h4>
@@ -463,10 +496,10 @@ Useful for debuggers</p>
   </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/MirageNet/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_RegisterPrefab_Mirage_NetworkIdentity_.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.RegisterPrefab(Mirage.NetworkIdentity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_RegisterPrefab_Mirage_NetworkIdentity_.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.RegisterPrefab(Mirage.NetworkIdentity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MirageNet/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L232">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L237">View Source</a>
   </span>
   <a id="Mirage_ClientObjectManager_RegisterPrefab_" data-uid="Mirage.ClientObjectManager.RegisterPrefab*"></a>
   <h4 id="Mirage_ClientObjectManager_RegisterPrefab_Mirage_NetworkIdentity_" data-uid="Mirage.ClientObjectManager.RegisterPrefab(Mirage.NetworkIdentity)">RegisterPrefab(NetworkIdentity)</h4>
@@ -500,10 +533,10 @@ Useful for debuggers</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/MirageNet/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_RegisterPrefab_Mirage_NetworkIdentity_Guid_.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.RegisterPrefab(Mirage.NetworkIdentity%2CGuid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_RegisterPrefab_Mirage_NetworkIdentity_Guid_.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.RegisterPrefab(Mirage.NetworkIdentity%2CGuid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MirageNet/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L217">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L222">View Source</a>
   </span>
   <a id="Mirage_ClientObjectManager_RegisterPrefab_" data-uid="Mirage.ClientObjectManager.RegisterPrefab*"></a>
   <h4 id="Mirage_ClientObjectManager_RegisterPrefab_Mirage_NetworkIdentity_Guid_" data-uid="Mirage.ClientObjectManager.RegisterPrefab(Mirage.NetworkIdentity,Guid)">RegisterPrefab(NetworkIdentity, Guid)</h4>
@@ -543,10 +576,10 @@ Useful for debuggers</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/MirageNet/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_RegisterPrefab_Mirage_NetworkIdentity_Mirage_SpawnHandlerDelegate_Mirage_UnSpawnDelegate_.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.RegisterPrefab(Mirage.NetworkIdentity%2CMirage.SpawnHandlerDelegate%2CMirage.UnSpawnDelegate)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_RegisterPrefab_Mirage_NetworkIdentity_Mirage_SpawnHandlerDelegate_Mirage_UnSpawnDelegate_.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.RegisterPrefab(Mirage.NetworkIdentity%2CMirage.SpawnHandlerDelegate%2CMirage.UnSpawnDelegate)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MirageNet/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L247">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L252">View Source</a>
   </span>
   <a id="Mirage_ClientObjectManager_RegisterPrefab_" data-uid="Mirage.ClientObjectManager.RegisterPrefab*"></a>
   <h4 id="Mirage_ClientObjectManager_RegisterPrefab_Mirage_NetworkIdentity_Mirage_SpawnHandlerDelegate_Mirage_UnSpawnDelegate_" data-uid="Mirage.ClientObjectManager.RegisterPrefab(Mirage.NetworkIdentity,Mirage.SpawnHandlerDelegate,Mirage.UnSpawnDelegate)">RegisterPrefab(NetworkIdentity, SpawnHandlerDelegate, UnSpawnDelegate)</h4>
@@ -592,10 +625,10 @@ Useful for debuggers</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/MirageNet/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_RegisterSpawnHandler_Guid_Mirage_SpawnHandlerDelegate_Mirage_UnSpawnDelegate_.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.RegisterSpawnHandler(Guid%2CMirage.SpawnHandlerDelegate%2CMirage.UnSpawnDelegate)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_RegisterSpawnHandler_Guid_Mirage_SpawnHandlerDelegate_Mirage_UnSpawnDelegate_.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.RegisterSpawnHandler(Guid%2CMirage.SpawnHandlerDelegate%2CMirage.UnSpawnDelegate)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MirageNet/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L281">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L286">View Source</a>
   </span>
   <a id="Mirage_ClientObjectManager_RegisterSpawnHandler_" data-uid="Mirage.ClientObjectManager.RegisterSpawnHandler*"></a>
   <h4 id="Mirage_ClientObjectManager_RegisterSpawnHandler_Guid_Mirage_SpawnHandlerDelegate_Mirage_UnSpawnDelegate_" data-uid="Mirage.ClientObjectManager.RegisterSpawnHandler(Guid,Mirage.SpawnHandlerDelegate,Mirage.UnSpawnDelegate)">RegisterSpawnHandler(Guid, SpawnHandlerDelegate, UnSpawnDelegate)</h4>
@@ -639,10 +672,10 @@ Useful for debuggers</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/MirageNet/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_Start.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.Start%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_Start.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.Start%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MirageNet/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L80">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L85">View Source</a>
   </span>
   <a id="Mirage_ClientObjectManager_Start_" data-uid="Mirage.ClientObjectManager.Start*"></a>
   <h4 id="Mirage_ClientObjectManager_Start" data-uid="Mirage.ClientObjectManager.Start">Start()</h4>
@@ -654,10 +687,10 @@ Useful for debuggers</p>
   </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/MirageNet/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_UnregisterPrefab_Mirage_NetworkIdentity_.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.UnregisterPrefab(Mirage.NetworkIdentity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_UnregisterPrefab_Mirage_NetworkIdentity_.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.UnregisterPrefab(Mirage.NetworkIdentity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MirageNet/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L264">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L269">View Source</a>
   </span>
   <a id="Mirage_ClientObjectManager_UnregisterPrefab_" data-uid="Mirage.ClientObjectManager.UnregisterPrefab*"></a>
   <h4 id="Mirage_ClientObjectManager_UnregisterPrefab_Mirage_NetworkIdentity_" data-uid="Mirage.ClientObjectManager.UnregisterPrefab(Mirage.NetworkIdentity)">UnregisterPrefab(NetworkIdentity)</h4>
@@ -688,10 +721,10 @@ Useful for debuggers</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/MirageNet/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_UnregisterSpawnHandler_Guid_.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.UnregisterSpawnHandler(Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_UnregisterSpawnHandler_Guid_.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.UnregisterSpawnHandler(Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MirageNet/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L293">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L298">View Source</a>
   </span>
   <a id="Mirage_ClientObjectManager_UnregisterSpawnHandler_" data-uid="Mirage.ClientObjectManager.UnregisterSpawnHandler*"></a>
   <h4 id="Mirage_ClientObjectManager_UnregisterSpawnHandler_Guid_" data-uid="Mirage.ClientObjectManager.UnregisterSpawnHandler(Guid)">UnregisterSpawnHandler(Guid)</h4>
@@ -722,6 +755,9 @@ Useful for debuggers</p>
   </table>
   <h3 id="implements">Implements</h3>
   <div>
+      <a class="xref" href="Mirage.IClientObjectManager.html">IClientObjectManager</a>
+  </div>
+  <div>
       <a class="xref" href="Mirage.IObjectLocator.html">IObjectLocator</a>
   </div>
 </article>
@@ -732,10 +768,10 @@ Useful for debuggers</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/MirageNet/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/MirageNet/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L13" class="contribution-link">View Source</a>
+                    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L12" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
