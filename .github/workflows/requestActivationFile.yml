@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Request manual activation file
-        uses: MirageNet/unity-runner@2.0.0
+        uses: MirageNet/unity-runner@3.1.0
         id: getManualLicenseFile
         with:
             entrypoint: /request_activation.sh
