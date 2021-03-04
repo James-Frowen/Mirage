@@ -1268,11 +1268,11 @@ references:
   commentId: T:Mirage.ILoggerExtensions
   fullName: Mirage.ILoggerExtensions
   nameWithType: ILoggerExtensions
-- uid: Mirage.ILoggerExtensions.Assert(ILogger,System.Boolean,System.Object)
+- uid: Mirage.ILoggerExtensions.Assert(UnityEngine.ILogger,System.Boolean,System.Object)
   name: Assert(ILogger, Boolean, Object)
-  href: api/Mirage.ILoggerExtensions.html#Mirage_ILoggerExtensions_Assert_ILogger_System_Boolean_System_Object_
-  commentId: M:Mirage.ILoggerExtensions.Assert(ILogger,System.Boolean,System.Object)
-  fullName: Mirage.ILoggerExtensions.Assert(ILogger, System.Boolean, System.Object)
+  href: api/Mirage.ILoggerExtensions.html#Mirage_ILoggerExtensions_Assert_UnityEngine_ILogger_System_Boolean_System_Object_
+  commentId: M:Mirage.ILoggerExtensions.Assert(UnityEngine.ILogger,System.Boolean,System.Object)
+  fullName: Mirage.ILoggerExtensions.Assert(UnityEngine.ILogger, System.Boolean, System.Object)
   nameWithType: ILoggerExtensions.Assert(ILogger, Boolean, Object)
 - uid: Mirage.ILoggerExtensions.Assert*
   name: Assert
@@ -1281,11 +1281,11 @@ references:
   isSpec: "True"
   fullName: Mirage.ILoggerExtensions.Assert
   nameWithType: ILoggerExtensions.Assert
-- uid: Mirage.ILoggerExtensions.ErrorEnabled(ILogger)
+- uid: Mirage.ILoggerExtensions.ErrorEnabled(UnityEngine.ILogger)
   name: ErrorEnabled(ILogger)
-  href: api/Mirage.ILoggerExtensions.html#Mirage_ILoggerExtensions_ErrorEnabled_ILogger_
-  commentId: M:Mirage.ILoggerExtensions.ErrorEnabled(ILogger)
-  fullName: Mirage.ILoggerExtensions.ErrorEnabled(ILogger)
+  href: api/Mirage.ILoggerExtensions.html#Mirage_ILoggerExtensions_ErrorEnabled_UnityEngine_ILogger_
+  commentId: M:Mirage.ILoggerExtensions.ErrorEnabled(UnityEngine.ILogger)
+  fullName: Mirage.ILoggerExtensions.ErrorEnabled(UnityEngine.ILogger)
   nameWithType: ILoggerExtensions.ErrorEnabled(ILogger)
 - uid: Mirage.ILoggerExtensions.ErrorEnabled*
   name: ErrorEnabled
@@ -1294,11 +1294,11 @@ references:
   isSpec: "True"
   fullName: Mirage.ILoggerExtensions.ErrorEnabled
   nameWithType: ILoggerExtensions.ErrorEnabled
-- uid: Mirage.ILoggerExtensions.LogEnabled(ILogger)
+- uid: Mirage.ILoggerExtensions.LogEnabled(UnityEngine.ILogger)
   name: LogEnabled(ILogger)
-  href: api/Mirage.ILoggerExtensions.html#Mirage_ILoggerExtensions_LogEnabled_ILogger_
-  commentId: M:Mirage.ILoggerExtensions.LogEnabled(ILogger)
-  fullName: Mirage.ILoggerExtensions.LogEnabled(ILogger)
+  href: api/Mirage.ILoggerExtensions.html#Mirage_ILoggerExtensions_LogEnabled_UnityEngine_ILogger_
+  commentId: M:Mirage.ILoggerExtensions.LogEnabled(UnityEngine.ILogger)
+  fullName: Mirage.ILoggerExtensions.LogEnabled(UnityEngine.ILogger)
   nameWithType: ILoggerExtensions.LogEnabled(ILogger)
 - uid: Mirage.ILoggerExtensions.LogEnabled*
   name: LogEnabled
@@ -1307,11 +1307,11 @@ references:
   isSpec: "True"
   fullName: Mirage.ILoggerExtensions.LogEnabled
   nameWithType: ILoggerExtensions.LogEnabled
-- uid: Mirage.ILoggerExtensions.LogError(ILogger,System.Object)
+- uid: Mirage.ILoggerExtensions.LogError(UnityEngine.ILogger,System.Object)
   name: LogError(ILogger, Object)
-  href: api/Mirage.ILoggerExtensions.html#Mirage_ILoggerExtensions_LogError_ILogger_System_Object_
-  commentId: M:Mirage.ILoggerExtensions.LogError(ILogger,System.Object)
-  fullName: Mirage.ILoggerExtensions.LogError(ILogger, System.Object)
+  href: api/Mirage.ILoggerExtensions.html#Mirage_ILoggerExtensions_LogError_UnityEngine_ILogger_System_Object_
+  commentId: M:Mirage.ILoggerExtensions.LogError(UnityEngine.ILogger,System.Object)
+  fullName: Mirage.ILoggerExtensions.LogError(UnityEngine.ILogger, System.Object)
   nameWithType: ILoggerExtensions.LogError(ILogger, Object)
 - uid: Mirage.ILoggerExtensions.LogError*
   name: LogError
@@ -1320,11 +1320,11 @@ references:
   isSpec: "True"
   fullName: Mirage.ILoggerExtensions.LogError
   nameWithType: ILoggerExtensions.LogError
-- uid: Mirage.ILoggerExtensions.LogWarning(ILogger,System.Object)
+- uid: Mirage.ILoggerExtensions.LogWarning(UnityEngine.ILogger,System.Object)
   name: LogWarning(ILogger, Object)
-  href: api/Mirage.ILoggerExtensions.html#Mirage_ILoggerExtensions_LogWarning_ILogger_System_Object_
-  commentId: M:Mirage.ILoggerExtensions.LogWarning(ILogger,System.Object)
-  fullName: Mirage.ILoggerExtensions.LogWarning(ILogger, System.Object)
+  href: api/Mirage.ILoggerExtensions.html#Mirage_ILoggerExtensions_LogWarning_UnityEngine_ILogger_System_Object_
+  commentId: M:Mirage.ILoggerExtensions.LogWarning(UnityEngine.ILogger,System.Object)
+  fullName: Mirage.ILoggerExtensions.LogWarning(UnityEngine.ILogger, System.Object)
   nameWithType: ILoggerExtensions.LogWarning(ILogger, Object)
 - uid: Mirage.ILoggerExtensions.LogWarning*
   name: LogWarning
@@ -1333,11 +1333,11 @@ references:
   isSpec: "True"
   fullName: Mirage.ILoggerExtensions.LogWarning
   nameWithType: ILoggerExtensions.LogWarning
-- uid: Mirage.ILoggerExtensions.WarnEnabled(ILogger)
+- uid: Mirage.ILoggerExtensions.WarnEnabled(UnityEngine.ILogger)
   name: WarnEnabled(ILogger)
-  href: api/Mirage.ILoggerExtensions.html#Mirage_ILoggerExtensions_WarnEnabled_ILogger_
-  commentId: M:Mirage.ILoggerExtensions.WarnEnabled(ILogger)
-  fullName: Mirage.ILoggerExtensions.WarnEnabled(ILogger)
+  href: api/Mirage.ILoggerExtensions.html#Mirage_ILoggerExtensions_WarnEnabled_UnityEngine_ILogger_
+  commentId: M:Mirage.ILoggerExtensions.WarnEnabled(UnityEngine.ILogger)
+  fullName: Mirage.ILoggerExtensions.WarnEnabled(UnityEngine.ILogger)
   nameWithType: ILoggerExtensions.WarnEnabled(ILogger)
 - uid: Mirage.ILoggerExtensions.WarnEnabled*
   name: WarnEnabled
@@ -2092,17 +2092,17 @@ references:
   commentId: T:Mirage.IServerObjectManager
   fullName: Mirage.IServerObjectManager
   nameWithType: IServerObjectManager
-- uid: Mirage.IServerObjectManager.AddPlayerForConnection(Mirage.INetworkConnection,GameObject)
+- uid: Mirage.IServerObjectManager.AddPlayerForConnection(Mirage.INetworkConnection,UnityEngine.GameObject)
   name: AddPlayerForConnection(INetworkConnection, GameObject)
-  href: api/Mirage.IServerObjectManager.html#Mirage_IServerObjectManager_AddPlayerForConnection_Mirage_INetworkConnection_GameObject_
-  commentId: M:Mirage.IServerObjectManager.AddPlayerForConnection(Mirage.INetworkConnection,GameObject)
-  fullName: Mirage.IServerObjectManager.AddPlayerForConnection(Mirage.INetworkConnection, GameObject)
+  href: api/Mirage.IServerObjectManager.html#Mirage_IServerObjectManager_AddPlayerForConnection_Mirage_INetworkConnection_UnityEngine_GameObject_
+  commentId: M:Mirage.IServerObjectManager.AddPlayerForConnection(Mirage.INetworkConnection,UnityEngine.GameObject)
+  fullName: Mirage.IServerObjectManager.AddPlayerForConnection(Mirage.INetworkConnection, UnityEngine.GameObject)
   nameWithType: IServerObjectManager.AddPlayerForConnection(INetworkConnection, GameObject)
-- uid: Mirage.IServerObjectManager.AddPlayerForConnection(Mirage.INetworkConnection,GameObject,System.Guid)
+- uid: Mirage.IServerObjectManager.AddPlayerForConnection(Mirage.INetworkConnection,UnityEngine.GameObject,System.Guid)
   name: AddPlayerForConnection(INetworkConnection, GameObject, Guid)
-  href: api/Mirage.IServerObjectManager.html#Mirage_IServerObjectManager_AddPlayerForConnection_Mirage_INetworkConnection_GameObject_System_Guid_
-  commentId: M:Mirage.IServerObjectManager.AddPlayerForConnection(Mirage.INetworkConnection,GameObject,System.Guid)
-  fullName: Mirage.IServerObjectManager.AddPlayerForConnection(Mirage.INetworkConnection, GameObject, System.Guid)
+  href: api/Mirage.IServerObjectManager.html#Mirage_IServerObjectManager_AddPlayerForConnection_Mirage_INetworkConnection_UnityEngine_GameObject_System_Guid_
+  commentId: M:Mirage.IServerObjectManager.AddPlayerForConnection(Mirage.INetworkConnection,UnityEngine.GameObject,System.Guid)
+  fullName: Mirage.IServerObjectManager.AddPlayerForConnection(Mirage.INetworkConnection, UnityEngine.GameObject, System.Guid)
   nameWithType: IServerObjectManager.AddPlayerForConnection(INetworkConnection, GameObject, Guid)
 - uid: Mirage.IServerObjectManager.AddPlayerForConnection*
   name: AddPlayerForConnection
@@ -2111,11 +2111,11 @@ references:
   isSpec: "True"
   fullName: Mirage.IServerObjectManager.AddPlayerForConnection
   nameWithType: IServerObjectManager.AddPlayerForConnection
-- uid: Mirage.IServerObjectManager.Destroy(GameObject)
+- uid: Mirage.IServerObjectManager.Destroy(UnityEngine.GameObject)
   name: Destroy(GameObject)
-  href: api/Mirage.IServerObjectManager.html#Mirage_IServerObjectManager_Destroy_GameObject_
-  commentId: M:Mirage.IServerObjectManager.Destroy(GameObject)
-  fullName: Mirage.IServerObjectManager.Destroy(GameObject)
+  href: api/Mirage.IServerObjectManager.html#Mirage_IServerObjectManager_Destroy_UnityEngine_GameObject_
+  commentId: M:Mirage.IServerObjectManager.Destroy(UnityEngine.GameObject)
+  fullName: Mirage.IServerObjectManager.Destroy(UnityEngine.GameObject)
   nameWithType: IServerObjectManager.Destroy(GameObject)
 - uid: Mirage.IServerObjectManager.Destroy*
   name: Destroy
@@ -2124,17 +2124,17 @@ references:
   isSpec: "True"
   fullName: Mirage.IServerObjectManager.Destroy
   nameWithType: IServerObjectManager.Destroy
-- uid: Mirage.IServerObjectManager.ReplacePlayerForConnection(Mirage.INetworkConnection,Mirage.NetworkClient,GameObject,System.Boolean)
+- uid: Mirage.IServerObjectManager.ReplacePlayerForConnection(Mirage.INetworkConnection,Mirage.NetworkClient,UnityEngine.GameObject,System.Boolean)
   name: ReplacePlayerForConnection(INetworkConnection, NetworkClient, GameObject, Boolean)
-  href: api/Mirage.IServerObjectManager.html#Mirage_IServerObjectManager_ReplacePlayerForConnection_Mirage_INetworkConnection_Mirage_NetworkClient_GameObject_System_Boolean_
-  commentId: M:Mirage.IServerObjectManager.ReplacePlayerForConnection(Mirage.INetworkConnection,Mirage.NetworkClient,GameObject,System.Boolean)
-  fullName: Mirage.IServerObjectManager.ReplacePlayerForConnection(Mirage.INetworkConnection, Mirage.NetworkClient, GameObject, System.Boolean)
+  href: api/Mirage.IServerObjectManager.html#Mirage_IServerObjectManager_ReplacePlayerForConnection_Mirage_INetworkConnection_Mirage_NetworkClient_UnityEngine_GameObject_System_Boolean_
+  commentId: M:Mirage.IServerObjectManager.ReplacePlayerForConnection(Mirage.INetworkConnection,Mirage.NetworkClient,UnityEngine.GameObject,System.Boolean)
+  fullName: Mirage.IServerObjectManager.ReplacePlayerForConnection(Mirage.INetworkConnection, Mirage.NetworkClient, UnityEngine.GameObject, System.Boolean)
   nameWithType: IServerObjectManager.ReplacePlayerForConnection(INetworkConnection, NetworkClient, GameObject, Boolean)
-- uid: Mirage.IServerObjectManager.ReplacePlayerForConnection(Mirage.INetworkConnection,Mirage.NetworkClient,GameObject,System.Guid,System.Boolean)
+- uid: Mirage.IServerObjectManager.ReplacePlayerForConnection(Mirage.INetworkConnection,Mirage.NetworkClient,UnityEngine.GameObject,System.Guid,System.Boolean)
   name: ReplacePlayerForConnection(INetworkConnection, NetworkClient, GameObject, Guid, Boolean)
-  href: api/Mirage.IServerObjectManager.html#Mirage_IServerObjectManager_ReplacePlayerForConnection_Mirage_INetworkConnection_Mirage_NetworkClient_GameObject_System_Guid_System_Boolean_
-  commentId: M:Mirage.IServerObjectManager.ReplacePlayerForConnection(Mirage.INetworkConnection,Mirage.NetworkClient,GameObject,System.Guid,System.Boolean)
-  fullName: Mirage.IServerObjectManager.ReplacePlayerForConnection(Mirage.INetworkConnection, Mirage.NetworkClient, GameObject, System.Guid, System.Boolean)
+  href: api/Mirage.IServerObjectManager.html#Mirage_IServerObjectManager_ReplacePlayerForConnection_Mirage_INetworkConnection_Mirage_NetworkClient_UnityEngine_GameObject_System_Guid_System_Boolean_
+  commentId: M:Mirage.IServerObjectManager.ReplacePlayerForConnection(Mirage.INetworkConnection,Mirage.NetworkClient,UnityEngine.GameObject,System.Guid,System.Boolean)
+  fullName: Mirage.IServerObjectManager.ReplacePlayerForConnection(Mirage.INetworkConnection, Mirage.NetworkClient, UnityEngine.GameObject, System.Guid, System.Boolean)
   nameWithType: IServerObjectManager.ReplacePlayerForConnection(INetworkConnection, NetworkClient, GameObject, Guid, Boolean)
 - uid: Mirage.IServerObjectManager.ReplacePlayerForConnection*
   name: ReplacePlayerForConnection
@@ -2143,24 +2143,24 @@ references:
   isSpec: "True"
   fullName: Mirage.IServerObjectManager.ReplacePlayerForConnection
   nameWithType: IServerObjectManager.ReplacePlayerForConnection
-- uid: Mirage.IServerObjectManager.Spawn(GameObject,GameObject)
-  name: Spawn(GameObject, GameObject)
-  href: api/Mirage.IServerObjectManager.html#Mirage_IServerObjectManager_Spawn_GameObject_GameObject_
-  commentId: M:Mirage.IServerObjectManager.Spawn(GameObject,GameObject)
-  fullName: Mirage.IServerObjectManager.Spawn(GameObject, GameObject)
-  nameWithType: IServerObjectManager.Spawn(GameObject, GameObject)
-- uid: Mirage.IServerObjectManager.Spawn(GameObject,Mirage.INetworkConnection)
+- uid: Mirage.IServerObjectManager.Spawn(UnityEngine.GameObject,Mirage.INetworkConnection)
   name: Spawn(GameObject, INetworkConnection)
-  href: api/Mirage.IServerObjectManager.html#Mirage_IServerObjectManager_Spawn_GameObject_Mirage_INetworkConnection_
-  commentId: M:Mirage.IServerObjectManager.Spawn(GameObject,Mirage.INetworkConnection)
-  fullName: Mirage.IServerObjectManager.Spawn(GameObject, Mirage.INetworkConnection)
+  href: api/Mirage.IServerObjectManager.html#Mirage_IServerObjectManager_Spawn_UnityEngine_GameObject_Mirage_INetworkConnection_
+  commentId: M:Mirage.IServerObjectManager.Spawn(UnityEngine.GameObject,Mirage.INetworkConnection)
+  fullName: Mirage.IServerObjectManager.Spawn(UnityEngine.GameObject, Mirage.INetworkConnection)
   nameWithType: IServerObjectManager.Spawn(GameObject, INetworkConnection)
-- uid: Mirage.IServerObjectManager.Spawn(GameObject,System.Guid,Mirage.INetworkConnection)
+- uid: Mirage.IServerObjectManager.Spawn(UnityEngine.GameObject,System.Guid,Mirage.INetworkConnection)
   name: Spawn(GameObject, Guid, INetworkConnection)
-  href: api/Mirage.IServerObjectManager.html#Mirage_IServerObjectManager_Spawn_GameObject_System_Guid_Mirage_INetworkConnection_
-  commentId: M:Mirage.IServerObjectManager.Spawn(GameObject,System.Guid,Mirage.INetworkConnection)
-  fullName: Mirage.IServerObjectManager.Spawn(GameObject, System.Guid, Mirage.INetworkConnection)
+  href: api/Mirage.IServerObjectManager.html#Mirage_IServerObjectManager_Spawn_UnityEngine_GameObject_System_Guid_Mirage_INetworkConnection_
+  commentId: M:Mirage.IServerObjectManager.Spawn(UnityEngine.GameObject,System.Guid,Mirage.INetworkConnection)
+  fullName: Mirage.IServerObjectManager.Spawn(UnityEngine.GameObject, System.Guid, Mirage.INetworkConnection)
   nameWithType: IServerObjectManager.Spawn(GameObject, Guid, INetworkConnection)
+- uid: Mirage.IServerObjectManager.Spawn(UnityEngine.GameObject,UnityEngine.GameObject)
+  name: Spawn(GameObject, GameObject)
+  href: api/Mirage.IServerObjectManager.html#Mirage_IServerObjectManager_Spawn_UnityEngine_GameObject_UnityEngine_GameObject_
+  commentId: M:Mirage.IServerObjectManager.Spawn(UnityEngine.GameObject,UnityEngine.GameObject)
+  fullName: Mirage.IServerObjectManager.Spawn(UnityEngine.GameObject, UnityEngine.GameObject)
+  nameWithType: IServerObjectManager.Spawn(GameObject, GameObject)
 - uid: Mirage.IServerObjectManager.Spawn*
   name: Spawn
   href: api/Mirage.IServerObjectManager.html#Mirage_IServerObjectManager_Spawn_
@@ -2194,11 +2194,11 @@ references:
   isSpec: "True"
   fullName: Mirage.IServerObjectManager.SpawnObjects
   nameWithType: IServerObjectManager.SpawnObjects
-- uid: Mirage.IServerObjectManager.UnSpawn(GameObject)
+- uid: Mirage.IServerObjectManager.UnSpawn(UnityEngine.GameObject)
   name: UnSpawn(GameObject)
-  href: api/Mirage.IServerObjectManager.html#Mirage_IServerObjectManager_UnSpawn_GameObject_
-  commentId: M:Mirage.IServerObjectManager.UnSpawn(GameObject)
-  fullName: Mirage.IServerObjectManager.UnSpawn(GameObject)
+  href: api/Mirage.IServerObjectManager.html#Mirage_IServerObjectManager_UnSpawn_UnityEngine_GameObject_
+  commentId: M:Mirage.IServerObjectManager.UnSpawn(UnityEngine.GameObject)
+  fullName: Mirage.IServerObjectManager.UnSpawn(UnityEngine.GameObject)
   nameWithType: IServerObjectManager.UnSpawn(GameObject)
 - uid: Mirage.IServerObjectManager.UnSpawn*
   name: UnSpawn
@@ -3547,17 +3547,17 @@ references:
   commentId: T:Mirage.LogFactory
   fullName: Mirage.LogFactory
   nameWithType: LogFactory
-- uid: Mirage.LogFactory.GetLogger(System.String,LogType)
+- uid: Mirage.LogFactory.GetLogger(System.String,UnityEngine.LogType)
   name: GetLogger(String, LogType)
-  href: api/Mirage.LogFactory.html#Mirage_LogFactory_GetLogger_System_String_LogType_
-  commentId: M:Mirage.LogFactory.GetLogger(System.String,LogType)
-  fullName: Mirage.LogFactory.GetLogger(System.String, LogType)
+  href: api/Mirage.LogFactory.html#Mirage_LogFactory_GetLogger_System_String_UnityEngine_LogType_
+  commentId: M:Mirage.LogFactory.GetLogger(System.String,UnityEngine.LogType)
+  fullName: Mirage.LogFactory.GetLogger(System.String, UnityEngine.LogType)
   nameWithType: LogFactory.GetLogger(String, LogType)
-- uid: Mirage.LogFactory.GetLogger(System.Type,LogType)
+- uid: Mirage.LogFactory.GetLogger(System.Type,UnityEngine.LogType)
   name: GetLogger(Type, LogType)
-  href: api/Mirage.LogFactory.html#Mirage_LogFactory_GetLogger_System_Type_LogType_
-  commentId: M:Mirage.LogFactory.GetLogger(System.Type,LogType)
-  fullName: Mirage.LogFactory.GetLogger(System.Type, LogType)
+  href: api/Mirage.LogFactory.html#Mirage_LogFactory_GetLogger_System_Type_UnityEngine_LogType_
+  commentId: M:Mirage.LogFactory.GetLogger(System.Type,UnityEngine.LogType)
+  fullName: Mirage.LogFactory.GetLogger(System.Type, UnityEngine.LogType)
   nameWithType: LogFactory.GetLogger(Type, LogType)
 - uid: Mirage.LogFactory.GetLogger*
   name: GetLogger
@@ -3566,13 +3566,13 @@ references:
   isSpec: "True"
   fullName: Mirage.LogFactory.GetLogger
   nameWithType: LogFactory.GetLogger
-- uid: Mirage.LogFactory.GetLogger``1(LogType)
+- uid: Mirage.LogFactory.GetLogger``1(UnityEngine.LogType)
   name: GetLogger<T>(LogType)
-  href: api/Mirage.LogFactory.html#Mirage_LogFactory_GetLogger__1_LogType_
-  commentId: M:Mirage.LogFactory.GetLogger``1(LogType)
+  href: api/Mirage.LogFactory.html#Mirage_LogFactory_GetLogger__1_UnityEngine_LogType_
+  commentId: M:Mirage.LogFactory.GetLogger``1(UnityEngine.LogType)
   name.vb: GetLogger(Of T)(LogType)
-  fullName: Mirage.LogFactory.GetLogger<T>(LogType)
-  fullName.vb: Mirage.LogFactory.GetLogger(Of T)(LogType)
+  fullName: Mirage.LogFactory.GetLogger<T>(UnityEngine.LogType)
+  fullName.vb: Mirage.LogFactory.GetLogger(Of T)(UnityEngine.LogType)
   nameWithType: LogFactory.GetLogger<T>(LogType)
   nameWithType.vb: LogFactory.GetLogger(Of T)(LogType)
 - uid: Mirage.LogSettings
@@ -7730,11 +7730,11 @@ references:
   isSpec: "True"
   fullName: Mirage.NetworkWriterExtensions.WriteChar
   nameWithType: NetworkWriterExtensions.WriteChar
-- uid: Mirage.NetworkWriterExtensions.WriteColor(Mirage.NetworkWriter,Color)
+- uid: Mirage.NetworkWriterExtensions.WriteColor(Mirage.NetworkWriter,UnityEngine.Color)
   name: WriteColor(NetworkWriter, Color)
-  href: api/Mirage.NetworkWriterExtensions.html#Mirage_NetworkWriterExtensions_WriteColor_Mirage_NetworkWriter_Color_
-  commentId: M:Mirage.NetworkWriterExtensions.WriteColor(Mirage.NetworkWriter,Color)
-  fullName: Mirage.NetworkWriterExtensions.WriteColor(Mirage.NetworkWriter, Color)
+  href: api/Mirage.NetworkWriterExtensions.html#Mirage_NetworkWriterExtensions_WriteColor_Mirage_NetworkWriter_UnityEngine_Color_
+  commentId: M:Mirage.NetworkWriterExtensions.WriteColor(Mirage.NetworkWriter,UnityEngine.Color)
+  fullName: Mirage.NetworkWriterExtensions.WriteColor(Mirage.NetworkWriter, UnityEngine.Color)
   nameWithType: NetworkWriterExtensions.WriteColor(NetworkWriter, Color)
 - uid: Mirage.NetworkWriterExtensions.WriteColor*
   name: WriteColor
@@ -7743,11 +7743,11 @@ references:
   isSpec: "True"
   fullName: Mirage.NetworkWriterExtensions.WriteColor
   nameWithType: NetworkWriterExtensions.WriteColor
-- uid: Mirage.NetworkWriterExtensions.WriteColor32(Mirage.NetworkWriter,Color32)
+- uid: Mirage.NetworkWriterExtensions.WriteColor32(Mirage.NetworkWriter,UnityEngine.Color32)
   name: WriteColor32(NetworkWriter, Color32)
-  href: api/Mirage.NetworkWriterExtensions.html#Mirage_NetworkWriterExtensions_WriteColor32_Mirage_NetworkWriter_Color32_
-  commentId: M:Mirage.NetworkWriterExtensions.WriteColor32(Mirage.NetworkWriter,Color32)
-  fullName: Mirage.NetworkWriterExtensions.WriteColor32(Mirage.NetworkWriter, Color32)
+  href: api/Mirage.NetworkWriterExtensions.html#Mirage_NetworkWriterExtensions_WriteColor32_Mirage_NetworkWriter_UnityEngine_Color32_
+  commentId: M:Mirage.NetworkWriterExtensions.WriteColor32(Mirage.NetworkWriter,UnityEngine.Color32)
+  fullName: Mirage.NetworkWriterExtensions.WriteColor32(Mirage.NetworkWriter, UnityEngine.Color32)
   nameWithType: NetworkWriterExtensions.WriteColor32(NetworkWriter, Color32)
 - uid: Mirage.NetworkWriterExtensions.WriteColor32*
   name: WriteColor32
@@ -7782,11 +7782,11 @@ references:
   isSpec: "True"
   fullName: Mirage.NetworkWriterExtensions.WriteDouble
   nameWithType: NetworkWriterExtensions.WriteDouble
-- uid: Mirage.NetworkWriterExtensions.WriteGameObject(Mirage.NetworkWriter,GameObject)
+- uid: Mirage.NetworkWriterExtensions.WriteGameObject(Mirage.NetworkWriter,UnityEngine.GameObject)
   name: WriteGameObject(NetworkWriter, GameObject)
-  href: api/Mirage.NetworkWriterExtensions.html#Mirage_NetworkWriterExtensions_WriteGameObject_Mirage_NetworkWriter_GameObject_
-  commentId: M:Mirage.NetworkWriterExtensions.WriteGameObject(Mirage.NetworkWriter,GameObject)
-  fullName: Mirage.NetworkWriterExtensions.WriteGameObject(Mirage.NetworkWriter, GameObject)
+  href: api/Mirage.NetworkWriterExtensions.html#Mirage_NetworkWriterExtensions_WriteGameObject_Mirage_NetworkWriter_UnityEngine_GameObject_
+  commentId: M:Mirage.NetworkWriterExtensions.WriteGameObject(Mirage.NetworkWriter,UnityEngine.GameObject)
+  fullName: Mirage.NetworkWriterExtensions.WriteGameObject(Mirage.NetworkWriter, UnityEngine.GameObject)
   nameWithType: NetworkWriterExtensions.WriteGameObject(NetworkWriter, GameObject)
 - uid: Mirage.NetworkWriterExtensions.WriteGameObject*
   name: WriteGameObject
@@ -7837,11 +7837,11 @@ references:
   fullName.vb: Mirage.NetworkWriterExtensions.WriteList(Of T)(Mirage.NetworkWriter, System.Collections.Generic.List(Of T))
   nameWithType: NetworkWriterExtensions.WriteList<T>(NetworkWriter, List<T>)
   nameWithType.vb: NetworkWriterExtensions.WriteList(Of T)(NetworkWriter, List(Of T))
-- uid: Mirage.NetworkWriterExtensions.WriteMatrix4X4(Mirage.NetworkWriter,Matrix4x4)
+- uid: Mirage.NetworkWriterExtensions.WriteMatrix4X4(Mirage.NetworkWriter,UnityEngine.Matrix4x4)
   name: WriteMatrix4X4(NetworkWriter, Matrix4x4)
-  href: api/Mirage.NetworkWriterExtensions.html#Mirage_NetworkWriterExtensions_WriteMatrix4X4_Mirage_NetworkWriter_Matrix4x4_
-  commentId: M:Mirage.NetworkWriterExtensions.WriteMatrix4X4(Mirage.NetworkWriter,Matrix4x4)
-  fullName: Mirage.NetworkWriterExtensions.WriteMatrix4X4(Mirage.NetworkWriter, Matrix4x4)
+  href: api/Mirage.NetworkWriterExtensions.html#Mirage_NetworkWriterExtensions_WriteMatrix4X4_Mirage_NetworkWriter_UnityEngine_Matrix4x4_
+  commentId: M:Mirage.NetworkWriterExtensions.WriteMatrix4X4(Mirage.NetworkWriter,UnityEngine.Matrix4x4)
+  fullName: Mirage.NetworkWriterExtensions.WriteMatrix4X4(Mirage.NetworkWriter, UnityEngine.Matrix4x4)
   nameWithType: NetworkWriterExtensions.WriteMatrix4X4(NetworkWriter, Matrix4x4)
 - uid: Mirage.NetworkWriterExtensions.WriteMatrix4X4*
   name: WriteMatrix4X4
@@ -7928,11 +7928,11 @@ references:
   isSpec: "True"
   fullName: Mirage.NetworkWriterExtensions.WritePackedUInt64
   nameWithType: NetworkWriterExtensions.WritePackedUInt64
-- uid: Mirage.NetworkWriterExtensions.WritePlane(Mirage.NetworkWriter,Plane)
+- uid: Mirage.NetworkWriterExtensions.WritePlane(Mirage.NetworkWriter,UnityEngine.Plane)
   name: WritePlane(NetworkWriter, Plane)
-  href: api/Mirage.NetworkWriterExtensions.html#Mirage_NetworkWriterExtensions_WritePlane_Mirage_NetworkWriter_Plane_
-  commentId: M:Mirage.NetworkWriterExtensions.WritePlane(Mirage.NetworkWriter,Plane)
-  fullName: Mirage.NetworkWriterExtensions.WritePlane(Mirage.NetworkWriter, Plane)
+  href: api/Mirage.NetworkWriterExtensions.html#Mirage_NetworkWriterExtensions_WritePlane_Mirage_NetworkWriter_UnityEngine_Plane_
+  commentId: M:Mirage.NetworkWriterExtensions.WritePlane(Mirage.NetworkWriter,UnityEngine.Plane)
+  fullName: Mirage.NetworkWriterExtensions.WritePlane(Mirage.NetworkWriter, UnityEngine.Plane)
   nameWithType: NetworkWriterExtensions.WritePlane(NetworkWriter, Plane)
 - uid: Mirage.NetworkWriterExtensions.WritePlane*
   name: WritePlane
@@ -7941,11 +7941,11 @@ references:
   isSpec: "True"
   fullName: Mirage.NetworkWriterExtensions.WritePlane
   nameWithType: NetworkWriterExtensions.WritePlane
-- uid: Mirage.NetworkWriterExtensions.WriteQuaternion(Mirage.NetworkWriter,Quaternion)
+- uid: Mirage.NetworkWriterExtensions.WriteQuaternion(Mirage.NetworkWriter,UnityEngine.Quaternion)
   name: WriteQuaternion(NetworkWriter, Quaternion)
-  href: api/Mirage.NetworkWriterExtensions.html#Mirage_NetworkWriterExtensions_WriteQuaternion_Mirage_NetworkWriter_Quaternion_
-  commentId: M:Mirage.NetworkWriterExtensions.WriteQuaternion(Mirage.NetworkWriter,Quaternion)
-  fullName: Mirage.NetworkWriterExtensions.WriteQuaternion(Mirage.NetworkWriter, Quaternion)
+  href: api/Mirage.NetworkWriterExtensions.html#Mirage_NetworkWriterExtensions_WriteQuaternion_Mirage_NetworkWriter_UnityEngine_Quaternion_
+  commentId: M:Mirage.NetworkWriterExtensions.WriteQuaternion(Mirage.NetworkWriter,UnityEngine.Quaternion)
+  fullName: Mirage.NetworkWriterExtensions.WriteQuaternion(Mirage.NetworkWriter, UnityEngine.Quaternion)
   nameWithType: NetworkWriterExtensions.WriteQuaternion(NetworkWriter, Quaternion)
 - uid: Mirage.NetworkWriterExtensions.WriteQuaternion*
   name: WriteQuaternion
@@ -7954,11 +7954,11 @@ references:
   isSpec: "True"
   fullName: Mirage.NetworkWriterExtensions.WriteQuaternion
   nameWithType: NetworkWriterExtensions.WriteQuaternion
-- uid: Mirage.NetworkWriterExtensions.WriteRay(Mirage.NetworkWriter,Ray)
+- uid: Mirage.NetworkWriterExtensions.WriteRay(Mirage.NetworkWriter,UnityEngine.Ray)
   name: WriteRay(NetworkWriter, Ray)
-  href: api/Mirage.NetworkWriterExtensions.html#Mirage_NetworkWriterExtensions_WriteRay_Mirage_NetworkWriter_Ray_
-  commentId: M:Mirage.NetworkWriterExtensions.WriteRay(Mirage.NetworkWriter,Ray)
-  fullName: Mirage.NetworkWriterExtensions.WriteRay(Mirage.NetworkWriter, Ray)
+  href: api/Mirage.NetworkWriterExtensions.html#Mirage_NetworkWriterExtensions_WriteRay_Mirage_NetworkWriter_UnityEngine_Ray_
+  commentId: M:Mirage.NetworkWriterExtensions.WriteRay(Mirage.NetworkWriter,UnityEngine.Ray)
+  fullName: Mirage.NetworkWriterExtensions.WriteRay(Mirage.NetworkWriter, UnityEngine.Ray)
   nameWithType: NetworkWriterExtensions.WriteRay(NetworkWriter, Ray)
 - uid: Mirage.NetworkWriterExtensions.WriteRay*
   name: WriteRay
@@ -7967,11 +7967,11 @@ references:
   isSpec: "True"
   fullName: Mirage.NetworkWriterExtensions.WriteRay
   nameWithType: NetworkWriterExtensions.WriteRay
-- uid: Mirage.NetworkWriterExtensions.WriteRect(Mirage.NetworkWriter,Rect)
+- uid: Mirage.NetworkWriterExtensions.WriteRect(Mirage.NetworkWriter,UnityEngine.Rect)
   name: WriteRect(NetworkWriter, Rect)
-  href: api/Mirage.NetworkWriterExtensions.html#Mirage_NetworkWriterExtensions_WriteRect_Mirage_NetworkWriter_Rect_
-  commentId: M:Mirage.NetworkWriterExtensions.WriteRect(Mirage.NetworkWriter,Rect)
-  fullName: Mirage.NetworkWriterExtensions.WriteRect(Mirage.NetworkWriter, Rect)
+  href: api/Mirage.NetworkWriterExtensions.html#Mirage_NetworkWriterExtensions_WriteRect_Mirage_NetworkWriter_UnityEngine_Rect_
+  commentId: M:Mirage.NetworkWriterExtensions.WriteRect(Mirage.NetworkWriter,UnityEngine.Rect)
+  fullName: Mirage.NetworkWriterExtensions.WriteRect(Mirage.NetworkWriter, UnityEngine.Rect)
   nameWithType: NetworkWriterExtensions.WriteRect(NetworkWriter, Rect)
 - uid: Mirage.NetworkWriterExtensions.WriteRect*
   name: WriteRect
@@ -8045,11 +8045,11 @@ references:
   isSpec: "True"
   fullName: Mirage.NetworkWriterExtensions.WriteUri
   nameWithType: NetworkWriterExtensions.WriteUri
-- uid: Mirage.NetworkWriterExtensions.WriteVector2(Mirage.NetworkWriter,Vector2)
+- uid: Mirage.NetworkWriterExtensions.WriteVector2(Mirage.NetworkWriter,UnityEngine.Vector2)
   name: WriteVector2(NetworkWriter, Vector2)
-  href: api/Mirage.NetworkWriterExtensions.html#Mirage_NetworkWriterExtensions_WriteVector2_Mirage_NetworkWriter_Vector2_
-  commentId: M:Mirage.NetworkWriterExtensions.WriteVector2(Mirage.NetworkWriter,Vector2)
-  fullName: Mirage.NetworkWriterExtensions.WriteVector2(Mirage.NetworkWriter, Vector2)
+  href: api/Mirage.NetworkWriterExtensions.html#Mirage_NetworkWriterExtensions_WriteVector2_Mirage_NetworkWriter_UnityEngine_Vector2_
+  commentId: M:Mirage.NetworkWriterExtensions.WriteVector2(Mirage.NetworkWriter,UnityEngine.Vector2)
+  fullName: Mirage.NetworkWriterExtensions.WriteVector2(Mirage.NetworkWriter, UnityEngine.Vector2)
   nameWithType: NetworkWriterExtensions.WriteVector2(NetworkWriter, Vector2)
 - uid: Mirage.NetworkWriterExtensions.WriteVector2*
   name: WriteVector2
@@ -8058,11 +8058,11 @@ references:
   isSpec: "True"
   fullName: Mirage.NetworkWriterExtensions.WriteVector2
   nameWithType: NetworkWriterExtensions.WriteVector2
-- uid: Mirage.NetworkWriterExtensions.WriteVector2Int(Mirage.NetworkWriter,Vector2Int)
+- uid: Mirage.NetworkWriterExtensions.WriteVector2Int(Mirage.NetworkWriter,UnityEngine.Vector2Int)
   name: WriteVector2Int(NetworkWriter, Vector2Int)
-  href: api/Mirage.NetworkWriterExtensions.html#Mirage_NetworkWriterExtensions_WriteVector2Int_Mirage_NetworkWriter_Vector2Int_
-  commentId: M:Mirage.NetworkWriterExtensions.WriteVector2Int(Mirage.NetworkWriter,Vector2Int)
-  fullName: Mirage.NetworkWriterExtensions.WriteVector2Int(Mirage.NetworkWriter, Vector2Int)
+  href: api/Mirage.NetworkWriterExtensions.html#Mirage_NetworkWriterExtensions_WriteVector2Int_Mirage_NetworkWriter_UnityEngine_Vector2Int_
+  commentId: M:Mirage.NetworkWriterExtensions.WriteVector2Int(Mirage.NetworkWriter,UnityEngine.Vector2Int)
+  fullName: Mirage.NetworkWriterExtensions.WriteVector2Int(Mirage.NetworkWriter, UnityEngine.Vector2Int)
   nameWithType: NetworkWriterExtensions.WriteVector2Int(NetworkWriter, Vector2Int)
 - uid: Mirage.NetworkWriterExtensions.WriteVector2Int*
   name: WriteVector2Int
@@ -8071,11 +8071,11 @@ references:
   isSpec: "True"
   fullName: Mirage.NetworkWriterExtensions.WriteVector2Int
   nameWithType: NetworkWriterExtensions.WriteVector2Int
-- uid: Mirage.NetworkWriterExtensions.WriteVector3(Mirage.NetworkWriter,Vector3)
+- uid: Mirage.NetworkWriterExtensions.WriteVector3(Mirage.NetworkWriter,UnityEngine.Vector3)
   name: WriteVector3(NetworkWriter, Vector3)
-  href: api/Mirage.NetworkWriterExtensions.html#Mirage_NetworkWriterExtensions_WriteVector3_Mirage_NetworkWriter_Vector3_
-  commentId: M:Mirage.NetworkWriterExtensions.WriteVector3(Mirage.NetworkWriter,Vector3)
-  fullName: Mirage.NetworkWriterExtensions.WriteVector3(Mirage.NetworkWriter, Vector3)
+  href: api/Mirage.NetworkWriterExtensions.html#Mirage_NetworkWriterExtensions_WriteVector3_Mirage_NetworkWriter_UnityEngine_Vector3_
+  commentId: M:Mirage.NetworkWriterExtensions.WriteVector3(Mirage.NetworkWriter,UnityEngine.Vector3)
+  fullName: Mirage.NetworkWriterExtensions.WriteVector3(Mirage.NetworkWriter, UnityEngine.Vector3)
   nameWithType: NetworkWriterExtensions.WriteVector3(NetworkWriter, Vector3)
 - uid: Mirage.NetworkWriterExtensions.WriteVector3*
   name: WriteVector3
@@ -8084,11 +8084,11 @@ references:
   isSpec: "True"
   fullName: Mirage.NetworkWriterExtensions.WriteVector3
   nameWithType: NetworkWriterExtensions.WriteVector3
-- uid: Mirage.NetworkWriterExtensions.WriteVector3Int(Mirage.NetworkWriter,Vector3Int)
+- uid: Mirage.NetworkWriterExtensions.WriteVector3Int(Mirage.NetworkWriter,UnityEngine.Vector3Int)
   name: WriteVector3Int(NetworkWriter, Vector3Int)
-  href: api/Mirage.NetworkWriterExtensions.html#Mirage_NetworkWriterExtensions_WriteVector3Int_Mirage_NetworkWriter_Vector3Int_
-  commentId: M:Mirage.NetworkWriterExtensions.WriteVector3Int(Mirage.NetworkWriter,Vector3Int)
-  fullName: Mirage.NetworkWriterExtensions.WriteVector3Int(Mirage.NetworkWriter, Vector3Int)
+  href: api/Mirage.NetworkWriterExtensions.html#Mirage_NetworkWriterExtensions_WriteVector3Int_Mirage_NetworkWriter_UnityEngine_Vector3Int_
+  commentId: M:Mirage.NetworkWriterExtensions.WriteVector3Int(Mirage.NetworkWriter,UnityEngine.Vector3Int)
+  fullName: Mirage.NetworkWriterExtensions.WriteVector3Int(Mirage.NetworkWriter, UnityEngine.Vector3Int)
   nameWithType: NetworkWriterExtensions.WriteVector3Int(NetworkWriter, Vector3Int)
 - uid: Mirage.NetworkWriterExtensions.WriteVector3Int*
   name: WriteVector3Int
@@ -8097,11 +8097,11 @@ references:
   isSpec: "True"
   fullName: Mirage.NetworkWriterExtensions.WriteVector3Int
   nameWithType: NetworkWriterExtensions.WriteVector3Int
-- uid: Mirage.NetworkWriterExtensions.WriteVector4(Mirage.NetworkWriter,Vector4)
+- uid: Mirage.NetworkWriterExtensions.WriteVector4(Mirage.NetworkWriter,UnityEngine.Vector4)
   name: WriteVector4(NetworkWriter, Vector4)
-  href: api/Mirage.NetworkWriterExtensions.html#Mirage_NetworkWriterExtensions_WriteVector4_Mirage_NetworkWriter_Vector4_
-  commentId: M:Mirage.NetworkWriterExtensions.WriteVector4(Mirage.NetworkWriter,Vector4)
-  fullName: Mirage.NetworkWriterExtensions.WriteVector4(Mirage.NetworkWriter, Vector4)
+  href: api/Mirage.NetworkWriterExtensions.html#Mirage_NetworkWriterExtensions_WriteVector4_Mirage_NetworkWriter_UnityEngine_Vector4_
+  commentId: M:Mirage.NetworkWriterExtensions.WriteVector4(Mirage.NetworkWriter,UnityEngine.Vector4)
+  fullName: Mirage.NetworkWriterExtensions.WriteVector4(Mirage.NetworkWriter, UnityEngine.Vector4)
   nameWithType: NetworkWriterExtensions.WriteVector4(NetworkWriter, Vector4)
 - uid: Mirage.NetworkWriterExtensions.WriteVector4*
   name: WriteVector4
@@ -8882,17 +8882,17 @@ references:
   commentId: T:Mirage.ServerObjectManager
   fullName: Mirage.ServerObjectManager
   nameWithType: ServerObjectManager
-- uid: Mirage.ServerObjectManager.AddPlayerForConnection(Mirage.INetworkConnection,GameObject)
+- uid: Mirage.ServerObjectManager.AddPlayerForConnection(Mirage.INetworkConnection,UnityEngine.GameObject)
   name: AddPlayerForConnection(INetworkConnection, GameObject)
-  href: api/Mirage.ServerObjectManager.html#Mirage_ServerObjectManager_AddPlayerForConnection_Mirage_INetworkConnection_GameObject_
-  commentId: M:Mirage.ServerObjectManager.AddPlayerForConnection(Mirage.INetworkConnection,GameObject)
-  fullName: Mirage.ServerObjectManager.AddPlayerForConnection(Mirage.INetworkConnection, GameObject)
+  href: api/Mirage.ServerObjectManager.html#Mirage_ServerObjectManager_AddPlayerForConnection_Mirage_INetworkConnection_UnityEngine_GameObject_
+  commentId: M:Mirage.ServerObjectManager.AddPlayerForConnection(Mirage.INetworkConnection,UnityEngine.GameObject)
+  fullName: Mirage.ServerObjectManager.AddPlayerForConnection(Mirage.INetworkConnection, UnityEngine.GameObject)
   nameWithType: ServerObjectManager.AddPlayerForConnection(INetworkConnection, GameObject)
-- uid: Mirage.ServerObjectManager.AddPlayerForConnection(Mirage.INetworkConnection,GameObject,System.Guid)
+- uid: Mirage.ServerObjectManager.AddPlayerForConnection(Mirage.INetworkConnection,UnityEngine.GameObject,System.Guid)
   name: AddPlayerForConnection(INetworkConnection, GameObject, Guid)
-  href: api/Mirage.ServerObjectManager.html#Mirage_ServerObjectManager_AddPlayerForConnection_Mirage_INetworkConnection_GameObject_System_Guid_
-  commentId: M:Mirage.ServerObjectManager.AddPlayerForConnection(Mirage.INetworkConnection,GameObject,System.Guid)
-  fullName: Mirage.ServerObjectManager.AddPlayerForConnection(Mirage.INetworkConnection, GameObject, System.Guid)
+  href: api/Mirage.ServerObjectManager.html#Mirage_ServerObjectManager_AddPlayerForConnection_Mirage_INetworkConnection_UnityEngine_GameObject_System_Guid_
+  commentId: M:Mirage.ServerObjectManager.AddPlayerForConnection(Mirage.INetworkConnection,UnityEngine.GameObject,System.Guid)
+  fullName: Mirage.ServerObjectManager.AddPlayerForConnection(Mirage.INetworkConnection, UnityEngine.GameObject, System.Guid)
   nameWithType: ServerObjectManager.AddPlayerForConnection(INetworkConnection, GameObject, Guid)
 - uid: Mirage.ServerObjectManager.AddPlayerForConnection*
   name: AddPlayerForConnection
@@ -8901,11 +8901,11 @@ references:
   isSpec: "True"
   fullName: Mirage.ServerObjectManager.AddPlayerForConnection
   nameWithType: ServerObjectManager.AddPlayerForConnection
-- uid: Mirage.ServerObjectManager.Destroy(GameObject)
+- uid: Mirage.ServerObjectManager.Destroy(UnityEngine.GameObject)
   name: Destroy(GameObject)
-  href: api/Mirage.ServerObjectManager.html#Mirage_ServerObjectManager_Destroy_GameObject_
-  commentId: M:Mirage.ServerObjectManager.Destroy(GameObject)
-  fullName: Mirage.ServerObjectManager.Destroy(GameObject)
+  href: api/Mirage.ServerObjectManager.html#Mirage_ServerObjectManager_Destroy_UnityEngine_GameObject_
+  commentId: M:Mirage.ServerObjectManager.Destroy(UnityEngine.GameObject)
+  fullName: Mirage.ServerObjectManager.Destroy(UnityEngine.GameObject)
   nameWithType: ServerObjectManager.Destroy(GameObject)
 - uid: Mirage.ServerObjectManager.Destroy*
   name: Destroy
@@ -8955,17 +8955,17 @@ references:
   isSpec: "True"
   fullName: Mirage.ServerObjectManager.RemovePlayerForConnection
   nameWithType: ServerObjectManager.RemovePlayerForConnection
-- uid: Mirage.ServerObjectManager.ReplacePlayerForConnection(Mirage.INetworkConnection,Mirage.NetworkClient,GameObject,System.Boolean)
+- uid: Mirage.ServerObjectManager.ReplacePlayerForConnection(Mirage.INetworkConnection,Mirage.NetworkClient,UnityEngine.GameObject,System.Boolean)
   name: ReplacePlayerForConnection(INetworkConnection, NetworkClient, GameObject, Boolean)
-  href: api/Mirage.ServerObjectManager.html#Mirage_ServerObjectManager_ReplacePlayerForConnection_Mirage_INetworkConnection_Mirage_NetworkClient_GameObject_System_Boolean_
-  commentId: M:Mirage.ServerObjectManager.ReplacePlayerForConnection(Mirage.INetworkConnection,Mirage.NetworkClient,GameObject,System.Boolean)
-  fullName: Mirage.ServerObjectManager.ReplacePlayerForConnection(Mirage.INetworkConnection, Mirage.NetworkClient, GameObject, System.Boolean)
+  href: api/Mirage.ServerObjectManager.html#Mirage_ServerObjectManager_ReplacePlayerForConnection_Mirage_INetworkConnection_Mirage_NetworkClient_UnityEngine_GameObject_System_Boolean_
+  commentId: M:Mirage.ServerObjectManager.ReplacePlayerForConnection(Mirage.INetworkConnection,Mirage.NetworkClient,UnityEngine.GameObject,System.Boolean)
+  fullName: Mirage.ServerObjectManager.ReplacePlayerForConnection(Mirage.INetworkConnection, Mirage.NetworkClient, UnityEngine.GameObject, System.Boolean)
   nameWithType: ServerObjectManager.ReplacePlayerForConnection(INetworkConnection, NetworkClient, GameObject, Boolean)
-- uid: Mirage.ServerObjectManager.ReplacePlayerForConnection(Mirage.INetworkConnection,Mirage.NetworkClient,GameObject,System.Guid,System.Boolean)
+- uid: Mirage.ServerObjectManager.ReplacePlayerForConnection(Mirage.INetworkConnection,Mirage.NetworkClient,UnityEngine.GameObject,System.Guid,System.Boolean)
   name: ReplacePlayerForConnection(INetworkConnection, NetworkClient, GameObject, Guid, Boolean)
-  href: api/Mirage.ServerObjectManager.html#Mirage_ServerObjectManager_ReplacePlayerForConnection_Mirage_INetworkConnection_Mirage_NetworkClient_GameObject_System_Guid_System_Boolean_
-  commentId: M:Mirage.ServerObjectManager.ReplacePlayerForConnection(Mirage.INetworkConnection,Mirage.NetworkClient,GameObject,System.Guid,System.Boolean)
-  fullName: Mirage.ServerObjectManager.ReplacePlayerForConnection(Mirage.INetworkConnection, Mirage.NetworkClient, GameObject, System.Guid, System.Boolean)
+  href: api/Mirage.ServerObjectManager.html#Mirage_ServerObjectManager_ReplacePlayerForConnection_Mirage_INetworkConnection_Mirage_NetworkClient_UnityEngine_GameObject_System_Guid_System_Boolean_
+  commentId: M:Mirage.ServerObjectManager.ReplacePlayerForConnection(Mirage.INetworkConnection,Mirage.NetworkClient,UnityEngine.GameObject,System.Guid,System.Boolean)
+  fullName: Mirage.ServerObjectManager.ReplacePlayerForConnection(Mirage.INetworkConnection, Mirage.NetworkClient, UnityEngine.GameObject, System.Guid, System.Boolean)
   nameWithType: ServerObjectManager.ReplacePlayerForConnection(INetworkConnection, NetworkClient, GameObject, Guid, Boolean)
 - uid: Mirage.ServerObjectManager.ReplacePlayerForConnection*
   name: ReplacePlayerForConnection
@@ -9019,30 +9019,30 @@ references:
   isSpec: "True"
   fullName: Mirage.ServerObjectManager.SetClientReady
   nameWithType: ServerObjectManager.SetClientReady
-- uid: Mirage.ServerObjectManager.Spawn(GameObject,GameObject)
-  name: Spawn(GameObject, GameObject)
-  href: api/Mirage.ServerObjectManager.html#Mirage_ServerObjectManager_Spawn_GameObject_GameObject_
-  commentId: M:Mirage.ServerObjectManager.Spawn(GameObject,GameObject)
-  fullName: Mirage.ServerObjectManager.Spawn(GameObject, GameObject)
-  nameWithType: ServerObjectManager.Spawn(GameObject, GameObject)
-- uid: Mirage.ServerObjectManager.Spawn(GameObject,Mirage.INetworkConnection)
-  name: Spawn(GameObject, INetworkConnection)
-  href: api/Mirage.ServerObjectManager.html#Mirage_ServerObjectManager_Spawn_GameObject_Mirage_INetworkConnection_
-  commentId: M:Mirage.ServerObjectManager.Spawn(GameObject,Mirage.INetworkConnection)
-  fullName: Mirage.ServerObjectManager.Spawn(GameObject, Mirage.INetworkConnection)
-  nameWithType: ServerObjectManager.Spawn(GameObject, INetworkConnection)
-- uid: Mirage.ServerObjectManager.Spawn(GameObject,System.Guid,Mirage.INetworkConnection)
-  name: Spawn(GameObject, Guid, INetworkConnection)
-  href: api/Mirage.ServerObjectManager.html#Mirage_ServerObjectManager_Spawn_GameObject_System_Guid_Mirage_INetworkConnection_
-  commentId: M:Mirage.ServerObjectManager.Spawn(GameObject,System.Guid,Mirage.INetworkConnection)
-  fullName: Mirage.ServerObjectManager.Spawn(GameObject, System.Guid, Mirage.INetworkConnection)
-  nameWithType: ServerObjectManager.Spawn(GameObject, Guid, INetworkConnection)
 - uid: Mirage.ServerObjectManager.Spawn(Mirage.NetworkIdentity)
   name: Spawn(NetworkIdentity)
   href: api/Mirage.ServerObjectManager.html#Mirage_ServerObjectManager_Spawn_Mirage_NetworkIdentity_
   commentId: M:Mirage.ServerObjectManager.Spawn(Mirage.NetworkIdentity)
   fullName: Mirage.ServerObjectManager.Spawn(Mirage.NetworkIdentity)
   nameWithType: ServerObjectManager.Spawn(NetworkIdentity)
+- uid: Mirage.ServerObjectManager.Spawn(UnityEngine.GameObject,Mirage.INetworkConnection)
+  name: Spawn(GameObject, INetworkConnection)
+  href: api/Mirage.ServerObjectManager.html#Mirage_ServerObjectManager_Spawn_UnityEngine_GameObject_Mirage_INetworkConnection_
+  commentId: M:Mirage.ServerObjectManager.Spawn(UnityEngine.GameObject,Mirage.INetworkConnection)
+  fullName: Mirage.ServerObjectManager.Spawn(UnityEngine.GameObject, Mirage.INetworkConnection)
+  nameWithType: ServerObjectManager.Spawn(GameObject, INetworkConnection)
+- uid: Mirage.ServerObjectManager.Spawn(UnityEngine.GameObject,System.Guid,Mirage.INetworkConnection)
+  name: Spawn(GameObject, Guid, INetworkConnection)
+  href: api/Mirage.ServerObjectManager.html#Mirage_ServerObjectManager_Spawn_UnityEngine_GameObject_System_Guid_Mirage_INetworkConnection_
+  commentId: M:Mirage.ServerObjectManager.Spawn(UnityEngine.GameObject,System.Guid,Mirage.INetworkConnection)
+  fullName: Mirage.ServerObjectManager.Spawn(UnityEngine.GameObject, System.Guid, Mirage.INetworkConnection)
+  nameWithType: ServerObjectManager.Spawn(GameObject, Guid, INetworkConnection)
+- uid: Mirage.ServerObjectManager.Spawn(UnityEngine.GameObject,UnityEngine.GameObject)
+  name: Spawn(GameObject, GameObject)
+  href: api/Mirage.ServerObjectManager.html#Mirage_ServerObjectManager_Spawn_UnityEngine_GameObject_UnityEngine_GameObject_
+  commentId: M:Mirage.ServerObjectManager.Spawn(UnityEngine.GameObject,UnityEngine.GameObject)
+  fullName: Mirage.ServerObjectManager.Spawn(UnityEngine.GameObject, UnityEngine.GameObject)
+  nameWithType: ServerObjectManager.Spawn(GameObject, GameObject)
 - uid: Mirage.ServerObjectManager.Spawn*
   name: Spawn
   href: api/Mirage.ServerObjectManager.html#Mirage_ServerObjectManager_Spawn_
@@ -9095,11 +9095,11 @@ references:
   isSpec: "True"
   fullName: Mirage.ServerObjectManager.Start
   nameWithType: ServerObjectManager.Start
-- uid: Mirage.ServerObjectManager.UnSpawn(GameObject)
+- uid: Mirage.ServerObjectManager.UnSpawn(UnityEngine.GameObject)
   name: UnSpawn(GameObject)
-  href: api/Mirage.ServerObjectManager.html#Mirage_ServerObjectManager_UnSpawn_GameObject_
-  commentId: M:Mirage.ServerObjectManager.UnSpawn(GameObject)
-  fullName: Mirage.ServerObjectManager.UnSpawn(GameObject)
+  href: api/Mirage.ServerObjectManager.html#Mirage_ServerObjectManager_UnSpawn_UnityEngine_GameObject_
+  commentId: M:Mirage.ServerObjectManager.UnSpawn(UnityEngine.GameObject)
+  fullName: Mirage.ServerObjectManager.UnSpawn(UnityEngine.GameObject)
   nameWithType: ServerObjectManager.UnSpawn(GameObject)
 - uid: Mirage.ServerObjectManager.UnSpawn*
   name: UnSpawn

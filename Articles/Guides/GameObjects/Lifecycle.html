@@ -192,7 +192,7 @@ Subscribe to this event either by using <code>AddListener</code>,  or adding you
 Note the Authority can be revoked, and granted again.  Every time the client loses authority, this event will be invoked again.</p>
 <h1 id="server-stop">Server Stop</h1>
 <p>Either because the client disconnected, the server stopped,
-you called &lt;xref:Mirage.ServerObjectManager.UnSpawn(UnityEngine.GameObject)&gt;,  or you called &lt;xref:Mirage.ServerObjectManager.Destroy(UnityEngine.GameObject)&gt; the object may stop in the server.
+you called <a class="xref" href="../../../api/Mirage.ServerObjectManager.html#Mirage_ServerObjectManager_UnSpawn_UnityEngine_GameObject_">UnSpawn(GameObject)</a>,  or you called <a class="xref" href="../../../api/Mirage.ServerObjectManager.html#Mirage_ServerObjectManager_Destroy_UnityEngine_GameObject_">Destroy(GameObject)</a> the object may stop in the server.
 During this state, a message is sent to all the clients to unspawn the object.
 The event <a class="xref" href="../../../api/Mirage.NetworkIdentity.html#Mirage_NetworkIdentity_OnStopServer">OnStopServer</a> will be invoked.</p>
 <p>Subscribe to this event either by using <code>AddListener</code>,  or adding your method to the event in the inspector.</p>
@@ -218,9 +218,6 @@ You can customize how objects are destroying using Spawn Handlers</p>
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
-                  <li>
-                    <a href="https://github.com/James-Frowen/Mirage/blob/master/doc/Articles/Guides/GameObjects/Lifecycle.md/#L1" class="contribution-link">Improve this Doc</a>
-                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
