@@ -22,6 +22,8 @@
     
     <meta property="docfx:rel" content="../">
     
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
   </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
@@ -90,10 +92,10 @@ May be from the server to client or from client to server</p>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="Mirage.IMessageHandler.html#Mirage_IMessageHandler_RegisterHandler__1_Action_Mirage_INetworkConnection___0__">IMessageHandler.RegisterHandler&lt;T&gt;(Action&lt;INetworkConnection, T&gt;)</a>
+      <a class="xref" href="Mirage.IMessageHandler.html#Mirage_IMessageHandler_RegisterHandler__1_System_Action_Mirage_INetworkConnection___0__">IMessageHandler.RegisterHandler&lt;T&gt;(Action&lt;INetworkConnection, T&gt;)</a>
     </div>
     <div>
-      <a class="xref" href="Mirage.IMessageHandler.html#Mirage_IMessageHandler_RegisterHandler__1_Action___0__">IMessageHandler.RegisterHandler&lt;T&gt;(Action&lt;T&gt;)</a>
+      <a class="xref" href="Mirage.IMessageHandler.html#Mirage_IMessageHandler_RegisterHandler__1_System_Action___0__">IMessageHandler.RegisterHandler&lt;T&gt;(Action&lt;T&gt;)</a>
     </div>
     <div>
       <a class="xref" href="Mirage.IMessageHandler.html#Mirage_IMessageHandler_UnregisterHandler__1">IMessageHandler.UnregisterHandler&lt;T&gt;()</a>
@@ -108,7 +110,7 @@ May be from the server to client or from client to server</p>
       <a class="xref" href="Mirage.IMessageHandler.html#Mirage_IMessageHandler_SendAsync__1___0_System_Int32_">IMessageHandler.SendAsync&lt;T&gt;(T, Int32)</a>
     </div>
     <div>
-      <a class="xref" href="Mirage.IMessageHandler.html#Mirage_IMessageHandler_SendAsync_ArraySegment_System_Byte__System_Int32_">IMessageHandler.SendAsync(ArraySegment&lt;Byte&gt;, Int32)</a>
+      <a class="xref" href="Mirage.IMessageHandler.html#Mirage_IMessageHandler_SendAsync_System_ArraySegment_System_Byte__System_Int32_">IMessageHandler.SendAsync(ArraySegment&lt;Byte&gt;, Int32)</a>
     </div>
     <div>
       <a class="xref" href="Mirage.IMessageHandler.html#Mirage_IMessageHandler_ProcessMessagesAsync">IMessageHandler.ProcessMessagesAsync()</a>
@@ -145,7 +147,7 @@ May be from the server to client or from client to server</p>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Mirage.html">Mirage</a></h6>
-  <h6><strong>Assembly</strong>: doc.dll</h6>
+  <h6><strong>Assembly</strong>: Mirage.dll</h6>
   <h5 id="Mirage_INetworkConnection_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public interface INetworkConnection : IMessageHandler, IVisibilityTracker, IObjectOwner</code></pre>
@@ -177,7 +179,7 @@ May be from the server to client or from client to server</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EndPoint</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.endpoint">EndPoint</a></td>
         <td></td>
       </tr>
     </tbody>

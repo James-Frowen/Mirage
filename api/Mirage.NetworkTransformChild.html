@@ -22,6 +22,8 @@
     
     <meta property="docfx:rel" content="../">
     
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
   </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
@@ -109,9 +111,6 @@
       <a class="xref" href="Mirage.NetworkTransformBase.html#Mirage_NetworkTransformBase_LocalScaleSensitivity">NetworkTransformBase.LocalScaleSensitivity</a>
     </div>
     <div>
-      <a class="xref" href="Mirage.NetworkTransformBase.html#Mirage_NetworkTransformBase_SerializeIntoWriter_Mirage_NetworkWriter_Vector3_Quaternion_Vector3_">NetworkTransformBase.SerializeIntoWriter(NetworkWriter, Vector3, Quaternion, Vector3)</a>
-    </div>
-    <div>
       <a class="xref" href="Mirage.NetworkTransformBase.html#Mirage_NetworkTransformBase_OnSerialize_Mirage_NetworkWriter_System_Boolean_">NetworkTransformBase.OnSerialize(NetworkWriter, Boolean)</a>
     </div>
     <div>
@@ -190,19 +189,7 @@
       <a class="xref" href="Mirage.NetworkBehaviour.html#Mirage_NetworkBehaviour_InitSyncObject_Mirage_ISyncObject_">NetworkBehaviour.InitSyncObject(ISyncObject)</a>
     </div>
     <div>
-      <a class="xref" href="Mirage.NetworkBehaviour.html#Mirage_NetworkBehaviour_SendServerRpcInternal_Type_System_String_Mirage_NetworkWriter_System_Int32_System_Boolean_">NetworkBehaviour.SendServerRpcInternal(Type, String, NetworkWriter, Int32, Boolean)</a>
-    </div>
-    <div>
-      <a class="xref" href="Mirage.NetworkBehaviour.html#Mirage_NetworkBehaviour_SendServerRpcWithReturn__1_Type_System_String_Mirage_NetworkWriter_System_Int32_System_Boolean_">NetworkBehaviour.SendServerRpcWithReturn&lt;T&gt;(Type, String, NetworkWriter, Int32, Boolean)</a>
-    </div>
-    <div>
-      <a class="xref" href="Mirage.NetworkBehaviour.html#Mirage_NetworkBehaviour_SendRpcInternal_Type_System_String_Mirage_NetworkWriter_System_Int32_System_Boolean_">NetworkBehaviour.SendRpcInternal(Type, String, NetworkWriter, Int32, Boolean)</a>
-    </div>
-    <div>
-      <a class="xref" href="Mirage.NetworkBehaviour.html#Mirage_NetworkBehaviour_SendTargetRpcInternal_Mirage_INetworkConnection_Type_System_String_Mirage_NetworkWriter_System_Int32_">NetworkBehaviour.SendTargetRpcInternal(INetworkConnection, Type, String, NetworkWriter, Int32)</a>
-    </div>
-    <div>
-      <a class="xref" href="Mirage.NetworkBehaviour.html#Mirage_NetworkBehaviour_SyncVarEqual__1___0___0_">NetworkBehaviour.SyncVarEqual&lt;T&gt;(T, T)</a>
+      <a class="xref" href="Mirage.NetworkBehaviour.html#Mirage_NetworkBehaviour_SendServerRpcWithReturn__1_System_Type_System_String_Mirage_NetworkWriter_System_Int32_System_Boolean_">NetworkBehaviour.SendServerRpcWithReturn&lt;T&gt;(Type, String, NetworkWriter, Int32, Boolean)</a>
     </div>
     <div>
       <a class="xref" href="Mirage.NetworkBehaviour.html#Mirage_NetworkBehaviour_SetDirtyBit_System_UInt64_">NetworkBehaviour.SetDirtyBit(UInt64)</a>
@@ -230,7 +217,7 @@
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Mirage.html">Mirage</a></h6>
-  <h6><strong>Assembly</strong>: doc.dll</h6>
+  <h6><strong>Assembly</strong>: Mirage.Components.dll</h6>
   <h5 id="Mirage_NetworkTransformChild_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class NetworkTransformChild : NetworkTransformBase</code></pre>

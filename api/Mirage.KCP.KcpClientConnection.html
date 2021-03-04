@@ -22,6 +22,8 @@
     
     <meta property="docfx:rel" content="../">
     
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
   </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
@@ -122,10 +124,10 @@
       <a class="xref" href="Mirage.KCP.KcpConnection.html#Mirage_KCP_KcpConnection_SetupKcp">KcpConnection.SetupKcp()</a>
     </div>
     <div>
-      <a class="xref" href="Mirage.KCP.KcpConnection.html#Mirage_KCP_KcpConnection_SendAsync_ArraySegment_System_Byte__System_Int32_">KcpConnection.SendAsync(ArraySegment&lt;Byte&gt;, Int32)</a>
+      <a class="xref" href="Mirage.KCP.KcpConnection.html#Mirage_KCP_KcpConnection_SendAsync_System_ArraySegment_System_Byte__System_Int32_">KcpConnection.SendAsync(ArraySegment&lt;Byte&gt;, Int32)</a>
     </div>
     <div>
-      <a class="xref" href="Mirage.KCP.KcpConnection.html#Mirage_KCP_KcpConnection_ReceiveAsync_MemoryStream_">KcpConnection.ReceiveAsync(MemoryStream)</a>
+      <a class="xref" href="Mirage.KCP.KcpConnection.html#Mirage_KCP_KcpConnection_ReceiveAsync_System_IO_MemoryStream_">KcpConnection.ReceiveAsync(MemoryStream)</a>
     </div>
     <div>
       <a class="xref" href="Mirage.KCP.KcpConnection.html#Mirage_KCP_KcpConnection_Disconnect">KcpConnection.Disconnect()</a>
@@ -136,9 +138,30 @@
     <div>
       <a class="xref" href="Mirage.KCP.KcpConnection.html#Mirage_KCP_KcpConnection_GetChannel_System_Byte___">KcpConnection.GetChannel(Byte[])</a>
     </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Mirage.KCP.html">Mirage.KCP</a></h6>
-  <h6><strong>Assembly</strong>: doc.dll</h6>
+  <h6><strong>Assembly</strong>: Mirage.dll</h6>
   <h5 id="Mirage_KCP_KcpClientConnection_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class KcpClientConnection : KcpConnection, IConnection</code></pre>
@@ -282,7 +305,7 @@ so we can set up our own read loop</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">UniTask</span></td>
+        <td><span class="xref">Cysharp.Threading.Tasks.UniTask</span></td>
         <td></td>
       </tr>
     </tbody>

@@ -22,6 +22,8 @@
     
     <meta property="docfx:rel" content="../">
     
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
   </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
@@ -94,7 +96,7 @@ This is used in network communications to be able to lookup game objects on diff
     <div class="level1"><span class="xref">NetworkIdentity</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Mirage.html">Mirage</a></h6>
-  <h6><strong>Assembly</strong>: doc.dll</h6>
+  <h6><strong>Assembly</strong>: Mirage.dll</h6>
   <h5 id="Mirage_NetworkIdentity_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public sealed class NetworkIdentity : MonoBehaviour</code></pre>
@@ -116,14 +118,47 @@ This is used in network communications to be able to lookup game objects on diff
     The NetworkIdentity manages the dirty state of the NetworkBehaviours of the object.
     When it discovers that NetworkBehaviours are dirty, it causes an update packet to be created and sent to clients.
 </p>
-<p>
-    The flow for serialization updates managed by the NetworkIdentity is:
-<ul><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
-</p>
-<p>
-    On the client:
-<ul><li></li><li></li><li></li><li></li><li></li><li></li></ul>
-</p>
+<p><strong>
+        The flow for serialization updates managed by the NetworkIdentity is:
+</strong></p><ul><li>
+    Each NetworkBehaviour has a dirty mask. This mask is available inside OnSerialize as syncVarDirtyBits
+</li><li>
+    Each SyncVar in a NetworkBehaviour script is assigned a bit in the dirty mask.
+</li><li>
+    Changing the value of SyncVars causes the bit for that SyncVar to be set in the dirty mask
+</li><li>
+    Alternatively, calling SetDirtyBit() writes directly to the dirty mask
+</li><li>
+    NetworkIdentity objects are checked on the server as part of it&apos;s update loop
+</li><li>
+    If any NetworkBehaviours on a NetworkIdentity are dirty, then an UpdateVars packet is created for that object
+</li><li>
+    The UpdateVars packet is populated by calling OnSerialize on each NetworkBehaviour on the object
+</li><li>
+    NetworkBehaviours that are NOT dirty write a zero to the packet for their dirty bits
+</li><li>
+    NetworkBehaviours that are dirty write their dirty mask, then the values for the SyncVars that have changed
+</li><li>
+    If OnSerialize returns true for a NetworkBehaviour, the dirty mask is reset for that NetworkBehaviour,
+    so it will not send again until its value changes.
+</li><li>
+    The UpdateVars packet is sent to ready clients that are observing the object
+</li></ul>
+<p><strong>
+        On the client:
+</strong></p><ul><li>
+    an UpdateVars packet is received for an object
+</li><li>
+    The OnDeserialize function is called for each NetworkBehaviour script on the object
+</li><li>
+    Each NetworkBehaviour script on the object reads a dirty mask.
+</li><li>
+    If the dirty mask for a NetworkBehaviour is zero, the OnDeserialize functions returns without reading any more
+</li><li>
+    If the dirty mask is non-zero value, then the OnDeserialize function reads the values for the SyncVars that correspond to the dirty bits that are set
+</li><li>
+    If there are SyncVar hook functions, those are invoked with the value read from the stream.
+</li></ul>
 </div>
   <h3 id="fields">Fields
   </h3>
@@ -132,7 +167,7 @@ This is used in network communications to be able to lookup game objects on diff
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkIdentity_ClientObjectManager.md&amp;value=---%0Auid%3A%20Mirage.NetworkIdentity.ClientObjectManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L183">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L187">View Source</a>
   </span>
   <h4 id="Mirage_NetworkIdentity_ClientObjectManager" data-uid="Mirage.NetworkIdentity.ClientObjectManager">ClientObjectManager</h4>
   <div class="markdown level1 summary"><p>The ClientObjectManager is present only for client instances.</p>
@@ -162,7 +197,7 @@ This is used in network communications to be able to lookup game objects on diff
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkIdentity_observers.md&amp;value=---%0Auid%3A%20Mirage.NetworkIdentity.observers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L144">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L148">View Source</a>
   </span>
   <h4 id="Mirage_NetworkIdentity_observers" data-uid="Mirage.NetworkIdentity.observers">observers</h4>
   <div class="markdown level1 summary"><p>The set of network connections (players) that can see this object.</p>
@@ -182,7 +217,7 @@ This is used in network communications to be able to lookup game objects on diff
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">HashSet</span>&lt;<a class="xref" href="Mirage.INetworkConnection.html">INetworkConnection</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.hashset-1">HashSet</a>&lt;<a class="xref" href="Mirage.INetworkConnection.html">INetworkConnection</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -192,7 +227,7 @@ This is used in network communications to be able to lookup game objects on diff
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkIdentity_OnStartAuthority.md&amp;value=---%0Auid%3A%20Mirage.NetworkIdentity.OnStartAuthority%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L333">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L337">View Source</a>
   </span>
   <h4 id="Mirage_NetworkIdentity_OnStartAuthority" data-uid="Mirage.NetworkIdentity.OnStartAuthority">OnStartAuthority</h4>
   <div class="markdown level1 summary"><p>This is invoked on behaviours that have authority, based on context and <a class="xref" href="Mirage.NetworkIdentity.html#Mirage_NetworkIdentity_HasAuthority">HasAuthority</a>.</p>
@@ -224,7 +259,7 @@ This is used in network communications to be able to lookup game objects on diff
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkIdentity_OnStartClient.md&amp;value=---%0Auid%3A%20Mirage.NetworkIdentity.OnStartClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L320">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L324">View Source</a>
   </span>
   <h4 id="Mirage_NetworkIdentity_OnStartClient" data-uid="Mirage.NetworkIdentity.OnStartClient">OnStartClient</h4>
   <div class="markdown level1 summary"><p>Called on every NetworkBehaviour when it is activated on a client.</p>
@@ -255,7 +290,7 @@ This is used in network communications to be able to lookup game objects on diff
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkIdentity_OnStartLocalPlayer.md&amp;value=---%0Auid%3A%20Mirage.NetworkIdentity.OnStartLocalPlayer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L326">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L330">View Source</a>
   </span>
   <h4 id="Mirage_NetworkIdentity_OnStartLocalPlayer" data-uid="Mirage.NetworkIdentity.OnStartLocalPlayer">OnStartLocalPlayer</h4>
   <div class="markdown level1 summary"><p>Called when the local player object has been set up.</p>
@@ -286,7 +321,7 @@ This is used in network communications to be able to lookup game objects on diff
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkIdentity_OnStartServer.md&amp;value=---%0Auid%3A%20Mirage.NetworkIdentity.OnStartServer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L314">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L318">View Source</a>
   </span>
   <h4 id="Mirage_NetworkIdentity_OnStartServer" data-uid="Mirage.NetworkIdentity.OnStartServer">OnStartServer</h4>
   <div class="markdown level1 summary"><p>This is invoked for NetworkBehaviour objects when they become active on the server.</p>
@@ -318,7 +353,7 @@ This is used in network communications to be able to lookup game objects on diff
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkIdentity_OnStopAuthority.md&amp;value=---%0Auid%3A%20Mirage.NetworkIdentity.OnStopAuthority%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L339">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L343">View Source</a>
   </span>
   <h4 id="Mirage_NetworkIdentity_OnStopAuthority" data-uid="Mirage.NetworkIdentity.OnStopAuthority">OnStopAuthority</h4>
   <div class="markdown level1 summary"><p>This is invoked on behaviours when authority is removed.</p>
@@ -349,7 +384,7 @@ This is used in network communications to be able to lookup game objects on diff
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkIdentity_OnStopClient.md&amp;value=---%0Auid%3A%20Mirage.NetworkIdentity.OnStopClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L346">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L350">View Source</a>
   </span>
   <h4 id="Mirage_NetworkIdentity_OnStopClient" data-uid="Mirage.NetworkIdentity.OnStopClient">OnStopClient</h4>
   <div class="markdown level1 summary"><p>This is invoked on clients when the server has caused this object to be destroyed.</p>
@@ -380,7 +415,7 @@ This is used in network communications to be able to lookup game objects on diff
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkIdentity_OnStopServer.md&amp;value=---%0Auid%3A%20Mirage.NetworkIdentity.OnStopServer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L352">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L356">View Source</a>
   </span>
   <h4 id="Mirage_NetworkIdentity_OnStopServer" data-uid="Mirage.NetworkIdentity.OnStopServer">OnStopServer</h4>
   <div class="markdown level1 summary"><p>This is called on the server when the object is unspawned</p>
@@ -413,7 +448,7 @@ This is used in network communications to be able to lookup game objects on diff
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkIdentity_sceneId.md&amp;value=---%0Auid%3A%20Mirage.NetworkIdentity.sceneId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L158">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L162">View Source</a>
   </span>
   <h4 id="Mirage_NetworkIdentity_sceneId" data-uid="Mirage.NetworkIdentity.sceneId">sceneId</h4>
   <div class="markdown level1 summary"><p>A unique identifier for NetworkIdentity objects within a scene.</p>
@@ -444,7 +479,7 @@ This is used in network communications to be able to lookup game objects on diff
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkIdentity_ServerObjectManager.md&amp;value=---%0Auid%3A%20Mirage.NetworkIdentity.ServerObjectManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L168">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L172">View Source</a>
   </span>
   <h4 id="Mirage_NetworkIdentity_ServerObjectManager" data-uid="Mirage.NetworkIdentity.ServerObjectManager">ServerObjectManager</h4>
   <div class="markdown level1 summary"><p>The ServerObjectManager is present only for server/host instances.</p>
@@ -476,7 +511,7 @@ This is used in network communications to be able to lookup game objects on diff
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkIdentity_AssetId.md&amp;value=---%0Auid%3A%20Mirage.NetworkIdentity.AssetId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L261">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L265">View Source</a>
   </span>
   <a id="Mirage_NetworkIdentity_AssetId_" data-uid="Mirage.NetworkIdentity.AssetId*"></a>
   <h4 id="Mirage_NetworkIdentity_AssetId" data-uid="Mirage.NetworkIdentity.AssetId">AssetId</h4>
@@ -496,14 +531,23 @@ This is used in network communications to be able to lookup game objects on diff
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Guid</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 id="Mirage_NetworkIdentity_AssetId_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The AssetId trick:</p>
-<ul><li></li><li></li><li></li></ul>
+<ul><li>
+        Ideally we would have a serialized &apos;Guid m_AssetId&apos; but Unity can&apos;t
+        serialize it because Guid&apos;s internal bytes are private
+</li><li>
+    UNET used &apos;NetworkHash128&apos; originally, with byte0, ..., byte16
+    which works, but it just unnecessary extra code
+</li><li>
+    Using just the Guid string would work, but it&apos;s 32 chars long and
+    would then be sent over the network as 64 instead of 16 bytes
+</li></ul>
 The solution is to serialize the string internally here and then
 use the real &apos;Guid&apos; type for everything else via .assetId
 </div>
@@ -512,7 +556,7 @@ use the real &apos;Guid&apos; type for everything else via .assetId
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkIdentity_Client.md&amp;value=---%0Auid%3A%20Mirage.NetworkIdentity.Client%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L178">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L182">View Source</a>
   </span>
   <a id="Mirage_NetworkIdentity_Client_" data-uid="Mirage.NetworkIdentity.Client*"></a>
   <h4 id="Mirage_NetworkIdentity_Client" data-uid="Mirage.NetworkIdentity.Client">Client</h4>
@@ -543,7 +587,7 @@ use the real &apos;Guid&apos; type for everything else via .assetId
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkIdentity_ConnectionToClient.md&amp;value=---%0Auid%3A%20Mirage.NetworkIdentity.ConnectionToClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L191">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L195">View Source</a>
   </span>
   <a id="Mirage_NetworkIdentity_ConnectionToClient_" data-uid="Mirage.NetworkIdentity.ConnectionToClient*"></a>
   <h4 id="Mirage_NetworkIdentity_ConnectionToClient" data-uid="Mirage.NetworkIdentity.ConnectionToClient">ConnectionToClient</h4>
@@ -575,7 +619,7 @@ use the real &apos;Guid&apos; type for everything else via .assetId
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkIdentity_ConnectionToServer.md&amp;value=---%0Auid%3A%20Mirage.NetworkIdentity.ConnectionToServer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L173">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L177">View Source</a>
   </span>
   <a id="Mirage_NetworkIdentity_ConnectionToServer_" data-uid="Mirage.NetworkIdentity.ConnectionToServer*"></a>
   <h4 id="Mirage_NetworkIdentity_ConnectionToServer" data-uid="Mirage.NetworkIdentity.ConnectionToServer">ConnectionToServer</h4>
@@ -606,7 +650,7 @@ use the real &apos;Guid&apos; type for everything else via .assetId
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkIdentity_HasAuthority.md&amp;value=---%0Auid%3A%20Mirage.NetworkIdentity.HasAuthority%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L139">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L143">View Source</a>
   </span>
   <a id="Mirage_NetworkIdentity_HasAuthority_" data-uid="Mirage.NetworkIdentity.HasAuthority*"></a>
   <h4 id="Mirage_NetworkIdentity_HasAuthority" data-uid="Mirage.NetworkIdentity.HasAuthority">HasAuthority</h4>
@@ -639,7 +683,7 @@ use the real &apos;Guid&apos; type for everything else via .assetId
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkIdentity_IsClient.md&amp;value=---%0Auid%3A%20Mirage.NetworkIdentity.IsClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L116">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L120">View Source</a>
   </span>
   <a id="Mirage_NetworkIdentity_IsClient_" data-uid="Mirage.NetworkIdentity.IsClient*"></a>
   <h4 id="Mirage_NetworkIdentity_IsClient" data-uid="Mirage.NetworkIdentity.IsClient">IsClient</h4>
@@ -670,7 +714,7 @@ use the real &apos;Guid&apos; type for everything else via .assetId
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkIdentity_IsLocalClient.md&amp;value=---%0Auid%3A%20Mirage.NetworkIdentity.IsLocalClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L126">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L130">View Source</a>
   </span>
   <a id="Mirage_NetworkIdentity_IsLocalClient_" data-uid="Mirage.NetworkIdentity.IsLocalClient*"></a>
   <h4 id="Mirage_NetworkIdentity_IsLocalClient" data-uid="Mirage.NetworkIdentity.IsLocalClient">IsLocalClient</h4>
@@ -701,7 +745,7 @@ use the real &apos;Guid&apos; type for everything else via .assetId
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkIdentity_IsLocalPlayer.md&amp;value=---%0Auid%3A%20Mirage.NetworkIdentity.IsLocalPlayer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L132">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L136">View Source</a>
   </span>
   <a id="Mirage_NetworkIdentity_IsLocalPlayer_" data-uid="Mirage.NetworkIdentity.IsLocalPlayer*"></a>
   <h4 id="Mirage_NetworkIdentity_IsLocalPlayer" data-uid="Mirage.NetworkIdentity.IsLocalPlayer">IsLocalPlayer</h4>
@@ -733,7 +777,7 @@ use the real &apos;Guid&apos; type for everything else via .assetId
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkIdentity_IsServer.md&amp;value=---%0Auid%3A%20Mirage.NetworkIdentity.IsServer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L121">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L125">View Source</a>
   </span>
   <a id="Mirage_NetworkIdentity_IsServer_" data-uid="Mirage.NetworkIdentity.IsServer*"></a>
   <h4 id="Mirage_NetworkIdentity_IsServer" data-uid="Mirage.NetworkIdentity.IsServer">IsServer</h4>
@@ -764,7 +808,7 @@ use the real &apos;Guid&apos; type for everything else via .assetId
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkIdentity_NetId.md&amp;value=---%0Auid%3A%20Mirage.NetworkIdentity.NetId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L150">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L154">View Source</a>
   </span>
   <a id="Mirage_NetworkIdentity_NetId_" data-uid="Mirage.NetworkIdentity.NetId*"></a>
   <h4 id="Mirage_NetworkIdentity_NetId" data-uid="Mirage.NetworkIdentity.NetId">NetId</h4>
@@ -796,7 +840,7 @@ use the real &apos;Guid&apos; type for everything else via .assetId
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkIdentity_NetworkBehaviours.md&amp;value=---%0Auid%3A%20Mirage.NetworkIdentity.NetworkBehaviours%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L208">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L212">View Source</a>
   </span>
   <a id="Mirage_NetworkIdentity_NetworkBehaviours_" data-uid="Mirage.NetworkIdentity.NetworkBehaviours*"></a>
   <h4 id="Mirage_NetworkIdentity_NetworkBehaviours" data-uid="Mirage.NetworkIdentity.NetworkBehaviours">NetworkBehaviours</h4>
@@ -827,7 +871,7 @@ use the real &apos;Guid&apos; type for everything else via .assetId
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkIdentity_Server.md&amp;value=---%0Auid%3A%20Mirage.NetworkIdentity.Server%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L163">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L167">View Source</a>
   </span>
   <a id="Mirage_NetworkIdentity_Server_" data-uid="Mirage.NetworkIdentity.Server*"></a>
   <h4 id="Mirage_NetworkIdentity_Server" data-uid="Mirage.NetworkIdentity.Server">Server</h4>
@@ -858,7 +902,7 @@ use the real &apos;Guid&apos; type for everything else via .assetId
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkIdentity_SpawnedFromInstantiate.md&amp;value=---%0Auid%3A%20Mirage.NetworkIdentity.SpawnedFromInstantiate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L405">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L409">View Source</a>
   </span>
   <a id="Mirage_NetworkIdentity_SpawnedFromInstantiate_" data-uid="Mirage.NetworkIdentity.SpawnedFromInstantiate*"></a>
   <h4 id="Mirage_NetworkIdentity_SpawnedFromInstantiate" data-uid="Mirage.NetworkIdentity.SpawnedFromInstantiate">SpawnedFromInstantiate</h4>
@@ -888,7 +932,7 @@ use the real &apos;Guid&apos; type for everything else via .assetId
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkIdentity_Visibility.md&amp;value=---%0Auid%3A%20Mirage.NetworkIdentity.Visibility%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L227">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L231">View Source</a>
   </span>
   <a id="Mirage_NetworkIdentity_Visibility_" data-uid="Mirage.NetworkIdentity.Visibility*"></a>
   <h4 id="Mirage_NetworkIdentity_Visibility" data-uid="Mirage.NetworkIdentity.Visibility">Visibility</h4>
@@ -920,7 +964,7 @@ use the real &apos;Guid&apos; type for everything else via .assetId
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkIdentity_AssignClientAuthority_Mirage_INetworkConnection_.md&amp;value=---%0Auid%3A%20Mirage.NetworkIdentity.AssignClientAuthority(Mirage.INetworkConnection)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L1117">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L1121">View Source</a>
   </span>
   <a id="Mirage_NetworkIdentity_AssignClientAuthority_" data-uid="Mirage.NetworkIdentity.AssignClientAuthority*"></a>
   <h4 id="Mirage_NetworkIdentity_AssignClientAuthority_Mirage_INetworkConnection_" data-uid="Mirage.NetworkIdentity.AssignClientAuthority(Mirage.INetworkConnection)">AssignClientAuthority(INetworkConnection)</h4>
@@ -956,7 +1000,7 @@ use the real &apos;Guid&apos; type for everything else via .assetId
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkIdentity_GetSceneIdentity_System_UInt64_.md&amp;value=---%0Auid%3A%20Mirage.NetworkIdentity.GetSceneIdentity(System.UInt64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L359">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L363">View Source</a>
   </span>
   <a id="Mirage_NetworkIdentity_GetSceneIdentity_" data-uid="Mirage.NetworkIdentity.GetSceneIdentity*"></a>
   <h4 id="Mirage_NetworkIdentity_GetSceneIdentity_System_UInt64_" data-uid="Mirage.NetworkIdentity.GetSceneIdentity(System.UInt64)">GetSceneIdentity(UInt64)</h4>
@@ -1005,7 +1049,7 @@ use the real &apos;Guid&apos; type for everything else via .assetId
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkIdentity_RebuildObservers_System_Boolean_.md&amp;value=---%0Auid%3A%20Mirage.NetworkIdentity.RebuildObservers(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L1002">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L1006">View Source</a>
   </span>
   <a id="Mirage_NetworkIdentity_RebuildObservers_" data-uid="Mirage.NetworkIdentity.RebuildObservers*"></a>
   <h4 id="Mirage_NetworkIdentity_RebuildObservers_System_Boolean_" data-uid="Mirage.NetworkIdentity.RebuildObservers(System.Boolean)">RebuildObservers(Boolean)</h4>
@@ -1040,7 +1084,7 @@ The OnRebuildObservers callback function will be invoked on each NetworkBehaviou
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkIdentity_RemoveClientAuthority.md&amp;value=---%0Auid%3A%20Mirage.NetworkIdentity.RemoveClientAuthority%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L1148">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L1152">View Source</a>
   </span>
   <a id="Mirage_NetworkIdentity_RemoveClientAuthority_" data-uid="Mirage.NetworkIdentity.RemoveClientAuthority*"></a>
   <h4 id="Mirage_NetworkIdentity_RemoveClientAuthority" data-uid="Mirage.NetworkIdentity.RemoveClientAuthority">RemoveClientAuthority()</h4>
@@ -1060,7 +1104,7 @@ The OnRebuildObservers callback function will be invoked on each NetworkBehaviou
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkIdentity_clientAuthorityCallback.md&amp;value=---%0Auid%3A%20Mirage.NetworkIdentity.clientAuthorityCallback%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L390">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L394">View Source</a>
   </span>
   <h4 id="Mirage_NetworkIdentity_clientAuthorityCallback" data-uid="Mirage.NetworkIdentity.clientAuthorityCallback">clientAuthorityCallback</h4>
   <div class="markdown level1 summary"><p>A callback that can be populated to be notified when the client-authority state of objects changes.</p>
@@ -1098,7 +1142,7 @@ The OnRebuildObservers callback function will be invoked on each NetworkBehaviou
                     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkIdentity.md&amp;value=---%0Auid%3A%20Mirage.NetworkIdentity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L103" class="contribution-link">View Source</a>
+                    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkIdentity.cs/#L107" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

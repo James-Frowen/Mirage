@@ -22,6 +22,8 @@
     
     <meta property="docfx:rel" content="../">
     
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
   </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
@@ -96,7 +98,7 @@
     <div><a class="xref" href="Mirage.IObjectLocator.html">IObjectLocator</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Mirage.html">Mirage</a></h6>
-  <h6><strong>Assembly</strong>: doc.dll</h6>
+  <h6><strong>Assembly</strong>: Mirage.dll</h6>
   <h5 id="Mirage_ClientObjectManager_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class ClientObjectManager : MonoBehaviour, IClientObjectManager, IObjectLocator</code></pre>
@@ -187,7 +189,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Dictionary</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a>, <a class="xref" href="Mirage.NetworkIdentity.html">NetworkIdentity</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a>, <a class="xref" href="Mirage.NetworkIdentity.html">NetworkIdentity</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -216,7 +218,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;<a class="xref" href="Mirage.NetworkIdentity.html">NetworkIdentity</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Mirage.NetworkIdentity.html">NetworkIdentity</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -357,7 +359,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Dictionary</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a>, <a class="xref" href="Mirage.NetworkIdentity.html">NetworkIdentity</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a>, <a class="xref" href="Mirage.NetworkIdentity.html">NetworkIdentity</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -429,13 +431,13 @@
   </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_GetPrefab_Guid_.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.GetPrefab(Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_GetPrefab_System_Guid_.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.GetPrefab(System.Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L202">View Source</a>
   </span>
   <a id="Mirage_ClientObjectManager_GetPrefab_" data-uid="Mirage.ClientObjectManager.GetPrefab*"></a>
-  <h4 id="Mirage_ClientObjectManager_GetPrefab_Guid_" data-uid="Mirage.ClientObjectManager.GetPrefab(Guid)">GetPrefab(Guid)</h4>
+  <h4 id="Mirage_ClientObjectManager_GetPrefab_System_Guid_" data-uid="Mirage.ClientObjectManager.GetPrefab(System.Guid)">GetPrefab(Guid)</h4>
   <div class="markdown level1 summary"><p>Find the registered prefab for this asset id.
 Useful for debuggers</p>
 </div>
@@ -455,7 +457,7 @@ Useful for debuggers</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Guid</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></td>
         <td><span class="parametername">assetId</span></td>
         <td><p>asset id of the prefab</p>
 </td>
@@ -533,49 +535,6 @@ Useful for debuggers</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_RegisterPrefab_Mirage_NetworkIdentity_Guid_.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.RegisterPrefab(Mirage.NetworkIdentity%2CGuid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L222">View Source</a>
-  </span>
-  <a id="Mirage_ClientObjectManager_RegisterPrefab_" data-uid="Mirage.ClientObjectManager.RegisterPrefab*"></a>
-  <h4 id="Mirage_ClientObjectManager_RegisterPrefab_Mirage_NetworkIdentity_Guid_" data-uid="Mirage.ClientObjectManager.RegisterPrefab(Mirage.NetworkIdentity,Guid)">RegisterPrefab(NetworkIdentity, Guid)</h4>
-  <div class="markdown level1 summary"><p>Registers a prefab with the spawning system.</p>
-<p>When a NetworkIdentity object is spawned on a server with NetworkServer.SpawnObject(), and the prefab that the object was created from was registered with RegisterPrefab(), the client will use that prefab to instantiate a corresponding client object with the same netId.</p>
-<p>The ClientObjectManager has a list of spawnable prefabs, it uses this function to register those prefabs with the ClientScene.</p>
-<p>The set of current spawnable object is available in the ClientScene static member variable ClientScene.prefabs, which is a dictionary of NetworkAssetIds and prefab references.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void RegisterPrefab(NetworkIdentity identity, Guid newAssetId)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Mirage.NetworkIdentity.html">NetworkIdentity</a></td>
-        <td><span class="parametername">identity</span></td>
-        <td><p>A Prefab that will be spawned.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Guid</span></td>
-        <td><span class="parametername">newAssetId</span></td>
-        <td><p>An assetId to be assigned to this prefab. This allows a dynamically created game object to be registered for an already known asset Id.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_RegisterPrefab_Mirage_NetworkIdentity_Mirage_SpawnHandlerDelegate_Mirage_UnSpawnDelegate_.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.RegisterPrefab(Mirage.NetworkIdentity%2CMirage.SpawnHandlerDelegate%2CMirage.UnSpawnDelegate)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -625,13 +584,56 @@ Useful for debuggers</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_RegisterSpawnHandler_Guid_Mirage_SpawnHandlerDelegate_Mirage_UnSpawnDelegate_.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.RegisterSpawnHandler(Guid%2CMirage.SpawnHandlerDelegate%2CMirage.UnSpawnDelegate)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_RegisterPrefab_Mirage_NetworkIdentity_System_Guid_.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.RegisterPrefab(Mirage.NetworkIdentity%2CSystem.Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L222">View Source</a>
+  </span>
+  <a id="Mirage_ClientObjectManager_RegisterPrefab_" data-uid="Mirage.ClientObjectManager.RegisterPrefab*"></a>
+  <h4 id="Mirage_ClientObjectManager_RegisterPrefab_Mirage_NetworkIdentity_System_Guid_" data-uid="Mirage.ClientObjectManager.RegisterPrefab(Mirage.NetworkIdentity,System.Guid)">RegisterPrefab(NetworkIdentity, Guid)</h4>
+  <div class="markdown level1 summary"><p>Registers a prefab with the spawning system.</p>
+<p>When a NetworkIdentity object is spawned on a server with NetworkServer.SpawnObject(), and the prefab that the object was created from was registered with RegisterPrefab(), the client will use that prefab to instantiate a corresponding client object with the same netId.</p>
+<p>The ClientObjectManager has a list of spawnable prefabs, it uses this function to register those prefabs with the ClientScene.</p>
+<p>The set of current spawnable object is available in the ClientScene static member variable ClientScene.prefabs, which is a dictionary of NetworkAssetIds and prefab references.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterPrefab(NetworkIdentity identity, Guid newAssetId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mirage.NetworkIdentity.html">NetworkIdentity</a></td>
+        <td><span class="parametername">identity</span></td>
+        <td><p>A Prefab that will be spawned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">newAssetId</span></td>
+        <td><p>An assetId to be assigned to this prefab. This allows a dynamically created game object to be registered for an already known asset Id.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_RegisterSpawnHandler_System_Guid_Mirage_SpawnHandlerDelegate_Mirage_UnSpawnDelegate_.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.RegisterSpawnHandler(System.Guid%2CMirage.SpawnHandlerDelegate%2CMirage.UnSpawnDelegate)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L286">View Source</a>
   </span>
   <a id="Mirage_ClientObjectManager_RegisterSpawnHandler_" data-uid="Mirage.ClientObjectManager.RegisterSpawnHandler*"></a>
-  <h4 id="Mirage_ClientObjectManager_RegisterSpawnHandler_Guid_Mirage_SpawnHandlerDelegate_Mirage_UnSpawnDelegate_" data-uid="Mirage.ClientObjectManager.RegisterSpawnHandler(Guid,Mirage.SpawnHandlerDelegate,Mirage.UnSpawnDelegate)">RegisterSpawnHandler(Guid, SpawnHandlerDelegate, UnSpawnDelegate)</h4>
+  <h4 id="Mirage_ClientObjectManager_RegisterSpawnHandler_System_Guid_Mirage_SpawnHandlerDelegate_Mirage_UnSpawnDelegate_" data-uid="Mirage.ClientObjectManager.RegisterSpawnHandler(System.Guid,Mirage.SpawnHandlerDelegate,Mirage.UnSpawnDelegate)">RegisterSpawnHandler(Guid, SpawnHandlerDelegate, UnSpawnDelegate)</h4>
   <div class="markdown level1 summary"><p>This is an advanced spawning function that registers a custom assetId with the UNET spawning system.</p>
 <p>This can be used to register custom spawning methods for an assetId - instead of the usual method of registering spawning methods for a prefab. This should be used when no prefab exists for the spawned objects - such as when they are constructed dynamically at runtime from configuration data.</p>
 </div>
@@ -651,7 +653,7 @@ Useful for debuggers</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Guid</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></td>
         <td><span class="parametername">assetId</span></td>
         <td><p>Custom assetId string.</p>
 </td>
@@ -721,13 +723,13 @@ Useful for debuggers</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_UnregisterSpawnHandler_Guid_.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.UnregisterSpawnHandler(Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_ClientObjectManager_UnregisterSpawnHandler_System_Guid_.md&amp;value=---%0Auid%3A%20Mirage.ClientObjectManager.UnregisterSpawnHandler(System.Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/ClientObjectManager.cs/#L298">View Source</a>
   </span>
   <a id="Mirage_ClientObjectManager_UnregisterSpawnHandler_" data-uid="Mirage.ClientObjectManager.UnregisterSpawnHandler*"></a>
-  <h4 id="Mirage_ClientObjectManager_UnregisterSpawnHandler_Guid_" data-uid="Mirage.ClientObjectManager.UnregisterSpawnHandler(Guid)">UnregisterSpawnHandler(Guid)</h4>
+  <h4 id="Mirage_ClientObjectManager_UnregisterSpawnHandler_System_Guid_" data-uid="Mirage.ClientObjectManager.UnregisterSpawnHandler(System.Guid)">UnregisterSpawnHandler(Guid)</h4>
   <div class="markdown level1 summary"><p>Removes a registered spawn handler function that was registered with ClientScene.RegisterHandler().</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -746,7 +748,7 @@ Useful for debuggers</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Guid</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></td>
         <td><span class="parametername">assetId</span></td>
         <td><p>The assetId for the handler to be removed for.</p>
 </td>

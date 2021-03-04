@@ -22,6 +22,8 @@
     
     <meta property="docfx:rel" content="../">
     
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
   </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
@@ -96,7 +98,7 @@
     <div><a class="xref" href="Mirage.INetworkServer.html">INetworkServer</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Mirage.html">Mirage</a></h6>
-  <h6><strong>Assembly</strong>: doc.dll</h6>
+  <h6><strong>Assembly</strong>: Mirage.dll</h6>
   <h5 id="Mirage_NetworkServer_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class NetworkServer : MonoBehaviour, INetworkServer</code></pre>
@@ -160,7 +162,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">HashSet</span>&lt;<a class="xref" href="Mirage.INetworkConnection.html">INetworkConnection</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.hashset-1">HashSet</a>&lt;<a class="xref" href="Mirage.INetworkConnection.html">INetworkConnection</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -475,20 +477,20 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkServer_NumPlayers.md&amp;value=---%0Auid%3A%20Mirage.NetworkServer.NumPlayers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkServer_NumberOfPlayers.md&amp;value=---%0Auid%3A%20Mirage.NetworkServer.NumberOfPlayers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkServer.cs/#L112">View Source</a>
   </span>
-  <a id="Mirage_NetworkServer_NumPlayers_" data-uid="Mirage.NetworkServer.NumPlayers*"></a>
-  <h4 id="Mirage_NetworkServer_NumPlayers" data-uid="Mirage.NetworkServer.NumPlayers">NumPlayers</h4>
+  <a id="Mirage_NetworkServer_NumberOfPlayers_" data-uid="Mirage.NetworkServer.NumberOfPlayers*"></a>
+  <h4 id="Mirage_NetworkServer_NumberOfPlayers" data-uid="Mirage.NetworkServer.NumberOfPlayers">NumberOfPlayers</h4>
   <div class="markdown level1 summary"><p>Number of active player objects across all connections on the server.</p>
 <p>This is only valid on the host / server.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int NumPlayers { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public int NumberOfPlayers { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -783,7 +785,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">UniTask</span></td>
+        <td><span class="xref">Cysharp.Threading.Tasks.UniTask</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -835,7 +837,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SendToAll&lt;T&gt;(T msg, int channelId = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SendToAll&lt;T&gt;(T msg, int channelId = 0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -921,7 +923,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">UniTask</span></td>
+        <td><span class="xref">Cysharp.Threading.Tasks.UniTask</span></td>
         <td></td>
       </tr>
     </tbody>

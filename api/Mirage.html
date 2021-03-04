@@ -22,6 +22,8 @@
     
     <meta property="docfx:rel" content="../">
     
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
   </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
@@ -90,7 +92,8 @@
       <h4><a class="xref" href="Mirage.Channel.html">Channel</a></h4>
       <section></section>
       <h4><a class="xref" href="Mirage.ClientAttribute.html">ClientAttribute</a></h4>
-      <section><p>Prevents the server from running this method.</p>
+      <section><p>Prevents this method from running if client is not active.</p>
+<p>Can only be used inside a NetworkBehaviour</p>
 </section>
       <h4><a class="xref" href="Mirage.ClientObjectManager.html">ClientObjectManager</a></h4>
       <section></section>
@@ -113,6 +116,7 @@
       <section></section>
       <h4><a class="xref" href="Mirage.HasAuthorityAttribute.html">HasAuthorityAttribute</a></h4>
       <section><p>Prevents players without authority from running this method.</p>
+<p>Can only be used inside a NetworkBehaviour</p>
 </section>
       <h4><a class="xref" href="Mirage.HeadlessAutoStart.html">HeadlessAutoStart</a></h4>
       <section></section>
@@ -126,6 +130,7 @@
       <section></section>
       <h4><a class="xref" href="Mirage.LocalPlayerAttribute.html">LocalPlayerAttribute</a></h4>
       <section><p>Prevents nonlocal players from running this method.</p>
+<p>Can only be used inside a NetworkBehaviour</p>
 </section>
       <h4><a class="xref" href="Mirage.LogFactory.html">LogFactory</a></h4>
       <section></section>
@@ -271,7 +276,8 @@ This will be populated by the weaver</p>
       <section><p>Converts a string property into a Scene property in the inspector</p>
 </section>
       <h4><a class="xref" href="Mirage.ServerAttribute.html">ServerAttribute</a></h4>
-      <section><p>Prevents clients from running this method.</p>
+      <section><p>Prevents a method from running if server is not active.</p>
+<p>Can only be used inside a NetworkBehaviour</p>
 </section>
       <h4><a class="xref" href="Mirage.ServerObjectManager.html">ServerObjectManager</a></h4>
       <section><p>The ServerObjectManager.</p>
@@ -291,12 +297,6 @@ This will be populated by the weaver</p>
       <h4><a class="xref" href="Mirage.SyncDictionary-2.html">SyncDictionary&lt;TKey, TValue&gt;</a></h4>
       <section></section>
       <h4><a class="xref" href="Mirage.SyncHashSet-1.html">SyncHashSet&lt;T&gt;</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Mirage.SyncIDictionary-2.html">SyncIDictionary&lt;TKey, TValue&gt;</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Mirage.SyncList-1.html">SyncList&lt;T&gt;</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Mirage.SyncSet-1.html">SyncSet&lt;T&gt;</a></h4>
       <section></section>
       <h4><a class="xref" href="Mirage.SyncSortedSet-1.html">SyncSortedSet&lt;T&gt;</a></h4>
       <section></section>
@@ -366,8 +366,6 @@ the weaver will replace the syncvar with this struct.</p>
       <h4><a class="xref" href="Mirage.ServerRpcReply.html">ServerRpcReply</a></h4>
       <section></section>
       <h4><a class="xref" href="Mirage.SpawnMessage.html">SpawnMessage</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Mirage.SyncList-1.Enumerator.html">SyncList&lt;T&gt;.Enumerator</a></h4>
       <section></section>
       <h4><a class="xref" href="Mirage.UpdateVarsMessage.html">UpdateVarsMessage</a></h4>
       <section></section>

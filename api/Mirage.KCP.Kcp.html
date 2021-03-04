@@ -22,6 +22,8 @@
     
     <meta property="docfx:rel" content="../">
     
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
   </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
@@ -92,23 +94,47 @@ based on <a href="https://github.com/skywind3000/kcp">https://github.com/skywind
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">Kcp</span></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Mirage.KCP.html">Mirage.KCP</a></h6>
-  <h6><strong>Assembly</strong>: doc.dll</h6>
+  <h6><strong>Assembly</strong>: Mirage.dll</h6>
   <h5 id="Mirage_KCP_Kcp_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Kcp : object</code></pre>
+    <pre><code class="lang-csharp hljs">public class Kcp</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_KCP_Kcp__ctor_System_UInt32_Action_System_Byte___System_Int32__.md&amp;value=---%0Auid%3A%20Mirage.KCP.Kcp.%23ctor(System.UInt32%2CAction%7BSystem.Byte%5B%5D%2CSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_KCP_Kcp__ctor_System_UInt32_System_Action_System_Byte___System_Int32__.md&amp;value=---%0Auid%3A%20Mirage.KCP.Kcp.%23ctor(System.UInt32%2CSystem.Action%7BSystem.Byte%5B%5D%2CSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/Transport/Kcp/Kcp.cs/#L118">View Source</a>
   </span>
   <a id="Mirage_KCP_Kcp__ctor_" data-uid="Mirage.KCP.Kcp.#ctor*"></a>
-  <h4 id="Mirage_KCP_Kcp__ctor_System_UInt32_Action_System_Byte___System_Int32__" data-uid="Mirage.KCP.Kcp.#ctor(System.UInt32,Action{System.Byte[],System.Int32})">Kcp(UInt32, Action&lt;Byte[], Int32&gt;)</h4>
+  <h4 id="Mirage_KCP_Kcp__ctor_System_UInt32_System_Action_System_Byte___System_Int32__" data-uid="Mirage.KCP.Kcp.#ctor(System.UInt32,System.Action{System.Byte[],System.Int32})">Kcp(UInt32, Action&lt;Byte[], Int32&gt;)</h4>
   <div class="markdown level1 summary"><p>create a new kcp control object, 'conv' must equal in two endpoint
 from the same connection.</p>
 </div>
@@ -134,7 +160,7 @@ from the same connection.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Action</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[], <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[], <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
         <td><span class="parametername">output</span></td>
         <td><p>a delegate to use when sending data</p>
 </td>
@@ -155,7 +181,7 @@ from the same connection.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const int ASK_SEND = null</code></pre>
+    <pre><code class="lang-csharp hljs">public const int ASK_SEND = 1</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -184,7 +210,7 @@ from the same connection.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const int ASK_TELL = null</code></pre>
+    <pre><code class="lang-csharp hljs">public const int ASK_TELL = 2</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -213,7 +239,7 @@ from the same connection.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const int INTERVAL = null</code></pre>
+    <pre><code class="lang-csharp hljs">public const int INTERVAL = 100</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -242,7 +268,7 @@ from the same connection.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const int OVERHEAD = null</code></pre>
+    <pre><code class="lang-csharp hljs">public const int OVERHEAD = 24</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -271,7 +297,7 @@ from the same connection.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const int PROBE_INIT = null</code></pre>
+    <pre><code class="lang-csharp hljs">public const int PROBE_INIT = 7000</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -300,7 +326,7 @@ from the same connection.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const int PROBE_LIMIT = null</code></pre>
+    <pre><code class="lang-csharp hljs">public const int PROBE_LIMIT = 120000</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -329,7 +355,7 @@ from the same connection.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const int RTO_MAX = null</code></pre>
+    <pre><code class="lang-csharp hljs">public const int RTO_MAX = 60000</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -358,7 +384,7 @@ from the same connection.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const int RTO_MIN = null</code></pre>
+    <pre><code class="lang-csharp hljs">public const int RTO_MIN = 100</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -387,7 +413,7 @@ from the same connection.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const int RTO_NDL = null</code></pre>
+    <pre><code class="lang-csharp hljs">public const int RTO_NDL = 30</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -416,7 +442,7 @@ from the same connection.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const int THRESH_INIT = null</code></pre>
+    <pre><code class="lang-csharp hljs">public const int THRESH_INIT = 2</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -445,7 +471,7 @@ from the same connection.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const int THRESH_MIN = null</code></pre>
+    <pre><code class="lang-csharp hljs">public const int THRESH_MIN = 2</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -474,7 +500,7 @@ from the same connection.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const int WND_RCV = null</code></pre>
+    <pre><code class="lang-csharp hljs">public const int WND_RCV = 128</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -901,7 +927,7 @@ the extra bytes can be used to store a CRC or other information</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetNoDelay(bool nodelay = false, int interval = null, int resend = 0, bool nocwnd = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SetNoDelay(bool nodelay = false, int interval = 100, int resend = 0, bool nocwnd = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">

@@ -22,6 +22,8 @@
     
     <meta property="docfx:rel" content="../">
     
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
   </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
@@ -94,7 +96,7 @@
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><span class="xref">IDisposable</span></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -134,9 +136,27 @@
     <div>
       <a class="xref" href="Mirage.NetworkReader.html#Mirage_NetworkReader_Read__1">NetworkReader.Read&lt;T&gt;()</a>
     </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Mirage.html">Mirage</a></h6>
-  <h6><strong>Assembly</strong>: doc.dll</h6>
+  <h6><strong>Assembly</strong>: Mirage.dll</h6>
   <h5 id="Mirage_PooledNetworkReader_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public sealed class PooledNetworkReader : NetworkReader, IDisposable</code></pre>
@@ -160,17 +180,20 @@
   </div>
   <h3 id="implements">Implements</h3>
   <div>
-      <span class="xref">IDisposable</span>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Mirage.NotifyPacketSerializer.html#Mirage_NotifyPacketSerializer_ReadNotifyPacket_Mirage_NetworkReader_">NotifyPacketSerializer.ReadNotifyPacket(NetworkReader)</a>
+  </div>
   <div>
       <a class="xref" href="Mirage.GameObjectSerializers.html#Mirage_GameObjectSerializers_ReadGameObjectSyncVar_Mirage_NetworkReader_">GameObjectSerializers.ReadGameObjectSyncVar(NetworkReader)</a>
   </div>
   <div>
-      <a class="xref" href="Mirage.NetworkBehaviorSerializers.html#Mirage_NetworkBehaviorSerializers_ReadNetworkBehaviourSyncVar_Mirage_NetworkReader_">NetworkBehaviorSerializers.ReadNetworkBehaviourSyncVar(NetworkReader)</a>
+      <a class="xref" href="Mirage.NetworkIdentitySerializers.html#Mirage_NetworkIdentitySerializers_ReadNetworkIdentitySyncVar_Mirage_NetworkReader_">NetworkIdentitySerializers.ReadNetworkIdentitySyncVar(NetworkReader)</a>
   </div>
   <div>
-      <a class="xref" href="Mirage.NetworkIdentitySerializers.html#Mirage_NetworkIdentitySerializers_ReadNetworkIdentitySyncVar_Mirage_NetworkReader_">NetworkIdentitySerializers.ReadNetworkIdentitySyncVar(NetworkReader)</a>
+      <a class="xref" href="Mirage.NetworkBehaviorSerializers.html#Mirage_NetworkBehaviorSerializers_ReadNetworkBehaviourSyncVar_Mirage_NetworkReader_">NetworkBehaviorSerializers.ReadNetworkBehaviourSyncVar(NetworkReader)</a>
   </div>
   <div>
       <a class="xref" href="Mirage.NetworkReaderExtensions.html#Mirage_NetworkReaderExtensions_ReadByte_Mirage_NetworkReader_">NetworkReaderExtensions.ReadByte(NetworkReader)</a>
@@ -294,9 +317,6 @@
   </div>
   <div>
       <a class="xref" href="Mirage.NetworkReaderExtensions.html#Mirage_NetworkReaderExtensions_ReadGameObject_Mirage_NetworkReader_">NetworkReaderExtensions.ReadGameObject(NetworkReader)</a>
-  </div>
-  <div>
-      <a class="xref" href="Mirage.NotifyPacketSerializer.html#Mirage_NotifyPacketSerializer_ReadNotifyPacket_Mirage_NetworkReader_">NotifyPacketSerializer.ReadNotifyPacket(NetworkReader)</a>
   </div>
 </article>
           </div>

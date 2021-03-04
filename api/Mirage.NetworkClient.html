@@ -22,6 +22,8 @@
     
     <meta property="docfx:rel" content="../">
     
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
   </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
@@ -98,7 +100,7 @@
     <div><a class="xref" href="Mirage.INetworkClient.html">INetworkClient</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Mirage.html">Mirage</a></h6>
-  <h6><strong>Assembly</strong>: doc.dll</h6>
+  <h6><strong>Assembly</strong>: Mirage.dll</h6>
   <h5 id="Mirage_NetworkClient_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class NetworkClient : MonoBehaviour, INetworkClient</code></pre>
@@ -457,7 +459,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">UniTask</span></td>
+        <td><span class="xref">Cysharp.Threading.Tasks.UniTask</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -512,20 +514,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">UniTask</span></td>
+        <td><span class="xref">Cysharp.Threading.Tasks.UniTask</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkClient_ConnectAsync_Uri_.md&amp;value=---%0Auid%3A%20Mirage.NetworkClient.ConnectAsync(Uri)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkClient_ConnectAsync_System_Uri_.md&amp;value=---%0Auid%3A%20Mirage.NetworkClient.ConnectAsync(System.Uri)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkClient.cs/#L134">View Source</a>
   </span>
   <a id="Mirage_NetworkClient_ConnectAsync_" data-uid="Mirage.NetworkClient.ConnectAsync*"></a>
-  <h4 id="Mirage_NetworkClient_ConnectAsync_Uri_" data-uid="Mirage.NetworkClient.ConnectAsync(Uri)">ConnectAsync(Uri)</h4>
+  <h4 id="Mirage_NetworkClient_ConnectAsync_System_Uri_" data-uid="Mirage.NetworkClient.ConnectAsync(System.Uri)">ConnectAsync(Uri)</h4>
   <div class="markdown level1 summary"><p>Connect client to a NetworkServer instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -544,7 +546,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Uri</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
         <td><span class="parametername">uri</span></td>
         <td><p>Address of the server to connect to</p>
 </td>
@@ -561,7 +563,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">UniTask</span></td>
+        <td><span class="xref">Cysharp.Threading.Tasks.UniTask</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -644,7 +646,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Send&lt;T&gt;(T message, int channelId = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Send&lt;T&gt;(T message, int channelId = 0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -699,7 +701,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UniTask SendAsync&lt;T&gt;(T message, int channelId = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public UniTask SendAsync&lt;T&gt;(T message, int channelId = 0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -733,7 +735,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">UniTask</span></td>
+        <td><span class="xref">Cysharp.Threading.Tasks.UniTask</span></td>
         <td><p>True if message was sent.</p>
 </td>
       </tr>
