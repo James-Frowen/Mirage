@@ -1,20 +1,19 @@
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Security.Cryptography;
 using Mirage.RemoteCalls;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.Events;
-#if UNITY_EDITOR
-using UnityEditor;
-#if UNITY_2018_3_OR_NEWER
-using UnityEditor.Experimental.SceneManagement;
-#endif
-#endif
 
 namespace Mirage
 {
+
+
+    public struct NetworkIdentityConfig
+    {
+        public ulong sceneId;
+        public string m_AssetId;
+    }
+
     /// <summary>
     /// The NetworkIdentity identifies objects across the network, between server and clients.
     /// Its primary data is a NetworkInstanceId which is allocated by the server and then set on clients.
@@ -104,15 +103,18 @@ namespace Mirage
     ///     </description></item>
     /// </list>
     /// </remarks>
-    [DisallowMultipleComponent]
-    [AddComponentMenu("Network/NetworkIdentity")]
-    [HelpURL("https://miragenet.github.io/Mirage/Articles/Components/NetworkIdentity.html")]
-    public sealed class NetworkIdentity : MonoBehaviour
+    public sealed class NetworkIdentity : MirageComponent
     {
         static readonly ILogger logger = LogFactory.GetLogger<NetworkIdentity>();
 
-        [NonSerialized]
-        NetworkBehaviour[] networkBehavioursCache;
+        public NetworkIdentity(GameObject gameObject, NetworkBehaviour[] behaviours, NetworkVisibility visibility, NetworkIdentityConfig config) : base(gameObject)
+        {
+            NetworkBehaviours = behaviours ?? throw new ArgumentNullException(nameof(behaviours));
+            Visibility = visibility ?? throw new ArgumentNullException(nameof(visibility));
+
+            m_AssetId = config.m_AssetId;
+            sceneId = config.sceneId;
+        }
 
         /// <summary>
         /// Returns true if running as a client and this object was spawned by a server.
@@ -158,7 +160,6 @@ namespace Mirage
         /// <para>This is used for spawning scene objects on clients.</para>
         /// </summary>
         // persistent scene id <sceneHash/32,sceneId/32> (see AssignSceneID comments)
-        [FormerlySerializedAs("m_SceneId"), HideInInspector]
         public ulong sceneId;
 
         /// <summary>
@@ -209,38 +210,12 @@ namespace Mirage
         /// <summary>
         /// Array of NetworkBehaviours associated with this NetworkIdentity. Can be in child GameObjects.
         /// </summary>
-        public NetworkBehaviour[] NetworkBehaviours
-        {
-            get
-            {
-                if (networkBehavioursCache != null)
-                    return networkBehavioursCache;
-
-                NetworkBehaviour[] components = GetComponentsInChildren<NetworkBehaviour>(true);
-
-                if (components.Length > byte.MaxValue)
-                    throw new InvalidOperationException("Only 255 NetworkBehaviour per gameobject allowed");
-
-                networkBehavioursCache = components;
-                return networkBehavioursCache;
-            }
-        }
+        public NetworkBehaviour[] NetworkBehaviours { get; }
 
 
-        NetworkVisibility visibilityCache;
-        public NetworkVisibility Visibility
-        {
-            get
-            {
-                if (visibilityCache is null)
-                {
-                    visibilityCache = GetComponent<NetworkVisibility>();
-                }
-                return visibilityCache;
-            }
-        }
+        public NetworkVisibility Visibility { get; }
 
-        [SerializeField, HideInInspector] string m_AssetId;
+        string m_AssetId;
 
 
         /// <remarks>
@@ -403,247 +378,6 @@ namespace Mirage
         }
 
         /// <summary>
-        /// hasSpawned should always be false before runtime
-        /// </summary>
-        [SerializeField, HideInInspector] bool hasSpawned;
-        public bool SpawnedFromInstantiate { get; private set; }
-
-        void Awake()
-        {
-            if (hasSpawned)
-            {
-                logger.LogError($"{name} has already spawned. Don't call Instantiate for NetworkIdentities that were in the scene since the beginning (aka scene objects).  Otherwise the client won't know which object to use for a SpawnSceneObject message.");
-
-                SpawnedFromInstantiate = true;
-                Destroy(gameObject);
-            }
-
-            hasSpawned = true;
-        }
-
-        void OnValidate()
-        {
-            // OnValidate is not called when using Instantiate, so we can use
-            // it to make sure that hasSpawned is false
-            hasSpawned = false;
-
-#if UNITY_EDITOR
-            SetupIDs();
-#endif
-        }
-
-#if UNITY_EDITOR
-        void AssignAssetID(GameObject prefab) => AssignAssetID(AssetDatabase.GetAssetPath(prefab));
-        void AssignAssetID(string path) => m_AssetId = AssetDatabase.AssetPathToGUID(path);
-
-        bool ThisIsAPrefab() => PrefabUtility.IsPartOfPrefabAsset(gameObject);
-
-        bool ThisIsASceneObjectWithPrefabParent(out GameObject prefab)
-        {
-            prefab = null;
-
-            if (!PrefabUtility.IsPartOfPrefabInstance(gameObject))
-            {
-                return false;
-            }
-            prefab = PrefabUtility.GetCorrespondingObjectFromSource(gameObject);
-
-            if (prefab is null)
-            {
-                logger.LogError("Failed to find prefab parent for scene object [name:" + gameObject.name + "]");
-                return false;
-            }
-            return true;
-        }
-
-        static uint GetRandomUInt()
-        {
-            // use Crypto RNG to avoid having time based duplicates
-            using (var rng = new RNGCryptoServiceProvider())
-            {
-                byte[] bytes = new byte[4];
-                rng.GetBytes(bytes);
-                return BitConverter.ToUInt32(bytes, 0);
-            }
-        }
-
-        // persistent sceneId assignment
-        // (because scene objects have no persistent unique ID in Unity)
-        //
-        // original UNET used OnPostProcessScene to assign an index based on
-        // FindObjectOfType<NetworkIdentity> order.
-        // -> this didn't work because FindObjectOfType order isn't deterministic.
-        // -> one workaround is to sort them by sibling paths, but it can still
-        //    get out of sync when we open scene2 in editor and we have
-        //    DontDestroyOnLoad objects that messed with the sibling index.
-        //
-        // we absolutely need a persistent id. challenges:
-        // * it needs to be 0 for prefabs
-        //   => we set it to 0 in SetupIDs() if prefab!
-        // * it needs to be only assigned in edit time, not at runtime because
-        //   only the objects that were in the scene since beginning should have
-        //   a scene id.
-        //   => Application.isPlaying check solves that
-        // * it needs to detect duplicated sceneIds after duplicating scene
-        //   objects
-        //   => sceneIds dict takes care of that
-        // * duplicating the whole scene file shouldn't result in duplicate
-        //   scene objects
-        //   => buildIndex is shifted into sceneId for that.
-        //   => if we have no scenes in build index then it doesn't matter
-        //      because by definition a build can't switch to other scenes
-        //   => if we do have scenes in build index then it will be != -1
-        //   note: the duplicated scene still needs to be opened once for it to
-        //          be set properly
-        // * scene objects need the correct scene index byte even if the scene's
-        //   build index was changed or a duplicated scene wasn't opened yet.
-        //   => OnPostProcessScene is the only function that gets called for
-        //      each scene before runtime, so this is where we set the scene
-        //      byte.
-        // * disabled scenes in build settings should result in same scene index
-        //   in editor and in build
-        //   => .gameObject.scene.buildIndex filters out disabled scenes by
-        //      default
-        // * generated sceneIds absolutely need to set scene dirty and force the
-        //   user to resave.
-        //   => Undo.RecordObject does that perfectly.
-        // * sceneIds should never be generated temporarily for unopened scenes
-        //   when building, otherwise editor and build get out of sync
-        //   => BuildPipeline.isBuildingPlayer check solves that
-        void AssignSceneID()
-        {
-            // we only ever assign sceneIds at edit time, never at runtime.
-            // by definition, only the original scene objects should get one.
-            // -> if we assign at runtime then server and client would generate
-            //    different random numbers!
-            if (Application.isPlaying)
-                return;
-
-            // no valid sceneId yet, or duplicate?
-            bool duplicate = sceneIds.TryGetValue(sceneId, out NetworkIdentity existing) && existing != null && existing != this;
-            if (sceneId == 0 || duplicate)
-            {
-                // clear in any case, because it might have been a duplicate
-                sceneId = 0;
-
-                // if a scene was never opened and we are building it, then a
-                // sceneId would be assigned to build but not saved in editor,
-                // resulting in them getting out of sync.
-                // => don't ever assign temporary ids. they always need to be
-                //    permanent
-                // => throw an exception to cancel the build and let the user
-                //    know how to fix it!
-                if (BuildPipeline.isBuildingPlayer)
-                    throw new InvalidOperationException("Scene " + gameObject.scene.path + " needs to be opened and resaved before building, because the scene object " + name + " has no valid sceneId yet.");
-
-                // if we generate the sceneId then we MUST be sure to set dirty
-                // in order to save the scene object properly. otherwise it
-                // would be regenerated every time we reopen the scene, and
-                // upgrading would be very difficult.
-                // -> Undo.RecordObject is the new EditorUtility.SetDirty!
-                // -> we need to call it before changing.
-                Undo.RecordObject(this, "Generated SceneId");
-
-                // generate random sceneId part (0x00000000FFFFFFFF)
-                uint randomId = GetRandomUInt();
-
-                // only assign if not a duplicate of an existing scene id
-                // (small chance, but possible)
-                duplicate = sceneIds.TryGetValue(randomId, out existing) && existing != null && existing != this;
-                if (!duplicate)
-                {
-                    sceneId = randomId;
-                }
-            }
-
-            // add to sceneIds dict no matter what
-            // -> even if we didn't generate anything new, because we still need
-            //    existing sceneIds in there to check duplicates
-            sceneIds[sceneId] = this;
-        }
-
-        // copy scene path hash into sceneId for scene objects.
-        // this is the only way for scene file duplication to not contain
-        // duplicate sceneIds as it seems.
-        // -> sceneId before: 0x00000000AABBCCDD
-        // -> then we clear the left 4 bytes, so that our 'OR' uses 0x00000000
-        // -> then we OR the hash into the 0x00000000 part
-        // -> buildIndex is not enough, because Editor and Build have different
-        //    build indices if there are disabled scenes in build settings, and
-        //    if no scene is in build settings then Editor and Build have
-        //    different indices too (Editor=0, Build=-1)
-        // => ONLY USE THIS FROM POSTPROCESSSCENE!
-        [EditorBrowsable(EditorBrowsableState.Never)]
-        public void SetSceneIdSceneHashPartInternal()
-        {
-            // get deterministic scene hash
-            uint pathHash = (uint)gameObject.scene.path.GetStableHashCode();
-
-            // shift hash from 0x000000FFFFFFFF to 0xFFFFFFFF00000000
-            ulong shiftedHash = (ulong)pathHash << 32;
-
-            // OR into scene id
-            sceneId = (sceneId & 0xFFFFFFFF) | shiftedHash;
-
-            // log it. this is incredibly useful to debug sceneId issues.
-            if (logger.LogEnabled()) logger.Log(name + " in scene=" + gameObject.scene.name + " scene index hash(" + pathHash.ToString("X") + ") copied into sceneId: " + sceneId.ToString("X"));
-        }
-
-        void SetupIDs()
-        {
-            if (ThisIsAPrefab())
-            {
-                // force 0 for prefabs
-                sceneId = 0;
-                AssignAssetID(gameObject);
-            }
-            // are we currently in prefab editing mode? aka prefab stage
-            // => check prefabstage BEFORE SceneObjectWithPrefabParent
-            //    (fixes https://github.com/vis2k/Mirror/issues/976)
-            // => if we don't check GetCurrentPrefabStage and only check
-            //    GetPrefabStage(gameObject), then the 'else' case where we
-            //    assign a sceneId and clear the assetId would still be
-            //    triggered for prefabs. in other words: if we are in prefab
-            //    stage, do not bother with anything else ever!
-            else if (PrefabStageUtility.GetCurrentPrefabStage() != null)
-            {
-                // when modifying a prefab in prefab stage, Unity calls
-                // OnValidate for that prefab and for all scene objects based on
-                // that prefab.
-                //
-                // is this GameObject the prefab that we modify, and not just a
-                // scene object based on the prefab?
-                //   * GetCurrentPrefabStage = 'are we editing ANY prefab?'
-                //   * GetPrefabStage(go) = 'are we editing THIS prefab?'
-                if (PrefabStageUtility.GetPrefabStage(gameObject) != null)
-                {
-                    // force 0 for prefabs
-                    sceneId = 0;
-                    // NOTE: might make sense to use GetPrefabStage for asset
-                    //       path, but let's not touch it while it works.
-#if UNITY_2020_1_OR_NEWER
-                    string path = PrefabStageUtility.GetCurrentPrefabStage().assetPath;
-#else
-                    string path = PrefabStageUtility.GetCurrentPrefabStage().prefabAssetPath;
-#endif
-
-                    AssignAssetID(path);
-                }
-            }
-            else if (ThisIsASceneObjectWithPrefabParent(out GameObject prefab))
-            {
-                AssignSceneID();
-                AssignAssetID(prefab);
-            }
-            else
-            {
-                AssignSceneID();
-                m_AssetId = "";
-            }
-        }
-#endif
-
-        /// <summary>
         /// Unity will Destroy all networked objects on Scene Change, so we have to handle that here silently.
         /// That means we cannot have any warning or logging in this method.
         /// </summary>
@@ -651,8 +385,6 @@ namespace Mirage
         {
             // Objects spawned from Instantiate are not allowed so are destroyed right away
             // we don't want to call NetworkServer.Destroy if this is the case
-            if (SpawnedFromInstantiate)
-                return;
 
             // If false the object has already been unspawned
             // if it is still true, then we need to unspawn it
@@ -1183,11 +915,14 @@ namespace Mirage
         /// as people might want to be able to read the members inside OnDestroy(), and we have no way
         /// of invoking reset after OnDestroy is called.
         /// </summary>
+        [System.Obsolete("dont reset objects, create new one instead")]
         internal void Reset()
         {
+            // dont reset objects
+            throw new NotImplementedException();
+
             ResetSyncObjects();
 
-            hasSpawned = false;
             clientStarted = false;
             localPlayerStarted = false;
             NetId = 0;
@@ -1197,7 +932,6 @@ namespace Mirage
             ClientObjectManager = null;
             ConnectionToServer = null;
             ConnectionToClient = null;
-            networkBehavioursCache = null;
 
             ClearObservers();
         }

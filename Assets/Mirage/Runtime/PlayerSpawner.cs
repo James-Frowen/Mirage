@@ -167,7 +167,7 @@ namespace Mirage
         /// <summary>
         /// The current method of spawning players used by the PlayerSpawner.
         /// </summary>
-        [Tooltip("Round Robin or Random order of Start Position selection")]
+        
         public PlayerSpawnMethod playerSpawnMethod;
     }
 }

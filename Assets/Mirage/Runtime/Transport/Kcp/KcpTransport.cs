@@ -18,9 +18,9 @@ namespace Mirage.KCP
         [Tooltip("Used for DoS prevention,  clients must mine a HashCash with these many bits in order to connect, higher means more secure, but slower for the clients")]
         public int HashCashBits = 18;
 
-        [Tooltip("How many messages can be sent simultaneously")]
+        
         public int SendWindowSize = 32;
-        [Tooltip("How many messages can be received")]
+        
         public int ReceiveWindowSize = 8192;
 
         public KcpDelayMode delayMode = KcpDelayMode.Fast3;

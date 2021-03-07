@@ -3,8 +3,6 @@ using UnityEngine;
 
 namespace Mirage
 {
-    [ExecuteInEditMode]
-    [AddComponentMenu("Network/LogSettings")]
     public class LogSettings : MonoBehaviour
     {
         [System.Serializable]

@@ -14,8 +14,8 @@ namespace Mirage
     /// <remarks>
     /// <para>NetworkServer handles remote connections from remote clients, and also has a local connection for a local client.</para>
     /// </remarks>
-    [AddComponentMenu("Network/NetworkServer")]
-    [DisallowMultipleComponent]
+    
+    
     public class NetworkServer : MonoBehaviour, INetworkServer
     {
         static readonly ILogger logger = LogFactory.GetLogger(typeof(NetworkServer));
@@ -39,7 +39,7 @@ namespace Mirage
         // transport to use to accept connections
         public Transport Transport;
 
-        [Tooltip("Authentication component attached to this object")]
+        
         public NetworkAuthenticator authenticator;
 
         

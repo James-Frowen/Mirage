@@ -16,8 +16,8 @@ namespace Mirage
     /// Objects are spawned with ServerObjectManager.Spawn() which adds them to this set, and makes them be created on clients.
     /// Spawned objects are removed automatically when they are destroyed, or than they can be removed from the spawned set by calling ServerObjectManager.UnSpawn() - this does not destroy the object.</para>
     /// </remarks>
-    [AddComponentMenu("Network/ServerObjectManager")]
-    [DisallowMultipleComponent]
+    
+    
     public class ServerObjectManager : MonoBehaviour, IServerObjectManager, IObjectLocator
     {
         static readonly ILogger logger = LogFactory.GetLogger(typeof(ServerObjectManager));

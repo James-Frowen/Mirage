@@ -9,6 +9,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="UniTask" Version="2.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\UnityImplementation\Mirage.UnityEngine.csproj" />
   </ItemGroup>
 

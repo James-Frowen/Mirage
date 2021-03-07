@@ -3,7 +3,6 @@ using System.Linq;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.Serialization;
 
 namespace Mirage
 {
@@ -12,7 +11,10 @@ namespace Mirage
     /// Event fires from a <see cref="NetworkClient">NetworkClient</see> or <see cref="NetworkServer">NetworkServer</see> during a new connection, a new authentication, or a disconnection.
     /// <para>INetworkConnection - connection creating the event</para>
     /// </summary>
-    [Serializable] public class NetworkConnectionEvent : UnityEvent<INetworkConnection> { }
+    [Serializable]
+    public class NetworkConnectionEvent : UnityEvent<INetworkConnection>
+    {
+    }
 
     public enum ConnectState
     {
@@ -26,36 +28,33 @@ namespace Mirage
     /// <para>The <see cref="NetworkClient">NetworkClient</see> handle connection state, messages handlers, and connection configuration. There can be many <see cref="NetworkClient">NetworkClient</see> instances in a process at a time, but only one that is connected to a game server (<see cref="NetworkServer">NetworkServer</see>) that uses spawned objects.</para>
     /// <para><see cref="NetworkClient">NetworkClient</see> has an internal update function where it handles events from the transport layer. This includes asynchronous connect events, disconnect events and incoming data from a server.</para>
     /// </summary>
-    [AddComponentMenu("Network/NetworkClient")]
-    [DisallowMultipleComponent]
-    public class NetworkClient : MonoBehaviour, INetworkClient
+    public class NetworkClient : INetworkClient
     {
         static readonly ILogger logger = LogFactory.GetLogger(typeof(NetworkClient));
 
         public Transport Transport;
 
-        [Tooltip("Authentication component attached to this object")]
         public NetworkAuthenticator authenticator;
 
-        
+
         /// <summary>
         /// Event fires once the Client has connected its Server.
         /// </summary>
-        
+
         NetworkConnectionEvent _connected = new NetworkConnectionEvent();
         public NetworkConnectionEvent Connected => _connected;
 
         /// <summary>
         /// Event fires after the Client connection has sucessfully been authenticated with its Server.
         /// </summary>
-        
+
         NetworkConnectionEvent _authenticated = new NetworkConnectionEvent();
         public NetworkConnectionEvent Authenticated => _authenticated;
 
         /// <summary>
         /// Event fires after the Client has disconnected from its Server and Cleanup has been called.
         /// </summary>
-        
+
         UnityEvent _disconnected = new UnityEvent();
         public UnityEvent Disconnected => _disconnected;
 
@@ -78,6 +77,13 @@ namespace Mirage
         public bool IsConnected => connectState == ConnectState.Connected;
 
         readonly NetworkTime _time = new NetworkTime();
+
+        public NetworkClient(Transport transport, NetworkAuthenticator authenticator)
+        {
+            Transport = transport ?? throw new ArgumentNullException(nameof(transport));
+            this.authenticator = authenticator ?? throw new ArgumentNullException(nameof(authenticator));
+        }
+
         /// <summary>
         /// Time kept in this client
         /// </summary>
@@ -135,8 +141,6 @@ namespace Mirage
         {
             if (logger.LogEnabled()) logger.Log("Client Connect: " + uri);
 
-            if (Transport == null)
-                Transport = GetComponent<Transport>();
             if (Transport == null)
                 throw new InvalidOperationException("Transport could not be found for NetworkClient");
 

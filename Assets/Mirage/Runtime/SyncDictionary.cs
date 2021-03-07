@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
-using JetBrains.Annotations;
 
 namespace Mirage
 {
@@ -336,7 +335,7 @@ namespace Mirage
             return TryGetValue(item.Key, out TValue val) && EqualityComparer<TValue>.Default.Equals(val, item.Value);
         }
 
-        public void CopyTo([NotNull] KeyValuePair<TKey, TValue>[] array, int arrayIndex)
+        public void CopyTo(KeyValuePair<TKey, TValue>[] array, int arrayIndex)
         {
             if (arrayIndex < 0 || arrayIndex > array.Length)
             {

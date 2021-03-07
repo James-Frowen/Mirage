@@ -20,9 +20,8 @@ namespace Mirage
     /// <para>The NetworkBehaviour component requires a NetworkIdentity on the game object. There can be multiple NetworkBehaviours on a single game object. For an object with sub-components in a hierarchy, the NetworkIdentity must be on the root object, and NetworkBehaviour scripts must also be on the root object.</para>
     /// <para>Some of the built-in components of the networking system are derived from NetworkBehaviour, including NetworkTransport, NetworkAnimator and NetworkProximityChecker.</para>
     /// </remarks>
-    [AddComponentMenu("")]
-    [HelpURL("https://miragenet.github.io/Mirage/Articles/Guides/GameObjects/NetworkBehaviour.html")]
-    public abstract class NetworkBehaviour : MonoBehaviour
+
+    public abstract class NetworkBehaviour : MirageComponent
     {
         static readonly ILogger logger = LogFactory.GetLogger(typeof(NetworkBehaviour));
 
@@ -32,16 +31,13 @@ namespace Mirage
         /// <summary>
         /// sync mode for OnSerialize
         /// </summary>
-        [HideInInspector] public SyncMode syncMode = SyncMode.Observers;
+        public SyncMode syncMode = SyncMode.Observers;
 
         // hidden because NetworkBehaviourInspector shows it only if has OnSerialize.
         /// <summary>
         /// sync interval for OnSerialize (in seconds)
         /// </summary>
-        [Tooltip("Time in seconds until next change is synchronized to the client. '0' means send immediately if changed. '0.5' means only send changes every 500ms.\n(This is for state synchronization like SyncVars, SyncLists, OnSerialize. Not for Cmds, Rpcs, etc.)")]
-        // [0,2] should be enough. anything >2s is too laggy anyway.
-        [Range(0, 2)]
-        [HideInInspector] public float syncInterval = 0.1f;
+        public float syncInterval = 0.1f;
 
         /// <summary>
         /// Returns true if this object is active on an active server.
@@ -151,34 +147,15 @@ namespace Mirage
         /// <summary>
         /// Returns the NetworkIdentity of this object
         /// </summary>
-        public NetworkIdentity NetIdentity
-        {
-            get
-            {
-                // in this specific case,  we want to know if we have set it before
-                // so we can compare if the reference is null
-                // instead of calling unity's MonoBehaviour == operator
-                if (netIdentityCache is null)
-                {
-                    // GetComponentInParent doesn't works on disabled gameobjecs
-                    // and GetComponentsInParent(false)[0] isn't allocation free, so
-                    // we just drop child support in this specific case
-                    if (gameObject.activeSelf)
-                        netIdentityCache = GetComponentInParent<NetworkIdentity>();
-                    else
-                        netIdentityCache = GetComponent<NetworkIdentity>();
-
-                    // do this 2nd check inside first if so that we are not checking == twice on unity Object
-                    if (netIdentityCache is null)
-                    {
-                        logger.LogError("There is no NetworkIdentity on " + name + ". Please add one.");
-                    }
-                }
-                return netIdentityCache;
-            }
-        }
+        public NetworkIdentity NetIdentity { get; }
 
         private int? componentIndex;
+
+        protected NetworkBehaviour(GameObject gameObject, NetworkIdentity netIdentity) : base(gameObject)
+        {
+            NetIdentity = netIdentity ?? throw new ArgumentNullException(nameof(netIdentity));
+        }
+
         /// <summary>
         /// Returns the index of the component on this object
         /// </summary>
@@ -201,7 +178,7 @@ namespace Mirage
                 }
 
                 // this should never happen
-                logger.LogError("Could not find component in GameObject. You should not add/remove components in networked objects dynamically", this);
+                logger.LogError("Could not find component in GameObject. You should not add/remove components in networked objects dynamically");
 
                 return -1;
             }
@@ -296,7 +273,7 @@ namespace Mirage
         protected internal void SendRpcInternal(Type invokeClass, string rpcName, NetworkWriter writer, int channelId, bool excludeOwner)
         {
             // this was in Weaver before
-            if (!Server || !Server.Active)
+            if (Server != null || !Server.Active)
             {
                 throw new InvalidOperationException("RPC Function " + rpcName + " called on Client.");
             }
@@ -328,7 +305,7 @@ namespace Mirage
         protected internal void SendTargetRpcInternal(INetworkConnection conn, Type invokeClass, string rpcName, NetworkWriter writer, int channelId)
         {
             // this was in Weaver before
-            if (!Server || !Server.Active)
+            if (Server != null || !Server.Active)
             {
                 throw new InvalidOperationException("RPC Function " + rpcName + " called on client.");
             }

@@ -9,7 +9,7 @@ namespace Mirage
     //
     // note: we inherit from NetworkBehaviour so we can reuse .netIdentity, etc.
     // note: unlike UNET, we only allow 1 proximity checker per NetworkIdentity.
-    [DisallowMultipleComponent]
+    
     public abstract class NetworkVisibility : NetworkBehaviour
     {
         /// <summary>
