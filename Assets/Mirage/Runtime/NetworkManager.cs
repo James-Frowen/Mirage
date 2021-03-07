@@ -11,15 +11,15 @@ namespace Mirage
     [DisallowMultipleComponent]
     public class NetworkManager : MonoBehaviour
     {
-        [FormerlySerializedAs("server")]
+        
         public NetworkServer Server;
-        [FormerlySerializedAs("client")]
+        
         public NetworkClient Client;
-        [FormerlySerializedAs("sceneManager")]
+        
         public NetworkSceneManager SceneManager;
-        [FormerlySerializedAs("serverObjectManager")]
+        
         public ServerObjectManager ServerObjectManager;
-        [FormerlySerializedAs("clientObjectManager")]
+        
         public ClientObjectManager ClientObjectManager;
 
         /// <summary>

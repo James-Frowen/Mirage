@@ -42,49 +42,49 @@ namespace Mirage
         [Tooltip("Authentication component attached to this object")]
         public NetworkAuthenticator authenticator;
 
-        [Header("Events")]
+        
         /// <summary>
         /// This is invoked when a server is started - including when a host is started.
         /// </summary>
-        [FormerlySerializedAs("Started")]
-        [SerializeField] UnityEvent _started = new UnityEvent();
+        
+        UnityEvent _started = new UnityEvent();
         public UnityEvent Started => _started;
 
         /// <summary>
         /// Event fires once a new Client has connect to the Server.
         /// </summary>
-        [FormerlySerializedAs("Connected")]
-        [SerializeField] NetworkConnectionEvent _connected = new NetworkConnectionEvent();
+        
+        NetworkConnectionEvent _connected = new NetworkConnectionEvent();
         public NetworkConnectionEvent Connected => _connected;
 
         /// <summary>
         /// Event fires once a new Client has passed Authentication to the Server.
         /// </summary>
-        [FormerlySerializedAs("Authenticated")]
-        [SerializeField] NetworkConnectionEvent _authenticated = new NetworkConnectionEvent();
+        
+        NetworkConnectionEvent _authenticated = new NetworkConnectionEvent();
         public NetworkConnectionEvent Authenticated => _authenticated;
 
         /// <summary>
         /// Event fires once a Client has Disconnected from the Server.
         /// </summary>
-        [FormerlySerializedAs("Disconnected")]
-        [SerializeField] NetworkConnectionEvent _disconnected = new NetworkConnectionEvent();
+        
+        NetworkConnectionEvent _disconnected = new NetworkConnectionEvent();
         public NetworkConnectionEvent Disconnected => _disconnected;
 
-        [SerializeField] UnityEvent _stopped = new UnityEvent();
+        UnityEvent _stopped = new UnityEvent();
         public UnityEvent Stopped => _stopped;
 
         /// <summary>
         /// This is invoked when a host is started.
         /// <para>StartHost has multiple signatures, but they all cause this hook to be called.</para>
         /// </summary>
-        [SerializeField] UnityEvent _onStartHost = new UnityEvent();
+        UnityEvent _onStartHost = new UnityEvent();
         public UnityEvent OnStartHost => _onStartHost;
 
         /// <summary>
         /// This is called when a host is stopped.
         /// </summary>
-        [SerializeField] UnityEvent _onStopHost = new UnityEvent();
+        UnityEvent _onStopHost = new UnityEvent();
         public UnityEvent OnStopHost => _onStopHost;
 
         /// <summary>

@@ -13,17 +13,17 @@ namespace Mirage
     {
         static readonly ILogger logger = LogFactory.GetLogger(typeof(PlayerSpawner));
 
-        [FormerlySerializedAs("client")]
+        
         public NetworkClient Client;
-        [FormerlySerializedAs("server")]
+        
         public NetworkServer Server;
-        [FormerlySerializedAs("sceneManager")]
+        
         public NetworkSceneManager SceneManager;
-        [FormerlySerializedAs("clientObjectManager")]
+        
         public ClientObjectManager ClientObjectManager;
-        [FormerlySerializedAs("serverObjectManager")]
+        
         public ServerObjectManager ServerObjectManager;
-        [FormerlySerializedAs("playerPrefab")]
+        
         public NetworkIdentity PlayerPrefab;
 
         /// <summary>

@@ -2,9 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Net;
-using Cysharp.Threading.Tasks;
 using UnityEngine;
-using UnityEngine.Assertions;
 
 namespace Mirage
 {
@@ -85,8 +83,7 @@ namespace Mirage
         /// <param name="networkConnectionId"></param>
         public NetworkConnection(IConnection connection)
         {
-            Assert.IsNotNull(connection);
-            this.connection = connection;
+            this.connection = connection ?? throw new ArgumentNullException(nameof(connection));
 
             lastNotifySentTime = Time.unscaledTime;
             // a black message to ensure a notify timeout

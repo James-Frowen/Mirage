@@ -1,42 +1,33 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Cysharp.Threading.Tasks;
 using Mirage.RemoteCalls;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Mirage
 {
-
-    [AddComponentMenu("Network/ClientObjectManager")]
-    [DisallowMultipleComponent]
-    public class ClientObjectManager : MonoBehaviour, IClientObjectManager, IObjectLocator
+    public class ClientObjectManager : IClientObjectManager, IObjectLocator
     {
         static readonly ILogger logger = LogFactory.GetLogger(typeof(ClientObjectManager));
 
-        [FormerlySerializedAs("client")]
         public NetworkClient Client;
-        [FormerlySerializedAs("networkSceneManager")]
         public NetworkSceneManager NetworkSceneManager;
 
         // spawn handlers. internal for testing purposes. do not use directly.
         internal readonly Dictionary<Guid, SpawnHandlerDelegate> spawnHandlers = new Dictionary<Guid, SpawnHandlerDelegate>();
         internal readonly Dictionary<Guid, UnSpawnDelegate> unspawnHandlers = new Dictionary<Guid, UnSpawnDelegate>();
 
-        [Header("Events")]
         /// <summary>
         /// Raised when the client spawns an object
         /// </summary>
-        [FormerlySerializedAs("Spawned")]
-        [SerializeField] SpawnEvent _spawned = new SpawnEvent();
+        SpawnEvent _spawned = new SpawnEvent();
         public SpawnEvent Spawned => _spawned;
 
         /// <summary>
         /// Raised when the client unspawns an object
         /// </summary>
-        [FormerlySerializedAs("UnSpawned")]
-        [SerializeField] SpawnEvent _unSpawned = new SpawnEvent();
+
+        SpawnEvent _unSpawned = new SpawnEvent();
         public SpawnEvent UnSpawned => _unSpawned;
 
         /// <summary>
@@ -44,7 +35,7 @@ namespace Mirage
         /// </summary>
         public NetworkIdentity LocalPlayer => Client.Connection?.Identity;
 
-        [Header("Prefabs")]
+
         /// <summary>
         /// List of prefabs that will be registered with the spawning system.
         /// <para>For each of these prefabs, ClientManager.RegisterPrefab() will be automatically invoke.</para>

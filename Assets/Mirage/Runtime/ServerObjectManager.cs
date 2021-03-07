@@ -22,24 +22,24 @@ namespace Mirage
     {
         static readonly ILogger logger = LogFactory.GetLogger(typeof(ServerObjectManager));
 
-        [FormerlySerializedAs("server")]
+        
         public NetworkServer Server;
-        [FormerlySerializedAs("networkSceneManager")]
+        
         public NetworkSceneManager NetworkSceneManager;
 
-        [Header("Events")]
+        
         /// <summary>
         /// Raised when the client spawns an object
         /// </summary>
-        [FormerlySerializedAs("Spawned")]
-        [SerializeField] SpawnEvent _spawned = new SpawnEvent();
+        
+        SpawnEvent _spawned = new SpawnEvent();
         public SpawnEvent Spawned => _spawned;
 
         /// <summary>
         /// Raised when the client unspawns an object
         /// </summary>
-        [FormerlySerializedAs("UnSpawned")]
-        [SerializeField] SpawnEvent _unSpawned = new SpawnEvent();
+        
+        SpawnEvent _unSpawned = new SpawnEvent();
         public SpawnEvent UnSpawned => _unSpawned;
 
         uint nextNetworkId = 1;
