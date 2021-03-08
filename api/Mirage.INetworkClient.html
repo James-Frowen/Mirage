@@ -38,8 +38,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" style="display:flex;" href="https://github.com/MirageNet/Mirage">
-                <img id="logo" class="svg" style="vertical-align: middle;align-self:center;" src="../logo.png" alt="">
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -87,11 +87,20 @@
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Mirage.IMessageSender.html#Mirage_IMessageSender_Send__1___0_System_Int32_">IMessageSender.Send&lt;T&gt;(T, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mirage.IMessageSender.html#Mirage_IMessageSender_Send_System_ArraySegment_System_Byte__System_Int32_">IMessageSender.Send(ArraySegment&lt;Byte&gt;, Int32)</a>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Mirage.html">Mirage</a></h6>
   <h6><strong>Assembly</strong>: Mirage.dll</h6>
   <h5 id="Mirage_INetworkClient_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface INetworkClient</code></pre>
+    <pre><code class="lang-csharp hljs">public interface INetworkClient : IMessageSender</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
@@ -264,115 +273,6 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">void Disconnect()</code></pre>
   </div>
-  
-  
-  <a id="Mirage_INetworkClient_Send_" data-uid="Mirage.INetworkClient.Send*"></a>
-  <h4 id="Mirage_INetworkClient_Send__1___0_System_Int32_" data-uid="Mirage.INetworkClient.Send``1(``0,System.Int32)">Send&lt;T&gt;(T, Int32)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Send&lt;T&gt;(T message, int channelId = 0)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">message</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">channelId</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Mirage_INetworkClient_SendAsync_" data-uid="Mirage.INetworkClient.SendAsync*"></a>
-  <h4 id="Mirage_INetworkClient_SendAsync__1___0_System_Int32_" data-uid="Mirage.INetworkClient.SendAsync``1(``0,System.Int32)">SendAsync&lt;T&gt;(T, Int32)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">UniTask SendAsync&lt;T&gt;(T message, int channelId = 0)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">message</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">channelId</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Cysharp.Threading.Tasks.UniTask</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 </article>
           </div>
           

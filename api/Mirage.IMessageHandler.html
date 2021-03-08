@@ -38,8 +38,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" style="display:flex;" href="https://github.com/MirageNet/Mirage">
-                <img id="logo" class="svg" style="vertical-align: middle;align-self:center;" src="../logo.png" alt="">
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -85,425 +85,48 @@
   
   <h1 id="Mirage_IMessageHandler" data-uid="Mirage.IMessageHandler" class="text-break">Interface IMessageHandler
   </h1>
-  <div class="markdown level0 summary"><p>An object that can send and receive messages</p>
+  <div class="markdown level0 summary"><p>An object that can send and receive messages and notify messages</p>
 </div>
   <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Mirage.IMessageSender.html#Mirage_IMessageSender_Send__1___0_System_Int32_">IMessageSender.Send&lt;T&gt;(T, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mirage.IMessageSender.html#Mirage_IMessageSender_Send_System_ArraySegment_System_Byte__System_Int32_">IMessageSender.Send(ArraySegment&lt;Byte&gt;, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mirage.IMessageReceiver.html#Mirage_IMessageReceiver_RegisterHandler__1_System_Action_Mirage_INetworkConnection___0__">IMessageReceiver.RegisterHandler&lt;T&gt;(Action&lt;INetworkConnection, T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mirage.IMessageReceiver.html#Mirage_IMessageReceiver_RegisterHandler__1_System_Action___0__">IMessageReceiver.RegisterHandler&lt;T&gt;(Action&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mirage.IMessageReceiver.html#Mirage_IMessageReceiver_UnregisterHandler__1">IMessageReceiver.UnregisterHandler&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mirage.IMessageReceiver.html#Mirage_IMessageReceiver_ClearHandlers">IMessageReceiver.ClearHandlers()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mirage.IMessageReceiver.html#Mirage_IMessageReceiver_ProcessMessagesAsync">IMessageReceiver.ProcessMessagesAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mirage.INotifySender.html#Mirage_INotifySender_SendNotify__1___0_System_Object_System_Int32_">INotifySender.SendNotify&lt;T&gt;(T, Object, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mirage.INotifyReceiver.html#Mirage_INotifyReceiver_NotifyDelivered">INotifyReceiver.NotifyDelivered</a>
+    </div>
+    <div>
+      <a class="xref" href="Mirage.INotifyReceiver.html#Mirage_INotifyReceiver_NotifyLost">INotifyReceiver.NotifyLost</a>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Mirage.html">Mirage</a></h6>
   <h6><strong>Assembly</strong>: Mirage.dll</h6>
   <h5 id="Mirage_IMessageHandler_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IMessageHandler</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IMessageHandler : IMessageSender, IMessageReceiver, INotifySender, INotifyReceiver</code></pre>
   </div>
-  <h3 id="methods">Methods
-  </h3>
-  
-  
-  <a id="Mirage_IMessageHandler_ClearHandlers_" data-uid="Mirage.IMessageHandler.ClearHandlers*"></a>
-  <h4 id="Mirage_IMessageHandler_ClearHandlers" data-uid="Mirage.IMessageHandler.ClearHandlers">ClearHandlers()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ClearHandlers()</code></pre>
-  </div>
-  
-  
-  <a id="Mirage_IMessageHandler_ProcessMessagesAsync_" data-uid="Mirage.IMessageHandler.ProcessMessagesAsync*"></a>
-  <h4 id="Mirage_IMessageHandler_ProcessMessagesAsync" data-uid="Mirage.IMessageHandler.ProcessMessagesAsync">ProcessMessagesAsync()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">UniTask ProcessMessagesAsync()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Cysharp.Threading.Tasks.UniTask</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Mirage_IMessageHandler_RegisterHandler_" data-uid="Mirage.IMessageHandler.RegisterHandler*"></a>
-  <h4 id="Mirage_IMessageHandler_RegisterHandler__1_System_Action___0__" data-uid="Mirage.IMessageHandler.RegisterHandler``1(System.Action{``0})">RegisterHandler&lt;T&gt;(Action&lt;T&gt;)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void RegisterHandler&lt;T&gt;(Action&lt;T&gt; handler)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</td>
-        <td><span class="parametername">handler</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Mirage_IMessageHandler_RegisterHandler_" data-uid="Mirage.IMessageHandler.RegisterHandler*"></a>
-  <h4 id="Mirage_IMessageHandler_RegisterHandler__1_System_Action_Mirage_INetworkConnection___0__" data-uid="Mirage.IMessageHandler.RegisterHandler``1(System.Action{Mirage.INetworkConnection,``0})">RegisterHandler&lt;T&gt;(Action&lt;INetworkConnection, T&gt;)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void RegisterHandler&lt;T&gt;(Action&lt;INetworkConnection, T&gt; handler)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="Mirage.INetworkConnection.html">INetworkConnection</a>, T&gt;</td>
-        <td><span class="parametername">handler</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Mirage_IMessageHandler_Send_" data-uid="Mirage.IMessageHandler.Send*"></a>
-  <h4 id="Mirage_IMessageHandler_Send__1___0_System_Int32_" data-uid="Mirage.IMessageHandler.Send``1(``0,System.Int32)">Send&lt;T&gt;(T, Int32)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Send&lt;T&gt;(T msg, int channelId = 0)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">msg</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">channelId</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Mirage_IMessageHandler_SendAsync_" data-uid="Mirage.IMessageHandler.SendAsync*"></a>
-  <h4 id="Mirage_IMessageHandler_SendAsync_System_ArraySegment_System_Byte__System_Int32_" data-uid="Mirage.IMessageHandler.SendAsync(System.ArraySegment{System.Byte},System.Int32)">SendAsync(ArraySegment&lt;Byte&gt;, Int32)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">UniTask SendAsync(ArraySegment&lt;byte&gt; segment, int channelId = 0)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.arraysegment-1">ArraySegment</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>&gt;</td>
-        <td><span class="parametername">segment</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">channelId</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Cysharp.Threading.Tasks.UniTask</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Mirage_IMessageHandler_SendAsync_" data-uid="Mirage.IMessageHandler.SendAsync*"></a>
-  <h4 id="Mirage_IMessageHandler_SendAsync__1___0_System_Int32_" data-uid="Mirage.IMessageHandler.SendAsync``1(``0,System.Int32)">SendAsync&lt;T&gt;(T, Int32)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">UniTask SendAsync&lt;T&gt;(T msg, int channelId = 0)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">msg</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">channelId</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Cysharp.Threading.Tasks.UniTask</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Mirage_IMessageHandler_SendNotify_" data-uid="Mirage.IMessageHandler.SendNotify*"></a>
-  <h4 id="Mirage_IMessageHandler_SendNotify__1___0_System_Object_System_Int32_" data-uid="Mirage.IMessageHandler.SendNotify``1(``0,System.Object,System.Int32)">SendNotify&lt;T&gt;(T, Object, Int32)</h4>
-  <div class="markdown level1 summary"><p>Sends a message, but notify when it is delivered or lost</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void SendNotify&lt;T&gt;(T msg, object token, int channelId = 1)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">msg</span></td>
-        <td><p>message to send</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
-        <td><span class="parametername">token</span></td>
-        <td><p>a arbitrary object that the sender will receive with their notification</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">channelId</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td><p>type of message to send</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Mirage_IMessageHandler_UnregisterHandler_" data-uid="Mirage.IMessageHandler.UnregisterHandler*"></a>
-  <h4 id="Mirage_IMessageHandler_UnregisterHandler__1" data-uid="Mirage.IMessageHandler.UnregisterHandler``1">UnregisterHandler&lt;T&gt;()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void UnregisterHandler&lt;T&gt;()</code></pre>
-  </div>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="events">Events
-  </h3>
-  
-  
-  <h4 id="Mirage_IMessageHandler_NotifyDelivered" data-uid="Mirage.IMessageHandler.NotifyDelivered">NotifyDelivered</h4>
-  <div class="markdown level1 summary"><p>Raised when a message is delivered</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">event Action&lt;INetworkConnection, object&gt; NotifyDelivered</code></pre>
-  </div>
-  <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="Mirage.INetworkConnection.html">INetworkConnection</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Mirage_IMessageHandler_NotifyLost" data-uid="Mirage.IMessageHandler.NotifyLost">NotifyLost</h4>
-  <div class="markdown level1 summary"><p>Raised when a message is lost</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">event Action&lt;INetworkConnection, object&gt; NotifyLost</code></pre>
-  </div>
-  <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="Mirage.INetworkConnection.html">INetworkConnection</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 </article>
           </div>
           

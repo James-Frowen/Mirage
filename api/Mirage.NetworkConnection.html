@@ -38,8 +38,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" style="display:flex;" href="https://github.com/MirageNet/Mirage">
-                <img id="logo" class="svg" style="vertical-align: middle;align-self:center;" src="../logo.png" alt="">
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -97,6 +97,10 @@
     <h5>Implements</h5>
     <div><a class="xref" href="Mirage.INetworkConnection.html">INetworkConnection</a></div>
     <div><a class="xref" href="Mirage.IMessageHandler.html">IMessageHandler</a></div>
+    <div><a class="xref" href="Mirage.IMessageSender.html">IMessageSender</a></div>
+    <div><a class="xref" href="Mirage.IMessageReceiver.html">IMessageReceiver</a></div>
+    <div><a class="xref" href="Mirage.INotifySender.html">INotifySender</a></div>
+    <div><a class="xref" href="Mirage.INotifyReceiver.html">INotifyReceiver</a></div>
     <div><a class="xref" href="Mirage.IVisibilityTracker.html">IVisibilityTracker</a></div>
     <div><a class="xref" href="Mirage.IObjectOwner.html">IObjectOwner</a></div>
   </div>
@@ -125,7 +129,7 @@
   <h6><strong>Assembly</strong>: Mirage.dll</h6>
   <h5 id="Mirage_NetworkConnection_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class NetworkConnection : INetworkConnection, IMessageHandler, IVisibilityTracker, IObjectOwner</code></pre>
+    <pre><code class="lang-csharp hljs">public class NetworkConnection : INetworkConnection, IMessageHandler, IMessageSender, IMessageReceiver, INotifySender, INotifyReceiver, IVisibilityTracker, IObjectOwner</code></pre>
   </div>
   <h5 id="Mirage_NetworkConnection_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>A NetworkConnection corresponds to a specific connection for a host in the transport layer. It has a connectionId that is assigned by the transport layer and passed to the Initialize function.</p>
@@ -572,6 +576,38 @@ associated with the connection for reference after Authentication completes.</p>
   
   
   <a id="Mirage_NetworkConnection_Send_" data-uid="Mirage.NetworkConnection.Send*"></a>
+  <h4 id="Mirage_NetworkConnection_Send_System_ArraySegment_System_Byte__System_Int32_" data-uid="Mirage.NetworkConnection.Send(System.ArraySegment{System.Byte},System.Int32)">Send(ArraySegment&lt;Byte&gt;, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Send(ArraySegment&lt;byte&gt; segment, int channelId = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.arraysegment-1">ArraySegment</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>&gt;</td>
+        <td><span class="parametername">segment</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">channelId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mirage_NetworkConnection_Send_" data-uid="Mirage.NetworkConnection.Send*"></a>
   <h4 id="Mirage_NetworkConnection_Send__1___0_System_Int32_" data-uid="Mirage.NetworkConnection.Send``1(``0,System.Int32)">Send&lt;T&gt;(T, Int32)</h4>
   <div class="markdown level1 summary"><p>This sends a network message to the connection.</p>
 </div>
@@ -593,7 +629,7 @@ associated with the connection for reference after Authentication completes.</p>
       <tr>
         <td><span class="xref">T</span></td>
         <td><span class="parametername">msg</span></td>
-        <td><p>The message to send</p>
+        <td><p>The message to send.</p>
 </td>
       </tr>
       <tr>
@@ -674,119 +710,6 @@ associated with the connection for reference after Authentication completes.</p>
   </table>
   
   
-  <a id="Mirage_NetworkConnection_SendAsync_" data-uid="Mirage.NetworkConnection.SendAsync*"></a>
-  <h4 id="Mirage_NetworkConnection_SendAsync_System_ArraySegment_System_Byte__System_Int32_" data-uid="Mirage.NetworkConnection.SendAsync(System.ArraySegment{System.Byte},System.Int32)">SendAsync(ArraySegment&lt;Byte&gt;, Int32)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UniTask SendAsync(ArraySegment&lt;byte&gt; segment, int channelId = 0)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.arraysegment-1">ArraySegment</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>&gt;</td>
-        <td><span class="parametername">segment</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">channelId</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Cysharp.Threading.Tasks.UniTask</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Mirage_NetworkConnection_SendAsync_" data-uid="Mirage.NetworkConnection.SendAsync*"></a>
-  <h4 id="Mirage_NetworkConnection_SendAsync__1___0_System_Int32_" data-uid="Mirage.NetworkConnection.SendAsync``1(``0,System.Int32)">SendAsync&lt;T&gt;(T, Int32)</h4>
-  <div class="markdown level1 summary"><p>This sends a network message to the connection. You can await it to check for errors</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual UniTask SendAsync&lt;T&gt;(T msg, int channelId = 0)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">msg</span></td>
-        <td><p>The message to send.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">channelId</span></td>
-        <td><p>The transport layer channel to send on.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Cysharp.Threading.Tasks.UniTask</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td><p>The message type</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="Mirage_NetworkConnection_SendNotify_" data-uid="Mirage.NetworkConnection.SendNotify*"></a>
   <h4 id="Mirage_NetworkConnection_SendNotify__1___0_System_Object_System_Int32_" data-uid="Mirage.NetworkConnection.SendNotify``1(``0,System.Object,System.Int32)">SendNotify&lt;T&gt;(T, Object, Int32)</h4>
   <div class="markdown level1 summary"><p>Sends a message, but notify when it is delivered or lost</p>
@@ -794,7 +717,7 @@ associated with the connection for reference after Authentication completes.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SendNotify&lt;T&gt;(T msg, object token, int channelId = 1)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SendNotify&lt;T&gt;(T message, object token, int channelId = 1)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -808,7 +731,7 @@ associated with the connection for reference after Authentication completes.</p>
     <tbody>
       <tr>
         <td><span class="xref">T</span></td>
-        <td><span class="parametername">msg</span></td>
+        <td><span class="parametername">message</span></td>
         <td><p>message to send</p>
 </td>
       </tr>
@@ -953,6 +876,18 @@ associated with the connection for reference after Authentication completes.</p>
   </div>
   <div>
       <a class="xref" href="Mirage.IMessageHandler.html">IMessageHandler</a>
+  </div>
+  <div>
+      <a class="xref" href="Mirage.IMessageSender.html">IMessageSender</a>
+  </div>
+  <div>
+      <a class="xref" href="Mirage.IMessageReceiver.html">IMessageReceiver</a>
+  </div>
+  <div>
+      <a class="xref" href="Mirage.INotifySender.html">INotifySender</a>
+  </div>
+  <div>
+      <a class="xref" href="Mirage.INotifyReceiver.html">INotifyReceiver</a>
   </div>
   <div>
       <a class="xref" href="Mirage.IVisibilityTracker.html">IVisibilityTracker</a>

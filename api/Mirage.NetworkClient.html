@@ -38,8 +38,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" style="display:flex;" href="https://github.com/MirageNet/Mirage">
-                <img id="logo" class="svg" style="vertical-align: middle;align-self:center;" src="../logo.png" alt="">
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -102,6 +102,7 @@
   <div classs="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="Mirage.INetworkClient.html">INetworkClient</a></div>
+    <div><a class="xref" href="Mirage.IMessageSender.html">IMessageSender</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -409,7 +410,7 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[AddComponentMenu(&quot;Network/NetworkClient&quot;)]
 [DisallowMultipleComponent]
-public class NetworkClient : MonoBehaviour, INetworkClient</code></pre>
+public class NetworkClient : MonoBehaviour, INetworkClient, IMessageSender</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
@@ -868,8 +869,43 @@ public NetworkAuthenticator authenticator</code></pre>
   
   
   <a id="Mirage_NetworkClient_Send_" data-uid="Mirage.NetworkClient.Send*"></a>
-  <h4 id="Mirage_NetworkClient_Send__1___0_System_Int32_" data-uid="Mirage.NetworkClient.Send``1(``0,System.Int32)">Send&lt;T&gt;(T, Int32)</h4>
+  <h4 id="Mirage_NetworkClient_Send_System_ArraySegment_System_Byte__System_Int32_" data-uid="Mirage.NetworkClient.Send(System.ArraySegment{System.Byte},System.Int32)">Send(ArraySegment&lt;Byte&gt;, Int32)</h4>
   <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Send(ArraySegment&lt;byte&gt; segment, int channelId = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.arraysegment-1">ArraySegment</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>&gt;</td>
+        <td><span class="parametername">segment</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">channelId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Mirage_NetworkClient_Send_" data-uid="Mirage.NetworkClient.Send*"></a>
+  <h4 id="Mirage_NetworkClient_Send__1___0_System_Int32_" data-uid="Mirage.NetworkClient.Send``1(``0,System.Int32)">Send&lt;T&gt;(T, Int32)</h4>
+  <div class="markdown level1 summary"><p>This sends a network message with a message Id to the server. This message is sent on channel zero, which by default is the reliable channel.</p>
+<p>The message must be an instance of a class derived from MessageBase.</p>
+<p>The message id passed to Send() is used to identify the handler function to invoke on the server when the message is received.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -908,72 +944,6 @@ public NetworkAuthenticator authenticator</code></pre>
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Mirage_NetworkClient_SendAsync_" data-uid="Mirage.NetworkClient.SendAsync*"></a>
-  <h4 id="Mirage_NetworkClient_SendAsync__1___0_System_Int32_" data-uid="Mirage.NetworkClient.SendAsync``1(``0,System.Int32)">SendAsync&lt;T&gt;(T, Int32)</h4>
-  <div class="markdown level1 summary"><p>This sends a network message with a message Id to the server. This message is sent on channel zero, which by default is the reliable channel.</p>
-<p>The message must be an instance of a class derived from MessageBase.</p>
-<p>The message id passed to Send() is used to identify the handler function to invoke on the server when the message is received.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UniTask SendAsync&lt;T&gt;(T message, int channelId = 0)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">message</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">channelId</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Cysharp.Threading.Tasks.UniTask</span></td>
-        <td><p>True if message was sent.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
         <td><p>The message type to unregister.</p>
 </td>
       </tr>
@@ -982,6 +952,9 @@ public NetworkAuthenticator authenticator</code></pre>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="Mirage.INetworkClient.html">INetworkClient</a>
+  </div>
+  <div>
+      <a class="xref" href="Mirage.IMessageSender.html">IMessageSender</a>
   </div>
 </article>
           </div>

@@ -38,8 +38,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" style="display:flex;" href="https://github.com/MirageNet/Mirage">
-                <img id="logo" class="svg" style="vertical-align: middle;align-self:center;" src="../logo.png" alt="">
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -92,37 +92,34 @@ May be from the server to client or from client to server</p>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="Mirage.IMessageHandler.html#Mirage_IMessageHandler_RegisterHandler__1_System_Action_Mirage_INetworkConnection___0__">IMessageHandler.RegisterHandler&lt;T&gt;(Action&lt;INetworkConnection, T&gt;)</a>
+      <a class="xref" href="Mirage.IMessageSender.html#Mirage_IMessageSender_Send__1___0_System_Int32_">IMessageSender.Send&lt;T&gt;(T, Int32)</a>
     </div>
     <div>
-      <a class="xref" href="Mirage.IMessageHandler.html#Mirage_IMessageHandler_RegisterHandler__1_System_Action___0__">IMessageHandler.RegisterHandler&lt;T&gt;(Action&lt;T&gt;)</a>
+      <a class="xref" href="Mirage.IMessageSender.html#Mirage_IMessageSender_Send_System_ArraySegment_System_Byte__System_Int32_">IMessageSender.Send(ArraySegment&lt;Byte&gt;, Int32)</a>
     </div>
     <div>
-      <a class="xref" href="Mirage.IMessageHandler.html#Mirage_IMessageHandler_UnregisterHandler__1">IMessageHandler.UnregisterHandler&lt;T&gt;()</a>
+      <a class="xref" href="Mirage.IMessageReceiver.html#Mirage_IMessageReceiver_RegisterHandler__1_System_Action_Mirage_INetworkConnection___0__">IMessageReceiver.RegisterHandler&lt;T&gt;(Action&lt;INetworkConnection, T&gt;)</a>
     </div>
     <div>
-      <a class="xref" href="Mirage.IMessageHandler.html#Mirage_IMessageHandler_ClearHandlers">IMessageHandler.ClearHandlers()</a>
+      <a class="xref" href="Mirage.IMessageReceiver.html#Mirage_IMessageReceiver_RegisterHandler__1_System_Action___0__">IMessageReceiver.RegisterHandler&lt;T&gt;(Action&lt;T&gt;)</a>
     </div>
     <div>
-      <a class="xref" href="Mirage.IMessageHandler.html#Mirage_IMessageHandler_Send__1___0_System_Int32_">IMessageHandler.Send&lt;T&gt;(T, Int32)</a>
+      <a class="xref" href="Mirage.IMessageReceiver.html#Mirage_IMessageReceiver_UnregisterHandler__1">IMessageReceiver.UnregisterHandler&lt;T&gt;()</a>
     </div>
     <div>
-      <a class="xref" href="Mirage.IMessageHandler.html#Mirage_IMessageHandler_SendAsync__1___0_System_Int32_">IMessageHandler.SendAsync&lt;T&gt;(T, Int32)</a>
+      <a class="xref" href="Mirage.IMessageReceiver.html#Mirage_IMessageReceiver_ClearHandlers">IMessageReceiver.ClearHandlers()</a>
     </div>
     <div>
-      <a class="xref" href="Mirage.IMessageHandler.html#Mirage_IMessageHandler_SendAsync_System_ArraySegment_System_Byte__System_Int32_">IMessageHandler.SendAsync(ArraySegment&lt;Byte&gt;, Int32)</a>
+      <a class="xref" href="Mirage.IMessageReceiver.html#Mirage_IMessageReceiver_ProcessMessagesAsync">IMessageReceiver.ProcessMessagesAsync()</a>
     </div>
     <div>
-      <a class="xref" href="Mirage.IMessageHandler.html#Mirage_IMessageHandler_ProcessMessagesAsync">IMessageHandler.ProcessMessagesAsync()</a>
+      <a class="xref" href="Mirage.INotifySender.html#Mirage_INotifySender_SendNotify__1___0_System_Object_System_Int32_">INotifySender.SendNotify&lt;T&gt;(T, Object, Int32)</a>
     </div>
     <div>
-      <a class="xref" href="Mirage.IMessageHandler.html#Mirage_IMessageHandler_SendNotify__1___0_System_Object_System_Int32_">IMessageHandler.SendNotify&lt;T&gt;(T, Object, Int32)</a>
+      <a class="xref" href="Mirage.INotifyReceiver.html#Mirage_INotifyReceiver_NotifyDelivered">INotifyReceiver.NotifyDelivered</a>
     </div>
     <div>
-      <a class="xref" href="Mirage.IMessageHandler.html#Mirage_IMessageHandler_NotifyDelivered">IMessageHandler.NotifyDelivered</a>
-    </div>
-    <div>
-      <a class="xref" href="Mirage.IMessageHandler.html#Mirage_IMessageHandler_NotifyLost">IMessageHandler.NotifyLost</a>
+      <a class="xref" href="Mirage.INotifyReceiver.html#Mirage_INotifyReceiver_NotifyLost">INotifyReceiver.NotifyLost</a>
     </div>
     <div>
       <a class="xref" href="Mirage.IVisibilityTracker.html#Mirage_IVisibilityTracker_AddToVisList_Mirage_NetworkIdentity_">IVisibilityTracker.AddToVisList(NetworkIdentity)</a>
@@ -150,7 +147,7 @@ May be from the server to client or from client to server</p>
   <h6><strong>Assembly</strong>: Mirage.dll</h6>
   <h5 id="Mirage_INetworkConnection_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface INetworkConnection : IMessageHandler, IVisibilityTracker, IObjectOwner</code></pre>
+    <pre><code class="lang-csharp hljs">public interface INetworkConnection : IMessageHandler, IMessageSender, IMessageReceiver, INotifySender, INotifyReceiver, IVisibilityTracker, IObjectOwner</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>

@@ -36,8 +36,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" style="display:flex;" href="https://github.com/MirageNet/Mirage">
-                <img id="logo" class="svg" style="vertical-align: middle;align-self:center;" src="../../logo.png" alt="">
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -103,7 +103,6 @@
 <p>The default implementation of <code>OnSetLocalVisibility</code> disables or enables all renderer components on the game object. If you want to customize this implementation, you can override the method in your script, and provide a new behavior for how the host (and therefore the local client) should respond when a game object becomes network-visible or invisible (such as disabling HUD elements or renderers).</p>
 <h2 id="customizing-network-visibility">Customizing Network Visibility</h2>
 <p>Sometimes you might want to use other kinds of visibility check, such as grid-based rules, line-of-sight tests, navigation path tests, or any other type of test that suits your game.</p>
-<p>To do this, you can create your own custom Network Observer from a <a href="../General/ScriptTemplates.html">script template</a> via the Assets menu by clicking Create -&gt; Mirage -&gt; Network Observer.</p>
 <p>It may be helpful to understand how the Network Proximity Checker works.</p>
 <p>The Network Proximity Checker is implemented using the public visibility interface of Mirage’s HLAPI. Using this same interface, you can implement any kind of visibility rules you desire. Each <code>NetworkIdentity</code> keeps track of the set of players that it is visible to. The players that a NetworkIdentity game object is visible to are called the “observers” of the NetworkIdentity.</p>
 <p>The Network Proximity Checker calls the <code>RebuildObservers</code> method on the Network Identity component at a fixed interval (set using the “Vis Update Interval” value in the inspector), so that the set of network-visible game objects for each player is updated as they move around.</p>

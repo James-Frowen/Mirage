@@ -38,8 +38,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" style="display:flex;" href="https://github.com/MirageNet/Mirage">
-                <img id="logo" class="svg" style="vertical-align: middle;align-self:center;" src="../logo.png" alt="">
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -1134,25 +1134,29 @@ public NetworkServer Server</code></pre>
   <a id="Mirage_ServerObjectManager_SpawnObjects_" data-uid="Mirage.ServerObjectManager.SpawnObjects*"></a>
   <h4 id="Mirage_ServerObjectManager_SpawnObjects" data-uid="Mirage.ServerObjectManager.SpawnObjects">SpawnObjects()</h4>
   <div class="markdown level1 summary"><p>This causes NetworkIdentity objects in a scene to be spawned on a server.</p>
-<p>NetworkIdentity objects in a scene are disabled by default. Calling SpawnObjects() causes these scene objects to be enabled and spawned. It is like calling NetworkServer.Spawn() for each of them.</p>
+<p>
+    NetworkIdentity objects in a scene are disabled by default.
+    Calling SpawnObjects() causes these scene objects to be enabled and spawned.
+    It is like calling NetworkServer.Spawn() for each of them.
+</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool SpawnObjects()</code></pre>
+    <pre><code class="lang-csharp hljs">public void SpawnObjects()</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
+  <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
-        <th>Description</th>
+        <th>Condition</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p>Success if objects where spawned.</p>
+        <td><span class="xref">InvalidOperationException</span></td>
+        <td><p>Thrown when server is not active</p>
 </td>
       </tr>
     </tbody>

@@ -38,8 +38,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" style="display:flex;" href="https://github.com/MirageNet/Mirage">
-                <img id="logo" class="svg" style="vertical-align: middle;align-self:center;" src="../logo.png" alt="">
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -310,6 +310,8 @@ and it's abstract methods</p>
 </section>
       <h4><a class="xref" href="Mirage.Transport.ConnectEvent.html">Transport.ConnectEvent</a></h4>
       <section></section>
+      <h4><a class="xref" href="Mirage.Version.html">Version</a></h4>
+      <section></section>
       <h4><a class="xref" href="Mirage.Writer-1.html">Writer&lt;T&gt;</a></h4>
       <section><p>a class that holds writers for the different types
 Note that c# creates a different static variable for each
@@ -376,7 +378,13 @@ the weaver will replace the syncvar with this struct.</p>
       <h4><a class="xref" href="Mirage.IConnection.html">IConnection</a></h4>
       <section></section>
       <h4><a class="xref" href="Mirage.IMessageHandler.html">IMessageHandler</a></h4>
-      <section><p>An object that can send and receive messages</p>
+      <section><p>An object that can send and receive messages and notify messages</p>
+</section>
+      <h4><a class="xref" href="Mirage.IMessageReceiver.html">IMessageReceiver</a></h4>
+      <section><p>An object that can receive messages</p>
+</section>
+      <h4><a class="xref" href="Mirage.IMessageSender.html">IMessageSender</a></h4>
+      <section><p>An object that can send messages</p>
 </section>
       <h4><a class="xref" href="Mirage.INetworkClient.html">INetworkClient</a></h4>
       <section></section>
@@ -384,12 +392,16 @@ the weaver will replace the syncvar with this struct.</p>
       <section><p>A connection to a remote endpoint.
 May be from the server to client or from client to server</p>
 </section>
-      <h4><a class="xref" href="Mirage.INetworkManager.html">INetworkManager</a></h4>
-      <section></section>
       <h4><a class="xref" href="Mirage.INetworkSceneManager.html">INetworkSceneManager</a></h4>
       <section></section>
       <h4><a class="xref" href="Mirage.INetworkServer.html">INetworkServer</a></h4>
       <section></section>
+      <h4><a class="xref" href="Mirage.INotifyReceiver.html">INotifyReceiver</a></h4>
+      <section><p>An object that can receive notify messages</p>
+</section>
+      <h4><a class="xref" href="Mirage.INotifySender.html">INotifySender</a></h4>
+      <section><p>An object that can send notify messages</p>
+</section>
       <h4><a class="xref" href="Mirage.IObjectLocator.html">IObjectLocator</a></h4>
       <section><p>An object that implements this interface can find objects by their net id
 This is used by readers when trying to deserialize gameobjects</p>
@@ -423,8 +435,6 @@ this is useful for interest management</p>
       <h4><a class="xref" href="Mirage.SyncMode.html">SyncMode</a></h4>
       <section><p>Sync to everyone, or only to owner.</p>
 </section>
-      <h4><a class="xref" href="Mirage.Version.html">Version</a></h4>
-      <section></section>
     <h3 id="delegates">Delegates
   </h3>
       <h4><a class="xref" href="Mirage.NetworkIdentity.ClientAuthorityCallback.html">NetworkIdentity.ClientAuthorityCallback</a></h4>
