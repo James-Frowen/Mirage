@@ -110,6 +110,7 @@ namespace Mirage
             // and increase the message count
             connected.writer.WritePackedInt32(channel);
             connected.writer.WriteBytesAndSizeSegment(data);
+            connected.MessageCount.Release();
         }
     }
 }

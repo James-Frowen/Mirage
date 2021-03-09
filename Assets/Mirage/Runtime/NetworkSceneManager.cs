@@ -29,29 +29,34 @@ namespace Mirage
         public bool DontDestroy = true;
 
         [Header("Events")]
+
         [FormerlySerializedAs("ClientChangeScene")]
         [SerializeField] ClientSceneChangeEvent _clientChangeScene = new ClientSceneChangeEvent();
+
+        [FormerlySerializedAs("ClientSceneChanged")]
+        [SerializeField] ClientSceneChangeEvent _clientSceneChanged = new ClientSceneChangeEvent();
+
+        [FormerlySerializedAs("ServerChangeScene")]
+        [SerializeField] ClientSceneChangeEvent _serverChangeScene = new ClientSceneChangeEvent();
+
+        [FormerlySerializedAs("ServerSceneChanged")]
+        [SerializeField] ClientSceneChangeEvent _serverSceneChanged = new ClientSceneChangeEvent();
+
         /// <summary>
         /// Event fires when the Client starts changing scene.
         /// </summary>
         public ClientSceneChangeEvent ClientChangeScene => _clientChangeScene;
 
-        [FormerlySerializedAs("ClientSceneChanged")]
-        [SerializeField] ClientSceneChangeEvent _clientSceneChanged = new ClientSceneChangeEvent();
         /// <summary>
         /// Event fires after the Client has completed its scene change.
         /// </summary>
         public ClientSceneChangeEvent ClientSceneChanged => _clientSceneChanged;
 
-        [FormerlySerializedAs("ServerChangeScene")]
-        [SerializeField] ClientSceneChangeEvent _serverChangeScene = new ClientSceneChangeEvent();
         /// <summary>
         /// Event fires before Server changes scene.
         /// </summary>
         public ClientSceneChangeEvent ServerChangeScene => _serverChangeScene;
 
-        [FormerlySerializedAs("ServerSceneChanged")]
-        [SerializeField] ClientSceneChangeEvent _serverSceneChanged = new ClientSceneChangeEvent();
         /// <summary>
         /// Event fires after Server has completed scene change.
         /// </summary>
@@ -68,11 +73,16 @@ namespace Mirage
         /// </remarks>
         public string ActiveScenePath => SceneManager.GetActiveScene().path;
 
-        internal AsyncOperation asyncOperation;
+        AsyncOperation asyncOperation;
 
-        //Used by the server to track all additive scenes. To notify clients upon connection
+        /// <summary>
+        /// Used by the server to track all additive scenes. To notify clients upon connection 
+        /// </summary>
         internal List<string> additiveSceneList = new List<string>();
-        //Used by the client to load the full additive scene list that the server has upon connection
+
+        /// <summary>
+        /// Used by the client to load the full additive scene list that the server has upon connection
+        /// </summary>
         internal List<string> pendingAdditiveSceneList = new List<string>();
 
         public void Start()
@@ -123,10 +133,10 @@ namespace Mirage
             }
             if (string.IsNullOrEmpty(msg.scenePath))
             {
-                throw new ArgumentNullException(msg.scenePath, "ClientSceneMessage: " + msg.scenePath + " cannot be empty or null");
+                throw new ArgumentNullException(nameof(msg.scenePath), $"ClientSceneMessage: {nameof(msg.scenePath)} cannot be empty or null");
             }
 
-            if (logger.LogEnabled()) logger.Log("ClientSceneMessage: changing scenes from: " + ActiveScenePath + " to:" + msg.scenePath);
+            if (logger.LogEnabled()) logger.Log($"ClientSceneMessage: changing scenes from: {ActiveScenePath} to: {msg.scenePath}");
 
             // Let client prepare for scene change
             OnClientChangeScene(msg.scenePath, msg.sceneOperation);

@@ -190,7 +190,6 @@ namespace Mirage
                 foreach (INetworkConnection conn in connections)
                 {
                     // send to all connections, but don't wait for them
-                    Debug.Log("Sending " + typeof(T) + " to " + conn);
                     conn.Send(segment, channelId);
                     count++;
                 }
@@ -200,7 +199,7 @@ namespace Mirage
         }
 
         /// <summary>
-        /// This sends a network message to the connection. You can await it to check for errors
+        /// This sends a network message to the connection.
         /// </summary>
         /// <typeparam name="T">The message type</typeparam>
         /// <param name="msg">The message to send.</param>
@@ -213,7 +212,6 @@ namespace Mirage
                 // pack message and send allocation free
                 MessagePacker.Pack(msg, writer);
                 NetworkDiagnostics.OnSend(msg, channelId, writer.Length, 1);
-                Debug.Log("Sending message " + typeof(T).Name);
                 Send(writer.ToArraySegment(), channelId);
             }
         }
@@ -370,9 +368,9 @@ namespace Mirage
         /// Sends a message, but notify when it is delivered or lost
         /// </summary>
         /// <typeparam name="T">type of message to send</typeparam>
-        /// <param name="msg">message to send</param>
+        /// <param name="message">message to send</param>
         /// <param name="token">a arbitrary object that the sender will receive with their notification</param>
-        public void SendNotify<T>(T msg, object token, int channelId = Channel.Unreliable)
+        public void SendNotify<T>(T message, object token, int channelId = Channel.Unreliable)
         {
             if (sendWindow.Count == WINDOW_SIZE)
             {
@@ -396,8 +394,8 @@ namespace Mirage
                 });
 
                 MessagePacker.Pack(notifyPacket, writer);
-                MessagePacker.Pack(msg, writer);
-                NetworkDiagnostics.OnSend(msg, channelId, writer.Length, 1);
+                MessagePacker.Pack(message, writer);
+                NetworkDiagnostics.OnSend(message, channelId, writer.Length, 1);
                 Send(writer.ToArraySegment(), channelId);
                 lastNotifySentTime = Time.unscaledTime;
             }

@@ -4,7 +4,7 @@ using UnityEngine.Events;
 
 namespace Mirage
 {
-    public interface INetworkClient
+    public interface INetworkClient : IMessageSender
     {
 
         /// <summary>
@@ -39,7 +39,5 @@ namespace Mirage
         bool IsLocalClient { get; }
 
         void Disconnect();
-
-        void Send<T>(T message, int channelId = Channel.Reliable);
     }
 }

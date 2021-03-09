@@ -256,8 +256,12 @@ namespace Mirage
         /// <returns>True if message was sent.</returns>
         public void Send<T>(T message, int channelId = Channel.Reliable)
         {
-            Debug.Log("Sending msg " + typeof(T).Name);
             Connection.Send(message, channelId);
+        }
+
+        public void Send(ArraySegment<byte> segment, int channelId = Channel.Reliable)
+        {
+            Connection.Send(segment, channelId);
         }
 
         internal void FixedUpdate()
