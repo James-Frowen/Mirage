@@ -95,40 +95,21 @@
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">NetworkReaderPool</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Mirage.html">Mirage</a></h6>
-  <h6><strong>Assembly</strong>: Mirage.dll</h6>
+  <h6><strong>Assembly</strong>: doc.dll</h6>
   <h5 id="Mirage_NetworkReaderPool_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class NetworkReaderPool</code></pre>
+    <pre><code class="lang-csharp hljs">public static class NetworkReaderPool : object</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkReaderPool_Capacity.md&amp;value=---%0Auid%3A%20Mirage.NetworkReaderPool.Capacity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkReaderPool.cs/#L35">View Source</a>
+  </span>
   <a id="Mirage_NetworkReaderPool_Capacity_" data-uid="Mirage.NetworkReaderPool.Capacity*"></a>
   <h4 id="Mirage_NetworkReaderPool_Capacity" data-uid="Mirage.NetworkReaderPool.Capacity">Capacity</h4>
   <div class="markdown level1 summary"><p>Size of the pool</p>
@@ -157,10 +138,15 @@
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkReaderPool_GetReader_ArraySegment_System_Byte__.md&amp;value=---%0Auid%3A%20Mirage.NetworkReaderPool.GetReader(ArraySegment%7BSystem.Byte%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkReaderPool.cs/#L90">View Source</a>
+  </span>
   <a id="Mirage_NetworkReaderPool_GetReader_" data-uid="Mirage.NetworkReaderPool.GetReader*"></a>
-  <h4 id="Mirage_NetworkReaderPool_GetReader_System_ArraySegment_System_Byte__" data-uid="Mirage.NetworkReaderPool.GetReader(System.ArraySegment{System.Byte})">GetReader(ArraySegment&lt;Byte&gt;)</h4>
+  <h4 id="Mirage_NetworkReaderPool_GetReader_ArraySegment_System_Byte__" data-uid="Mirage.NetworkReaderPool.GetReader(ArraySegment{System.Byte})">GetReader(ArraySegment&lt;Byte&gt;)</h4>
   <div class="markdown level1 summary"><p>Get the next reader in the pool</p>
 <p>If pool is empty, creates a new Reader</p>
 </div>
@@ -180,7 +166,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.arraysegment-1">ArraySegment</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>&gt;</td>
+        <td><span class="xref">ArraySegment</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>&gt;</td>
         <td><span class="parametername">segment</span></td>
         <td></td>
       </tr>
@@ -201,8 +187,13 @@
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkReaderPool_GetReader_System_Byte___.md&amp;value=---%0Auid%3A%20Mirage.NetworkReaderPool.GetReader(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkReaderPool.cs/#L69">View Source</a>
+  </span>
   <a id="Mirage_NetworkReaderPool_GetReader_" data-uid="Mirage.NetworkReaderPool.GetReader*"></a>
   <h4 id="Mirage_NetworkReaderPool_GetReader_System_Byte___" data-uid="Mirage.NetworkReaderPool.GetReader(System.Byte[])">GetReader(Byte[])</h4>
   <div class="markdown level1 summary"><p>Get the next reader in the pool</p>
@@ -245,8 +236,13 @@
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkReaderPool_Recycle_Mirage_PooledNetworkReader_.md&amp;value=---%0Auid%3A%20Mirage.NetworkReaderPool.Recycle(Mirage.PooledNetworkReader)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkReaderPool.cs/#L111">View Source</a>
+  </span>
   <a id="Mirage_NetworkReaderPool_Recycle_" data-uid="Mirage.NetworkReaderPool.Recycle*"></a>
   <h4 id="Mirage_NetworkReaderPool_Recycle_Mirage_PooledNetworkReader_" data-uid="Mirage.NetworkReaderPool.Recycle(Mirage.PooledNetworkReader)">Recycle(PooledNetworkReader)</h4>
   <div class="markdown level1 summary"><p>Puts reader back into pool</p>
@@ -281,6 +277,12 @@
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkReaderPool.md&amp;value=---%0Auid%3A%20Mirage.NetworkReaderPool%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkReaderPool.cs/#L26" class="contribution-link">View Source</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

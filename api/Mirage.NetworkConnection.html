@@ -104,32 +104,11 @@
     <div><a class="xref" href="Mirage.IVisibilityTracker.html">IVisibilityTracker</a></div>
     <div><a class="xref" href="Mirage.IObjectOwner.html">IObjectOwner</a></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Mirage.html">Mirage</a></h6>
-  <h6><strong>Assembly</strong>: Mirage.dll</h6>
+  <h6><strong>Assembly</strong>: doc.dll</h6>
   <h5 id="Mirage_NetworkConnection_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class NetworkConnection : INetworkConnection, IMessageHandler, IMessageSender, IMessageReceiver, INotifySender, INotifyReceiver, IVisibilityTracker, IObjectOwner</code></pre>
+    <pre><code class="lang-csharp hljs">public class NetworkConnection : object, INetworkConnection, IMessageHandler, IMessageSender, IMessageReceiver, INotifySender, INotifyReceiver, IVisibilityTracker, IObjectOwner</code></pre>
   </div>
   <h5 id="Mirage_NetworkConnection_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>A NetworkConnection corresponds to a specific connection for a host in the transport layer. It has a connectionId that is assigned by the transport layer and passed to the Initialize function.</p>
@@ -140,8 +119,13 @@
 </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkConnection__ctor_Mirage_IConnection_.md&amp;value=---%0Auid%3A%20Mirage.NetworkConnection.%23ctor(Mirage.IConnection)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkConnection.cs/#L86">View Source</a>
+  </span>
   <a id="Mirage_NetworkConnection__ctor_" data-uid="Mirage.NetworkConnection.#ctor*"></a>
   <h4 id="Mirage_NetworkConnection__ctor_Mirage_IConnection_" data-uid="Mirage.NetworkConnection.#ctor(Mirage.IConnection)">NetworkConnection(IConnection)</h4>
   <div class="markdown level1 summary"><p>Creates a new NetworkConnection with the specified address and connectionId</p>
@@ -170,8 +154,13 @@
   </table>
   <h3 id="fields">Fields
   </h3>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkConnection_NOTIFY_ACK_TIMEOUT.md&amp;value=---%0Auid%3A%20Mirage.NetworkConnection.NOTIFY_ACK_TIMEOUT%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkConnection.cs/#L377">View Source</a>
+  </span>
   <h4 id="Mirage_NetworkConnection_NOTIFY_ACK_TIMEOUT" data-uid="Mirage.NetworkConnection.NOTIFY_ACK_TIMEOUT">NOTIFY_ACK_TIMEOUT</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -196,8 +185,13 @@
   </table>
   <h3 id="properties">Properties
   </h3>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkConnection_Address.md&amp;value=---%0Auid%3A%20Mirage.NetworkConnection.Address%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkConnection.cs/#L66">View Source</a>
+  </span>
   <a id="Mirage_NetworkConnection_Address_" data-uid="Mirage.NetworkConnection.Address*"></a>
   <h4 id="Mirage_NetworkConnection_Address" data-uid="Mirage.NetworkConnection.Address">Address</h4>
   <div class="markdown level1 summary"><p>The IP address / URL / FQDN associated with the connection.
@@ -218,13 +212,18 @@ Can be useful for a game master to do IP Bans etc.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.endpoint">EndPoint</a></td>
+        <td><span class="xref">EndPoint</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkConnection_AuthenticationData.md&amp;value=---%0Auid%3A%20Mirage.NetworkConnection.AuthenticationData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkConnection.cs/#L53">View Source</a>
+  </span>
   <a id="Mirage_NetworkConnection_AuthenticationData_" data-uid="Mirage.NetworkConnection.AuthenticationData*"></a>
   <h4 id="Mirage_NetworkConnection_AuthenticationData" data-uid="Mirage.NetworkConnection.AuthenticationData">AuthenticationData</h4>
   <div class="markdown level1 summary"><p>General purpose object to hold authentication data, character selection, tokens, etc.
@@ -250,8 +249,13 @@ associated with the connection for reference after Authentication completes.</p>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkConnection_Identity.md&amp;value=---%0Auid%3A%20Mirage.NetworkConnection.Identity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkConnection.cs/#L71">View Source</a>
+  </span>
   <a id="Mirage_NetworkConnection_Identity_" data-uid="Mirage.NetworkConnection.Identity*"></a>
   <h4 id="Mirage_NetworkConnection_Identity" data-uid="Mirage.NetworkConnection.Identity">Identity</h4>
   <div class="markdown level1 summary"><p>The NetworkIdentity for this connection.</p>
@@ -276,8 +280,13 @@ associated with the connection for reference after Authentication completes.</p>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkConnection_IsReady.md&amp;value=---%0Auid%3A%20Mirage.NetworkConnection.IsReady%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkConnection.cs/#L60">View Source</a>
+  </span>
   <a id="Mirage_NetworkConnection_IsReady_" data-uid="Mirage.NetworkConnection.IsReady*"></a>
   <h4 id="Mirage_NetworkConnection_IsReady" data-uid="Mirage.NetworkConnection.IsReady">IsReady</h4>
   <div class="markdown level1 summary"><p>Flag that tells if the connection has been marked as &quot;ready&quot; by a client calling ClientScene.Ready().</p>
@@ -306,8 +315,13 @@ associated with the connection for reference after Authentication completes.</p>
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkConnection_AddOwnedObject_Mirage_NetworkIdentity_.md&amp;value=---%0Auid%3A%20Mirage.NetworkConnection.AddOwnedObject(Mirage.NetworkIdentity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkConnection.cs/#L315">View Source</a>
+  </span>
   <a id="Mirage_NetworkConnection_AddOwnedObject_" data-uid="Mirage.NetworkConnection.AddOwnedObject*"></a>
   <h4 id="Mirage_NetworkConnection_AddOwnedObject_Mirage_NetworkIdentity_" data-uid="Mirage.NetworkConnection.AddOwnedObject(Mirage.NetworkIdentity)">AddOwnedObject(NetworkIdentity)</h4>
   <div class="markdown level1 summary"></div>
@@ -333,8 +347,13 @@ associated with the connection for reference after Authentication completes.</p>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkConnection_AddToVisList_Mirage_NetworkIdentity_.md&amp;value=---%0Auid%3A%20Mirage.NetworkConnection.AddToVisList(Mirage.NetworkIdentity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkConnection.cs/#L233">View Source</a>
+  </span>
   <a id="Mirage_NetworkConnection_AddToVisList_" data-uid="Mirage.NetworkConnection.AddToVisList*"></a>
   <h4 id="Mirage_NetworkConnection_AddToVisList_Mirage_NetworkIdentity_" data-uid="Mirage.NetworkConnection.AddToVisList(Mirage.NetworkIdentity)">AddToVisList(NetworkIdentity)</h4>
   <div class="markdown level1 summary"></div>
@@ -360,8 +379,13 @@ associated with the connection for reference after Authentication completes.</p>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkConnection_ClearHandlers.md&amp;value=---%0Auid%3A%20Mirage.NetworkConnection.ClearHandlers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkConnection.cs/#L177">View Source</a>
+  </span>
   <a id="Mirage_NetworkConnection_ClearHandlers_" data-uid="Mirage.NetworkConnection.ClearHandlers*"></a>
   <h4 id="Mirage_NetworkConnection_ClearHandlers" data-uid="Mirage.NetworkConnection.ClearHandlers">ClearHandlers()</h4>
   <div class="markdown level1 summary"><p>Clear all registered callback handlers.</p>
@@ -371,8 +395,13 @@ associated with the connection for reference after Authentication completes.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void ClearHandlers()</code></pre>
   </div>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkConnection_DestroyOwnedObjects.md&amp;value=---%0Auid%3A%20Mirage.NetworkConnection.DestroyOwnedObjects%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkConnection.cs/#L325">View Source</a>
+  </span>
   <a id="Mirage_NetworkConnection_DestroyOwnedObjects_" data-uid="Mirage.NetworkConnection.DestroyOwnedObjects*"></a>
   <h4 id="Mirage_NetworkConnection_DestroyOwnedObjects" data-uid="Mirage.NetworkConnection.DestroyOwnedObjects">DestroyOwnedObjects()</h4>
   <div class="markdown level1 summary"></div>
@@ -381,8 +410,13 @@ associated with the connection for reference after Authentication completes.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void DestroyOwnedObjects()</code></pre>
   </div>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkConnection_Disconnect.md&amp;value=---%0Auid%3A%20Mirage.NetworkConnection.Disconnect%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkConnection.cs/#L99">View Source</a>
+  </span>
   <a id="Mirage_NetworkConnection_Disconnect_" data-uid="Mirage.NetworkConnection.Disconnect*"></a>
   <h4 id="Mirage_NetworkConnection_Disconnect" data-uid="Mirage.NetworkConnection.Disconnect">Disconnect()</h4>
   <div class="markdown level1 summary"><p>Disconnects this connection.</p>
@@ -392,8 +426,13 @@ associated with the connection for reference after Authentication completes.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void Disconnect()</code></pre>
   </div>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkConnection_ProcessMessagesAsync.md&amp;value=---%0Auid%3A%20Mirage.NetworkConnection.ProcessMessagesAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkConnection.cs/#L346">View Source</a>
+  </span>
   <a id="Mirage_NetworkConnection_ProcessMessagesAsync_" data-uid="Mirage.NetworkConnection.ProcessMessagesAsync*"></a>
   <h4 id="Mirage_NetworkConnection_ProcessMessagesAsync" data-uid="Mirage.NetworkConnection.ProcessMessagesAsync">ProcessMessagesAsync()</h4>
   <div class="markdown level1 summary"></div>
@@ -412,15 +451,20 @@ associated with the connection for reference after Authentication completes.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Cysharp.Threading.Tasks.UniTask</span></td>
+        <td><span class="xref">UniTask</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkConnection_RegisterHandler__1_Action___0__.md&amp;value=---%0Auid%3A%20Mirage.NetworkConnection.RegisterHandler%60%601(Action%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkConnection.cs/#L159">View Source</a>
+  </span>
   <a id="Mirage_NetworkConnection_RegisterHandler_" data-uid="Mirage.NetworkConnection.RegisterHandler*"></a>
-  <h4 id="Mirage_NetworkConnection_RegisterHandler__1_System_Action___0__" data-uid="Mirage.NetworkConnection.RegisterHandler``1(System.Action{``0})">RegisterHandler&lt;T&gt;(Action&lt;T&gt;)</h4>
+  <h4 id="Mirage_NetworkConnection_RegisterHandler__1_Action___0__" data-uid="Mirage.NetworkConnection.RegisterHandler``1(Action{``0})">RegisterHandler&lt;T&gt;(Action&lt;T&gt;)</h4>
   <div class="markdown level1 summary"><p>Register a handler for a particular message type.</p>
 <p>There are several system message types which you can add handlers for. You can also add your own message types.</p>
 </div>
@@ -440,7 +484,7 @@ associated with the connection for reference after Authentication completes.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</td>
+        <td><span class="xref">Action</span>&lt;T&gt;</td>
         <td><span class="parametername">handler</span></td>
         <td><p>Function handler which will be invoked for when this message type is received.</p>
 </td>
@@ -463,10 +507,15 @@ associated with the connection for reference after Authentication completes.</p>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkConnection_RegisterHandler__1_Action_Mirage_INetworkConnection___0__.md&amp;value=---%0Auid%3A%20Mirage.NetworkConnection.RegisterHandler%60%601(Action%7BMirage.INetworkConnection%2C%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkConnection.cs/#L142">View Source</a>
+  </span>
   <a id="Mirage_NetworkConnection_RegisterHandler_" data-uid="Mirage.NetworkConnection.RegisterHandler*"></a>
-  <h4 id="Mirage_NetworkConnection_RegisterHandler__1_System_Action_Mirage_INetworkConnection___0__" data-uid="Mirage.NetworkConnection.RegisterHandler``1(System.Action{Mirage.INetworkConnection,``0})">RegisterHandler&lt;T&gt;(Action&lt;INetworkConnection, T&gt;)</h4>
+  <h4 id="Mirage_NetworkConnection_RegisterHandler__1_Action_Mirage_INetworkConnection___0__" data-uid="Mirage.NetworkConnection.RegisterHandler``1(Action{Mirage.INetworkConnection,``0})">RegisterHandler&lt;T&gt;(Action&lt;INetworkConnection, T&gt;)</h4>
   <div class="markdown level1 summary"><p>Register a handler for a particular message type.</p>
 <p>There are several system message types which you can add handlers for. You can also add your own message types.</p>
 </div>
@@ -486,7 +535,7 @@ associated with the connection for reference after Authentication completes.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="Mirage.INetworkConnection.html">INetworkConnection</a>, T&gt;</td>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="Mirage.INetworkConnection.html">INetworkConnection</a>, T&gt;</td>
         <td><span class="parametername">handler</span></td>
         <td><p>Function handler which will be invoked for when this message type is received.</p>
 </td>
@@ -509,8 +558,13 @@ associated with the connection for reference after Authentication completes.</p>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkConnection_RemoveFromVisList_Mirage_NetworkIdentity_.md&amp;value=---%0Auid%3A%20Mirage.NetworkConnection.RemoveFromVisList(Mirage.NetworkIdentity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkConnection.cs/#L238">View Source</a>
+  </span>
   <a id="Mirage_NetworkConnection_RemoveFromVisList_" data-uid="Mirage.NetworkConnection.RemoveFromVisList*"></a>
   <h4 id="Mirage_NetworkConnection_RemoveFromVisList_Mirage_NetworkIdentity_" data-uid="Mirage.NetworkConnection.RemoveFromVisList(Mirage.NetworkIdentity)">RemoveFromVisList(NetworkIdentity)</h4>
   <div class="markdown level1 summary"></div>
@@ -536,8 +590,13 @@ associated with the connection for reference after Authentication completes.</p>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkConnection_RemoveObservers.md&amp;value=---%0Auid%3A%20Mirage.NetworkConnection.RemoveObservers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkConnection.cs/#L243">View Source</a>
+  </span>
   <a id="Mirage_NetworkConnection_RemoveObservers_" data-uid="Mirage.NetworkConnection.RemoveObservers*"></a>
   <h4 id="Mirage_NetworkConnection_RemoveObservers" data-uid="Mirage.NetworkConnection.RemoveObservers">RemoveObservers()</h4>
   <div class="markdown level1 summary"></div>
@@ -546,8 +605,13 @@ associated with the connection for reference after Authentication completes.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void RemoveObservers()</code></pre>
   </div>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkConnection_RemoveOwnedObject_Mirage_NetworkIdentity_.md&amp;value=---%0Auid%3A%20Mirage.NetworkConnection.RemoveOwnedObject(Mirage.NetworkIdentity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkConnection.cs/#L320">View Source</a>
+  </span>
   <a id="Mirage_NetworkConnection_RemoveOwnedObject_" data-uid="Mirage.NetworkConnection.RemoveOwnedObject*"></a>
   <h4 id="Mirage_NetworkConnection_RemoveOwnedObject_Mirage_NetworkIdentity_" data-uid="Mirage.NetworkConnection.RemoveOwnedObject(Mirage.NetworkIdentity)">RemoveOwnedObject(NetworkIdentity)</h4>
   <div class="markdown level1 summary"></div>
@@ -573,15 +637,20 @@ associated with the connection for reference after Authentication completes.</p>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkConnection_Send_ArraySegment_System_Byte__System_Int32_.md&amp;value=---%0Auid%3A%20Mirage.NetworkConnection.Send(ArraySegment%7BSystem.Byte%7D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkConnection.cs/#L222">View Source</a>
+  </span>
   <a id="Mirage_NetworkConnection_Send_" data-uid="Mirage.NetworkConnection.Send*"></a>
-  <h4 id="Mirage_NetworkConnection_Send_System_ArraySegment_System_Byte__System_Int32_" data-uid="Mirage.NetworkConnection.Send(System.ArraySegment{System.Byte},System.Int32)">Send(ArraySegment&lt;Byte&gt;, Int32)</h4>
+  <h4 id="Mirage_NetworkConnection_Send_ArraySegment_System_Byte__System_Int32_" data-uid="Mirage.NetworkConnection.Send(ArraySegment{System.Byte},System.Int32)">Send(ArraySegment&lt;Byte&gt;, Int32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Send(ArraySegment&lt;byte&gt; segment, int channelId = 0)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Send(ArraySegment&lt;byte&gt; segment, int channelId = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -594,7 +663,7 @@ associated with the connection for reference after Authentication completes.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.arraysegment-1">ArraySegment</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>&gt;</td>
+        <td><span class="xref">ArraySegment</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>&gt;</td>
         <td><span class="parametername">segment</span></td>
         <td></td>
       </tr>
@@ -605,8 +674,13 @@ associated with the connection for reference after Authentication completes.</p>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkConnection_Send__1___0_System_Int32_.md&amp;value=---%0Auid%3A%20Mirage.NetworkConnection.Send%60%601(%60%600%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkConnection.cs/#L209">View Source</a>
+  </span>
   <a id="Mirage_NetworkConnection_Send_" data-uid="Mirage.NetworkConnection.Send*"></a>
   <h4 id="Mirage_NetworkConnection_Send__1___0_System_Int32_" data-uid="Mirage.NetworkConnection.Send``1(``0,System.Int32)">Send&lt;T&gt;(T, Int32)</h4>
   <div class="markdown level1 summary"><p>This sends a network message to the connection.</p>
@@ -614,7 +688,7 @@ associated with the connection for reference after Authentication completes.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void Send&lt;T&gt;(T msg, int channelId = 0)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void Send&lt;T&gt;(T msg, int channelId = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -656,15 +730,20 @@ associated with the connection for reference after Authentication completes.</p>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkConnection_Send__1_IEnumerable_Mirage_INetworkConnection____0_System_Int32_.md&amp;value=---%0Auid%3A%20Mirage.NetworkConnection.Send%60%601(IEnumerable%7BMirage.INetworkConnection%7D%2C%60%600%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkConnection.cs/#L182">View Source</a>
+  </span>
   <a id="Mirage_NetworkConnection_Send_" data-uid="Mirage.NetworkConnection.Send*"></a>
-  <h4 id="Mirage_NetworkConnection_Send__1_System_Collections_Generic_IEnumerable_Mirage_INetworkConnection____0_System_Int32_" data-uid="Mirage.NetworkConnection.Send``1(System.Collections.Generic.IEnumerable{Mirage.INetworkConnection},``0,System.Int32)">Send&lt;T&gt;(IEnumerable&lt;INetworkConnection&gt;, T, Int32)</h4>
+  <h4 id="Mirage_NetworkConnection_Send__1_IEnumerable_Mirage_INetworkConnection____0_System_Int32_" data-uid="Mirage.NetworkConnection.Send``1(IEnumerable{Mirage.INetworkConnection},``0,System.Int32)">Send&lt;T&gt;(IEnumerable&lt;INetworkConnection&gt;, T, Int32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Send&lt;T&gt;(IEnumerable&lt;INetworkConnection&gt; connections, T msg, int channelId = 0)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Send&lt;T&gt;(IEnumerable&lt;INetworkConnection&gt; connections, T msg, int channelId = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -677,7 +756,7 @@ associated with the connection for reference after Authentication completes.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Mirage.INetworkConnection.html">INetworkConnection</a>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Mirage.INetworkConnection.html">INetworkConnection</a>&gt;</td>
         <td><span class="parametername">connections</span></td>
         <td></td>
       </tr>
@@ -708,8 +787,13 @@ associated with the connection for reference after Authentication completes.</p>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkConnection_SendNotify__1___0_System_Object_System_Int32_.md&amp;value=---%0Auid%3A%20Mirage.NetworkConnection.SendNotify%60%601(%60%600%2CSystem.Object%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkConnection.cs/#L394">View Source</a>
+  </span>
   <a id="Mirage_NetworkConnection_SendNotify_" data-uid="Mirage.NetworkConnection.SendNotify*"></a>
   <h4 id="Mirage_NetworkConnection_SendNotify__1___0_System_Object_System_Int32_" data-uid="Mirage.NetworkConnection.SendNotify``1(``0,System.Object,System.Int32)">SendNotify&lt;T&gt;(T, Object, Int32)</h4>
   <div class="markdown level1 summary"><p>Sends a message, but notify when it is delivered or lost</p>
@@ -717,7 +801,7 @@ associated with the connection for reference after Authentication completes.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SendNotify&lt;T&gt;(T message, object token, int channelId = 1)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SendNotify&lt;T&gt;(T message, object token, int channelId = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -764,8 +848,13 @@ associated with the connection for reference after Authentication completes.</p>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkConnection_ToString.md&amp;value=---%0Auid%3A%20Mirage.NetworkConnection.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkConnection.cs/#L228">View Source</a>
+  </span>
   <a id="Mirage_NetworkConnection_ToString_" data-uid="Mirage.NetworkConnection.ToString*"></a>
   <h4 id="Mirage_NetworkConnection_ToString" data-uid="Mirage.NetworkConnection.ToString">ToString()</h4>
   <div class="markdown level1 summary"></div>
@@ -789,10 +878,13 @@ associated with the connection for reference after Authentication completes.</p>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a></div>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkConnection_UnregisterHandler__1.md&amp;value=---%0Auid%3A%20Mirage.NetworkConnection.UnregisterHandler%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkConnection.cs/#L168">View Source</a>
+  </span>
   <a id="Mirage_NetworkConnection_UnregisterHandler_" data-uid="Mirage.NetworkConnection.UnregisterHandler*"></a>
   <h4 id="Mirage_NetworkConnection_UnregisterHandler__1" data-uid="Mirage.NetworkConnection.UnregisterHandler``1">UnregisterHandler&lt;T&gt;()</h4>
   <div class="markdown level1 summary"><p>Unregisters a handler for a particular message type.</p>
@@ -820,8 +912,13 @@ associated with the connection for reference after Authentication completes.</p>
   </table>
   <h3 id="events">Events
   </h3>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkConnection_NotifyDelivered.md&amp;value=---%0Auid%3A%20Mirage.NetworkConnection.NotifyDelivered%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkConnection.cs/#L491">View Source</a>
+  </span>
   <h4 id="Mirage_NetworkConnection_NotifyDelivered" data-uid="Mirage.NetworkConnection.NotifyDelivered">NotifyDelivered</h4>
   <div class="markdown level1 summary"><p>Raised when a message is delivered</p>
 </div>
@@ -840,13 +937,18 @@ associated with the connection for reference after Authentication completes.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="Mirage.INetworkConnection.html">INetworkConnection</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;</td>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="Mirage.INetworkConnection.html">INetworkConnection</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkConnection_NotifyLost.md&amp;value=---%0Auid%3A%20Mirage.NetworkConnection.NotifyLost%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkConnection.cs/#L496">View Source</a>
+  </span>
   <h4 id="Mirage_NetworkConnection_NotifyLost" data-uid="Mirage.NetworkConnection.NotifyLost">NotifyLost</h4>
   <div class="markdown level1 summary"><p>Raised when a message is lost</p>
 </div>
@@ -865,7 +967,7 @@ associated with the connection for reference after Authentication completes.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="Mirage.INetworkConnection.html">INetworkConnection</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;</td>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="Mirage.INetworkConnection.html">INetworkConnection</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -902,6 +1004,12 @@ associated with the connection for reference after Authentication completes.</p>
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkConnection.md&amp;value=---%0Auid%3A%20Mirage.NetworkConnection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/NetworkConnection.cs/#L26" class="contribution-link">View Source</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

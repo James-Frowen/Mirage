@@ -82,7 +82,7 @@
 <h1 id="synclists">SyncLists</h1>
 
 <p>SyncLists are array based lists similar to C# <a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=netframework-4.7.2">List&lt;T&gt;</a> that synchronize their contents from the server to the clients.</p>
-<p>A &lt;xref:Mirage.SyncList`1&gt; can contain any <a href="../DataTypes.html">supported Mirage type</a>.</p>
+<p>A <a class="xref" href="../../../api/Mirage.SyncList-1.html">SyncList&lt;T&gt;</a> can contain any <a href="../DataTypes.html">supported Mirage type</a>.</p>
 <h2 id="usage">Usage</h2>
 <p>Add a field of type <code>SyncList&lt;T&gt;</code> on any <a class="xref" href="../../../api/Mirage.NetworkBehaviour.html">NetworkBehaviour</a> where <code>T</code> can be any supported Mirage type and initialize it.</p>
 <div class="IMPORTANT">
@@ -127,7 +127,7 @@ public class Player : NetworkBehaviour
 </code></pre>
 <h2 id="callbacks">Callbacks</h2>
 <p>You can detect when a SyncList changes on the client and/or server. This is especially useful for refreshing your UI, character appearance etc.</p>
-<p>There are different callbacks for different operations, such as <code>OnChange</code> (any change to the list), <code>OnInsert</code> (adding new element) etc. Please check the <a href="xref:Mirage.SyncList%601">SyncList API reference</a> for the complete list of callbacks.</p>
+<p>There are different callbacks for different operations, such as <code>OnChange</code> (any change to the list), <code>OnInsert</code> (adding new element) etc. Please check the <a class="xref" href="../../../api/Mirage.SyncList-1.html">SyncList API reference</a> for the complete list of callbacks.</p>
 <p>Depending on where you want to invoke the callbacks, you can use these methods to register them:</p>
 <ul>
 <li><code>Awake</code> for both client and server</li>
@@ -178,6 +178,9 @@ public class Player : NetworkBehaviour {
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/James-Frowen/Mirage/blob/master/doc/Articles/Guides/Sync/SyncLists.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

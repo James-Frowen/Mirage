@@ -88,15 +88,20 @@
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Mirage.html">Mirage</a></h6>
-  <h6><strong>Assembly</strong>: Mirage.dll</h6>
+  <h6><strong>Assembly</strong>: doc.dll</h6>
   <h5 id="Mirage_IConnection_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public interface IConnection</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_IConnection_Disconnect.md&amp;value=---%0Auid%3A%20Mirage.IConnection.Disconnect%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/Transport/IConnection.cs/#L33">View Source</a>
+  </span>
   <a id="Mirage_IConnection_Disconnect_" data-uid="Mirage.IConnection.Disconnect*"></a>
   <h4 id="Mirage_IConnection_Disconnect" data-uid="Mirage.IConnection.Disconnect">Disconnect()</h4>
   <div class="markdown level1 summary"><p>Disconnect this connection</p>
@@ -106,8 +111,13 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">void Disconnect()</code></pre>
   </div>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_IConnection_GetEndPointAddress.md&amp;value=---%0Auid%3A%20Mirage.IConnection.GetEndPointAddress%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/Transport/IConnection.cs/#L41">View Source</a>
+  </span>
   <a id="Mirage_IConnection_GetEndPointAddress_" data-uid="Mirage.IConnection.GetEndPointAddress*"></a>
   <h4 id="Mirage_IConnection_GetEndPointAddress" data-uid="Mirage.IConnection.GetEndPointAddress">GetEndPointAddress()</h4>
   <div class="markdown level1 summary"><p>the address of endpoint we are connected to
@@ -129,15 +139,20 @@ of EndPoint, which depends on the transport</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.endpoint">EndPoint</a></td>
+        <td><span class="xref">EndPoint</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_IConnection_ReceiveAsync_MemoryStream_.md&amp;value=---%0Auid%3A%20Mirage.IConnection.ReceiveAsync(MemoryStream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/Transport/IConnection.cs/#L28">View Source</a>
+  </span>
   <a id="Mirage_IConnection_ReceiveAsync_" data-uid="Mirage.IConnection.ReceiveAsync*"></a>
-  <h4 id="Mirage_IConnection_ReceiveAsync_System_IO_MemoryStream_" data-uid="Mirage.IConnection.ReceiveAsync(System.IO.MemoryStream)">ReceiveAsync(MemoryStream)</h4>
+  <h4 id="Mirage_IConnection_ReceiveAsync_MemoryStream_" data-uid="Mirage.IConnection.ReceiveAsync(MemoryStream)">ReceiveAsync(MemoryStream)</h4>
   <div class="markdown level1 summary"><p>reads a message from connection</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -156,7 +171,7 @@ of EndPoint, which depends on the transport</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.memorystream">MemoryStream</a></td>
+        <td><span class="xref">MemoryStream</span></td>
         <td><span class="parametername">buffer</span></td>
         <td><p>buffer where the message will be written</p>
 </td>
@@ -173,21 +188,26 @@ of EndPoint, which depends on the transport</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Cysharp.Threading.Tasks.UniTask</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
         <td><p>The channel where we got the message</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_IConnection_Send_ArraySegment_System_Byte__System_Int32_.md&amp;value=---%0Auid%3A%20Mirage.IConnection.Send(ArraySegment%7BSystem.Byte%7D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/Transport/IConnection.cs/#L20">View Source</a>
+  </span>
   <a id="Mirage_IConnection_Send_" data-uid="Mirage.IConnection.Send*"></a>
-  <h4 id="Mirage_IConnection_Send_System_ArraySegment_System_Byte__System_Int32_" data-uid="Mirage.IConnection.Send(System.ArraySegment{System.Byte},System.Int32)">Send(ArraySegment&lt;Byte&gt;, Int32)</h4>
+  <h4 id="Mirage_IConnection_Send_ArraySegment_System_Byte__System_Int32_" data-uid="Mirage.IConnection.Send(ArraySegment{System.Byte},System.Int32)">Send(ArraySegment&lt;Byte&gt;, Int32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Send(ArraySegment&lt;byte&gt; data, int channel = 0)</code></pre>
+    <pre><code class="lang-csharp hljs">void Send(ArraySegment&lt;byte&gt; data, int channel = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -200,7 +220,7 @@ of EndPoint, which depends on the transport</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.arraysegment-1">ArraySegment</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>&gt;</td>
+        <td><span class="xref">ArraySegment</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>&gt;</td>
         <td><span class="parametername">data</span></td>
         <td></td>
       </tr>
@@ -218,6 +238,12 @@ of EndPoint, which depends on the transport</p>
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_IConnection.md&amp;value=---%0Auid%3A%20Mirage.IConnection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/Transport/IConnection.cs/#L18" class="contribution-link">View Source</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
