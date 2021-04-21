@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 using System.Linq;
 using Mono.Cecil;
@@ -14,13 +15,18 @@ namespace Mirage.Weaver
 
         public override ILPostProcessResult Process(ICompiledAssembly compiledAssembly)
         {
-            if (!WillProcess(compiledAssembly))
+            bool willProcess = WillProcess(compiledAssembly);
+
+            Console.WriteLine($"Mirage ILPP: Checking: {compiledAssembly.Name} will process: {willProcess}");
+            if (!willProcess)
                 return null;
 
             var logger = new Logger();
             var weaver = new Weaver(logger);
 
+            Console.WriteLine($"Mirage ILPP: Weave Started on {compiledAssembly.Name}");
             AssemblyDefinition assemblyDefinition = weaver.Weave(compiledAssembly);
+            Console.WriteLine($"Mirage ILPP: Weave Finished on {compiledAssembly.Name}");
 
             // write
             var pe = new MemoryStream();
