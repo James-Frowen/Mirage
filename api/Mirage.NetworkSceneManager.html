@@ -37,21 +37,31 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              
               <a class="navbar-brand" href="../index.html">
                 <img id="logo" class="svg" src="../logo.png" alt="">
-              </a>
-            </div>
+            </a></div>
             <div class="collapse navbar-collapse" id="navbar">
               <form class="navbar-form navbar-right" role="search" id="search">
+        		<div class="toggle-mode">
+        			<div class="icon">
+        			<i aria-hidden="true">🌕</i>
+        		</div>
+        		<label class="switch">
+        			<input type="checkbox" id="switch-style">
+        			<span class="slider round"></span>
+        		</label>
+        		<div class="icon">
+        			<i aria-hidden="true">🌙</i>
+        		</div>
+        			<script type="text/javascript" src="../styles/toggle-theme.js"></script>
+        		</div>
                 <div class="form-group">
                   <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
                 </div>
               </form>
             </div>
           </div>
-        </nav>
-        
+        </nav>        
         <div class="subnav navbar navbar-default">
           <div class="container hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
@@ -419,7 +429,7 @@ public class NetworkSceneManager : MonoBehaviour, INetworkSceneManager</code></p
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkSceneManager_Client.md&amp;value=---%0Auid%3A%20Mirage.NetworkSceneManager.Client%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkSceneManager.cs/#L25">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkSceneManager.cs/#L25">View Source</a>
   </span>
   <h4 id="Mirage_NetworkSceneManager_Client" data-uid="Mirage.NetworkSceneManager.Client">Client</h4>
   <div class="markdown level1 summary"></div>
@@ -449,7 +459,7 @@ public NetworkClient Client</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkSceneManager_DontDestroy.md&amp;value=---%0Auid%3A%20Mirage.NetworkSceneManager.DontDestroy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkSceneManager.cs/#L32">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkSceneManager.cs/#L32">View Source</a>
   </span>
   <h4 id="Mirage_NetworkSceneManager_DontDestroy" data-uid="Mirage.NetworkSceneManager.DontDestroy">DontDestroy</h4>
   <div class="markdown level1 summary"><p>Sets the NetworksSceneManagers GameObject to DontDestroyOnLoad. Default = true.</p>
@@ -479,7 +489,7 @@ public NetworkClient Client</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkSceneManager_Server.md&amp;value=---%0Auid%3A%20Mirage.NetworkSceneManager.Server%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkSceneManager.cs/#L27">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkSceneManager.cs/#L27">View Source</a>
   </span>
   <h4 id="Mirage_NetworkSceneManager_Server" data-uid="Mirage.NetworkSceneManager.Server">Server</h4>
   <div class="markdown level1 summary"></div>
@@ -511,7 +521,7 @@ public NetworkServer Server</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkSceneManager_ActiveScenePath.md&amp;value=---%0Auid%3A%20Mirage.NetworkSceneManager.ActiveScenePath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkSceneManager.cs/#L77">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkSceneManager.cs/#L77">View Source</a>
   </span>
   <a id="Mirage_NetworkSceneManager_ActiveScenePath_" data-uid="Mirage.NetworkSceneManager.ActiveScenePath*"></a>
   <h4 id="Mirage_NetworkSceneManager_ActiveScenePath" data-uid="Mirage.NetworkSceneManager.ActiveScenePath">ActiveScenePath</h4>
@@ -548,7 +558,7 @@ public NetworkServer Server</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkSceneManager_ClientChangeScene.md&amp;value=---%0Auid%3A%20Mirage.NetworkSceneManager.ClientChangeScene%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkSceneManager.cs/#L51">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkSceneManager.cs/#L51">View Source</a>
   </span>
   <a id="Mirage_NetworkSceneManager_ClientChangeScene_" data-uid="Mirage.NetworkSceneManager.ClientChangeScene*"></a>
   <h4 id="Mirage_NetworkSceneManager_ClientChangeScene" data-uid="Mirage.NetworkSceneManager.ClientChangeScene">ClientChangeScene</h4>
@@ -579,7 +589,7 @@ public NetworkServer Server</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkSceneManager_ClientSceneChanged.md&amp;value=---%0Auid%3A%20Mirage.NetworkSceneManager.ClientSceneChanged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkSceneManager.cs/#L56">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkSceneManager.cs/#L56">View Source</a>
   </span>
   <a id="Mirage_NetworkSceneManager_ClientSceneChanged_" data-uid="Mirage.NetworkSceneManager.ClientSceneChanged*"></a>
   <h4 id="Mirage_NetworkSceneManager_ClientSceneChanged" data-uid="Mirage.NetworkSceneManager.ClientSceneChanged">ClientSceneChanged</h4>
@@ -610,7 +620,7 @@ public NetworkServer Server</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkSceneManager_ServerChangeScene.md&amp;value=---%0Auid%3A%20Mirage.NetworkSceneManager.ServerChangeScene%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkSceneManager.cs/#L61">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkSceneManager.cs/#L61">View Source</a>
   </span>
   <a id="Mirage_NetworkSceneManager_ServerChangeScene_" data-uid="Mirage.NetworkSceneManager.ServerChangeScene*"></a>
   <h4 id="Mirage_NetworkSceneManager_ServerChangeScene" data-uid="Mirage.NetworkSceneManager.ServerChangeScene">ServerChangeScene</h4>
@@ -641,7 +651,7 @@ public NetworkServer Server</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkSceneManager_ServerSceneChanged.md&amp;value=---%0Auid%3A%20Mirage.NetworkSceneManager.ServerSceneChanged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkSceneManager.cs/#L66">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkSceneManager.cs/#L66">View Source</a>
   </span>
   <a id="Mirage_NetworkSceneManager_ServerSceneChanged_" data-uid="Mirage.NetworkSceneManager.ServerSceneChanged*"></a>
   <h4 id="Mirage_NetworkSceneManager_ServerSceneChanged" data-uid="Mirage.NetworkSceneManager.ServerSceneChanged">ServerSceneChanged</h4>
@@ -674,7 +684,7 @@ public NetworkServer Server</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkSceneManager_ChangeServerScene_System_String_Mirage_SceneOperation_.md&amp;value=---%0Auid%3A%20Mirage.NetworkSceneManager.ChangeServerScene(System.String%2CMirage.SceneOperation)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkSceneManager.cs/#L245">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkSceneManager.cs/#L248">View Source</a>
   </span>
   <a id="Mirage_NetworkSceneManager_ChangeServerScene_" data-uid="Mirage.NetworkSceneManager.ChangeServerScene*"></a>
   <h4 id="Mirage_NetworkSceneManager_ChangeServerScene_System_String_Mirage_SceneOperation_" data-uid="Mirage.NetworkSceneManager.ChangeServerScene(System.String,Mirage.SceneOperation)">ChangeServerScene(String, SceneOperation)</h4>
@@ -708,12 +718,28 @@ public NetworkServer Server</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Scene path was not valid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkSceneManager_SetClientReady.md&amp;value=---%0Auid%3A%20Mirage.NetworkSceneManager.SetClientReady%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkSceneManager.cs/#L211">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkSceneManager.cs/#L213">View Source</a>
   </span>
   <a id="Mirage_NetworkSceneManager_SetClientReady_" data-uid="Mirage.NetworkSceneManager.SetClientReady*"></a>
   <h4 id="Mirage_NetworkSceneManager_SetClientReady" data-uid="Mirage.NetworkSceneManager.SetClientReady">SetClientReady()</h4>
@@ -725,12 +751,28 @@ public NetworkServer Server</code></pre>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void SetClientReady()</code></pre>
   </div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>When called with an null or disconnected client</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkSceneManager_Start.md&amp;value=---%0Auid%3A%20Mirage.NetworkSceneManager.Start%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkSceneManager.cs/#L91">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkSceneManager.cs/#L91">View Source</a>
   </span>
   <a id="Mirage_NetworkSceneManager_Start_" data-uid="Mirage.NetworkSceneManager.Start*"></a>
   <h4 id="Mirage_NetworkSceneManager_Start" data-uid="Mirage.NetworkSceneManager.Start">Start()</h4>
@@ -755,7 +797,7 @@ public NetworkServer Server</code></pre>
                     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkSceneManager.md&amp;value=---%0Auid%3A%20Mirage.NetworkSceneManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkSceneManager.cs/#L18" class="contribution-link">View Source</a>
+                    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkSceneManager.cs/#L18" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

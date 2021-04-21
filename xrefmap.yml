@@ -436,19 +436,6 @@ references:
   isSpec: "True"
   fullName: Mirage.ClientObjectManager.GetPrefab
   nameWithType: ClientObjectManager.GetPrefab
-- uid: Mirage.ClientObjectManager.LocalPlayer
-  name: LocalPlayer
-  href: api/Mirage.ClientObjectManager.html#Mirage_ClientObjectManager_LocalPlayer
-  commentId: P:Mirage.ClientObjectManager.LocalPlayer
-  fullName: Mirage.ClientObjectManager.LocalPlayer
-  nameWithType: ClientObjectManager.LocalPlayer
-- uid: Mirage.ClientObjectManager.LocalPlayer*
-  name: LocalPlayer
-  href: api/Mirage.ClientObjectManager.html#Mirage_ClientObjectManager_LocalPlayer_
-  commentId: Overload:Mirage.ClientObjectManager.LocalPlayer
-  isSpec: "True"
-  fullName: Mirage.ClientObjectManager.LocalPlayer
-  nameWithType: ClientObjectManager.LocalPlayer
 - uid: Mirage.ClientObjectManager.NetworkSceneManager
   name: NetworkSceneManager
   href: api/Mirage.ClientObjectManager.html#Mirage_ClientObjectManager_NetworkSceneManager
@@ -2659,6 +2646,19 @@ references:
   isSpec: "True"
   fullName: Mirage.Events.AddLateEvent.Invoke
   nameWithType: AddLateEvent.Invoke
+- uid: Mirage.Events.AddLateEvent.RemoveListener(UnityEngine.Events.UnityAction)
+  name: RemoveListener(UnityAction)
+  href: api/Mirage.Events.AddLateEvent.html#Mirage_Events_AddLateEvent_RemoveListener_UnityEngine_Events_UnityAction_
+  commentId: M:Mirage.Events.AddLateEvent.RemoveListener(UnityEngine.Events.UnityAction)
+  fullName: Mirage.Events.AddLateEvent.RemoveListener(UnityEngine.Events.UnityAction)
+  nameWithType: AddLateEvent.RemoveListener(UnityAction)
+- uid: Mirage.Events.AddLateEvent.RemoveListener*
+  name: RemoveListener
+  href: api/Mirage.Events.AddLateEvent.html#Mirage_Events_AddLateEvent_RemoveListener_
+  commentId: Overload:Mirage.Events.AddLateEvent.RemoveListener
+  isSpec: "True"
+  fullName: Mirage.Events.AddLateEvent.RemoveListener
+  nameWithType: AddLateEvent.RemoveListener
 - uid: Mirage.Events.AddLateEvent`2
   name: AddLateEvent<T0, TEvent>
   href: api/Mirage.Events.AddLateEvent-2.html
@@ -2720,6 +2720,24 @@ references:
   fullName.vb: Mirage.Events.AddLateEvent(Of T0, TEvent).Invoke
   nameWithType: AddLateEvent<T0, TEvent>.Invoke
   nameWithType.vb: AddLateEvent(Of T0, TEvent).Invoke
+- uid: Mirage.Events.AddLateEvent`2.RemoveListener(UnityEngine.Events.UnityAction{`0})
+  name: RemoveListener(UnityAction<T0>)
+  href: api/Mirage.Events.AddLateEvent-2.html#Mirage_Events_AddLateEvent_2_RemoveListener_UnityEngine_Events_UnityAction__0__
+  commentId: M:Mirage.Events.AddLateEvent`2.RemoveListener(UnityEngine.Events.UnityAction{`0})
+  name.vb: RemoveListener(UnityAction(Of T0))
+  fullName: Mirage.Events.AddLateEvent<T0, TEvent>.RemoveListener(UnityEngine.Events.UnityAction<T0>)
+  fullName.vb: Mirage.Events.AddLateEvent(Of T0, TEvent).RemoveListener(UnityEngine.Events.UnityAction(Of T0))
+  nameWithType: AddLateEvent<T0, TEvent>.RemoveListener(UnityAction<T0>)
+  nameWithType.vb: AddLateEvent(Of T0, TEvent).RemoveListener(UnityAction(Of T0))
+- uid: Mirage.Events.AddLateEvent`2.RemoveListener*
+  name: RemoveListener
+  href: api/Mirage.Events.AddLateEvent-2.html#Mirage_Events_AddLateEvent_2_RemoveListener_
+  commentId: Overload:Mirage.Events.AddLateEvent`2.RemoveListener
+  isSpec: "True"
+  fullName: Mirage.Events.AddLateEvent<T0, TEvent>.RemoveListener
+  fullName.vb: Mirage.Events.AddLateEvent(Of T0, TEvent).RemoveListener
+  nameWithType: AddLateEvent<T0, TEvent>.RemoveListener
+  nameWithType.vb: AddLateEvent(Of T0, TEvent).RemoveListener
 - uid: Mirage.Events.AddLateEvent`3
   name: AddLateEvent<T0, T1, TEvent>
   href: api/Mirage.Events.AddLateEvent-3.html
@@ -2781,6 +2799,24 @@ references:
   fullName.vb: Mirage.Events.AddLateEvent(Of T0, T1, TEvent).Invoke
   nameWithType: AddLateEvent<T0, T1, TEvent>.Invoke
   nameWithType.vb: AddLateEvent(Of T0, T1, TEvent).Invoke
+- uid: Mirage.Events.AddLateEvent`3.RemoveListener(UnityEngine.Events.UnityAction{`0,`1})
+  name: RemoveListener(UnityAction<T0, T1>)
+  href: api/Mirage.Events.AddLateEvent-3.html#Mirage_Events_AddLateEvent_3_RemoveListener_UnityEngine_Events_UnityAction__0__1__
+  commentId: M:Mirage.Events.AddLateEvent`3.RemoveListener(UnityEngine.Events.UnityAction{`0,`1})
+  name.vb: RemoveListener(UnityAction(Of T0, T1))
+  fullName: Mirage.Events.AddLateEvent<T0, T1, TEvent>.RemoveListener(UnityEngine.Events.UnityAction<T0, T1>)
+  fullName.vb: Mirage.Events.AddLateEvent(Of T0, T1, TEvent).RemoveListener(UnityEngine.Events.UnityAction(Of T0, T1))
+  nameWithType: AddLateEvent<T0, T1, TEvent>.RemoveListener(UnityAction<T0, T1>)
+  nameWithType.vb: AddLateEvent(Of T0, T1, TEvent).RemoveListener(UnityAction(Of T0, T1))
+- uid: Mirage.Events.AddLateEvent`3.RemoveListener*
+  name: RemoveListener
+  href: api/Mirage.Events.AddLateEvent-3.html#Mirage_Events_AddLateEvent_3_RemoveListener_
+  commentId: Overload:Mirage.Events.AddLateEvent`3.RemoveListener
+  isSpec: "True"
+  fullName: Mirage.Events.AddLateEvent<T0, T1, TEvent>.RemoveListener
+  fullName.vb: Mirage.Events.AddLateEvent(Of T0, T1, TEvent).RemoveListener
+  nameWithType: AddLateEvent<T0, T1, TEvent>.RemoveListener
+  nameWithType.vb: AddLateEvent(Of T0, T1, TEvent).RemoveListener
 - uid: Mirage.Events.AddLateEventBase
   name: AddLateEventBase
   href: api/Mirage.Events.AddLateEventBase.html
@@ -2826,6 +2862,19 @@ references:
   isSpec: "True"
   fullName: Mirage.Events.AddLateEventBase.MarkInvoked
   nameWithType: AddLateEventBase.MarkInvoked
+- uid: Mirage.Events.AddLateEventBase.RemoveAllListeners
+  name: RemoveAllListeners()
+  href: api/Mirage.Events.AddLateEventBase.html#Mirage_Events_AddLateEventBase_RemoveAllListeners
+  commentId: M:Mirage.Events.AddLateEventBase.RemoveAllListeners
+  fullName: Mirage.Events.AddLateEventBase.RemoveAllListeners()
+  nameWithType: AddLateEventBase.RemoveAllListeners()
+- uid: Mirage.Events.AddLateEventBase.RemoveAllListeners*
+  name: RemoveAllListeners
+  href: api/Mirage.Events.AddLateEventBase.html#Mirage_Events_AddLateEventBase_RemoveAllListeners_
+  commentId: Overload:Mirage.Events.AddLateEventBase.RemoveAllListeners
+  isSpec: "True"
+  fullName: Mirage.Events.AddLateEventBase.RemoveAllListeners
+  nameWithType: AddLateEventBase.RemoveAllListeners
 - uid: Mirage.Events.AddLateEventBase.Reset
   name: Reset()
   href: api/Mirage.Events.AddLateEventBase.html#Mirage_Events_AddLateEventBase_Reset
@@ -2839,6 +2888,18 @@ references:
   isSpec: "True"
   fullName: Mirage.Events.AddLateEventBase.Reset
   nameWithType: AddLateEventBase.Reset
+- uid: Mirage.Events.BoolAddLateEvent
+  name: BoolAddLateEvent
+  href: api/Mirage.Events.BoolAddLateEvent.html
+  commentId: T:Mirage.Events.BoolAddLateEvent
+  fullName: Mirage.Events.BoolAddLateEvent
+  nameWithType: BoolAddLateEvent
+- uid: Mirage.Events.BoolUnityEvent
+  name: BoolUnityEvent
+  href: api/Mirage.Events.BoolUnityEvent.html
+  commentId: T:Mirage.Events.BoolUnityEvent
+  fullName: Mirage.Events.BoolUnityEvent
+  nameWithType: BoolUnityEvent
 - uid: Mirage.Events.IAddLateEvent
   name: IAddLateEvent
   href: api/Mirage.Events.IAddLateEvent.html
@@ -2858,6 +2919,19 @@ references:
   isSpec: "True"
   fullName: Mirage.Events.IAddLateEvent.AddListener
   nameWithType: IAddLateEvent.AddListener
+- uid: Mirage.Events.IAddLateEvent.RemoveListener(UnityEngine.Events.UnityAction)
+  name: RemoveListener(UnityAction)
+  href: api/Mirage.Events.IAddLateEvent.html#Mirage_Events_IAddLateEvent_RemoveListener_UnityEngine_Events_UnityAction_
+  commentId: M:Mirage.Events.IAddLateEvent.RemoveListener(UnityEngine.Events.UnityAction)
+  fullName: Mirage.Events.IAddLateEvent.RemoveListener(UnityEngine.Events.UnityAction)
+  nameWithType: IAddLateEvent.RemoveListener(UnityAction)
+- uid: Mirage.Events.IAddLateEvent.RemoveListener*
+  name: RemoveListener
+  href: api/Mirage.Events.IAddLateEvent.html#Mirage_Events_IAddLateEvent_RemoveListener_
+  commentId: Overload:Mirage.Events.IAddLateEvent.RemoveListener
+  isSpec: "True"
+  fullName: Mirage.Events.IAddLateEvent.RemoveListener
+  nameWithType: IAddLateEvent.RemoveListener
 - uid: Mirage.Events.IAddLateEvent`1
   name: IAddLateEvent<T0>
   href: api/Mirage.Events.IAddLateEvent-1.html
@@ -2885,6 +2959,24 @@ references:
   fullName.vb: Mirage.Events.IAddLateEvent(Of T0).AddListener
   nameWithType: IAddLateEvent<T0>.AddListener
   nameWithType.vb: IAddLateEvent(Of T0).AddListener
+- uid: Mirage.Events.IAddLateEvent`1.RemoveListener(UnityEngine.Events.UnityAction{`0})
+  name: RemoveListener(UnityAction<T0>)
+  href: api/Mirage.Events.IAddLateEvent-1.html#Mirage_Events_IAddLateEvent_1_RemoveListener_UnityEngine_Events_UnityAction__0__
+  commentId: M:Mirage.Events.IAddLateEvent`1.RemoveListener(UnityEngine.Events.UnityAction{`0})
+  name.vb: RemoveListener(UnityAction(Of T0))
+  fullName: Mirage.Events.IAddLateEvent<T0>.RemoveListener(UnityEngine.Events.UnityAction<T0>)
+  fullName.vb: Mirage.Events.IAddLateEvent(Of T0).RemoveListener(UnityEngine.Events.UnityAction(Of T0))
+  nameWithType: IAddLateEvent<T0>.RemoveListener(UnityAction<T0>)
+  nameWithType.vb: IAddLateEvent(Of T0).RemoveListener(UnityAction(Of T0))
+- uid: Mirage.Events.IAddLateEvent`1.RemoveListener*
+  name: RemoveListener
+  href: api/Mirage.Events.IAddLateEvent-1.html#Mirage_Events_IAddLateEvent_1_RemoveListener_
+  commentId: Overload:Mirage.Events.IAddLateEvent`1.RemoveListener
+  isSpec: "True"
+  fullName: Mirage.Events.IAddLateEvent<T0>.RemoveListener
+  fullName.vb: Mirage.Events.IAddLateEvent(Of T0).RemoveListener
+  nameWithType: IAddLateEvent<T0>.RemoveListener
+  nameWithType.vb: IAddLateEvent(Of T0).RemoveListener
 - uid: Mirage.Events.IAddLateEvent`2
   name: IAddLateEvent<T0, T1>
   href: api/Mirage.Events.IAddLateEvent-2.html
@@ -2912,6 +3004,36 @@ references:
   fullName.vb: Mirage.Events.IAddLateEvent(Of T0, T1).AddListener
   nameWithType: IAddLateEvent<T0, T1>.AddListener
   nameWithType.vb: IAddLateEvent(Of T0, T1).AddListener
+- uid: Mirage.Events.IAddLateEvent`2.RemoveListener(UnityEngine.Events.UnityAction{`0,`1})
+  name: RemoveListener(UnityAction<T0, T1>)
+  href: api/Mirage.Events.IAddLateEvent-2.html#Mirage_Events_IAddLateEvent_2_RemoveListener_UnityEngine_Events_UnityAction__0__1__
+  commentId: M:Mirage.Events.IAddLateEvent`2.RemoveListener(UnityEngine.Events.UnityAction{`0,`1})
+  name.vb: RemoveListener(UnityAction(Of T0, T1))
+  fullName: Mirage.Events.IAddLateEvent<T0, T1>.RemoveListener(UnityEngine.Events.UnityAction<T0, T1>)
+  fullName.vb: Mirage.Events.IAddLateEvent(Of T0, T1).RemoveListener(UnityEngine.Events.UnityAction(Of T0, T1))
+  nameWithType: IAddLateEvent<T0, T1>.RemoveListener(UnityAction<T0, T1>)
+  nameWithType.vb: IAddLateEvent(Of T0, T1).RemoveListener(UnityAction(Of T0, T1))
+- uid: Mirage.Events.IAddLateEvent`2.RemoveListener*
+  name: RemoveListener
+  href: api/Mirage.Events.IAddLateEvent-2.html#Mirage_Events_IAddLateEvent_2_RemoveListener_
+  commentId: Overload:Mirage.Events.IAddLateEvent`2.RemoveListener
+  isSpec: "True"
+  fullName: Mirage.Events.IAddLateEvent<T0, T1>.RemoveListener
+  fullName.vb: Mirage.Events.IAddLateEvent(Of T0, T1).RemoveListener
+  nameWithType: IAddLateEvent<T0, T1>.RemoveListener
+  nameWithType.vb: IAddLateEvent(Of T0, T1).RemoveListener
+- uid: Mirage.Events.NetworkPlayerAddLateEvent
+  name: NetworkPlayerAddLateEvent
+  href: api/Mirage.Events.NetworkPlayerAddLateEvent.html
+  commentId: T:Mirage.Events.NetworkPlayerAddLateEvent
+  fullName: Mirage.Events.NetworkPlayerAddLateEvent
+  nameWithType: NetworkPlayerAddLateEvent
+- uid: Mirage.Events.NetworkPlayerEvent
+  name: NetworkPlayerEvent
+  href: api/Mirage.Events.NetworkPlayerEvent.html
+  commentId: T:Mirage.Events.NetworkPlayerEvent
+  fullName: Mirage.Events.NetworkPlayerEvent
+  nameWithType: NetworkPlayerEvent
 - uid: Mirage.Experimental
   name: Mirage.Experimental
   href: api/Mirage.Experimental.html
@@ -3499,19 +3621,6 @@ references:
   isSpec: "True"
   fullName: Mirage.IClientObjectManager.GetPrefab
   nameWithType: IClientObjectManager.GetPrefab
-- uid: Mirage.IClientObjectManager.LocalPlayer
-  name: LocalPlayer
-  href: api/Mirage.IClientObjectManager.html#Mirage_IClientObjectManager_LocalPlayer
-  commentId: P:Mirage.IClientObjectManager.LocalPlayer
-  fullName: Mirage.IClientObjectManager.LocalPlayer
-  nameWithType: IClientObjectManager.LocalPlayer
-- uid: Mirage.IClientObjectManager.LocalPlayer*
-  name: LocalPlayer
-  href: api/Mirage.IClientObjectManager.html#Mirage_IClientObjectManager_LocalPlayer_
-  commentId: Overload:Mirage.IClientObjectManager.LocalPlayer
-  isSpec: "True"
-  fullName: Mirage.IClientObjectManager.LocalPlayer
-  nameWithType: IClientObjectManager.LocalPlayer
 - uid: Mirage.IClientObjectManager.PrepareToSpawnSceneObjects
   name: PrepareToSpawnSceneObjects()
   href: api/Mirage.IClientObjectManager.html#Mirage_IClientObjectManager_PrepareToSpawnSceneObjects
@@ -4417,12 +4526,12 @@ references:
   isSpec: "True"
   fullName: Mirage.IServerObjectManager.AddCharacter
   nameWithType: IServerObjectManager.AddCharacter
-- uid: Mirage.IServerObjectManager.Destroy(UnityEngine.GameObject)
-  name: Destroy(GameObject)
-  href: api/Mirage.IServerObjectManager.html#Mirage_IServerObjectManager_Destroy_UnityEngine_GameObject_
-  commentId: M:Mirage.IServerObjectManager.Destroy(UnityEngine.GameObject)
-  fullName: Mirage.IServerObjectManager.Destroy(UnityEngine.GameObject)
-  nameWithType: IServerObjectManager.Destroy(GameObject)
+- uid: Mirage.IServerObjectManager.Destroy(UnityEngine.GameObject,System.Boolean)
+  name: Destroy(GameObject, Boolean)
+  href: api/Mirage.IServerObjectManager.html#Mirage_IServerObjectManager_Destroy_UnityEngine_GameObject_System_Boolean_
+  commentId: M:Mirage.IServerObjectManager.Destroy(UnityEngine.GameObject,System.Boolean)
+  fullName: Mirage.IServerObjectManager.Destroy(UnityEngine.GameObject, System.Boolean)
+  nameWithType: IServerObjectManager.Destroy(GameObject, Boolean)
 - uid: Mirage.IServerObjectManager.Destroy*
   name: Destroy
   href: api/Mirage.IServerObjectManager.html#Mirage_IServerObjectManager_Destroy_
@@ -4430,18 +4539,18 @@ references:
   isSpec: "True"
   fullName: Mirage.IServerObjectManager.Destroy
   nameWithType: IServerObjectManager.Destroy
-- uid: Mirage.IServerObjectManager.ReplaceCharacter(Mirage.INetworkPlayer,Mirage.INetworkClient,UnityEngine.GameObject,System.Boolean)
-  name: ReplaceCharacter(INetworkPlayer, INetworkClient, GameObject, Boolean)
-  href: api/Mirage.IServerObjectManager.html#Mirage_IServerObjectManager_ReplaceCharacter_Mirage_INetworkPlayer_Mirage_INetworkClient_UnityEngine_GameObject_System_Boolean_
-  commentId: M:Mirage.IServerObjectManager.ReplaceCharacter(Mirage.INetworkPlayer,Mirage.INetworkClient,UnityEngine.GameObject,System.Boolean)
-  fullName: Mirage.IServerObjectManager.ReplaceCharacter(Mirage.INetworkPlayer, Mirage.INetworkClient, UnityEngine.GameObject, System.Boolean)
-  nameWithType: IServerObjectManager.ReplaceCharacter(INetworkPlayer, INetworkClient, GameObject, Boolean)
-- uid: Mirage.IServerObjectManager.ReplaceCharacter(Mirage.INetworkPlayer,Mirage.INetworkClient,UnityEngine.GameObject,System.Guid,System.Boolean)
-  name: ReplaceCharacter(INetworkPlayer, INetworkClient, GameObject, Guid, Boolean)
-  href: api/Mirage.IServerObjectManager.html#Mirage_IServerObjectManager_ReplaceCharacter_Mirage_INetworkPlayer_Mirage_INetworkClient_UnityEngine_GameObject_System_Guid_System_Boolean_
-  commentId: M:Mirage.IServerObjectManager.ReplaceCharacter(Mirage.INetworkPlayer,Mirage.INetworkClient,UnityEngine.GameObject,System.Guid,System.Boolean)
-  fullName: Mirage.IServerObjectManager.ReplaceCharacter(Mirage.INetworkPlayer, Mirage.INetworkClient, UnityEngine.GameObject, System.Guid, System.Boolean)
-  nameWithType: IServerObjectManager.ReplaceCharacter(INetworkPlayer, INetworkClient, GameObject, Guid, Boolean)
+- uid: Mirage.IServerObjectManager.ReplaceCharacter(Mirage.INetworkPlayer,UnityEngine.GameObject,System.Boolean)
+  name: ReplaceCharacter(INetworkPlayer, GameObject, Boolean)
+  href: api/Mirage.IServerObjectManager.html#Mirage_IServerObjectManager_ReplaceCharacter_Mirage_INetworkPlayer_UnityEngine_GameObject_System_Boolean_
+  commentId: M:Mirage.IServerObjectManager.ReplaceCharacter(Mirage.INetworkPlayer,UnityEngine.GameObject,System.Boolean)
+  fullName: Mirage.IServerObjectManager.ReplaceCharacter(Mirage.INetworkPlayer, UnityEngine.GameObject, System.Boolean)
+  nameWithType: IServerObjectManager.ReplaceCharacter(INetworkPlayer, GameObject, Boolean)
+- uid: Mirage.IServerObjectManager.ReplaceCharacter(Mirage.INetworkPlayer,UnityEngine.GameObject,System.Guid,System.Boolean)
+  name: ReplaceCharacter(INetworkPlayer, GameObject, Guid, Boolean)
+  href: api/Mirage.IServerObjectManager.html#Mirage_IServerObjectManager_ReplaceCharacter_Mirage_INetworkPlayer_UnityEngine_GameObject_System_Guid_System_Boolean_
+  commentId: M:Mirage.IServerObjectManager.ReplaceCharacter(Mirage.INetworkPlayer,UnityEngine.GameObject,System.Guid,System.Boolean)
+  fullName: Mirage.IServerObjectManager.ReplaceCharacter(Mirage.INetworkPlayer, UnityEngine.GameObject, System.Guid, System.Boolean)
+  nameWithType: IServerObjectManager.ReplaceCharacter(INetworkPlayer, GameObject, Guid, Boolean)
 - uid: Mirage.IServerObjectManager.ReplaceCharacter*
   name: ReplaceCharacter
   href: api/Mirage.IServerObjectManager.html#Mirage_IServerObjectManager_ReplaceCharacter_
@@ -4487,19 +4596,6 @@ references:
   isSpec: "True"
   fullName: Mirage.IServerObjectManager.SpawnObjects
   nameWithType: IServerObjectManager.SpawnObjects
-- uid: Mirage.IServerObjectManager.UnSpawn(UnityEngine.GameObject)
-  name: UnSpawn(GameObject)
-  href: api/Mirage.IServerObjectManager.html#Mirage_IServerObjectManager_UnSpawn_UnityEngine_GameObject_
-  commentId: M:Mirage.IServerObjectManager.UnSpawn(UnityEngine.GameObject)
-  fullName: Mirage.IServerObjectManager.UnSpawn(UnityEngine.GameObject)
-  nameWithType: IServerObjectManager.UnSpawn(GameObject)
-- uid: Mirage.IServerObjectManager.UnSpawn*
-  name: UnSpawn
-  href: api/Mirage.IServerObjectManager.html#Mirage_IServerObjectManager_UnSpawn_
-  commentId: Overload:Mirage.IServerObjectManager.UnSpawn
-  isSpec: "True"
-  fullName: Mirage.IServerObjectManager.UnSpawn
-  nameWithType: IServerObjectManager.UnSpawn
 - uid: Mirage.IVisibilityTracker
   name: IVisibilityTracker
   href: api/Mirage.IVisibilityTracker.html
@@ -6802,19 +6898,6 @@ references:
   isSpec: "True"
   fullName: Mirage.NetworkClient.Disconnected
   nameWithType: NetworkClient.Disconnected
-- uid: Mirage.NetworkClient.GetNewPlayer(Mirage.IConnection)
-  name: GetNewPlayer(IConnection)
-  href: api/Mirage.NetworkClient.html#Mirage_NetworkClient_GetNewPlayer_Mirage_IConnection_
-  commentId: M:Mirage.NetworkClient.GetNewPlayer(Mirage.IConnection)
-  fullName: Mirage.NetworkClient.GetNewPlayer(Mirage.IConnection)
-  nameWithType: NetworkClient.GetNewPlayer(IConnection)
-- uid: Mirage.NetworkClient.GetNewPlayer*
-  name: GetNewPlayer
-  href: api/Mirage.NetworkClient.html#Mirage_NetworkClient_GetNewPlayer_
-  commentId: Overload:Mirage.NetworkClient.GetNewPlayer
-  isSpec: "True"
-  fullName: Mirage.NetworkClient.GetNewPlayer
-  nameWithType: NetworkClient.GetNewPlayer
 - uid: Mirage.NetworkClient.IsConnected
   name: IsConnected
   href: api/Mirage.NetworkClient.html#Mirage_NetworkClient_IsConnected
@@ -6911,12 +6994,6 @@ references:
   isSpec: "True"
   fullName: Mirage.NetworkClient.World
   nameWithType: NetworkClient.World
-- uid: Mirage.NetworkConnectionEvent
-  name: NetworkConnectionEvent
-  href: api/Mirage.NetworkConnectionEvent.html
-  commentId: T:Mirage.NetworkConnectionEvent
-  fullName: Mirage.NetworkConnectionEvent
-  nameWithType: NetworkConnectionEvent
 - uid: Mirage.NetworkDiagnostics
   name: NetworkDiagnostics
   href: api/Mirage.NetworkDiagnostics.html
@@ -7151,46 +7228,82 @@ references:
   commentId: F:Mirage.NetworkIdentity.observers
   fullName: Mirage.NetworkIdentity.observers
   nameWithType: NetworkIdentity.observers
-- uid: Mirage.NetworkIdentity.OnStartAuthority
-  name: OnStartAuthority
-  href: api/Mirage.NetworkIdentity.html#Mirage_NetworkIdentity_OnStartAuthority
-  commentId: F:Mirage.NetworkIdentity.OnStartAuthority
-  fullName: Mirage.NetworkIdentity.OnStartAuthority
-  nameWithType: NetworkIdentity.OnStartAuthority
+- uid: Mirage.NetworkIdentity.OnAuthorityChanged
+  name: OnAuthorityChanged
+  href: api/Mirage.NetworkIdentity.html#Mirage_NetworkIdentity_OnAuthorityChanged
+  commentId: P:Mirage.NetworkIdentity.OnAuthorityChanged
+  fullName: Mirage.NetworkIdentity.OnAuthorityChanged
+  nameWithType: NetworkIdentity.OnAuthorityChanged
+- uid: Mirage.NetworkIdentity.OnAuthorityChanged*
+  name: OnAuthorityChanged
+  href: api/Mirage.NetworkIdentity.html#Mirage_NetworkIdentity_OnAuthorityChanged_
+  commentId: Overload:Mirage.NetworkIdentity.OnAuthorityChanged
+  isSpec: "True"
+  fullName: Mirage.NetworkIdentity.OnAuthorityChanged
+  nameWithType: NetworkIdentity.OnAuthorityChanged
 - uid: Mirage.NetworkIdentity.OnStartClient
   name: OnStartClient
   href: api/Mirage.NetworkIdentity.html#Mirage_NetworkIdentity_OnStartClient
-  commentId: F:Mirage.NetworkIdentity.OnStartClient
+  commentId: P:Mirage.NetworkIdentity.OnStartClient
+  fullName: Mirage.NetworkIdentity.OnStartClient
+  nameWithType: NetworkIdentity.OnStartClient
+- uid: Mirage.NetworkIdentity.OnStartClient*
+  name: OnStartClient
+  href: api/Mirage.NetworkIdentity.html#Mirage_NetworkIdentity_OnStartClient_
+  commentId: Overload:Mirage.NetworkIdentity.OnStartClient
+  isSpec: "True"
   fullName: Mirage.NetworkIdentity.OnStartClient
   nameWithType: NetworkIdentity.OnStartClient
 - uid: Mirage.NetworkIdentity.OnStartLocalPlayer
   name: OnStartLocalPlayer
   href: api/Mirage.NetworkIdentity.html#Mirage_NetworkIdentity_OnStartLocalPlayer
-  commentId: F:Mirage.NetworkIdentity.OnStartLocalPlayer
+  commentId: P:Mirage.NetworkIdentity.OnStartLocalPlayer
+  fullName: Mirage.NetworkIdentity.OnStartLocalPlayer
+  nameWithType: NetworkIdentity.OnStartLocalPlayer
+- uid: Mirage.NetworkIdentity.OnStartLocalPlayer*
+  name: OnStartLocalPlayer
+  href: api/Mirage.NetworkIdentity.html#Mirage_NetworkIdentity_OnStartLocalPlayer_
+  commentId: Overload:Mirage.NetworkIdentity.OnStartLocalPlayer
+  isSpec: "True"
   fullName: Mirage.NetworkIdentity.OnStartLocalPlayer
   nameWithType: NetworkIdentity.OnStartLocalPlayer
 - uid: Mirage.NetworkIdentity.OnStartServer
   name: OnStartServer
   href: api/Mirage.NetworkIdentity.html#Mirage_NetworkIdentity_OnStartServer
-  commentId: F:Mirage.NetworkIdentity.OnStartServer
+  commentId: P:Mirage.NetworkIdentity.OnStartServer
   fullName: Mirage.NetworkIdentity.OnStartServer
   nameWithType: NetworkIdentity.OnStartServer
-- uid: Mirage.NetworkIdentity.OnStopAuthority
-  name: OnStopAuthority
-  href: api/Mirage.NetworkIdentity.html#Mirage_NetworkIdentity_OnStopAuthority
-  commentId: F:Mirage.NetworkIdentity.OnStopAuthority
-  fullName: Mirage.NetworkIdentity.OnStopAuthority
-  nameWithType: NetworkIdentity.OnStopAuthority
+- uid: Mirage.NetworkIdentity.OnStartServer*
+  name: OnStartServer
+  href: api/Mirage.NetworkIdentity.html#Mirage_NetworkIdentity_OnStartServer_
+  commentId: Overload:Mirage.NetworkIdentity.OnStartServer
+  isSpec: "True"
+  fullName: Mirage.NetworkIdentity.OnStartServer
+  nameWithType: NetworkIdentity.OnStartServer
 - uid: Mirage.NetworkIdentity.OnStopClient
   name: OnStopClient
   href: api/Mirage.NetworkIdentity.html#Mirage_NetworkIdentity_OnStopClient
-  commentId: F:Mirage.NetworkIdentity.OnStopClient
+  commentId: P:Mirage.NetworkIdentity.OnStopClient
+  fullName: Mirage.NetworkIdentity.OnStopClient
+  nameWithType: NetworkIdentity.OnStopClient
+- uid: Mirage.NetworkIdentity.OnStopClient*
+  name: OnStopClient
+  href: api/Mirage.NetworkIdentity.html#Mirage_NetworkIdentity_OnStopClient_
+  commentId: Overload:Mirage.NetworkIdentity.OnStopClient
+  isSpec: "True"
   fullName: Mirage.NetworkIdentity.OnStopClient
   nameWithType: NetworkIdentity.OnStopClient
 - uid: Mirage.NetworkIdentity.OnStopServer
   name: OnStopServer
   href: api/Mirage.NetworkIdentity.html#Mirage_NetworkIdentity_OnStopServer
-  commentId: F:Mirage.NetworkIdentity.OnStopServer
+  commentId: P:Mirage.NetworkIdentity.OnStopServer
+  fullName: Mirage.NetworkIdentity.OnStopServer
+  nameWithType: NetworkIdentity.OnStopServer
+- uid: Mirage.NetworkIdentity.OnStopServer*
+  name: OnStopServer
+  href: api/Mirage.NetworkIdentity.html#Mirage_NetworkIdentity_OnStopServer_
+  commentId: Overload:Mirage.NetworkIdentity.OnStopServer
+  isSpec: "True"
   fullName: Mirage.NetworkIdentity.OnStopServer
   nameWithType: NetworkIdentity.OnStopServer
 - uid: Mirage.NetworkIdentity.RebuildObservers(System.Boolean)
@@ -7365,6 +7478,19 @@ references:
   isSpec: "True"
   fullName: Mirage.NetworkManager.IsNetworkActive
   nameWithType: NetworkManager.IsNetworkActive
+- uid: Mirage.NetworkManager.NetworkMode
+  name: NetworkMode
+  href: api/Mirage.NetworkManager.html#Mirage_NetworkManager_NetworkMode
+  commentId: P:Mirage.NetworkManager.NetworkMode
+  fullName: Mirage.NetworkManager.NetworkMode
+  nameWithType: NetworkManager.NetworkMode
+- uid: Mirage.NetworkManager.NetworkMode*
+  name: NetworkMode
+  href: api/Mirage.NetworkManager.html#Mirage_NetworkManager_NetworkMode_
+  commentId: Overload:Mirage.NetworkManager.NetworkMode
+  isSpec: "True"
+  fullName: Mirage.NetworkManager.NetworkMode
+  nameWithType: NetworkManager.NetworkMode
 - uid: Mirage.NetworkManager.NetworkSceneManager
   name: NetworkSceneManager
   href: api/Mirage.NetworkManager.html#Mirage_NetworkManager_NetworkSceneManager
@@ -7490,6 +7616,36 @@ references:
   isSpec: "True"
   fullName: Mirage.NetworkManagerHud.StopButtonHandler
   nameWithType: NetworkManagerHud.StopButtonHandler
+- uid: Mirage.NetworkManagerMode
+  name: NetworkManagerMode
+  href: api/Mirage.NetworkManagerMode.html
+  commentId: T:Mirage.NetworkManagerMode
+  fullName: Mirage.NetworkManagerMode
+  nameWithType: NetworkManagerMode
+- uid: Mirage.NetworkManagerMode.Client
+  name: Client
+  href: api/Mirage.NetworkManagerMode.html#Mirage_NetworkManagerMode_Client
+  commentId: F:Mirage.NetworkManagerMode.Client
+  fullName: Mirage.NetworkManagerMode.Client
+  nameWithType: NetworkManagerMode.Client
+- uid: Mirage.NetworkManagerMode.Host
+  name: Host
+  href: api/Mirage.NetworkManagerMode.html#Mirage_NetworkManagerMode_Host
+  commentId: F:Mirage.NetworkManagerMode.Host
+  fullName: Mirage.NetworkManagerMode.Host
+  nameWithType: NetworkManagerMode.Host
+- uid: Mirage.NetworkManagerMode.None
+  name: None
+  href: api/Mirage.NetworkManagerMode.html#Mirage_NetworkManagerMode_None
+  commentId: F:Mirage.NetworkManagerMode.None
+  fullName: Mirage.NetworkManagerMode.None
+  nameWithType: NetworkManagerMode.None
+- uid: Mirage.NetworkManagerMode.Server
+  name: Server
+  href: api/Mirage.NetworkManagerMode.html#Mirage_NetworkManagerMode_Server
+  commentId: F:Mirage.NetworkManagerMode.Server
+  fullName: Mirage.NetworkManagerMode.Server
+  nameWithType: NetworkManagerMode.Server
 - uid: Mirage.NetworkMatchChecker
   name: NetworkMatchChecker
   href: api/Mirage.NetworkMatchChecker.html
@@ -8276,19 +8432,6 @@ references:
   isSpec: "True"
   fullName: Mirage.NetworkServer.Disconnected
   nameWithType: NetworkServer.Disconnected
-- uid: Mirage.NetworkServer.GetNewPlayer(Mirage.IConnection)
-  name: GetNewPlayer(IConnection)
-  href: api/Mirage.NetworkServer.html#Mirage_NetworkServer_GetNewPlayer_Mirage_IConnection_
-  commentId: M:Mirage.NetworkServer.GetNewPlayer(Mirage.IConnection)
-  fullName: Mirage.NetworkServer.GetNewPlayer(Mirage.IConnection)
-  nameWithType: NetworkServer.GetNewPlayer(IConnection)
-- uid: Mirage.NetworkServer.GetNewPlayer*
-  name: GetNewPlayer
-  href: api/Mirage.NetworkServer.html#Mirage_NetworkServer_GetNewPlayer_
-  commentId: Overload:Mirage.NetworkServer.GetNewPlayer
-  isSpec: "True"
-  fullName: Mirage.NetworkServer.GetNewPlayer
-  nameWithType: NetworkServer.GetNewPlayer
 - uid: Mirage.NetworkServer.ListenAsync
   name: ListenAsync()
   href: api/Mirage.NetworkServer.html#Mirage_NetworkServer_ListenAsync
@@ -11233,12 +11376,12 @@ references:
   isSpec: "True"
   fullName: Mirage.ServerObjectManager.AddCharacter
   nameWithType: ServerObjectManager.AddCharacter
-- uid: Mirage.ServerObjectManager.Destroy(UnityEngine.GameObject)
-  name: Destroy(GameObject)
-  href: api/Mirage.ServerObjectManager.html#Mirage_ServerObjectManager_Destroy_UnityEngine_GameObject_
-  commentId: M:Mirage.ServerObjectManager.Destroy(UnityEngine.GameObject)
-  fullName: Mirage.ServerObjectManager.Destroy(UnityEngine.GameObject)
-  nameWithType: ServerObjectManager.Destroy(GameObject)
+- uid: Mirage.ServerObjectManager.Destroy(UnityEngine.GameObject,System.Boolean)
+  name: Destroy(GameObject, Boolean)
+  href: api/Mirage.ServerObjectManager.html#Mirage_ServerObjectManager_Destroy_UnityEngine_GameObject_System_Boolean_
+  commentId: M:Mirage.ServerObjectManager.Destroy(UnityEngine.GameObject,System.Boolean)
+  fullName: Mirage.ServerObjectManager.Destroy(UnityEngine.GameObject, System.Boolean)
+  nameWithType: ServerObjectManager.Destroy(GameObject, Boolean)
 - uid: Mirage.ServerObjectManager.Destroy*
   name: Destroy
   href: api/Mirage.ServerObjectManager.html#Mirage_ServerObjectManager_Destroy_
@@ -11265,18 +11408,18 @@ references:
   isSpec: "True"
   fullName: Mirage.ServerObjectManager.RemovePlayerForConnection
   nameWithType: ServerObjectManager.RemovePlayerForConnection
-- uid: Mirage.ServerObjectManager.ReplaceCharacter(Mirage.INetworkPlayer,Mirage.INetworkClient,UnityEngine.GameObject,System.Boolean)
-  name: ReplaceCharacter(INetworkPlayer, INetworkClient, GameObject, Boolean)
-  href: api/Mirage.ServerObjectManager.html#Mirage_ServerObjectManager_ReplaceCharacter_Mirage_INetworkPlayer_Mirage_INetworkClient_UnityEngine_GameObject_System_Boolean_
-  commentId: M:Mirage.ServerObjectManager.ReplaceCharacter(Mirage.INetworkPlayer,Mirage.INetworkClient,UnityEngine.GameObject,System.Boolean)
-  fullName: Mirage.ServerObjectManager.ReplaceCharacter(Mirage.INetworkPlayer, Mirage.INetworkClient, UnityEngine.GameObject, System.Boolean)
-  nameWithType: ServerObjectManager.ReplaceCharacter(INetworkPlayer, INetworkClient, GameObject, Boolean)
-- uid: Mirage.ServerObjectManager.ReplaceCharacter(Mirage.INetworkPlayer,Mirage.INetworkClient,UnityEngine.GameObject,System.Guid,System.Boolean)
-  name: ReplaceCharacter(INetworkPlayer, INetworkClient, GameObject, Guid, Boolean)
-  href: api/Mirage.ServerObjectManager.html#Mirage_ServerObjectManager_ReplaceCharacter_Mirage_INetworkPlayer_Mirage_INetworkClient_UnityEngine_GameObject_System_Guid_System_Boolean_
-  commentId: M:Mirage.ServerObjectManager.ReplaceCharacter(Mirage.INetworkPlayer,Mirage.INetworkClient,UnityEngine.GameObject,System.Guid,System.Boolean)
-  fullName: Mirage.ServerObjectManager.ReplaceCharacter(Mirage.INetworkPlayer, Mirage.INetworkClient, UnityEngine.GameObject, System.Guid, System.Boolean)
-  nameWithType: ServerObjectManager.ReplaceCharacter(INetworkPlayer, INetworkClient, GameObject, Guid, Boolean)
+- uid: Mirage.ServerObjectManager.ReplaceCharacter(Mirage.INetworkPlayer,UnityEngine.GameObject,System.Boolean)
+  name: ReplaceCharacter(INetworkPlayer, GameObject, Boolean)
+  href: api/Mirage.ServerObjectManager.html#Mirage_ServerObjectManager_ReplaceCharacter_Mirage_INetworkPlayer_UnityEngine_GameObject_System_Boolean_
+  commentId: M:Mirage.ServerObjectManager.ReplaceCharacter(Mirage.INetworkPlayer,UnityEngine.GameObject,System.Boolean)
+  fullName: Mirage.ServerObjectManager.ReplaceCharacter(Mirage.INetworkPlayer, UnityEngine.GameObject, System.Boolean)
+  nameWithType: ServerObjectManager.ReplaceCharacter(INetworkPlayer, GameObject, Boolean)
+- uid: Mirage.ServerObjectManager.ReplaceCharacter(Mirage.INetworkPlayer,UnityEngine.GameObject,System.Guid,System.Boolean)
+  name: ReplaceCharacter(INetworkPlayer, GameObject, Guid, Boolean)
+  href: api/Mirage.ServerObjectManager.html#Mirage_ServerObjectManager_ReplaceCharacter_Mirage_INetworkPlayer_UnityEngine_GameObject_System_Guid_System_Boolean_
+  commentId: M:Mirage.ServerObjectManager.ReplaceCharacter(Mirage.INetworkPlayer,UnityEngine.GameObject,System.Guid,System.Boolean)
+  fullName: Mirage.ServerObjectManager.ReplaceCharacter(Mirage.INetworkPlayer, UnityEngine.GameObject, System.Guid, System.Boolean)
+  nameWithType: ServerObjectManager.ReplaceCharacter(INetworkPlayer, GameObject, Guid, Boolean)
 - uid: Mirage.ServerObjectManager.ReplaceCharacter*
   name: ReplaceCharacter
   href: api/Mirage.ServerObjectManager.html#Mirage_ServerObjectManager_ReplaceCharacter_
@@ -11399,19 +11542,6 @@ references:
   isSpec: "True"
   fullName: Mirage.ServerObjectManager.SyncVarSender
   nameWithType: ServerObjectManager.SyncVarSender
-- uid: Mirage.ServerObjectManager.UnSpawn(UnityEngine.GameObject)
-  name: UnSpawn(GameObject)
-  href: api/Mirage.ServerObjectManager.html#Mirage_ServerObjectManager_UnSpawn_UnityEngine_GameObject_
-  commentId: M:Mirage.ServerObjectManager.UnSpawn(UnityEngine.GameObject)
-  fullName: Mirage.ServerObjectManager.UnSpawn(UnityEngine.GameObject)
-  nameWithType: ServerObjectManager.UnSpawn(GameObject)
-- uid: Mirage.ServerObjectManager.UnSpawn*
-  name: UnSpawn
-  href: api/Mirage.ServerObjectManager.html#Mirage_ServerObjectManager_UnSpawn_
-  commentId: Overload:Mirage.ServerObjectManager.UnSpawn
-  isSpec: "True"
-  fullName: Mirage.ServerObjectManager.UnSpawn
-  nameWithType: ServerObjectManager.UnSpawn
 - uid: Mirage.ServerRpcAttribute
   name: ServerRpcAttribute
   href: api/Mirage.ServerRpcAttribute.html

@@ -35,21 +35,31 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              
               <a class="navbar-brand" href="../../index.html">
                 <img id="logo" class="svg" src="../../logo.png" alt="">
-              </a>
-            </div>
+            </a></div>
             <div class="collapse navbar-collapse" id="navbar">
               <form class="navbar-form navbar-right" role="search" id="search">
+        		<div class="toggle-mode">
+        			<div class="icon">
+        			<i aria-hidden="true">🌕</i>
+        		</div>
+        		<label class="switch">
+        			<input type="checkbox" id="switch-style">
+        			<span class="slider round"></span>
+        		</label>
+        		<div class="icon">
+        			<i aria-hidden="true">🌙</i>
+        		</div>
+        			<script type="text/javascript" src="../../styles/toggle-theme.js"></script>
+        		</div>
                 <div class="form-group">
                   <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
                 </div>
               </form>
             </div>
           </div>
-        </nav>
-        
+        </nav>        
         <div class="subnav navbar navbar-default">
           <div class="container hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
@@ -259,11 +269,11 @@ class MyNetworkManager : NetworkManager {
 </tr>
 <tr>
 <td style="text-align: center;"><code>OnStartAuthority</code></td>
-<td style="text-align: center;"><a class="xref" href="../../api/Mirage.NetworkIdentity.html#Mirage_NetworkIdentity_OnStartAuthority">NetIdentity.OnStartAuthority</a></td>
+<td style="text-align: center;"><a class="xref" href="../../api/Mirage.NetworkIdentity.html#Mirage_NetworkIdentity_OnAuthorityChanged">NetIdentity.OnAuthorityChanged</a></td>
 </tr>
 <tr>
 <td style="text-align: center;"><code>OnStopAuthority</code></td>
-<td style="text-align: center;"><a class="xref" href="../../api/Mirage.NetworkIdentity.html#Mirage_NetworkIdentity_OnStopAuthority">NetIdentity.OnStopAuthority</a></td>
+<td style="text-align: center;"><a class="xref" href="../../api/Mirage.NetworkIdentity.html#Mirage_NetworkIdentity_OnAuthorityChanged">NetIdentity.OnAuthorityChanged</a></td>
 </tr>
 </tbody>
 </table>
@@ -338,7 +348,7 @@ public class Player : NetworkBehaviour {
 <tbody>
 <tr>
 <td style="text-align: center;"><code>ClientScene.localPlayer</code></td>
-<td style="text-align: center;"><a class="xref" href="../../api/Mirage.ClientObjectManager.html#Mirage_ClientObjectManager_LocalPlayer">ClientObjectManager.LocalPlayer</a></td>
+<td style="text-align: center;"><a class="xref" href="../../api/Mirage.NetworkPlayer.html#Mirage_NetworkPlayer_Identity">NetworkPlayer.Identity</a></td>
 </tr>
 <tr>
 <td style="text-align: center;"><code>ClientScene.ready</code></td>
@@ -432,7 +442,7 @@ public class Player : NetworkBehaviour {
 </tr>
 <tr>
 <td style="text-align: center;"><code>NetworkServer.Destroy</code></td>
-<td style="text-align: center;"><a class="xref" href="../../api/Mirage.ServerObjectManager.html#Mirage_ServerObjectManager_Destroy_UnityEngine_GameObject_">ServerObjectManager.Destroy</a></td>
+<td style="text-align: center;">[ServerObjectManager.Destroy](xref:Mirage.ServerObjectManager.Destroy(UnityEngine.GameObject, System.Boolean))</td>
 </tr>
 </tbody>
 </table>

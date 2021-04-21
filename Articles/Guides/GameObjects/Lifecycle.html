@@ -35,21 +35,31 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              
               <a class="navbar-brand" href="../../../index.html">
                 <img id="logo" class="svg" src="../../../logo.png" alt="">
-              </a>
-            </div>
+            </a></div>
             <div class="collapse navbar-collapse" id="navbar">
               <form class="navbar-form navbar-right" role="search" id="search">
+        		<div class="toggle-mode">
+        			<div class="icon">
+        			<i aria-hidden="true">🌕</i>
+        		</div>
+        		<label class="switch">
+        			<input type="checkbox" id="switch-style">
+        			<span class="slider round"></span>
+        		</label>
+        		<div class="icon">
+        			<i aria-hidden="true">🌙</i>
+        		</div>
+        			<script type="text/javascript" src="../../../styles/toggle-theme.js"></script>
+        		</div>
                 <div class="form-group">
                   <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
                 </div>
               </form>
             </div>
           </div>
-        </nav>
-        
+        </nav>        
         <div class="subnav navbar navbar-default">
           <div class="container hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
@@ -176,7 +186,7 @@ You can customize how objects are instantiated using Spawn Handlers.</p>
 <p>Do not add Network logic to these events.  Instead,  use these events to subscribe to network events in NetworkIdentity.</p>
 <p>Immediatelly after the object is instantiated, all the data is updated to match the data in the server.</p>
 <h1 id="client-start-authority">Client Start Authority</h1>
-<p>If the object is owned by this client, then NetworkIdentity will invoke the <a class="xref" href="../../../api/Mirage.NetworkIdentity.html#Mirage_NetworkIdentity_OnStartAuthority">OnStartAuthority</a>
+<p>If the object is owned by this client, then NetworkIdentity will invoke the <a class="xref" href="../../../api/Mirage.NetworkIdentity.html#Mirage_NetworkIdentity_OnAuthorityChanged">OnAuthorityChanged</a>
 Subscribe to this event either by using <code>AddListener</code>,  or adding your method to the event in the inspector.
 Note the Authority can be revoked, and granted again.  Every time the client gains authority, this event will be invoked again.</p>
 <h1 id="start-client">Start Client</h1>
@@ -187,12 +197,12 @@ Subscribe to this event by using <code>AddListener</code> or adding your method 
 is invoked.
 Subscribe to this event by using <code>AddListener</code> or adding your method in the event in the inspector</p>
 <h1 id="stop-authority">Stop Authority</h1>
-<p>If the object loses authority over the object, then NetworkIdentity will invoke the <a class="xref" href="../../../api/Mirage.NetworkIdentity.html#Mirage_NetworkIdentity_OnStopAuthority">OnStopAuthority</a>
+<p>If the object loses authority over the object, then NetworkIdentity will invoke the <a class="xref" href="../../../api/Mirage.NetworkIdentity.html#Mirage_NetworkIdentity_OnAuthorityChanged">OnAuthorityChanged</a>
 Subscribe to this event either by using <code>AddListener</code>,  or adding your method to the event in the inspector.
 Note the Authority can be revoked, and granted again.  Every time the client loses authority, this event will be invoked again.</p>
 <h1 id="server-stop">Server Stop</h1>
 <p>Either because the client disconnected, the server stopped,
-you called <a class="xref" href="../../../api/Mirage.ServerObjectManager.html#Mirage_ServerObjectManager_UnSpawn_UnityEngine_GameObject_">UnSpawn(GameObject)</a>,  or you called <a class="xref" href="../../../api/Mirage.ServerObjectManager.html#Mirage_ServerObjectManager_Destroy_UnityEngine_GameObject_">Destroy(GameObject)</a> the object may stop in the server.
+you called <a class="xref" href="../../../api/Mirage.ServerObjectManager.html#Mirage_ServerObjectManager_Destroy_UnityEngine_GameObject_System_Boolean_">Destroy(GameObject, Boolean)</a> the object may stop in the server.
 During this state, a message is sent to all the clients to unspawn the object.
 The event <a class="xref" href="../../../api/Mirage.NetworkIdentity.html#Mirage_NetworkIdentity_OnStopServer">OnStopServer</a> will be invoked.</p>
 <p>Subscribe to this event either by using <code>AddListener</code>,  or adding your method to the event in the inspector.</p>

@@ -37,21 +37,31 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              
               <a class="navbar-brand" href="../index.html">
                 <img id="logo" class="svg" src="../logo.png" alt="">
-              </a>
-            </div>
+            </a></div>
             <div class="collapse navbar-collapse" id="navbar">
               <form class="navbar-form navbar-right" role="search" id="search">
+        		<div class="toggle-mode">
+        			<div class="icon">
+        			<i aria-hidden="true">🌕</i>
+        		</div>
+        		<label class="switch">
+        			<input type="checkbox" id="switch-style">
+        			<span class="slider round"></span>
+        		</label>
+        		<div class="icon">
+        			<i aria-hidden="true">🌙</i>
+        		</div>
+        			<script type="text/javascript" src="../styles/toggle-theme.js"></script>
+        		</div>
                 <div class="form-group">
                   <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
                 </div>
               </form>
             </div>
           </div>
-        </nav>
-        
+        </nav>        
         <div class="subnav navbar navbar-default">
           <div class="container hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
@@ -419,7 +429,7 @@ public class NetworkServer : MonoBehaviour, INetworkServer</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkServer_authenticator.md&amp;value=---%0Auid%3A%20Mirage.NetworkServer.authenticator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkServer.cs/#L45">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkServer.cs/#L45">View Source</a>
   </span>
   <h4 id="Mirage_NetworkServer_authenticator" data-uid="Mirage.NetworkServer.authenticator">authenticator</h4>
   <div class="markdown level1 summary"></div>
@@ -449,7 +459,7 @@ public NetworkAuthenticator authenticator</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkServer_Listening.md&amp;value=---%0Auid%3A%20Mirage.NetworkServer.Listening%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkServer.cs/#L39">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkServer.cs/#L39">View Source</a>
   </span>
   <h4 id="Mirage_NetworkServer_Listening" data-uid="Mirage.NetworkServer.Listening">Listening</h4>
   <div class="markdown level1 summary"><p>If you disable this, the server will not listen for incoming connections on the regular network port.</p>
@@ -480,7 +490,7 @@ public NetworkAuthenticator authenticator</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkServer_MaxConnections.md&amp;value=---%0Auid%3A%20Mirage.NetworkServer.MaxConnections%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkServer.cs/#L33">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkServer.cs/#L33">View Source</a>
   </span>
   <h4 id="Mirage_NetworkServer_MaxConnections" data-uid="Mirage.NetworkServer.MaxConnections">MaxConnections</h4>
   <div class="markdown level1 summary"><p>The maximum number of concurrent network connections to support.</p>
@@ -513,7 +523,7 @@ public int MaxConnections</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkServer_Players.md&amp;value=---%0Auid%3A%20Mirage.NetworkServer.Players%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkServer.cs/#L119">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkServer.cs/#L118">View Source</a>
   </span>
   <h4 id="Mirage_NetworkServer_Players" data-uid="Mirage.NetworkServer.Players">Players</h4>
   <div class="markdown level1 summary"><p>A list of local connections on the server.</p>
@@ -543,7 +553,7 @@ public int MaxConnections</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkServer_Transport.md&amp;value=---%0Auid%3A%20Mirage.NetworkServer.Transport%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkServer.cs/#L42">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkServer.cs/#L42">View Source</a>
   </span>
   <h4 id="Mirage_NetworkServer_Transport" data-uid="Mirage.NetworkServer.Transport">Transport</h4>
   <div class="markdown level1 summary"></div>
@@ -574,7 +584,7 @@ public int MaxConnections</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkServer_Active.md&amp;value=---%0Auid%3A%20Mirage.NetworkServer.Active%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkServer.cs/#L126">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkServer.cs/#L125">View Source</a>
   </span>
   <a id="Mirage_NetworkServer_Active_" data-uid="Mirage.NetworkServer.Active*"></a>
   <h4 id="Mirage_NetworkServer_Active" data-uid="Mirage.NetworkServer.Active">Active</h4>
@@ -606,7 +616,7 @@ public int MaxConnections</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkServer_Authenticated.md&amp;value=---%0Auid%3A%20Mirage.NetworkServer.Authenticated%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkServer.cs/#L67">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkServer.cs/#L66">View Source</a>
   </span>
   <a id="Mirage_NetworkServer_Authenticated_" data-uid="Mirage.NetworkServer.Authenticated*"></a>
   <h4 id="Mirage_NetworkServer_Authenticated" data-uid="Mirage.NetworkServer.Authenticated">Authenticated</h4>
@@ -614,7 +624,7 @@ public int MaxConnections</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public NetworkConnectionEvent Authenticated { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public NetworkPlayerEvent Authenticated { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -626,7 +636,7 @@ public int MaxConnections</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Mirage.NetworkConnectionEvent.html">NetworkConnectionEvent</a></td>
+        <td><a class="xref" href="Mirage.Events.NetworkPlayerEvent.html">NetworkPlayerEvent</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -636,7 +646,7 @@ public int MaxConnections</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkServer_Connected.md&amp;value=---%0Auid%3A%20Mirage.NetworkServer.Connected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkServer.cs/#L60">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkServer.cs/#L59">View Source</a>
   </span>
   <a id="Mirage_NetworkServer_Connected_" data-uid="Mirage.NetworkServer.Connected*"></a>
   <h4 id="Mirage_NetworkServer_Connected" data-uid="Mirage.NetworkServer.Connected">Connected</h4>
@@ -644,7 +654,7 @@ public int MaxConnections</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public NetworkConnectionEvent Connected { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public NetworkPlayerEvent Connected { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -656,7 +666,7 @@ public int MaxConnections</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Mirage.NetworkConnectionEvent.html">NetworkConnectionEvent</a></td>
+        <td><a class="xref" href="Mirage.Events.NetworkPlayerEvent.html">NetworkPlayerEvent</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -666,7 +676,7 @@ public int MaxConnections</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkServer_Disconnected.md&amp;value=---%0Auid%3A%20Mirage.NetworkServer.Disconnected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkServer.cs/#L74">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkServer.cs/#L73">View Source</a>
   </span>
   <a id="Mirage_NetworkServer_Disconnected_" data-uid="Mirage.NetworkServer.Disconnected*"></a>
   <h4 id="Mirage_NetworkServer_Disconnected" data-uid="Mirage.NetworkServer.Disconnected">Disconnected</h4>
@@ -674,7 +684,7 @@ public int MaxConnections</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public NetworkConnectionEvent Disconnected { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public NetworkPlayerEvent Disconnected { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -686,7 +696,7 @@ public int MaxConnections</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Mirage.NetworkConnectionEvent.html">NetworkConnectionEvent</a></td>
+        <td><a class="xref" href="Mirage.Events.NetworkPlayerEvent.html">NetworkPlayerEvent</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -696,7 +706,7 @@ public int MaxConnections</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkServer_LocalClient.md&amp;value=---%0Auid%3A%20Mirage.NetworkServer.LocalClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkServer.cs/#L103">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkServer.cs/#L102">View Source</a>
   </span>
   <a id="Mirage_NetworkServer_LocalClient_" data-uid="Mirage.NetworkServer.LocalClient*"></a>
   <h4 id="Mirage_NetworkServer_LocalClient" data-uid="Mirage.NetworkServer.LocalClient">LocalClient</h4>
@@ -727,7 +737,7 @@ public int MaxConnections</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkServer_LocalClientActive.md&amp;value=---%0Auid%3A%20Mirage.NetworkServer.LocalClientActive%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkServer.cs/#L108">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkServer.cs/#L107">View Source</a>
   </span>
   <a id="Mirage_NetworkServer_LocalClientActive_" data-uid="Mirage.NetworkServer.LocalClientActive*"></a>
   <h4 id="Mirage_NetworkServer_LocalClientActive" data-uid="Mirage.NetworkServer.LocalClientActive">LocalClientActive</h4>
@@ -758,7 +768,7 @@ public int MaxConnections</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkServer_LocalPlayer.md&amp;value=---%0Auid%3A%20Mirage.NetworkServer.LocalPlayer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkServer.cs/#L98">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkServer.cs/#L97">View Source</a>
   </span>
   <a id="Mirage_NetworkServer_LocalPlayer_" data-uid="Mirage.NetworkServer.LocalPlayer*"></a>
   <h4 id="Mirage_NetworkServer_LocalPlayer" data-uid="Mirage.NetworkServer.LocalPlayer">LocalPlayer</h4>
@@ -789,7 +799,7 @@ public int MaxConnections</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkServer_NumberOfPlayers.md&amp;value=---%0Auid%3A%20Mirage.NetworkServer.NumberOfPlayers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkServer.cs/#L114">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkServer.cs/#L113">View Source</a>
   </span>
   <a id="Mirage_NetworkServer_NumberOfPlayers_" data-uid="Mirage.NetworkServer.NumberOfPlayers*"></a>
   <h4 id="Mirage_NetworkServer_NumberOfPlayers" data-uid="Mirage.NetworkServer.NumberOfPlayers">NumberOfPlayers</h4>
@@ -821,7 +831,7 @@ public int MaxConnections</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkServer_OnStartHost.md&amp;value=---%0Auid%3A%20Mirage.NetworkServer.OnStartHost%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkServer.cs/#L84">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkServer.cs/#L83">View Source</a>
   </span>
   <a id="Mirage_NetworkServer_OnStartHost_" data-uid="Mirage.NetworkServer.OnStartHost*"></a>
   <h4 id="Mirage_NetworkServer_OnStartHost" data-uid="Mirage.NetworkServer.OnStartHost">OnStartHost</h4>
@@ -829,7 +839,7 @@ public int MaxConnections</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UnityEvent OnStartHost { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IAddLateEvent OnStartHost { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -841,7 +851,7 @@ public int MaxConnections</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Events.UnityEvent.html">UnityEvent</a></td>
+        <td><a class="xref" href="Mirage.Events.IAddLateEvent.html">IAddLateEvent</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -851,7 +861,7 @@ public int MaxConnections</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkServer_OnStopHost.md&amp;value=---%0Auid%3A%20Mirage.NetworkServer.OnStopHost%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkServer.cs/#L90">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkServer.cs/#L89">View Source</a>
   </span>
   <a id="Mirage_NetworkServer_OnStopHost_" data-uid="Mirage.NetworkServer.OnStopHost*"></a>
   <h4 id="Mirage_NetworkServer_OnStopHost" data-uid="Mirage.NetworkServer.OnStopHost">OnStopHost</h4>
@@ -859,7 +869,7 @@ public int MaxConnections</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UnityEvent OnStopHost { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IAddLateEvent OnStopHost { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -871,7 +881,7 @@ public int MaxConnections</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Events.UnityEvent.html">UnityEvent</a></td>
+        <td><a class="xref" href="Mirage.Events.IAddLateEvent.html">IAddLateEvent</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -881,15 +891,16 @@ public int MaxConnections</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkServer_Started.md&amp;value=---%0Auid%3A%20Mirage.NetworkServer.Started%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkServer.cs/#L53">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkServer.cs/#L52">View Source</a>
   </span>
   <a id="Mirage_NetworkServer_Started_" data-uid="Mirage.NetworkServer.Started*"></a>
   <h4 id="Mirage_NetworkServer_Started" data-uid="Mirage.NetworkServer.Started">Started</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>This is invoked when a server is started - including when a host is started.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UnityEvent Started { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IAddLateEvent Started { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -901,7 +912,7 @@ public int MaxConnections</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Events.UnityEvent.html">UnityEvent</a></td>
+        <td><a class="xref" href="Mirage.Events.IAddLateEvent.html">IAddLateEvent</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -911,7 +922,7 @@ public int MaxConnections</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkServer_Stopped.md&amp;value=---%0Auid%3A%20Mirage.NetworkServer.Stopped%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkServer.cs/#L77">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkServer.cs/#L76">View Source</a>
   </span>
   <a id="Mirage_NetworkServer_Stopped_" data-uid="Mirage.NetworkServer.Stopped*"></a>
   <h4 id="Mirage_NetworkServer_Stopped" data-uid="Mirage.NetworkServer.Stopped">Stopped</h4>
@@ -919,7 +930,7 @@ public int MaxConnections</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UnityEvent Stopped { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IAddLateEvent Stopped { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -931,7 +942,7 @@ public int MaxConnections</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Events.UnityEvent.html">UnityEvent</a></td>
+        <td><a class="xref" href="Mirage.Events.IAddLateEvent.html">IAddLateEvent</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -941,7 +952,7 @@ public int MaxConnections</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkServer_Time.md&amp;value=---%0Auid%3A%20Mirage.NetworkServer.Time%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkServer.cs/#L131">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkServer.cs/#L130">View Source</a>
   </span>
   <a id="Mirage_NetworkServer_Time_" data-uid="Mirage.NetworkServer.Time*"></a>
   <h4 id="Mirage_NetworkServer_Time" data-uid="Mirage.NetworkServer.Time">Time</h4>
@@ -972,7 +983,7 @@ public int MaxConnections</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkServer_World.md&amp;value=---%0Auid%3A%20Mirage.NetworkServer.World%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkServer.cs/#L133">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkServer.cs/#L132">View Source</a>
   </span>
   <a id="Mirage_NetworkServer_World_" data-uid="Mirage.NetworkServer.World*"></a>
   <h4 id="Mirage_NetworkServer_World" data-uid="Mirage.NetworkServer.World">World</h4>
@@ -1004,7 +1015,7 @@ public int MaxConnections</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkServer_AddConnection_Mirage_INetworkPlayer_.md&amp;value=---%0Auid%3A%20Mirage.NetworkServer.AddConnection(Mirage.INetworkPlayer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkServer.cs/#L303">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkServer.cs/#L299">View Source</a>
   </span>
   <a id="Mirage_NetworkServer_AddConnection_" data-uid="Mirage.NetworkServer.AddConnection*"></a>
   <h4 id="Mirage_NetworkServer_AddConnection_Mirage_INetworkPlayer_" data-uid="Mirage.NetworkServer.AddConnection(Mirage.INetworkPlayer)">AddConnection(INetworkPlayer)</h4>
@@ -1039,7 +1050,7 @@ public int MaxConnections</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkServer_Disconnect.md&amp;value=---%0Auid%3A%20Mirage.NetworkServer.Disconnect%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkServer.cs/#L138">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkServer.cs/#L137">View Source</a>
   </span>
   <a id="Mirage_NetworkServer_Disconnect_" data-uid="Mirage.NetworkServer.Disconnect*"></a>
   <h4 id="Mirage_NetworkServer_Disconnect" data-uid="Mirage.NetworkServer.Disconnect">Disconnect()</h4>
@@ -1052,58 +1063,10 @@ public int MaxConnections</code></pre>
   </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkServer_GetNewPlayer_Mirage_IConnection_.md&amp;value=---%0Auid%3A%20Mirage.NetworkServer.GetNewPlayer(Mirage.IConnection)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkServer.cs/#L293">View Source</a>
-  </span>
-  <a id="Mirage_NetworkServer_GetNewPlayer_" data-uid="Mirage.NetworkServer.GetNewPlayer*"></a>
-  <h4 id="Mirage_NetworkServer_GetNewPlayer_Mirage_IConnection_" data-uid="Mirage.NetworkServer.GetNewPlayer(Mirage.IConnection)">GetNewPlayer(IConnection)</h4>
-  <div class="markdown level1 summary"><p>Creates a new INetworkConnection based on the provided IConnection.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual INetworkPlayer GetNewPlayer(IConnection connection)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Mirage.IConnection.html">IConnection</a></td>
-        <td><span class="parametername">connection</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Mirage.INetworkPlayer.html">INetworkPlayer</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkServer_ListenAsync.md&amp;value=---%0Auid%3A%20Mirage.NetworkServer.ListenAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkServer.cs/#L196">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkServer.cs/#L195">View Source</a>
   </span>
   <a id="Mirage_NetworkServer_ListenAsync_" data-uid="Mirage.NetworkServer.ListenAsync*"></a>
   <h4 id="Mirage_NetworkServer_ListenAsync" data-uid="Mirage.NetworkServer.ListenAsync">ListenAsync()</h4>
@@ -1134,7 +1097,7 @@ public int MaxConnections</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkServer_RemoveConnection_Mirage_INetworkPlayer_.md&amp;value=---%0Auid%3A%20Mirage.NetworkServer.RemoveConnection(Mirage.INetworkPlayer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkServer.cs/#L318">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkServer.cs/#L314">View Source</a>
   </span>
   <a id="Mirage_NetworkServer_RemoveConnection_" data-uid="Mirage.NetworkServer.RemoveConnection*"></a>
   <h4 id="Mirage_NetworkServer_RemoveConnection_Mirage_INetworkPlayer_" data-uid="Mirage.NetworkServer.RemoveConnection(Mirage.INetworkPlayer)">RemoveConnection(INetworkPlayer)</h4>
@@ -1167,7 +1130,7 @@ public int MaxConnections</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkServer_SendToAll__1___0_System_Int32_.md&amp;value=---%0Auid%3A%20Mirage.NetworkServer.SendToAll%60%601(%60%600%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkServer.cs/#L349">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkServer.cs/#L345">View Source</a>
   </span>
   <a id="Mirage_NetworkServer_SendToAll_" data-uid="Mirage.NetworkServer.SendToAll*"></a>
   <h4 id="Mirage_NetworkServer_SendToAll__1___0_System_Int32_" data-uid="Mirage.NetworkServer.SendToAll``1(``0,System.Int32)">SendToAll&lt;T&gt;(T, Int32)</h4>
@@ -1223,7 +1186,7 @@ public int MaxConnections</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkServer_SendToMany__1_System_Collections_Generic_IEnumerable_Mirage_INetworkPlayer____0_System_Int32_.md&amp;value=---%0Auid%3A%20Mirage.NetworkServer.SendToMany%60%601(System.Collections.Generic.IEnumerable%7BMirage.INetworkPlayer%7D%2C%60%600%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkServer.cs/#L355">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkServer.cs/#L351">View Source</a>
   </span>
   <a id="Mirage_NetworkServer_SendToMany_" data-uid="Mirage.NetworkServer.SendToMany*"></a>
   <h4 id="Mirage_NetworkServer_SendToMany__1_System_Collections_Generic_IEnumerable_Mirage_INetworkPlayer____0_System_Int32_" data-uid="Mirage.NetworkServer.SendToMany``1(System.Collections.Generic.IEnumerable{Mirage.INetworkPlayer},``0,System.Int32)">SendToMany&lt;T&gt;(IEnumerable&lt;INetworkPlayer&gt;, T, Int32)</h4>
@@ -1280,7 +1243,7 @@ public int MaxConnections</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkServer_StartHost_Mirage_NetworkClient_.md&amp;value=---%0Auid%3A%20Mirage.NetworkServer.StartHost(Mirage.NetworkClient)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkServer.cs/#L236">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkServer.cs/#L235">View Source</a>
   </span>
   <a id="Mirage_NetworkServer_StartHost_" data-uid="Mirage.NetworkServer.StartHost*"></a>
   <h4 id="Mirage_NetworkServer_StartHost_Mirage_NetworkClient_" data-uid="Mirage.NetworkServer.StartHost(Mirage.NetworkClient)">StartHost(NetworkClient)</h4>
@@ -1329,7 +1292,7 @@ public int MaxConnections</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkServer_StopHost.md&amp;value=---%0Auid%3A%20Mirage.NetworkServer.StopHost%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkServer.cs/#L263">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkServer.cs/#L262">View Source</a>
   </span>
   <a id="Mirage_NetworkServer_StopHost_" data-uid="Mirage.NetworkServer.StopHost*"></a>
   <h4 id="Mirage_NetworkServer_StopHost" data-uid="Mirage.NetworkServer.StopHost">StopHost()</h4>
@@ -1347,7 +1310,7 @@ public int MaxConnections</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkServer_Mirage_INetworkServer_Players.md&amp;value=---%0Auid%3A%20Mirage.NetworkServer.Mirage%23INetworkServer%23Players%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkServer.cs/#L120">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkServer.cs/#L119">View Source</a>
   </span>
   <a id="Mirage_NetworkServer_Mirage_INetworkServer_Players_" data-uid="Mirage.NetworkServer.Mirage#INetworkServer#Players*"></a>
   <h4 id="Mirage_NetworkServer_Mirage_INetworkServer_Players" data-uid="Mirage.NetworkServer.Mirage#INetworkServer#Players">INetworkServer.Players</h4>
@@ -1387,7 +1350,7 @@ public int MaxConnections</code></pre>
                     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkServer.md&amp;value=---%0Auid%3A%20Mirage.NetworkServer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkServer.cs/#L19" class="contribution-link">View Source</a>
+                    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkServer.cs/#L19" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

@@ -37,21 +37,31 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              
               <a class="navbar-brand" href="../index.html">
                 <img id="logo" class="svg" src="../logo.png" alt="">
-              </a>
-            </div>
+            </a></div>
             <div class="collapse navbar-collapse" id="navbar">
               <form class="navbar-form navbar-right" role="search" id="search">
+        		<div class="toggle-mode">
+        			<div class="icon">
+        			<i aria-hidden="true">🌕</i>
+        		</div>
+        		<label class="switch">
+        			<input type="checkbox" id="switch-style">
+        			<span class="slider round"></span>
+        		</label>
+        		<div class="icon">
+        			<i aria-hidden="true">🌙</i>
+        		</div>
+        			<script type="text/javascript" src="../styles/toggle-theme.js"></script>
+        		</div>
                 <div class="form-group">
                   <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
                 </div>
               </form>
             </div>
           </div>
-        </nav>
-        
+        </nav>        
         <div class="subnav navbar navbar-default">
           <div class="container hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
@@ -419,7 +429,7 @@ public class NetworkClient : MonoBehaviour, INetworkClient, IMessageSender</code
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkClient_authenticator.md&amp;value=---%0Auid%3A%20Mirage.NetworkClient.authenticator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkClient.cs/#L39">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkClient.cs/#L33">View Source</a>
   </span>
   <h4 id="Mirage_NetworkClient_authenticator" data-uid="Mirage.NetworkClient.authenticator">authenticator</h4>
   <div class="markdown level1 summary"></div>
@@ -449,7 +459,7 @@ public NetworkAuthenticator authenticator</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkClient_Transport.md&amp;value=---%0Auid%3A%20Mirage.NetworkClient.Transport%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkClient.cs/#L36">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkClient.cs/#L30">View Source</a>
   </span>
   <h4 id="Mirage_NetworkClient_Transport" data-uid="Mirage.NetworkClient.Transport">Transport</h4>
   <div class="markdown level1 summary"></div>
@@ -480,7 +490,7 @@ public NetworkAuthenticator authenticator</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkClient_Active.md&amp;value=---%0Auid%3A%20Mirage.NetworkClient.Active%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkClient.cs/#L74">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkClient.cs/#L66">View Source</a>
   </span>
   <a id="Mirage_NetworkClient_Active_" data-uid="Mirage.NetworkClient.Active*"></a>
   <h4 id="Mirage_NetworkClient_Active" data-uid="Mirage.NetworkClient.Active">Active</h4>
@@ -512,15 +522,16 @@ public NetworkAuthenticator authenticator</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkClient_Authenticated.md&amp;value=---%0Auid%3A%20Mirage.NetworkClient.Authenticated%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkClient.cs/#L54">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkClient.cs/#L48">View Source</a>
   </span>
   <a id="Mirage_NetworkClient_Authenticated_" data-uid="Mirage.NetworkClient.Authenticated*"></a>
   <h4 id="Mirage_NetworkClient_Authenticated" data-uid="Mirage.NetworkClient.Authenticated">Authenticated</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Event fires after the Client connection has sucessfully been authenticated with its Server.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public NetworkConnectionEvent Authenticated { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IAddLateEvent&lt;INetworkPlayer&gt; Authenticated { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -532,7 +543,7 @@ public NetworkAuthenticator authenticator</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Mirage.NetworkConnectionEvent.html">NetworkConnectionEvent</a></td>
+        <td><a class="xref" href="Mirage.Events.IAddLateEvent-1.html">IAddLateEvent</a>&lt;<a class="xref" href="Mirage.INetworkPlayer.html">INetworkPlayer</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -542,15 +553,16 @@ public NetworkAuthenticator authenticator</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkClient_Connected.md&amp;value=---%0Auid%3A%20Mirage.NetworkClient.Connected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkClient.cs/#L47">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkClient.cs/#L43">View Source</a>
   </span>
   <a id="Mirage_NetworkClient_Connected_" data-uid="Mirage.NetworkClient.Connected*"></a>
   <h4 id="Mirage_NetworkClient_Connected" data-uid="Mirage.NetworkClient.Connected">Connected</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Event fires once the Client has connected its Server.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public NetworkConnectionEvent Connected { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IAddLateEvent&lt;INetworkPlayer&gt; Connected { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -562,7 +574,7 @@ public NetworkAuthenticator authenticator</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Mirage.NetworkConnectionEvent.html">NetworkConnectionEvent</a></td>
+        <td><a class="xref" href="Mirage.Events.IAddLateEvent-1.html">IAddLateEvent</a>&lt;<a class="xref" href="Mirage.INetworkPlayer.html">INetworkPlayer</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -572,15 +584,16 @@ public NetworkAuthenticator authenticator</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkClient_Disconnected.md&amp;value=---%0Auid%3A%20Mirage.NetworkClient.Disconnected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkClient.cs/#L61">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkClient.cs/#L53">View Source</a>
   </span>
   <a id="Mirage_NetworkClient_Disconnected_" data-uid="Mirage.NetworkClient.Disconnected*"></a>
   <h4 id="Mirage_NetworkClient_Disconnected" data-uid="Mirage.NetworkClient.Disconnected">Disconnected</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Event fires after the Client has disconnected from its Server and Cleanup has been called.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UnityEvent Disconnected { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IAddLateEvent Disconnected { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -592,7 +605,7 @@ public NetworkAuthenticator authenticator</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Events.UnityEvent.html">UnityEvent</a></td>
+        <td><a class="xref" href="Mirage.Events.IAddLateEvent.html">IAddLateEvent</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -602,7 +615,7 @@ public NetworkAuthenticator authenticator</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkClient_IsConnected.md&amp;value=---%0Auid%3A%20Mirage.NetworkClient.IsConnected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkClient.cs/#L79">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkClient.cs/#L71">View Source</a>
   </span>
   <a id="Mirage_NetworkClient_IsConnected_" data-uid="Mirage.NetworkClient.IsConnected*"></a>
   <h4 id="Mirage_NetworkClient_IsConnected" data-uid="Mirage.NetworkClient.IsConnected">IsConnected</h4>
@@ -633,7 +646,7 @@ public NetworkAuthenticator authenticator</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkClient_IsLocalClient.md&amp;value=---%0Auid%3A%20Mirage.NetworkClient.IsLocalClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkClient.cs/#L91">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkClient.cs/#L83">View Source</a>
   </span>
   <a id="Mirage_NetworkClient_IsLocalClient_" data-uid="Mirage.NetworkClient.IsLocalClient*"></a>
   <h4 id="Mirage_NetworkClient_IsLocalClient" data-uid="Mirage.NetworkClient.IsLocalClient">IsLocalClient</h4>
@@ -664,7 +677,7 @@ public NetworkAuthenticator authenticator</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkClient_Player.md&amp;value=---%0Auid%3A%20Mirage.NetworkClient.Player%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkClient.cs/#L66">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkClient.cs/#L58">View Source</a>
   </span>
   <a id="Mirage_NetworkClient_Player_" data-uid="Mirage.NetworkClient.Player*"></a>
   <h4 id="Mirage_NetworkClient_Player" data-uid="Mirage.NetworkClient.Player">Player</h4>
@@ -695,7 +708,7 @@ public NetworkAuthenticator authenticator</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkClient_Time.md&amp;value=---%0Auid%3A%20Mirage.NetworkClient.Time%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkClient.cs/#L84">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkClient.cs/#L76">View Source</a>
   </span>
   <a id="Mirage_NetworkClient_Time_" data-uid="Mirage.NetworkClient.Time*"></a>
   <h4 id="Mirage_NetworkClient_Time" data-uid="Mirage.NetworkClient.Time">Time</h4>
@@ -726,7 +739,7 @@ public NetworkAuthenticator authenticator</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkClient_World.md&amp;value=---%0Auid%3A%20Mirage.NetworkClient.World%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkClient.cs/#L86">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkClient.cs/#L78">View Source</a>
   </span>
   <a id="Mirage_NetworkClient_World_" data-uid="Mirage.NetworkClient.World*"></a>
   <h4 id="Mirage_NetworkClient_World" data-uid="Mirage.NetworkClient.World">World</h4>
@@ -758,7 +771,7 @@ public NetworkAuthenticator authenticator</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkClient_ConnectAsync_System_String_.md&amp;value=---%0Auid%3A%20Mirage.NetworkClient.ConnectAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkClient.cs/#L97">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkClient.cs/#L89">View Source</a>
   </span>
   <a id="Mirage_NetworkClient_ConnectAsync_" data-uid="Mirage.NetworkClient.ConnectAsync*"></a>
   <h4 id="Mirage_NetworkClient_ConnectAsync_System_String_" data-uid="Mirage.NetworkClient.ConnectAsync(System.String)">ConnectAsync(String)</h4>
@@ -807,7 +820,7 @@ public NetworkAuthenticator authenticator</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkClient_ConnectAsync_System_String_System_UInt16_.md&amp;value=---%0Auid%3A%20Mirage.NetworkClient.ConnectAsync(System.String%2CSystem.UInt16)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkClient.cs/#L115">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkClient.cs/#L107">View Source</a>
   </span>
   <a id="Mirage_NetworkClient_ConnectAsync_" data-uid="Mirage.NetworkClient.ConnectAsync*"></a>
   <h4 id="Mirage_NetworkClient_ConnectAsync_System_String_System_UInt16_" data-uid="Mirage.NetworkClient.ConnectAsync(System.String,System.UInt16)">ConnectAsync(String, UInt16)</h4>
@@ -862,7 +875,7 @@ public NetworkAuthenticator authenticator</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkClient_ConnectAsync_System_Uri_.md&amp;value=---%0Auid%3A%20Mirage.NetworkClient.ConnectAsync(System.Uri)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkClient.cs/#L133">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkClient.cs/#L125">View Source</a>
   </span>
   <a id="Mirage_NetworkClient_ConnectAsync_" data-uid="Mirage.NetworkClient.ConnectAsync*"></a>
   <h4 id="Mirage_NetworkClient_ConnectAsync_System_Uri_" data-uid="Mirage.NetworkClient.ConnectAsync(System.Uri)">ConnectAsync(Uri)</h4>
@@ -911,7 +924,7 @@ public NetworkAuthenticator authenticator</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkClient_Disconnect.md&amp;value=---%0Auid%3A%20Mirage.NetworkClient.Disconnect%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkClient.cs/#L243">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkClient.cs/#L227">View Source</a>
   </span>
   <a id="Mirage_NetworkClient_Disconnect_" data-uid="Mirage.NetworkClient.Disconnect*"></a>
   <h4 id="Mirage_NetworkClient_Disconnect" data-uid="Mirage.NetworkClient.Disconnect">Disconnect()</h4>
@@ -925,58 +938,10 @@ public NetworkAuthenticator authenticator</code></pre>
   </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkClient_GetNewPlayer_Mirage_IConnection_.md&amp;value=---%0Auid%3A%20Mirage.NetworkClient.GetNewPlayer(Mirage.IConnection)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkClient.cs/#L188">View Source</a>
-  </span>
-  <a id="Mirage_NetworkClient_GetNewPlayer_" data-uid="Mirage.NetworkClient.GetNewPlayer*"></a>
-  <h4 id="Mirage_NetworkClient_GetNewPlayer_Mirage_IConnection_" data-uid="Mirage.NetworkClient.GetNewPlayer(Mirage.IConnection)">GetNewPlayer(IConnection)</h4>
-  <div class="markdown level1 summary"><p>Creates a new INetworkConnection based on the provided IConnection.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual INetworkPlayer GetNewPlayer(IConnection connection)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Mirage.IConnection.html">IConnection</a></td>
-        <td><span class="parametername">connection</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Mirage.INetworkPlayer.html">INetworkPlayer</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkClient_Send_System_ArraySegment_System_Byte__System_Int32_.md&amp;value=---%0Auid%3A%20Mirage.NetworkClient.Send(System.ArraySegment%7BSystem.Byte%7D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkClient.cs/#L262">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkClient.cs/#L246">View Source</a>
   </span>
   <a id="Mirage_NetworkClient_Send_" data-uid="Mirage.NetworkClient.Send*"></a>
   <h4 id="Mirage_NetworkClient_Send_System_ArraySegment_System_Byte__System_Int32_" data-uid="Mirage.NetworkClient.Send(System.ArraySegment{System.Byte},System.Int32)">Send(ArraySegment&lt;Byte&gt;, Int32)</h4>
@@ -1013,7 +978,7 @@ public NetworkAuthenticator authenticator</code></pre>
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkClient_Send__1___0_System_Int32_.md&amp;value=---%0Auid%3A%20Mirage.NetworkClient.Send%60%601(%60%600%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkClient.cs/#L257">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkClient.cs/#L241">View Source</a>
   </span>
   <a id="Mirage_NetworkClient_Send_" data-uid="Mirage.NetworkClient.Send*"></a>
   <h4 id="Mirage_NetworkClient_Send__1___0_System_Int32_" data-uid="Mirage.NetworkClient.Send``1(``0,System.Int32)">Send&lt;T&gt;(T, Int32)</h4>
@@ -1082,7 +1047,7 @@ public NetworkAuthenticator authenticator</code></pre>
                     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_NetworkClient.md&amp;value=---%0Auid%3A%20Mirage.NetworkClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/NetworkClient.cs/#L30" class="contribution-link">View Source</a>
+                    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/NetworkClient.cs/#L24" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

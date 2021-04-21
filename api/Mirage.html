@@ -37,21 +37,31 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              
               <a class="navbar-brand" href="../index.html">
                 <img id="logo" class="svg" src="../logo.png" alt="">
-              </a>
-            </div>
+            </a></div>
             <div class="collapse navbar-collapse" id="navbar">
               <form class="navbar-form navbar-right" role="search" id="search">
+        		<div class="toggle-mode">
+        			<div class="icon">
+        			<i aria-hidden="true">🌕</i>
+        		</div>
+        		<label class="switch">
+        			<input type="checkbox" id="switch-style">
+        			<span class="slider round"></span>
+        		</label>
+        		<div class="icon">
+        			<i aria-hidden="true">🌙</i>
+        		</div>
+        			<script type="text/javascript" src="../styles/toggle-theme.js"></script>
+        		</div>
                 <div class="form-group">
                   <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
                 </div>
               </form>
             </div>
           </div>
-        </nav>
-        
+        </nav>        
         <div class="subnav navbar navbar-default">
           <div class="container hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
@@ -147,10 +157,6 @@
 <p>The <a class="xref" href="Mirage.NetworkClient.html">NetworkClient</a> handle connection state, messages handlers, and connection configuration. There can be many <a class="xref" href="Mirage.NetworkClient.html">NetworkClient</a> instances in a process at a time, but only one that is connected to a game server (<a class="xref" href="Mirage.NetworkServer.html">NetworkServer</a>) that uses spawned objects.</p>
 <p><a class="xref" href="Mirage.NetworkClient.html">NetworkClient</a> has an internal update function where it handles events from the transport layer. This includes asynchronous connect events, disconnect events and incoming data from a server.</p>
 </section>
-      <h4><a class="xref" href="Mirage.NetworkConnectionEvent.html">NetworkConnectionEvent</a></h4>
-      <section><p>Event fires from a <a class="xref" href="Mirage.NetworkClient.html">NetworkClient</a> or <a class="xref" href="Mirage.NetworkServer.html">NetworkServer</a> during a new connection, a new authentication, or a disconnection.</p>
-<p>INetworkConnection - connection creating the event</p>
-</section>
       <h4><a class="xref" href="Mirage.NetworkDiagnostics.html">NetworkDiagnostics</a></h4>
       <section><p>Provides profiling information from mirror
 A profiler can subscribe to these events and
@@ -210,7 +216,7 @@ This is used in network communications to be able to lookup game objects on diff
       <section></section>
       <h4><a class="xref" href="Mirage.NetworkTransformChild.html">NetworkTransformChild</a></h4>
       <section><p>A component to synchronize the position of child transforms of networked objects.</p>
-<p>There must be a NetworkTransform on the root object of the hierarchy. There can be multiple NetworkTransformChild components on an object. This does not use physics for synchronization, it simply synchronizes the localPosition and localRotation of the child transform and lerps towards the recieved values.</p>
+<p>There must be a NetworkTransform on the root object of the hierarchy. There can be multiple NetworkTransformChild components on an object. This does not use physics for synchronization, it simply synchronizes the localPosition and localRotation of the child transform and lerps towards the received values.</p>
 </section>
       <h4><a class="xref" href="Mirage.NetworkVisibility.html">NetworkVisibility</a></h4>
       <section></section>
@@ -346,7 +352,7 @@ the following numbers:</p>
       <h4><a class="xref" href="Mirage.INetworkClient.html">INetworkClient</a></h4>
       <section></section>
       <h4><a class="xref" href="Mirage.INetworkPlayer.html">INetworkPlayer</a></h4>
-      <section><p>A connection to a remote endpoint.
+      <section><p>An object owned by a player that can: send/receive messages, have network visibility, be an object owner, authenticated permissions, and load scenes.
 May be from the server to client or from client to server</p>
 </section>
       <h4><a class="xref" href="Mirage.INetworkSceneManager.html">INetworkSceneManager</a></h4>
@@ -382,6 +388,8 @@ this is useful for interest management</p>
       <h4><a class="xref" href="Mirage.Client.html">Client</a></h4>
       <section></section>
       <h4><a class="xref" href="Mirage.ConnectState.html">ConnectState</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Mirage.NetworkManagerMode.html">NetworkManagerMode</a></h4>
       <section></section>
       <h4><a class="xref" href="Mirage.SceneOperation.html">SceneOperation</a></h4>
       <section></section>

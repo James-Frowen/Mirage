@@ -37,21 +37,31 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              
               <a class="navbar-brand" href="../index.html">
                 <img id="logo" class="svg" src="../logo.png" alt="">
-              </a>
-            </div>
+            </a></div>
             <div class="collapse navbar-collapse" id="navbar">
               <form class="navbar-form navbar-right" role="search" id="search">
+        		<div class="toggle-mode">
+        			<div class="icon">
+        			<i aria-hidden="true">🌕</i>
+        		</div>
+        		<label class="switch">
+        			<input type="checkbox" id="switch-style">
+        			<span class="slider round"></span>
+        		</label>
+        		<div class="icon">
+        			<i aria-hidden="true">🌙</i>
+        		</div>
+        			<script type="text/javascript" src="../styles/toggle-theme.js"></script>
+        		</div>
                 <div class="form-group">
                   <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
                 </div>
               </form>
             </div>
           </div>
-        </nav>
-        
+        </nav>        
         <div class="subnav navbar navbar-default">
           <div class="container hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
@@ -100,7 +110,7 @@
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_INetworkServer_Active.md&amp;value=---%0Auid%3A%20Mirage.INetworkServer.Active%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/INetworkServer.cs/#L60">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/INetworkServer.cs/#L60">View Source</a>
   </span>
   <a id="Mirage_INetworkServer_Active_" data-uid="Mirage.INetworkServer.Active*"></a>
   <h4 id="Mirage_INetworkServer_Active" data-uid="Mirage.INetworkServer.Active">Active</h4>
@@ -132,7 +142,7 @@
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_INetworkServer_Authenticated.md&amp;value=---%0Auid%3A%20Mirage.INetworkServer.Authenticated%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/INetworkServer.cs/#L21">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/INetworkServer.cs/#L21">View Source</a>
   </span>
   <a id="Mirage_INetworkServer_Authenticated_" data-uid="Mirage.INetworkServer.Authenticated*"></a>
   <h4 id="Mirage_INetworkServer_Authenticated" data-uid="Mirage.INetworkServer.Authenticated">Authenticated</h4>
@@ -141,7 +151,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">NetworkConnectionEvent Authenticated { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">NetworkPlayerEvent Authenticated { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -153,7 +163,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Mirage.NetworkConnectionEvent.html">NetworkConnectionEvent</a></td>
+        <td><a class="xref" href="Mirage.Events.NetworkPlayerEvent.html">NetworkPlayerEvent</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -163,7 +173,7 @@
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_INetworkServer_Connected.md&amp;value=---%0Auid%3A%20Mirage.INetworkServer.Connected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/INetworkServer.cs/#L16">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/INetworkServer.cs/#L16">View Source</a>
   </span>
   <a id="Mirage_INetworkServer_Connected_" data-uid="Mirage.INetworkServer.Connected*"></a>
   <h4 id="Mirage_INetworkServer_Connected" data-uid="Mirage.INetworkServer.Connected">Connected</h4>
@@ -172,7 +182,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">NetworkConnectionEvent Connected { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">NetworkPlayerEvent Connected { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -184,7 +194,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Mirage.NetworkConnectionEvent.html">NetworkConnectionEvent</a></td>
+        <td><a class="xref" href="Mirage.Events.NetworkPlayerEvent.html">NetworkPlayerEvent</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -194,7 +204,7 @@
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_INetworkServer_Disconnected.md&amp;value=---%0Auid%3A%20Mirage.INetworkServer.Disconnected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/INetworkServer.cs/#L26">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/INetworkServer.cs/#L26">View Source</a>
   </span>
   <a id="Mirage_INetworkServer_Disconnected_" data-uid="Mirage.INetworkServer.Disconnected*"></a>
   <h4 id="Mirage_INetworkServer_Disconnected" data-uid="Mirage.INetworkServer.Disconnected">Disconnected</h4>
@@ -203,7 +213,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">NetworkConnectionEvent Disconnected { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">NetworkPlayerEvent Disconnected { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -215,7 +225,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Mirage.NetworkConnectionEvent.html">NetworkConnectionEvent</a></td>
+        <td><a class="xref" href="Mirage.Events.NetworkPlayerEvent.html">NetworkPlayerEvent</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -225,7 +235,7 @@
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_INetworkServer_LocalClient.md&amp;value=---%0Auid%3A%20Mirage.INetworkServer.LocalClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/INetworkServer.cs/#L49">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/INetworkServer.cs/#L49">View Source</a>
   </span>
   <a id="Mirage_INetworkServer_LocalClient_" data-uid="Mirage.INetworkServer.LocalClient*"></a>
   <h4 id="Mirage_INetworkServer_LocalClient" data-uid="Mirage.INetworkServer.LocalClient">LocalClient</h4>
@@ -256,7 +266,7 @@
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_INetworkServer_LocalClientActive.md&amp;value=---%0Auid%3A%20Mirage.INetworkServer.LocalClientActive%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/INetworkServer.cs/#L54">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/INetworkServer.cs/#L54">View Source</a>
   </span>
   <a id="Mirage_INetworkServer_LocalClientActive_" data-uid="Mirage.INetworkServer.LocalClientActive*"></a>
   <h4 id="Mirage_INetworkServer_LocalClientActive" data-uid="Mirage.INetworkServer.LocalClientActive">LocalClientActive</h4>
@@ -287,7 +297,7 @@
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_INetworkServer_LocalPlayer.md&amp;value=---%0Auid%3A%20Mirage.INetworkServer.LocalPlayer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/INetworkServer.cs/#L44">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/INetworkServer.cs/#L44">View Source</a>
   </span>
   <a id="Mirage_INetworkServer_LocalPlayer_" data-uid="Mirage.INetworkServer.LocalPlayer*"></a>
   <h4 id="Mirage_INetworkServer_LocalPlayer" data-uid="Mirage.INetworkServer.LocalPlayer">LocalPlayer</h4>
@@ -318,7 +328,7 @@
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_INetworkServer_OnStartHost.md&amp;value=---%0Auid%3A%20Mirage.INetworkServer.OnStartHost%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/INetworkServer.cs/#L34">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/INetworkServer.cs/#L34">View Source</a>
   </span>
   <a id="Mirage_INetworkServer_OnStartHost_" data-uid="Mirage.INetworkServer.OnStartHost*"></a>
   <h4 id="Mirage_INetworkServer_OnStartHost" data-uid="Mirage.INetworkServer.OnStartHost">OnStartHost</h4>
@@ -328,7 +338,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">UnityEvent OnStartHost { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">IAddLateEvent OnStartHost { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -340,7 +350,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Events.UnityEvent.html">UnityEvent</a></td>
+        <td><a class="xref" href="Mirage.Events.IAddLateEvent.html">IAddLateEvent</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -350,7 +360,7 @@
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_INetworkServer_OnStopHost.md&amp;value=---%0Auid%3A%20Mirage.INetworkServer.OnStopHost%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/INetworkServer.cs/#L39">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/INetworkServer.cs/#L39">View Source</a>
   </span>
   <a id="Mirage_INetworkServer_OnStopHost_" data-uid="Mirage.INetworkServer.OnStopHost*"></a>
   <h4 id="Mirage_INetworkServer_OnStopHost" data-uid="Mirage.INetworkServer.OnStopHost">OnStopHost</h4>
@@ -359,7 +369,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">UnityEvent OnStopHost { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">IAddLateEvent OnStopHost { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -371,7 +381,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Events.UnityEvent.html">UnityEvent</a></td>
+        <td><a class="xref" href="Mirage.Events.IAddLateEvent.html">IAddLateEvent</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -381,7 +391,7 @@
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_INetworkServer_Players.md&amp;value=---%0Auid%3A%20Mirage.INetworkServer.Players%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/INetworkServer.cs/#L66">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/INetworkServer.cs/#L66">View Source</a>
   </span>
   <a id="Mirage_INetworkServer_Players_" data-uid="Mirage.INetworkServer.Players*"></a>
   <h4 id="Mirage_INetworkServer_Players" data-uid="Mirage.INetworkServer.Players">Players</h4>
@@ -411,7 +421,7 @@
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_INetworkServer_Started.md&amp;value=---%0Auid%3A%20Mirage.INetworkServer.Started%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/INetworkServer.cs/#L11">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/INetworkServer.cs/#L11">View Source</a>
   </span>
   <a id="Mirage_INetworkServer_Started_" data-uid="Mirage.INetworkServer.Started*"></a>
   <h4 id="Mirage_INetworkServer_Started" data-uid="Mirage.INetworkServer.Started">Started</h4>
@@ -420,7 +430,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">UnityEvent Started { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">IAddLateEvent Started { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -432,7 +442,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Events.UnityEvent.html">UnityEvent</a></td>
+        <td><a class="xref" href="Mirage.Events.IAddLateEvent.html">IAddLateEvent</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -442,7 +452,7 @@
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_INetworkServer_Stopped.md&amp;value=---%0Auid%3A%20Mirage.INetworkServer.Stopped%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/INetworkServer.cs/#L28">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/INetworkServer.cs/#L28">View Source</a>
   </span>
   <a id="Mirage_INetworkServer_Stopped_" data-uid="Mirage.INetworkServer.Stopped*"></a>
   <h4 id="Mirage_INetworkServer_Stopped" data-uid="Mirage.INetworkServer.Stopped">Stopped</h4>
@@ -450,7 +460,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">UnityEvent Stopped { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">IAddLateEvent Stopped { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -462,7 +472,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/Events.UnityEvent.html">UnityEvent</a></td>
+        <td><a class="xref" href="Mirage.Events.IAddLateEvent.html">IAddLateEvent</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -472,7 +482,7 @@
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_INetworkServer_Time.md&amp;value=---%0Auid%3A%20Mirage.INetworkServer.Time%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/INetworkServer.cs/#L62">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/INetworkServer.cs/#L62">View Source</a>
   </span>
   <a id="Mirage_INetworkServer_Time_" data-uid="Mirage.INetworkServer.Time*"></a>
   <h4 id="Mirage_INetworkServer_Time" data-uid="Mirage.INetworkServer.Time">Time</h4>
@@ -502,7 +512,7 @@
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_INetworkServer_World.md&amp;value=---%0Auid%3A%20Mirage.INetworkServer.World%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/INetworkServer.cs/#L64">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/INetworkServer.cs/#L64">View Source</a>
   </span>
   <a id="Mirage_INetworkServer_World_" data-uid="Mirage.INetworkServer.World*"></a>
   <h4 id="Mirage_INetworkServer_World" data-uid="Mirage.INetworkServer.World">World</h4>
@@ -534,7 +544,7 @@
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_INetworkServer_AddConnection_Mirage_INetworkPlayer_.md&amp;value=---%0Auid%3A%20Mirage.INetworkServer.AddConnection(Mirage.INetworkPlayer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/INetworkServer.cs/#L70">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/INetworkServer.cs/#L70">View Source</a>
   </span>
   <a id="Mirage_INetworkServer_AddConnection_" data-uid="Mirage.INetworkServer.AddConnection*"></a>
   <h4 id="Mirage_INetworkServer_AddConnection_Mirage_INetworkPlayer_" data-uid="Mirage.INetworkServer.AddConnection(Mirage.INetworkPlayer)">AddConnection(INetworkPlayer)</h4>
@@ -566,7 +576,7 @@
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_INetworkServer_Disconnect.md&amp;value=---%0Auid%3A%20Mirage.INetworkServer.Disconnect%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/INetworkServer.cs/#L68">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/INetworkServer.cs/#L68">View Source</a>
   </span>
   <a id="Mirage_INetworkServer_Disconnect_" data-uid="Mirage.INetworkServer.Disconnect*"></a>
   <h4 id="Mirage_INetworkServer_Disconnect" data-uid="Mirage.INetworkServer.Disconnect">Disconnect()</h4>
@@ -581,7 +591,7 @@
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_INetworkServer_RemoveConnection_Mirage_INetworkPlayer_.md&amp;value=---%0Auid%3A%20Mirage.INetworkServer.RemoveConnection(Mirage.INetworkPlayer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/INetworkServer.cs/#L72">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/INetworkServer.cs/#L72">View Source</a>
   </span>
   <a id="Mirage_INetworkServer_RemoveConnection_" data-uid="Mirage.INetworkServer.RemoveConnection*"></a>
   <h4 id="Mirage_INetworkServer_RemoveConnection_Mirage_INetworkPlayer_" data-uid="Mirage.INetworkServer.RemoveConnection(Mirage.INetworkPlayer)">RemoveConnection(INetworkPlayer)</h4>
@@ -613,7 +623,7 @@
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_INetworkServer_SendToAll__1___0_System_Int32_.md&amp;value=---%0Auid%3A%20Mirage.INetworkServer.SendToAll%60%601(%60%600%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/INetworkServer.cs/#L74">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/INetworkServer.cs/#L74">View Source</a>
   </span>
   <a id="Mirage_INetworkServer_SendToAll_" data-uid="Mirage.INetworkServer.SendToAll*"></a>
   <h4 id="Mirage_INetworkServer_SendToAll__1___0_System_Int32_" data-uid="Mirage.INetworkServer.SendToAll``1(``0,System.Int32)">SendToAll&lt;T&gt;(T, Int32)</h4>
@@ -671,7 +681,7 @@
                     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_INetworkServer.md&amp;value=---%0Auid%3A%20Mirage.INetworkServer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/INetworkServer.cs/#L6" class="contribution-link">View Source</a>
+                    <a href="https://github.com/James-Frowen/Mirage/blob/4eed52af73db9946181bf63484d6e1d8c7ec2474/Assets/Mirage/Runtime/INetworkServer.cs/#L6" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
