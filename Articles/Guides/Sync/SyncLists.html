@@ -82,15 +82,16 @@
 <h1 id="synclists">SyncLists</h1>
 
 <p>SyncLists are array based lists similar to C# <a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=netframework-4.7.2">List&lt;T&gt;</a> that synchronize their contents from the server to the clients.</p>
-<p>A <a class="xref" href="../../../api/Mirage.SyncList-1.html">SyncList&lt;T&gt;</a> can contain any <a href="../DataTypes.html">supported Mirage type</a>.</p>
+<p>A <a class="xref" href="../../../api/Mirage.Collections.SyncList-1.html">SyncList&lt;T&gt;</a> can contain any <a href="../DataTypes.html">supported Mirage type</a>.</p>
 <h2 id="usage">Usage</h2>
-<p>Add a field of type <code>SyncList&lt;T&gt;</code> on any <a class="xref" href="../../../api/Mirage.NetworkBehaviour.html">NetworkBehaviour</a> where <code>T</code> can be any supported Mirage type and initialize it.</p>
+<p>Add a field of type <a class="xref" href="../../../api/Mirage.Collections.SyncList-1.html">SyncList&lt;T&gt;</a> on any <a class="xref" href="../../../api/Mirage.NetworkBehaviour.html">NetworkBehaviour</a> where <code>T</code> can be any supported Mirage type and initialize it.</p>
 <div class="IMPORTANT">
 <h5>Important</h5>
 <p>You need to initialize the SyncList immediately after definition in order for them to work. You can mark them as <code>readonly</code> to enforce proper usage.</p>
 </div>
 <h3 id="basic-example">Basic example</h3>
 <pre><code class="lang-cs">using Mirage;
+using Mirage.Collections;
 
 [System.Serializable]
 public struct Item
@@ -127,7 +128,7 @@ public class Player : NetworkBehaviour
 </code></pre>
 <h2 id="callbacks">Callbacks</h2>
 <p>You can detect when a SyncList changes on the client and/or server. This is especially useful for refreshing your UI, character appearance etc.</p>
-<p>There are different callbacks for different operations, such as <code>OnChange</code> (any change to the list), <code>OnInsert</code> (adding new element) etc. Please check the <a class="xref" href="../../../api/Mirage.SyncList-1.html">SyncList API reference</a> for the complete list of callbacks.</p>
+<p>There are different callbacks for different operations, such as <code>OnChange</code> (any change to the list), <code>OnInsert</code> (adding new element) etc. Please check the <a class="xref" href="../../../api/Mirage.Collections.SyncList-1.html">SyncList API reference</a> for the complete list of callbacks.</p>
 <p>Depending on where you want to invoke the callbacks, you can use these methods to register them:</p>
 <ul>
 <li><code>Awake</code> for both client and server</li>
@@ -140,6 +141,7 @@ public class Player : NetworkBehaviour
 </div>
 <h3 id="example">Example</h3>
 <pre><code class="lang-cs">using Mirage;
+using Mirage.Collections;
 
 public class Player : NetworkBehaviour {
     readonly SyncList&lt;Item&gt; inventory = new SyncList&lt;Item&gt;();

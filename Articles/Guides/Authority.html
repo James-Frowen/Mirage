@@ -89,8 +89,8 @@
 <p>When a client has authority over an object it means that they can call <a href="Communications/RemoteActions.html">ServerRpc</a> and that the object will automatically be destroyed when the client disconnects.</p>
 <p>Even if a client has authority over an object the server still controls SyncVar and control other serialization features. A component will need to use a <a href="Communications/RemoteActions.html">ServerRpc</a> to update the state on the server in order for it to sync to other clients.</p>
 <h2 id="how-to-give-authority">How to give authority</h2>
-<p>By default the server has Authority over all objects. The server can give authority to objects that a client needs to control, like the player object.</p>
-<p>If you spawn a player object using <code>NetworkServer.AddPlayerForConnection</code> then it will automatically be given authority.</p>
+<p>By default the server has Authority over all objects. The server can give authority to objects that a client needs to control, like the character object.</p>
+<p>If you spawn a character object using <code>NetworkServer.AddPlayerForConnection</code> then it will automatically be given authority.</p>
 <h3 id="using-networkserverspawn">Using NetworkServer.Spawn</h3>
 <p>You can give authority to a client when an object is spawned. This is done by passing in the connection to the spawn message</p>
 <pre><code class="lang-cs">GameObject go = Instantiate(prefab);
@@ -101,7 +101,7 @@ NetworkServer.Spawn(go, connectionToClient);
 <pre><code class="lang-cs">identity.AssignClientAuthority(conn);
 </code></pre>
 <p>You may want to do this when a player picks up an item</p>
-<pre><code class="lang-cs">// Command on player object
+<pre><code class="lang-cs">// Command on character object
 [ServerRpc]
 void PickupItem(NetworkIdentity item)
 {
@@ -112,7 +112,7 @@ void PickupItem(NetworkIdentity item)
 <p>You can use <code>identity.RemoveClientAuthority</code> to remove client authority from an object.</p>
 <pre><code class="lang-cs">identity.RemoveClientAuthority();
 </code></pre>
-<p>Authority can't be removed from the player object. Instead you will have to replace the player object using <code>NetworkServer.ReplacePlayerForConnection</code>.</p>
+<p>Authority can't be removed from the character object. Instead you will have to replace the character object using <code>NetworkServer.ReplacePlayerForConnection</code>.</p>
 <h2 id="on-authority">On Authority</h2>
 <p>When authority is given to or removed from an object a message will be sent to that client to notify them. This will cause the <code>OnStartAuthority</code> or <code>OnStopAuthority</code> functions to be called.</p>
 <h2 id="check-authority">Check Authority</h2>

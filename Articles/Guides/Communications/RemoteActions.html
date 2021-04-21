@@ -85,7 +85,7 @@
 <p>The diagram below shows the directions that remote actions take:</p>
 <p><img src="UNetDirections.jpg" alt="Data Flow Graph"></p>
 <h2 id="server-rpc-calls">Server RPC Calls</h2>
-<p>Server RPC Calls are sent from player objects on the client to player objects on the server. For security, Server RPC Calls can only be sent from YOUR player object by default, so you cannot control the objects of other players.  You can bypass the authority check using <code>[ServerRpc(requireAuthority = false)]</code>.</p>
+<p>Server RPC Calls are sent from character objects on the client to character objects on the server. For security, Server RPC Calls can only be sent from YOUR character object by default, so you cannot control the objects of other players.  You can bypass the authority check using <code>[ServerRpc(requireAuthority = false)]</code>.</p>
 <p>To make a function into a Server RPC Calls, add the [ServerRpc] custom attribute to it. This function will now be run on the server when it is called on the client. Any parameters of <a href="../DataTypes.html">allowed data type</a> will be automatically passed to the server with the Server RPC Call.</p>
 <p>Server RPC Calls functions cannot be static.</p>
 <pre><code class="lang-cs">public class Player : NetworkBehaviour
@@ -144,7 +144,7 @@ To return a value,  add a return value using <code>UniTask&lt;MyReturnType&gt;</
 }
 </code></pre>
 <h3 id="serverrpc-and-authority">ServerRpc and Authority</h3>
-<p>It is possible to invoke ServerRpcs on non-player objects if any of the following are true:</p>
+<p>It is possible to invoke ServerRpcs on non-character objects if any of the following are true:</p>
 <ul>
 <li>The object was spawned with client authority</li>
 <li>The object has client authority set with <code>NetworkIdentity.AssignClientAuthority</code></li>
@@ -155,7 +155,7 @@ To return a value,  add a return value using <code>UniTask&lt;MyReturnType&gt;</
 </ul>
 </li>
 </ul>
-<p>Server RPC Calls sent from these object are run on the server instance of the object, not on the associated player object for the client.</p>
+<p>Server RPC Calls sent from these object are run on the server instance of the object, not on the associated character object for the client.</p>
 <pre><code class="lang-cs">public enum DoorState : byte
 {
     Open, Closed
@@ -177,7 +177,7 @@ public class Door : NetworkBehaviour
 <h2 id="clientrpc-calls">ClientRpc Calls</h2>
 <p>ClientRpc calls are sent from objects on the server to objects on clients. They can be sent from any server object with a NetworkIdentity that has been spawned. Since the server has authority, then there no security issues with server objects being able to send these calls. To make a function into a ClientRpc call, add the [ClientRpc] custom attribute to it. This function will now be run on clients when it is called on the server. Any parameters of <a href="../DataTypes.html">allowed data type</a> will automatically be passed to the clients with the ClientRpc call..</p>
 <p>ClientRpc functions cannot be static.  They must return <code>void</code></p>
-<p>ClientRpc messages are only sent to observers of an object according to its <a href="../Visibility.html">Network Visibility</a>. Player objects are always obeservers of themselves. In some cases, you may want to exclude the owner client when calling a ClientRpc.  This is done with the <code>excludeOwner</code> option: <code>[ClientRpc(excludeOwner = true)]</code>.</p>
+<p>ClientRpc messages are only sent to observers of an object according to its <a href="../Visibility.html">Network Visibility</a>. character objects are always obeservers of themselves. In some cases, you may want to exclude the owner client when calling a ClientRpc.  This is done with the <code>excludeOwner</code> option: <code>[ClientRpc(excludeOwner = true)]</code>.</p>
 <pre><code class="lang-cs">public class Player : NetworkBehaviour
 {
     int health;

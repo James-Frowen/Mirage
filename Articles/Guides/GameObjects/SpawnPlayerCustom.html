@@ -81,9 +81,9 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="custom-character-spawning">Custom Character Spawning</h1>
 
-<p>Mirage comes with a PlayerSpawner which will automatically spawn a player object when a client connects.</p>
+<p>Mirage comes with a CharacterSpawner which will automatically spawn a character object when a client connects.</p>
 <p>Many games need character customization. You may want to pick the color of the hair, eyes, skin, height, race, etc.</p>
-<p>In this case,  you will need to create your own PlayerSpawner.  Follow these steps:</p>
+<p>In this case,  you will need to create your own CharacterSpawner.  Follow these steps:</p>
 <ol>
 <li>Create your player prefabs (as many as you need) and add them to the Spawnable Prefabs in your NetworkClient.</li>
 <li>Create a message that describes your player. For example:</li>
@@ -107,7 +107,7 @@ public enum Race
 <ol start="3">
 <li>Create Player Spawner class and add it to some GameObject in your scene</li>
 </ol>
-<pre><code class="lang-cs">public class PlayerSpawner : MonoBehaviour
+<pre><code class="lang-cs">public class CharacterSpawner : MonoBehaviour
 {
     public NetworkSceneManager SceneManager;
     public NetworkClient Client;
@@ -150,11 +150,11 @@ private void OnClientAuthenticated(INetworkConnection connection)
 
 void OnCreateCharacter(INetworkConnection conn, CreateMMOCharacterMessage msg)
 {
-    // create your player object
+    // create your character object
     // use the data in msg to configure it
     GameObject playerObject = ...;
 
-    // spawn it as the player object
+    // spawn it as the character object
     server.AddPlayerForConnection(conn, playerObject);
 }
 </code></pre>
@@ -171,13 +171,13 @@ void OnCreateCharacter(INetworkConnection conn, CreateMMOCharacterMessage msg)
 
     public void ReplacePlayer(NetworkConnection conn, GameObject newPrefab)
     {
-        // Cache a reference to the current player object
+        // Cache a reference to the current character object
         GameObject oldPlayer = conn.identity.gameObject;
 
-        // Instantiate the new player object and broadcast to clients
+        // Instantiate the new character object and broadcast to clients
         kServer.ReplacePlayerForConnection(conn, Instantiate(newPrefab));
 
-        // Remove the previous player object that's now been replaced
+        // Remove the previous character object that's now been replaced
         Server.Destroy(oldPlayer);
     }
 }

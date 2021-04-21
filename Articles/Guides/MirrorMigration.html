@@ -210,7 +210,7 @@ class MyNetworkManager : NetworkManager {
         // Server started
     }
 
-    void OnServerConnect(INetworkConnection conn) {
+    void OnServerConnect(INetworkPlayer conn) {
         // Client connected (and authenticated) on server
     }
 
@@ -218,7 +218,7 @@ class MyNetworkManager : NetworkManager {
         // Server stopped
     }
 
-    void OnClinetConnect(INetworkConnection conn) {
+    void OnClinetConnect(INetworkPlayer conn) {
         // Client connected
     }
 
@@ -342,7 +342,7 @@ public class Player : NetworkBehaviour {
 </tr>
 <tr>
 <td style="text-align: center;"><code>ClientScene.ready</code></td>
-<td style="text-align: center;"><a class="xref" href="../../api/Mirage.NetworkConnection.html#Mirage_NetworkConnection_IsReady">NetworkClient.Connection.IsReady</a></td>
+<td style="text-align: center;"><a class="xref" href="../../api/Mirage.NetworkPlayer.html#Mirage_NetworkPlayer_IsReady">NetworkClient.Connection.IsReady</a></td>
 </tr>
 <tr>
 <td style="text-align: center;"><code>NetworkIdentity.assetId</code></td>
@@ -366,7 +366,7 @@ public class Player : NetworkBehaviour {
 </tr>
 <tr>
 <td style="text-align: center;"><code>NetworkBehaviour.connectionToServer</code></td>
-<td style="text-align: center;"><a class="xref" href="../../api/Mirage.NetworkBehaviour.html#Mirage_NetworkBehaviour_ConnectionToServer">NetworkBehaviour.ConnectionToServer</a></td>
+<td style="text-align: center;">Removed, use <a class="xref" href="../../api/Mirage.NetworkClient.html#Mirage_NetworkClient_Player">Client.Player</a> instead</td>
 </tr>
 <tr>
 <td style="text-align: center;"><code>NetworkBehaviour.hasAuthority</code></td>
@@ -390,11 +390,11 @@ public class Player : NetworkBehaviour {
 </tr>
 <tr>
 <td style="text-align: center;"><code>NetworkConnection.isReady</code></td>
-<td style="text-align: center;"><a class="xref" href="../../api/Mirage.NetworkConnection.html#Mirage_NetworkConnection_IsReady">NetworkConnection.IsReady</a></td>
+<td style="text-align: center;"><a class="xref" href="../../api/Mirage.NetworkPlayer.html#Mirage_NetworkPlayer_IsReady">NetworkPlayer.IsReady</a></td>
 </tr>
 <tr>
 <td style="text-align: center;"><code>NetworkConnection.identity</code></td>
-<td style="text-align: center;"><a class="xref" href="../../api/Mirage.NetworkConnection.html#Mirage_NetworkConnection_Identity">NetworkConnection.Identity</a></td>
+<td style="text-align: center;"><a class="xref" href="../../api/Mirage.NetworkPlayer.html#Mirage_NetworkPlayer_Identity">NetworkPlayer.Identity</a></td>
 </tr>
 <tr>
 <td style="text-align: center;"><code>NetworkServer.active</code></td>
@@ -402,11 +402,11 @@ public class Player : NetworkBehaviour {
 </tr>
 <tr>
 <td style="text-align: center;"><code>NetworkServer.localConnection</code></td>
-<td style="text-align: center;"><a class="xref" href="../../api/Mirage.NetworkServer.html#Mirage_NetworkServer_LocalConnection">NetworkServer.LocalConnection</a></td>
+<td style="text-align: center;"><a class="xref" href="../../api/Mirage.NetworkServer.html#Mirage_NetworkServer_LocalPlayer">NetworkServer.LocalPlayer</a></td>
 </tr>
 <tr>
 <td style="text-align: center;"><code>NetworkClient.connection</code></td>
-<td style="text-align: center;"><a class="xref" href="../../api/Mirage.NetworkClient.html#Mirage_NetworkClient_Connection">NetworkClient.Connection</a></td>
+<td style="text-align: center;"><a class="xref" href="../../api/Mirage.NetworkClient.html#Mirage_NetworkClient_Player">NetworkClient.Player</a></td>
 </tr>
 <tr>
 <td style="text-align: center;"><code>NetworkTime.time</code></td>
@@ -432,7 +432,7 @@ public class Player : NetworkBehaviour {
 </tr>
 <tr>
 <td style="text-align: center;"><code>NetworkServer.Destroy</code></td>
-<td style="text-align: center;"><a class="xref" href="../../api/Mirage.ServerObjectManager.html#Mirage_ServerObjectManager_Destroy_GameObject_">ServerObjectManager.Destroy</a></td>
+<td style="text-align: center;"><a class="xref" href="../../api/Mirage.ServerObjectManager.html#Mirage_ServerObjectManager_Destroy_UnityEngine_GameObject_">ServerObjectManager.Destroy</a></td>
 </tr>
 </tbody>
 </table>

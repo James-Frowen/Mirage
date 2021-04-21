@@ -85,14 +85,54 @@
   
   <h1 id="Mirage_Sequencer" data-uid="Mirage.Sequencer" class="text-break">Struct Sequencer
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>A sequence generator that can wrap.
+For example a 2 bit sequencer would generate
+the following numbers:</p>
+<pre><code>    0,1,2,3,0,1,2,3,0,1,2,3...</code></pre>
+</div>
   <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetype.equals#System_ValueType_Equals_System_Object_">ValueType.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetype.gethashcode#System_ValueType_GetHashCode">ValueType.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetype.tostring#System_ValueType_ToString">ValueType.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Mirage.html">Mirage</a></h6>
-  <h6><strong>Assembly</strong>: doc.dll</h6>
+  <h6><strong>Assembly</strong>: Mirage.dll</h6>
   <h5 id="Mirage_Sequencer_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public struct Sequencer</code></pre>
   </div>
+  <h5 id="Mirage_Sequencer_examples"><strong>Examples</strong></h5>
+  <pre><code>// create a 8 bit sequence generator
+Sequencer sequencer = new Sequencer(8);
+
+ulong zero = sequencer.Next();
+ulong one = sequencer.Next();
+...
+ulong n = sequencer.Next();
+
+// you can determine the distance between 2 sequences
+// as long as they are withing 1/2 of the sequence space
+
+// this is equivalent to a - b adjusted for wrapping
+int d = sequencer.Distance(a, b);</code></pre>
+
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
@@ -100,11 +140,12 @@
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_Sequencer__ctor_System_Int32_.md&amp;value=---%0Auid%3A%20Mirage.Sequencer.%23ctor(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/Sequencer.cs/#L35">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/Sequencer.cs/#L68">View Source</a>
   </span>
   <a id="Mirage_Sequencer__ctor_" data-uid="Mirage.Sequencer.#ctor*"></a>
   <h4 id="Mirage_Sequencer__ctor_System_Int32_" data-uid="Mirage.Sequencer.#ctor(System.Int32)">Sequencer(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a sequencer</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -123,7 +164,8 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">bits</span></td>
-        <td></td>
+        <td><p>amount of bits for the sequence</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -134,11 +176,13 @@
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_Sequencer_Bits.md&amp;value=---%0Auid%3A%20Mirage.Sequencer.Bits%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/Sequencer.cs/#L33">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/Sequencer.cs/#L62">View Source</a>
   </span>
   <a id="Mirage_Sequencer_Bits_" data-uid="Mirage.Sequencer.Bits*"></a>
   <h4 id="Mirage_Sequencer_Bits" data-uid="Mirage.Sequencer.Bits">Bits</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Number of bits used for the sequence generator
+up to 64</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -166,11 +210,13 @@
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_Sequencer_Distance_System_UInt64_System_UInt64_.md&amp;value=---%0Auid%3A%20Mirage.Sequencer.Distance(System.UInt64%2CSystem.UInt64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/Sequencer.cs/#L58">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/Sequencer.cs/#L111">View Source</a>
   </span>
   <a id="Mirage_Sequencer_Distance_" data-uid="Mirage.Sequencer.Distance*"></a>
   <h4 id="Mirage_Sequencer_Distance_System_UInt64_System_UInt64_" data-uid="Mirage.Sequencer.Distance(System.UInt64,System.UInt64)">Distance(UInt64, UInt64)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Calculates the distance between 2 sequences, taking into account
+wrapping</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -189,12 +235,14 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a></td>
         <td><span class="parametername">from</span></td>
-        <td></td>
+        <td><p>current sequence value</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a></td>
         <td><span class="parametername">to</span></td>
-        <td></td>
+        <td><p>previous sequence value</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -209,7 +257,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
-        <td></td>
+        <td><p>from - to, adjusted for wrapping</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -218,11 +267,13 @@
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_Sequencer_Next.md&amp;value=---%0Auid%3A%20Mirage.Sequencer.Next%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/Sequencer.cs/#L48">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/Sequencer.cs/#L86">View Source</a>
   </span>
   <a id="Mirage_Sequencer_Next_" data-uid="Mirage.Sequencer.Next*"></a>
   <h4 id="Mirage_Sequencer_Next" data-uid="Mirage.Sequencer.Next">Next()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Generates the next value in the sequence
+starts with 0</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -239,7 +290,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a></td>
-        <td></td>
+        <td><p>0, 1, 2, ... 2^n-1, 0, 1, 2, ...</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -248,11 +300,13 @@
     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_Sequencer_NextAfter_System_UInt64_.md&amp;value=---%0Auid%3A%20Mirage.Sequencer.NextAfter(System.UInt64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/Sequencer.cs/#L53">View Source</a>
+    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/Sequencer.cs/#L99">View Source</a>
   </span>
   <a id="Mirage_Sequencer_NextAfter_" data-uid="Mirage.Sequencer.NextAfter*"></a>
   <h4 id="Mirage_Sequencer_NextAfter_System_UInt64_" data-uid="Mirage.Sequencer.NextAfter(System.UInt64)">NextAfter(UInt64)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the next sequence value after a given sequence
+wraps if necessary</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -271,7 +325,8 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a></td>
         <td><span class="parametername">sequence</span></td>
-        <td></td>
+        <td><p>current sequence value</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -286,7 +341,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a></td>
-        <td></td>
+        <td><p>the next sequence value</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -301,7 +357,7 @@
                     <a href="https://github.com/James-Frowen/Mirage/new/master/apiSpec/new?filename=Mirage_Sequencer.md&amp;value=---%0Auid%3A%20Mirage.Sequencer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/James-Frowen/Mirage/blob/master/Assets/Mirage/Runtime/Sequencer.cs/#L26" class="contribution-link">View Source</a>
+                    <a href="https://github.com/James-Frowen/Mirage/blob/b7c636b1401f39fa10067b6b5ed458bd9708cfbc/Assets/Mirage/Runtime/Sequencer.cs/#L51" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

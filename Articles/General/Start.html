@@ -94,10 +94,10 @@
 <ul>
 <li>Find the Prefab for the player game object in the game, or create a Prefab from the player game object</li>
 <li>Add the NetworkIdentity component to the player Prefab</li>
-<li>Set the <code>playerPrefab</code> field on the <code>PlayerSpawner</code> component  to the player Prefab. You can find this component on the GameObject you created in the first setup.</li>
+<li>Set the <code>playerPrefab</code> field on the <code>CharacterSpawner</code> component  to the player Prefab. You can find this component on the GameObject you created in the first setup.</li>
 <li>Remove the player game object instance from the Scene if it exists in the Scene</li>
 </ul>
-<p>See <a href="../Guides/GameObjects/SpawnPlayer.html">Player Objects</a> for more information.</p>
+<p>See <a href="../Guides/GameObjects/SpawnPlayer.html">character objects</a> for more information.</p>
 <h2 id="player-movement">Player movement</h2>
 <ul>
 <li>Add a NetworkTransform component to the player Prefab</li>
@@ -152,7 +152,7 @@ public class Controls : NetworkBehaviour
 <h2 id="spawn-positions-for-players">Spawn positions for players</h2>
 <ul>
 <li>Add a new game object and place it at player’s start location</li>
-<li>Add this GameObject to the <code>PlayerSpawner</code>'s <code>Positions</code> list.</li>
+<li>Add this GameObject to the <code>CharacterSpawner</code>'s <code>Positions</code> list.</li>
 </ul>
 </article>
           </div>
