@@ -19,7 +19,7 @@ namespace Mirage.Weaver
 
         protected readonly Dictionary<TypeReference, MethodReference> funcs = new Dictionary<TypeReference, MethodReference>(new TypeReferenceComparer());
         protected readonly Dictionary<TypeDefinition, MethodReference> collectionMethods = new Dictionary<TypeDefinition, MethodReference>(new TypeReferenceComparer());
-        private readonly IWeaverLogger logger;
+        protected readonly IWeaverLogger logger;
         protected readonly ModuleDefinition module;
 
         public int Count => funcs.Count;
