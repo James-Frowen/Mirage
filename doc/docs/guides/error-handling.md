@@ -15,9 +15,33 @@ This rate-limiting system is server-side only and replaces the old `DisconnectOn
 
 ## Player Error Flags
 
-The `PlayerErrorFlags` enum helps categorize the types of errors a player can cause, allowing for more granular tracking and response.
+```cs
+// see PlayerErrorFlags in the source code for most up-to-date values
+[Flags]
+public enum PlayerErrorFlags
+{
+    None = 0,
 
-{{{ Path:'Snippets/General/ErrorHandlingSnippets.cs' Name:'error-handling-flags' }}}
+    // Likely developer bugs
+    RpcNullException = 1 << 0,
+    RpcException = 1 << 1,
+
+    // Connection/versioning issues
+    DeserializationException = 1 << 2,
+    RpcSync = 1 << 3,
+    RateLimit = 1 << 4,
+    InvalidState = 1 << 9,
+
+    // Security/Malicious Intent
+    NoAuthority = 1 << 5,
+    Unauthenticated = 1 << 6,
+    Critical = 1 << 7,
+    LikelyCheater = 1 << 8,
+
+    // Custom developer defined errors
+    CustomError = 1 << 16
+}
+```
 
 You can use these flags to identify an error's cause when implementing custom logic. You can also define your own flags using the `CustomError` bit as a starting point:
 
