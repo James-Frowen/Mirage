@@ -22,7 +22,7 @@ jobs:
     uses: ./.github/workflows/run-test.yml
     secrets:
       # checking if same license will work
-      unity_license: ${{ secrets.UNITY_LICENSE_2021_3_4 }}
+      unity_license: ${{ secrets.UNITY_LICENSE }}
       access_token: ${{ secrets.GITHUB_TOKEN }}
     with:
       unity_container: unityci/editor:ubuntu-2022.3.62f2-base-3.2.2
@@ -35,7 +35,7 @@ jobs:
     uses: ./.github/workflows/run-test.yml
     secrets:
       # checking if same license will work
-      unity_license: ${{ secrets.UNITY_LICENSE_2021_3_4 }}
+      unity_license: ${{ secrets.UNITY_LICENSE }}
       access_token: ${{ secrets.GITHUB_TOKEN }}
     with:
       unity_container: unityci/editor:ubuntu-6000.0.75f1-base-3.2.2
@@ -48,7 +48,7 @@ jobs:
     uses: ./.github/workflows/run-test.yml
     secrets:
       # checking if same license will work
-      unity_license: ${{ secrets.UNITY_LICENSE_2021_3_4 }}
+      unity_license: ${{ secrets.UNITY_LICENSE }}
       access_token: ${{ secrets.GITHUB_TOKEN }}
     with:
       unity_container: unityci/editor:ubuntu-6000.3.16f1-base-3.2.2
@@ -66,7 +66,7 @@ jobs:
         # exit code is 1 for manual activation
         continue-on-error: true
         env:
-          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE2 }}
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         run: |          
           echo "$UNITY_LICENSE" | tr -d '\r' > UnityLicenseFile.ulf
           unity-editor -nographics -logFile /dev/stdout -manualLicenseFile UnityLicenseFile.ulf -quit 
@@ -142,7 +142,7 @@ jobs:
         # exit code is 1 for manual activation
         continue-on-error: true
         env:
-          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE2 }}
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         run: |          
           echo "$UNITY_LICENSE" | tr -d '\r' > UnityLicenseFile.ulf
           unity-editor -nographics -logFile /dev/stdout -manualLicenseFile UnityLicenseFile.ulf -quit 
