@@ -267,7 +267,7 @@ Because client tick `N` and server tick `N` are the same number for the same sim
 
 ## 5. Fact-check of the design note
 
-Source: `Plans/SimpleCSP/inputs/TimingSystem_ApproachA_vs_Legacy.md` (identical to the uploaded copy).
+Source: `Plans/SimpleCSP/old-draft/2-timing-decisions/TimingSystem_ApproachA_vs_Legacy.md` (identical to the uploaded copy).
 
 | # | Claim about the legacy system | Verdict | Evidence |
 |---|---|---|---|

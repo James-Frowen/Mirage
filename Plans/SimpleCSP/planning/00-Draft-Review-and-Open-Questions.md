@@ -1,15 +1,15 @@
-# Phase 1 — Review of the input planning docs
+# Phase 1 — Review of the old draft planning docs
 
 Summary of the four planning files supplied for SimpleCSP. It records where each one landed, how the timing debate moved, and the gaps that matter for the target game. The target is a **server-authoritative FPS with 16–32 players**, where the character controller and weapons are predicted per network object.
 
-Copies of the inputs are in [`inputs/`](inputs/):
+Copies of the old draft docs are in [`old-draft/`](../old-draft/):
 
 | File | What it is |
 |---|---|
-| [`inputs/omp-session-2026-09-02.md`](inputs/omp-session-2026-09-02.md) | A 4-round design session with an agent. It embeds the **original 4 plan docs**, which are extracted to [`inputs/original-plan-from-session/`](inputs/original-plan-from-session/): `OverallPlan.md`, `Decision_FixedUpdate_vs_CustomTick.md`, `Decision_GenericBaseClass.md`, `Decision_ProxyInterpolation.md` |
-| [`inputs/TimingSystem_ApproachA_vs_Legacy.md`](inputs/TimingSystem_ApproachA_vs_Legacy.md) | Distils session round 3: the "self-clocking" client-labelled tick stream compared with the legacy `ClientTickRunner` |
-| [`inputs/Decision_FixedTick_vs_VariableTime.md`](inputs/Decision_FixedTick_vs_VariableTime.md) | Fixed tick vs variable dt, with steel-man pseudocode. Also covers the FPS camera: rotation is never predicted |
-| [`inputs/Decision_Fixed_vs_variable-glm.md`](inputs/Decision_Fixed_vs_variable-glm.md) | Distils session round 4: Option A (fixed) vs Option C (variable dt), both using epsilon reconcile and re-baselining |
+| [`../old-draft/design-session-2026-09-02.md`](../old-draft/design-session-2026-09-02.md) | A 4-round design session with an agent. It embeds the **original 4 plan docs**, which are extracted to [`../old-draft/1-original-plan/`](../old-draft/1-original-plan/): `OverallPlan.md`, `Decision_FixedUpdate_vs_CustomTick.md`, `Decision_GenericBaseClass.md`, `Decision_ProxyInterpolation.md` |
+| [`../old-draft/2-timing-decisions/TimingSystem_ApproachA_vs_Legacy.md`](../old-draft/2-timing-decisions/TimingSystem_ApproachA_vs_Legacy.md) | Distils session round 3: the "self-clocking" client-labelled tick stream compared with the legacy `ClientTickRunner` |
+| [`../old-draft/2-timing-decisions/Decision_FixedTick_vs_VariableTime.md`](../old-draft/2-timing-decisions/Decision_FixedTick_vs_VariableTime.md) | Fixed tick vs variable dt, with steel-man pseudocode. Also covers the FPS camera: rotation is never predicted |
+| [`../old-draft/2-timing-decisions/Decision_Fixed_vs_variable-glm.md`](../old-draft/2-timing-decisions/Decision_Fixed_vs_variable-glm.md) | Distils session round 4: Option A (fixed) vs Option C (variable dt), both using epsilon reconcile and re-baselining |
 
 ---
 
@@ -132,4 +132,4 @@ That is fine for a self-clocking owner. It is a problem for a **server** whose t
 7. **Replay side effects.** The `IsReplaying` contract and first-time-only events.
 8. **Host mode** and server-only objects (bots).
 
-The research reports in [`research/`](research/) cover what the legacy CSP and Mirage already provide for each of these.
+The research reports in [`research/`](../research/) cover what the legacy CSP and Mirage already provide for each of these.
