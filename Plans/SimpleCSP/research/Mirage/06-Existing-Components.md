@@ -1,3 +1,5 @@
+> Verified against main @ 0638bf8e5
+
 # 06 - Existing Components and Precedents
 
 **Summary.** Mirage's `Components/` folder is mostly infrastructure (scene loading, visibility, HUD, headless helpers). The only state-sync component is `NetworkTransform` (+`NetworkTransformChild`), which is marked `[Obsolete]`/"not for production" and uses the plain SyncVar pipeline (reliable, 100 ms default) with simple two-point interpolation; `NetworkAnimator` is demoted to a legacy sample. A repo-wide search for prediction, reconciliation, rewind, lag compensation and snapshot buffers finds **nothing**; the only interpolation is in `NetworkTransformBase`. The closest design precedents are the `Notify` sample (ack-aware deltas), `NetworkTransformBase` (custom `OnSerialize` + `SetDirtyBit`), and the owner->server `ReadyCheck` SyncVar.
@@ -11,7 +13,7 @@
 | Component | What it does | Relevance to CSP |
 |---|---|---|
 | `NetworkTransform`, `NetworkTransformChild` (`NetworkTransformBase`) | Position/rotation/scale sync, optional client authority | Precedent for custom `OnSerialize` + interpolation; **not** prediction. Obsolete. |
-| `NetworkSceneLoader` | Scene loading + player spawn helper; sets `SceneIsReady`, registers `SceneReadyMessage` | Defines when a player becomes an observer (`NetworkSceneLoader.cs:57-167`) |
+| `NetworkSceneLoader` | Scene loading + player spawn helper; sets `SceneIsReady`, registers `SceneReadyMessage` | Defines when a player becomes an observer (`NetworkSceneLoader.cs:61-181`) |
 | `OnlineOfflineScene`, `LobbyReady`, `ReadyCheck` | Lobby/ready flow; `ReadyCheck` is an owner->server SyncVar with hooks | Pattern for owner-authored SyncVar (`ReadyCheck.cs:15-16`) |
 | `SyncObjectActive` | SyncVar `_active` with hook + `invokeHookOnServer` | tiny example of server-side hook usage |
 | Visibility: `NetworkProximityChecker`, `NetworkMatchChecker`, `SceneVisibilityChecker`, `NetworkSceneChecker` (obsolete), `AlwaysNetworkVisibility`, `HostRendererVisibility` | Interest management | Controls who gets state; changes destroy/recreate client objects (file 01) |
@@ -57,18 +59,18 @@ Performed across `Assets/Mirage` (Runtime, Components, Weaver, Samples~), `Asset
 | **Notify sample** `SendChangesNotify` | Send "changes since last acked" over unreliable via `Send(msg, INotifyCallBack)`; pooled callback objects; track `lastReceivedCount` on `OnDelivered` | `Assets/Mirage/Samples~/Notify/NotfyExample.cs:17-120` |
 | **NetworkTransformBase** | Per-object `OnSerialize/OnDeserialize` override with `SetDirtyBit`, plus owner `ServerRpc` for authoritative input | `NetworkTransformBase.cs:95-111, 220-239` |
 | **ReadyCheck** | Owner-authored SyncVar (set `SyncFrom.Owner`, `To.Server`) with `invokeHookOnServer/Owner` | `Assets/Mirage/Components/ReadyCheck.cs:15-16` |
-| **LobbyReady** | Global manager reacting to `World.onSpawn/onUnspawn`, sends `NetworkServer.SendToMany` with channel | `LobbyReady.cs:41-106` |
+| **LobbyReady** | Global manager reacting to `World.onSpawn/onUnspawn`, sends `NetworkServer.SendToMany` with channel | `Assets/Mirage/Components/LobbyReady.cs:20-37` (spawn/unspawn hooks), `:55-80` (`SendToReady`) |
 | **HostRendererVisibility** | Host-mode special-casing of per-object logic | `Visibility/HostRendererVisibility.cs` |
-| **Tanks sample** | Client-authoritative movement via transform sync + `ServerRpc` for fire event + `ClientRpc` for FX (no prediction) | `Assets/Mirage/Samples~/Tanks/Scripts/Tank.cs:34-87` |
+| **Tanks sample** | Client-authoritative movement via transform sync + `ServerRpc` for fire event + `ClientRpc` for FX (no prediction) | `Assets/Mirage/Samples~/Tanks/Scripts/Tank.cs:35-88` |
 | **RequestServerMetrics** | Reading `NetworkServer.Metrics` frames for bandwidth/resend stats | `Components/DisplayMetrics/RequestServerMetrics.cs` |
 
 ## 5. Visibility components (quick facts)
 
-- `NetworkProximityChecker`: brute-force distance check against each authenticated player's **character** position; rebuilds via `InvokeRepeating` every `VisibilityUpdateInterval` (1 s) (`:59-137`).
-- `NetworkMatchChecker`: groups by `Guid MatchId`; has a `[SyncVar] currentMatchDebug` string; rebuilds immediately on change (`:16-134`).
+- `NetworkProximityChecker`: brute-force distance check against each authenticated player's **character** position; rebuilds via `InvokeRepeating` every `VisibilityUpdateInterval` (1 s) (`NetworkProximityChecker.cs:28, 37-53, 76-100`).
+- `NetworkMatchChecker`: groups by `Guid MatchId`; has a `[SyncVar] currentMatchDebug` string; rebuilds immediately on change (`NetworkMatchChecker.cs:16-134`; `[SyncVar]` at `:22-23`).
 - `SceneVisibilityChecker`: same-scene visibility; `NetworkSceneChecker` (obsolete, polls scene in `Update`) (`SceneChecking/*`).
 - `AlwaysNetworkVisibility`: observers = all authenticated players, even while loading scenes (`Visibility/AlwaysNetworkVisibility.cs`).
-- All require the component to be on the **same GameObject** as the identity (`NetworkIdentity.cs:351-355`).
+- All require the component to be on the **same GameObject** as the identity (`NetworkIdentity.cs:365-376`).
 
 ## 6. Implication
 
