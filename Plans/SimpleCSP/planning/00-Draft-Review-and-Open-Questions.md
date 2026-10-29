@@ -20,7 +20,7 @@ Copies of the old draft docs are in [`old-draft/`](../old-draft/):
 | Topic | Proposal | Source | Status |
 |---|---|---|---|
 | Scope | Per-object CSP, no whole-world rollback | OverallPlan | Agreed |
-| API | `PredictionBehaviour<TInput, TState>`: `GetInput`, `ProcessInput(input, prev[, dt])`, `ApplyState`, `GatherState`, `CompareState` | Decision_GenericBaseClass | Proposed. **Weaver support for generic NetworkBehaviour/RPCs is unverified** (pending the Mirage research) |
+| API | `PredictionBehaviour<TInput, TState>`: `GetInput`, `ProcessInput(input, prev[, dt])`, `ApplyState`, `GatherState`, `CompareState` | Decision_GenericBaseClass | Proposed. Weaver supports generic classes with `T`-typed RPC parameters; abstract or generic-method RPCs are errors (resolved in [01-Phase1-Summary](01-Phase1-Summary.md) §2.7) |
 | History | Fixed-size ring buffers of structs, indexed by `tick % N` (64–128) | OverallPlan | Agreed |
 | Input transport | Unreliable ServerRpc, `{latestTick, [in_t, in_t-1, in_t-2]}`, redundancy fixed at 3 (not user-tunable) | OverallPlan + session r1 | Agreed |
 | Correction transport | Unreliable ClientRpc `{tick, state}` every server tick | OverallPlan | Agreed in principle. Unclear whether to send to the owner only or to everyone (see §3.4) |
@@ -69,7 +69,7 @@ A likely clean split for phase 2 to evaluate:
 
 With "process as soon as it arrives, pause when starved", the server keeps **no jitter buffer**.
 
-- Mirage batches sends per frame (pending confirmation from the Mirage research). A client running at 30 fps with a 60 Hz tick sends 2 inputs per packet. The server then processes 2 ticks of that player in one server tick and 0 in the next, so the server-side motion is uneven.
+- Mirage batches sends per frame (confirmed: [Mirage README](../research/Mirage/README.md) fact 6). A client running at 30 fps with a 60 Hz tick sends 2 inputs per packet. The server then processes 2 ticks of that player in one server tick and 0 in the next, so the server-side motion is uneven.
 - Because observers and lag comp see the server-side motion (§3.1), that unevenness reaches everyone. Network jitter does the same thing.
 - The standard fix is a small per-player **server input buffer** of 1–2 ticks. The client's lead is then tuned so that buffer stays small but non-empty: the server reports buffer depth, and the client nudges its tick rate. That is what Overwatch describes (GDC 2017, *general knowledge*), and it is essentially what `ClientTickRunner` + `PlayerTimeTracker` do.
 - **Takeaway:** some form of time feedback probably comes back for good-quality observer motion. It may be simpler than the legacy one, for example driven by measured server buffer depth instead of an RTT model. The TickRunner research report has the detail on what the legacy code actually does.
@@ -102,7 +102,7 @@ This is the concern you raised in r2. Points from general Unity knowledge:
 - `Time.timeScale` changes the FixedUpdate frequency.
 - Several fixed steps run back-to-back inside one frame before any network send or receive.
 
-That is fine for a self-clocking owner. It is a problem for a **server** whose tick defines the shared timeline (§3.1–3.3): a server hitch silently loses time, and every client's server-time estimate then drifts. That argues for the server tick (and probably the client's estimate of it) coming from a Stopwatch-based runner like `TickRunner`. You can still *call* the predicted step from that runner and use `Physics.Simulate` only if physics prediction is ever needed (currently out of scope). This is pending the TickRunner report.
+That is fine for a self-clocking owner. It is a problem for a **server** whose tick defines the shared timeline (§3.1–3.3): a server hitch silently loses time, and every client's server-time estimate then drifts. That argues for the server tick (and probably the client's estimate of it) coming from a Stopwatch-based runner like `TickRunner`. You can still *call* the predicted step from that runner and use `Physics.Simulate` only if physics prediction is ever needed (currently out of scope). The TickRunner report confirms the legacy `TickRunner` is a Stopwatch loop driven from `Update` (see [01-Phase1-Summary](01-Phase1-Summary.md) §2.9).
 
 ### 3.7 Precedents: both clock models ship *(general knowledge, worth verifying)*
 
@@ -114,7 +114,7 @@ That is fine for a self-clocking owner. It is a problem for a **server** whose t
 
 - **Tick rate agreement**: `fixedDeltaTime` or the tick rate must match between builds. Enforce it with a handshake value, not just documentation.
 - **Initial state handshake** on spawn or authority change. Late-join observers wait for 2 snapshots before rendering.
-- **Bandwidth at 32 players**: a `ClientRpc` state per player per tick to all observers is 32 × 31 × tickRate messages per second. Mirage's batching and visibility rules matter here (pending the Mirage research). A lower send rate to observers (for example every 2nd tick) may be needed.
+- **Bandwidth at 32 players**: a `ClientRpc` state per player per tick to all observers is 32 × 31 × tickRate messages per second. Mirage packs a ClientRpc once and copies it to N observers, with about 7 bytes of overhead per message ([Mirage README](../research/Mirage/README.md) fact 17). A lower send rate to observers (for example every 2nd tick) may be needed.
 - **Redundancy factor**: if Mirage packs several ticks per packet (§3.2), redundancy should be counted in *packets*, not ticks.
 - **Hosts and listen servers**: the host's own player has zero latency. Remote players hit by the host still need lag comp against the host's view.
 

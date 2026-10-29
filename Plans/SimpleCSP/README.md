@@ -4,8 +4,8 @@ SimpleCSP is a planned per-network-object client-side prediction system for Mira
 
 ## Status
 
-- **Phase 1: information gathering.** Review of the old draft docs (`planning/00`) and research on the existing systems (`research/`). Mirage research may still be in progress: `research/Mirage/` has no `README.md` or `07-*` file yet.
-- **Phase 2: full system planning.** Not started. It needs the decisions listed in `planning/00` first.
+- **Phase 1: information gathering.** Complete. Review of the old draft docs (`planning/00`), research on the legacy CSP repo, Mirage and external best practice (`research/`), and a cross-checked summary (`planning/01`).
+- **Phase 2: full system planning.** Not started. It begins with the decisions D1–D11 listed in [`planning/01-Phase1-Summary.md`](planning/01-Phase1-Summary.md) §4.
 
 ## old-draft/
 
@@ -44,23 +44,45 @@ Background reports on existing systems. Treat these as facts about the current c
 
 ### research/Mirage/
 
-In progress: no `README.md` or `07-*` file yet.
+Verified against `main` @ `0638bf8e5` (v159.1.1).
 
+- [`README.md`](research/Mirage/README.md): architecture on one page and 18 facts that matter for per-object CSP
 - [`01-Objects-Ownership-Lifecycle.md`](research/Mirage/01-Objects-Ownership-Lifecycle.md): NetworkIdentity, NetworkBehaviour, ownership, lifecycle hooks
 - [`02-SyncVars-and-State-Sync.md`](research/Mirage/02-SyncVars-and-State-Sync.md): SyncVar dirty tracking and per-frame sending
 - [`03-RPCs-and-Messages.md`](research/Mirage/03-RPCs-and-Messages.md): ServerRpc / ClientRpc and messages
 - [`04-Update-Loop-and-Timing.md`](research/Mirage/04-Update-Loop-and-Timing.md): update loop and timing
 - [`05-Serialization.md`](research/Mirage/05-Serialization.md): bit-level NetworkWriter/NetworkReader and weaver-generated serializers
 - [`06-Existing-Components.md`](research/Mirage/06-Existing-Components.md): existing components and precedents, mainly NetworkTransform
+- [`07-Gaps-and-Hooks-for-CSP.md`](research/Mirage/07-Gaps-and-Hooks-for-CSP.md): assessment: what Mirage gives CSP, what's missing, generics support, gotchas
+
+### research/External-Best-Practices/
+
+An independent baseline from outside sources only (engine source, docs, talks). It was written without reading any of our files, so it can be compared against the old draft.
+
+- [`README.md`](research/External-Best-Practices/README.md): ranked checklist of 46 practices (Essential / Recommended / Nice-to-have / Overkill) and main sources
+- [`01-Time-and-Ticks.md`](research/External-Best-Practices/01-Time-and-Ticks.md): fixed vs variable dt, clock ownership families, lead control, hitches
+- [`02-Inputs.md`](research/External-Best-Practices/02-Inputs.md): sampling, redundancy, server buffers, missing input, rate limits
+- [`03-Reconciliation-and-Replay.md`](research/External-Best-Practices/03-Reconciliation-and-Replay.md): reconcile loop, what to compare, replay side effects
+- [`04-Smoothing-and-Camera.md`](research/External-Best-Practices/04-Smoothing-and-Camera.md): visual/sim separation, error decay, render interpolation, camera rules
+- [`05-Remote-Entities-Interpolation.md`](research/External-Best-Practices/05-Remote-Entities-Interpolation.md): snapshot interpolation, buffer sizing, adaptive delay
+- [`06-Lag-Compensation-and-Hit-Registration.md`](research/External-Best-Practices/06-Lag-Compensation-and-Hit-Registration.md): server rewind, view tick, max rewind, hit markers
+- [`07-Weapons-and-Predicted-Gameplay.md`](research/External-Best-Practices/07-Weapons-and-Predicted-Gameplay.md): predicting fire, ammo, reload, spawns, interactions
+- [`08-Bandwidth-Messaging-AntiCheat.md`](research/External-Best-Practices/08-Bandwidth-Messaging-AntiCheat.md): send rates, channels, delta compression, validation
+- [`09-Testing-and-Debugging.md`](research/External-Best-Practices/09-Testing-and-Debugging.md): network simulation, misprediction visibility, tests
+- [`10-Unity-Specific.md`](research/External-Best-Practices/10-Unity-Specific.md): tick loop, physics, CharacterController, GC, Animator, and how Unity netcode libraries do it
+- [`11-Reference-Architectures.md`](research/External-Best-Practices/11-Reference-Architectures.md): Quake 3, Source, Overwatch, Unreal, Fusion and others, with a comparison table
+- [`12-Contested-Points.md`](research/External-Best-Practices/12-Contested-Points.md): where reputable sources disagree, and what decides it
 
 ## planning/
 
 Planning the new system and the decisions needed before starting.
 
 - [`00-Draft-Review-and-Open-Questions.md`](planning/00-Draft-Review-and-Open-Questions.md): review of the old draft docs, gaps for the target game, and open questions
+- [`01-Phase1-Summary.md`](planning/01-Phase1-Summary.md): cross-check of old draft vs research vs external practice, and the decisions for phase 2
 
 ## Suggested reading order
 
-1. [`planning/00-Draft-Review-and-Open-Questions.md`](planning/00-Draft-Review-and-Open-Questions.md)
-2. The research READMEs, starting with [`research/ClientSidePrediction/README.md`](research/ClientSidePrediction/README.md), then the numbered files you need
-3. `old-draft/` for history
+1. [`planning/01-Phase1-Summary.md`](planning/01-Phase1-Summary.md): the overall picture and the phase 2 decision list
+2. [`planning/00-Draft-Review-and-Open-Questions.md`](planning/00-Draft-Review-and-Open-Questions.md): detail on the gaps in the old draft
+3. The research READMEs ([legacy CSP](research/ClientSidePrediction/README.md), [Mirage](research/Mirage/README.md), [external](research/External-Best-Practices/README.md)), then the numbered files you need
+4. `old-draft/` for history
